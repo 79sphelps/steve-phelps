@@ -10,6 +10,7 @@ import eventPlanningNW0 from "../../Assets/event-planning-nw-1-p1-w300.png";
 import calendarAppReact from "../../Assets/calendar-app.png";
 import chatApp from "../../Assets/chat-app.png";
 import musicApp from "../../Assets/music-player-app.png";
+import northone from "../../Assets/northone.png";
 
 function Projects() {
   return (
@@ -23,6 +24,16 @@ function Projects() {
           Here are some of the React.js and Angular projects I've worked on:
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={northone}
+              isBlog={false}
+              title="NorthOne - Banking"
+              description="This is the primary React.js desktop banking application for NorthOne. I had a chance to work on this site along with a mobile site built with React Native back in 2021/2022."
+              demoLink="https://northone.com/"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={allAboutHairAngular}
@@ -97,13 +108,11 @@ function Projects() {
                 administrative side with most data hosted in MongoDB document stores hosted
                 by mLab. This mock project is no longer maintained but kept for reference only."
               ghLink="https://github.com/79sphelps/event-planning-nw-2"
-              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={suicide}
               imgPath={eventPlanningNW0}
               isBlog={false}
               title="Event Planning NW - Original"
@@ -117,7 +126,6 @@ function Projects() {
                 administrative side with most data hosted in MongoDB document stores hosted
                 by mLab. This mock project is no longer maintained but kept for reference only."
               ghLink="https://github.com/79sphelps/event-planning-nw"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
@@ -131,8 +139,6 @@ function Projects() {
               demoLink="https://northone.onrender.com/"
             />
           </Col>
-
-
         </Row>
       </Container>
     </Container>
