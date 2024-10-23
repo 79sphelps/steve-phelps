@@ -28,7 +28,7 @@ function Home() {
               <h3 className="heading-subtext" >
               My name is<strong className="main-name"> Steve Phelps</strong>.
               I'm a front-end developer based in Happy Valley, OR. 
-              I have developed may types of front-end applications assisting small business owners up to larger startups.
+              My focus is on creating modern front-end applications using React.js/Next.js. 
               </h3>
               <h3 className="heading-subtext" >
                 I'm passionate about cutting-edge, beautiful interfaces, and intuitively implemented UX.
