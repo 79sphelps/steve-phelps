@@ -40,8 +40,10 @@ function Home() {
                 {/* <ul class="information margin-tb-30"> */}
                 <br />
                 <br />
+                <br />
                 {/* <ul style={{ fontSize: "1.5rem" }}> */}
-                <ul style={{ fontSize: "20px" }}>
+                {/* <ul style={{ fontSize: "20px" }}> */}
+                <ul className="home-contact-text">
                   <li><b className="purple">PHONE: </b>503-462-2135</li>
                   <li><b className="purple">EMAIL: </b>79sphelps&#64;gmail.com</li>
                   <li><b className="purple">CITY: </b>Happy Valley</li>

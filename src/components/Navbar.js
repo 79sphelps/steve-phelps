@@ -38,9 +38,9 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand href="/" className="logo-text d-flex">
           {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
-          Steve Phelps - JavaScript Developer
+          Steve Phelps - Developer
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
