@@ -24,7 +24,7 @@ function ProjectCards(props) {
         {"\n"}
         {"\n"}
 
-        {!props.isBlog && props.demoLink (
+        {!props.isBlog && props.demoLink ? (
           <Button
             variant="primary"
             href={props.demoLink}
@@ -34,7 +34,7 @@ function ProjectCards(props) {
             <CgWebsite /> &nbsp;
             {"Demo"}
           </Button>
-        )}
+        ) : null }
       </Card.Body>
     </Card>
   );
