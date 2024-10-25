@@ -19,7 +19,7 @@ const ProgressBar2 = (props) => {
   const { bgcolor, completed } = props;
 
   const containerStyles = {
-    width: "100%",
+    width: "95%",
     justifyContent: "center",
     backgroundColor: "#e0e0de",
     borderRadius: 50,
