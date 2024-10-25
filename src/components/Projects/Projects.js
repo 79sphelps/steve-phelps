@@ -11,6 +11,7 @@ import calendarAppReact from "../../Assets/calendar-app.png";
 import chatApp from "../../Assets/chat-app.png";
 import musicApp from "../../Assets/music-player-app.png";
 import northone from "../../Assets/northone.png";
+import smar from "../../Assets/smar-investments.png";
 
 function Projects() {
   return (
@@ -29,23 +30,8 @@ function Projects() {
               imgPath={northone}
               isBlog={false}
               title="NorthOne - Banking"
-              description="This is the primary React.js desktop banking application for NorthOne. I had a chance to work on this site along with a mobile site built with React Native back in 2021/2022."
+              description="This is the primary React.js desktop banking application for NorthOne. I had a chance to work on this site along with a mobile site built with React Native back in 2021/2022. It uses Redux for state management and leverages a fully distributed AWS backend using microservices."
               demoLink="https://northone.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={allAboutHairAngular}
-              isBlog={false}
-              title="All About Hair - Angular"
-              description="This is a custom hair salon site for a business in Happy Valley. It was
-                built with MEAN stack using Bootstrap 4. It includes APIs for authorized
-                CRUD operations, authentication and access management with automatic JWT
-                renewal (via OAuth), and simple/complex forms with custom validation. It
-                integrates Google Calendar APIs. This site is still a work in progress."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://all-about-hair.onrender.com/"
             />
           </Col>
 
@@ -54,7 +40,7 @@ function Projects() {
               imgPath={allAboutHairReact}
               isBlog={false}
               title="All About Hair - React"
-              description="This is the React.js/Redux version of the Angular app. It is a rework of the original. It uses Redux-Saga for async calls, Bootstrap for styling, and Auth0 for auth. It includes a fully functional backoffice area for updating site pages. MongoDB Cloud Atlas was used for free cloud storage."
+              description="This is the React.js/Redux version of the original Angular app. It is a complete rework and it uses Redux-Saga for async calls, Bootstrap for styling, and Auth0 for auth. It includes a fully functional backoffice area for updating site pages. MongoDB Cloud Atlas was used for free cloud storage."
               ghLink="https://github.com/79sphelps/all-about-hair-react"
               demoLink="https://all-about-hair-react.onrender.com/"
             />
@@ -62,12 +48,29 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={realEstateSite}
+              imgPath={smar}
               isBlog={false}
-              title="Real Estate Site"
-              description="This is the front end of a real estate broker website built using older style React and Redux for state management. It uses the redux-saga library to make and handle asynchronous calls to the back end. The app leverages the react-bootstrap library for UI. The app includes APIs for authorized CRUD operations, authentication and access management (via OAuth), and simple/complex forms with custom validation. It uses the compound component pattern and the Styled Components library to style the components."
-              ghLink="https://github.com/79sphelps/real-estate-rentals-frontend"
-              demoLink="https://real-estate-rentals-frontend.onrender.com/"
+              title="SMAR Investments 1, LLC"
+              description="This is the front end of the SMAR Investments 1, LLC website built using older style React and Redux for state management. It uses the redux-saga library to make and handle asynchronous calls to the back end. The app leverages the react-bootstrap library for UI. The app includes APIs for authorized CRUD operations, authentication and access management (via OAuth), and simple/complex forms with custom validation. It uses the compound component pattern and the Styled Components library to style the components."
+              // ghLink="https://github.com/79sphelps/smar-investments-1-llc-frontend"
+              demoLink="https://smar-investments-1-llc-frontend.onrender.com/"
+            />
+          </Col>
+
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={allAboutHairAngular}
+              isBlog={false}
+              title="All About Hair - Angular (Old)"
+              description="This is a custom hair salon site for a business in Happy Valley. It was
+                built with MEAN stack using Bootstrap 4. It includes APIs for authorized
+                CRUD operations, authentication and access management with automatic JWT
+                renewal (via OAuth), and simple/complex forms with custom validation. It
+                integrates Google Calendar APIs. This site is still a work in progress."
+              ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://all-about-hair.onrender.com/"
             />
           </Col>
 
@@ -87,9 +90,20 @@ function Projects() {
               imgPath={chatApp}
               isBlog={false}
               title="Chat Application"
-              description="This is a React.js chat application used for communication with my family. It leverages the Scaledrone API a real-time messaging API which makes building chat rooms"
-              ghLink="https://github.com/79sphelps/scaledrone-chat-app"
+              description="This is a React.js chat application used for communication with my family. It leverages the Scaledrone API which is a real-time messaging API that makes building chat rooms easier."
+              // ghLink="https://github.com/79sphelps/scaledrone-chat-app"
               demoLink="https://scaledrone-chat-app-22bw.onrender.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={realEstateSite}
+              isBlog={false}
+              title="Real Estate Broker Site"
+              description="This is the front end of a real estate broker website built using older style React and Redux for state management. It uses the redux-saga library to make and handle asynchronous calls to the back end. The app leverages the react-bootstrap library for UI. The app includes APIs for authorized CRUD operations, authentication and access management (via OAuth), and simple/complex forms with custom validation. It uses the compound component pattern and the Styled Components library to style the components."
+              ghLink="https://github.com/79sphelps/real-estate-rentals-frontend"
+              demoLink="https://real-estate-rentals-frontend.onrender.com/"
             />
           </Col>
 
@@ -97,7 +111,7 @@ function Projects() {
             <ProjectCard
               imgPath={eventPlanningNW}
               isBlog={false}
-              title="Event Planning NW"
+              title="Event Planning NW (Old Project)"
               description="This was a mock up SPA project using the MEAN stack. The project was the initial design
                 for a local event planning entrepeneur but work on it stopped in order to
                 perform a redesign later on. It was built with Angular 5 using Bootstrap 4.
@@ -110,12 +124,12 @@ function Projects() {
               ghLink="https://github.com/79sphelps/event-planning-nw-2"
             />
           </Col>
-
+{/* 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={eventPlanningNW0}
               isBlog={false}
-              title="Event Planning NW - Original"
+              title="Event Planning NW (Old Original Project)"
               description="This was a mock up SPA project using the MEAN stack. The project was the initial design
                 for a local event planning entrepeneur but work on it stopped in order to
                 perform a redesign later on. It was built with Angular 5 using Bootstrap 4.
@@ -127,14 +141,14 @@ function Projects() {
                 by mLab. This mock project is no longer maintained but kept for reference only."
               ghLink="https://github.com/79sphelps/event-planning-nw"
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={calendarAppReact}
               isBlog={false}
               title="Calendar Application"
-              description="This is a React.js/Redux calendar application. It was an older project to get familiar with Redux, Redux-Saga, selectors, and state management. Bootstrap was used for styling. It has a Node.js/Express backend and MongoDB Cloud Atlas was used for cloud storage."
+              description="This is a React.js/Redux calendar application. It leverages the FullCalendar package which makes visualizing month/week/day events really easy. There are lots of options with the package but only minimal ones are used. It was an older project to get familiar with Redux, Redux-Saga, selectors, and state management. Bootstrap was used for styling. It has a Node.js/Express backend and MongoDB Cloud Atlas was used for cloud storage."
               ghLink="https://github.com/79sphelps/northone"
               demoLink="https://northone.onrender.com/"
             />

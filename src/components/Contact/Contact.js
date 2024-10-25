@@ -64,6 +64,15 @@ const ContactForm = () => {
         <Container>
           <Row style={{ justifyContent: "center", padding: "10px" }}>
             <h1>Get in Touch</h1>
+
+            <div style={{ display: "inline" }}>
+              <b className="purple">PHONE: </b>503-462-2135
+            </div>
+            <div style={{ display: "inline" }}>
+              <b className="purple">EMAIL: </b>
+              <a href="mailto:79sphelps@gmail.com">79sphelps&#64;gmail.com</a>
+            </div>
+
             <Col size={12} md={6}>
               <TrackVisibility>
                 {({ isVisible = true }) => (
