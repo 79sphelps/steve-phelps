@@ -285,8 +285,30 @@ button:focus {
   font-size: 1.0em !important;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1200px) {
   .logo-text {
+    font-size: 0.8em !important;
+  }
+}
+
+@media (max-width: 1010px) {
+  .logo-text {
+    font-size: 0.7em !important;
+  }
+}
+
+.navbar-item-text {
+  font-size: 1.0em !important;
+}
+
+@media (max-width: 1200px) {
+  .navbar-item-text {
+    font-size: 0.8em !important;
+  }
+}
+
+@media (max-width: 1010px) {
+  .navbar-item-text {
     font-size: 0.7em !important;
   }
 }

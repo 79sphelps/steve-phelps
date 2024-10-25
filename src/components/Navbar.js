@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -29,6 +29,39 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
+  const useWindowSize = () => {
+    const [windowSize, setWindowSize] = useState({
+      width: undefined,
+      height: undefined,
+    });
+
+    useEffect(() => {
+      // only execute all the code below in client side
+      if (typeof window !== "undefined") {
+        // Handler to call on window resize
+        function handleResize() {
+          // Set window width/height to state
+          setWindowSize({
+            width: window.innerWidth,
+            height: window.innerHeight,
+          });
+        }
+
+        // Add event listener
+        window.addEventListener("resize", handleResize);
+
+        // Call handler right away so state gets updated with initial window size
+        handleResize();
+
+        // Remove event listener on cleanup
+        return () => window.removeEventListener("resize", handleResize);
+      }
+    }, []); // Empty array ensures that effect is only run on mount
+    return windowSize;
+  };
+
+  const size = useWindowSize();
+
   return (
     <Navbar
       expanded={expand}
@@ -37,7 +70,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="logo-text d-flex">
+        <Navbar.Brand href="/" className="logo-text d-flex" style={{ bottomMargin: "2px" }}>
           {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
           Steve Phelps - Developer
         </Navbar.Brand>
@@ -54,8 +87,8 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)} className="navbar-item-text">
+                { size.width > 1010 ? <AiOutlineHome style={{ marginBottom: "2px" }} /> : null } Home
               </Nav.Link>
             </Nav.Item>
 
@@ -64,8 +97,9 @@ function NavBar() {
                 as={Link}
                 to="/about"
                 onClick={() => updateExpanded(false)}
+                className="navbar-item-text"
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                { size.width > 1010 ? <AiOutlineUser style={{ marginBottom: "2px" }} /> : null } About
               </Nav.Link>
             </Nav.Item>
 
@@ -74,8 +108,9 @@ function NavBar() {
                 as={Link}
                 to="/contact"
                 onClick={() => updateExpanded(false)}
+                className="navbar-item-text"
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Contact
+                { size.width > 1010 ? <AiOutlineUser style={{ marginBottom: "2px" }} /> : null } Contact
               </Nav.Link>
             </Nav.Item>
 
@@ -84,11 +119,11 @@ function NavBar() {
                 as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
+                className="navbar-item-text"
               >
-                <AiOutlineFundProjectionScreen
+                { size.width > 1010 ? <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+                /> : null } Projects
               </Nav.Link>
             </Nav.Item>
 
@@ -97,8 +132,9 @@ function NavBar() {
                 as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
+                className="navbar-item-text"
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                { size.width > 1010 ? <CgFileDocument style={{ marginBottom: "2px" }} /> : null } Resume
               </Nav.Link>
             </Nav.Item>
 
@@ -108,7 +144,7 @@ function NavBar() {
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                { size.width > 1010 ? <CgGitFork style={{ fontSize: "1.2em" }} /> : null }
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
