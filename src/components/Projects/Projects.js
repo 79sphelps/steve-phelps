@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import allAboutHairAngular from "../../Assets/all-about-hair-p1.png";
 import allAboutHairReact from "../../Assets/all-about-hair-react-1-min.png";
 import realEstateSite from "../../Assets/real-estate-site-home.png";
-import eventPlanningNW from "../../Assets/event-planning-nw-2-p1.png"
+import eventPlanningNW from "../../Assets/event-planning-nw-2-p1.png";
 import eventPlanningNW0 from "../../Assets/event-planning-nw-1-p1-w300.png";
 import calendarAppReact from "../../Assets/calendar-app.png";
 import chatApp from "../../Assets/chat-app.png";
@@ -24,7 +24,7 @@ function Projects() {
           Here are some of the React.js and Angular projects I've worked on:
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={northone}
               isBlog={false}
@@ -67,7 +67,7 @@ function Projects() {
               title="Real Estate Site"
               description="This is the front end of a real estate broker website built using older style React and Redux for state management. It uses the redux-saga library to make and handle asynchronous calls to the back end. The app leverages the react-bootstrap library for UI. The app includes APIs for authorized CRUD operations, authentication and access management (via OAuth), and simple/complex forms with custom validation. It uses the compound component pattern and the Styled Components library to style the components."
               ghLink="https://github.com/79sphelps/real-estate-rentals-frontend"
-              demoLink="https://real-estate-rentals-frontend.onrender.com/"              
+              demoLink="https://real-estate-rentals-frontend.onrender.com/"
             />
           </Col>
 

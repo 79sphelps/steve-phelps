@@ -19,7 +19,7 @@ function ProjectCards(props) {
             <BsGithub /> &nbsp;
             {props.isBlog ? "Blog" : "GitHub"}
           </Button>
-        ) : null }
+        ) : null}
 
         {"\n"}
         {"\n"}
@@ -34,7 +34,7 @@ function ProjectCards(props) {
             <CgWebsite /> &nbsp;
             {"Demo"}
           </Button>
-        ) : null }
+        ) : null}
       </Card.Body>
     </Card>
   );

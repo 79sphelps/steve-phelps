@@ -4,8 +4,8 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiSlack,
-  SiVercel,
-  SiMacos,
+  // SiVercel,
+  // SiMacos,
   SiRender,
   SiReact,
   SiRedux,
@@ -27,27 +27,21 @@ function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        {/* <SiMacos /> */}
         <SiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        {/* <SiMacos /> */}
         <SiRedux />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        {/* <SiMacos /> */}
         <SiReactquery />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        {/* <SiMacos /> */}
         <SiJavascript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        {/* <SiMacos /> */}
         <SiTypescript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        {/* <SiMacos /> */}
         <SiNodedotjs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -74,7 +68,6 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiNextdotjs />
       </Col>
-
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
       </Col>

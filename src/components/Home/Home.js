@@ -20,18 +20,20 @@ function Home() {
                 </span>
               </h1> */}
               <h1 className="heading-name">
-                Welcome. 
+                Welcome.
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
-              <h3 className="heading-subtext" >
-              My name is<strong className="main-name"> Steve Phelps</strong>.
-              I'm a front-end developer based in Happy Valley, OR. 
-              My focus is on creating modern front-end applications using React.js/Next.js. 
+              <h3 className="heading-subtext">
+                My name is<strong className="main-name"> Steve Phelps</strong>.
+                I'm a front-end developer based in Happy Valley, OR. My focus is
+                on creating modern front-end applications using
+                React.js/Next.js.
               </h3>
-              <h3 className="heading-subtext" >
-                I'm passionate about cutting-edge, beautiful interfaces, and intuitively implemented UX.
+              <h3 className="heading-subtext">
+                I'm passionate about cutting-edge, beautiful interfaces, and
+                intuitively implemented UX.
               </h3>
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
@@ -44,10 +46,18 @@ function Home() {
                 {/* <ul style={{ fontSize: "1.5rem" }}> */}
                 {/* <ul style={{ fontSize: "20px" }}> */}
                 <ul className="home-contact-text">
-                  <li><b className="purple">PHONE: </b>503-462-2135</li>
-                  <li><b className="purple">EMAIL: </b>79sphelps&#64;gmail.com</li>
-                  <li><b className="purple">CITY: </b>Happy Valley</li>
-                  <li><b className="purple">STATE: </b>Oregon</li>
+                  <li>
+                    <b className="purple">PHONE: </b>503-462-2135
+                  </li>
+                  <li>
+                    <b className="purple">EMAIL: </b>79sphelps&#64;gmail.com
+                  </li>
+                  <li>
+                    <b className="purple">CITY: </b>Happy Valley
+                  </li>
+                  <li>
+                    <b className="purple">STATE: </b>Oregon
+                  </li>
                 </ul>
               </div>
             </Col>

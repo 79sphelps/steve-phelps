@@ -5,7 +5,7 @@ import myImg from "../../Assets/my_photo-min.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
+  // AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -17,74 +17,39 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              {/* LET ME <span className="purple"> INTRODUCE </span> MYSELF */}
               Let me <span className="purple"> introduce </span> myself!
             </h1>
-
-            {/* <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
-            </p> */}
-
             <p className="home-about-body">
-              I am a full stack JavaScript developer with 10+ years of experience prepared for 
-              role with strong expertise in JavaScript/TypeScript, React.js, Redux/RTK/TanStack Query, 
-              Hooks, HTML, and CSS. Adept at building responsive and user-friendly web applications. 
-              Known for effective team collaboration, focus, and delivering high-quality results. 
-              Flexible and reliable, adapting seamlessly to changing project requirements. 
-              My backend experience has primarily been with Node.js. Other experience includes Angular, 
-              Git, Docker, cloud application architecture, microservice development, AWS, remote work culture, 
-              and collaborating with distributed teams communicating via Slack and Zoom.
-
+              I am a full stack JavaScript developer with 10+ years of
+              experience prepared for role with strong expertise in
+              JavaScript/TypeScript, React.js, Redux/RTK/TanStack Query, Hooks,
+              HTML, and CSS. Adept at building responsive and user-friendly web
+              applications. Known for effective team collaboration, focus, and
+              delivering high-quality results. Flexible and reliable, adapting
+              seamlessly to changing project requirements. My backend experience
+              has primarily been with Node.js. Other experience includes
+              Angular, Git, Docker, cloud application architecture, microservice
+              development, AWS, remote work culture, and collaborating with
+              distributed teams communicating via Slack and Zoom.
               <br />
-              {/* 
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
-              <br /> */}
               <br />
               My current focus is on &nbsp;
               <i>
-                <b className="purple">frontend technologies</b> and building applications with <b className="purple">React.js, Next.js, and Tailwind CSS</b>
+                <b className="purple">frontend technologies</b> and building
+                applications with{" "}
+                <b className="purple">React.js, Next.js, and Tailwind CSS</b>
               </i>
               <br />
-
             </p>
-
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" style={{ borderRadius: "12px" }} alt="avatar" />
+              <img
+                src={myImg}
+                className="img-fluid"
+                style={{ borderRadius: "12px" }}
+                alt="avatar"
+              />
             </Tilt>
           </Col>
         </Row>
@@ -105,16 +70,6 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              {/* <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li> */}
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/steve-phelps-1614192b/"
