@@ -47,7 +47,7 @@ function Home2() {
               <img
                 src={myImg}
                 className="img-fluid"
-                style={{ borderRadius: "12px" }}
+                style={{ borderRadius: "12px", width: "200px" }}
                 alt="avatar"
               />
             </Tilt>
