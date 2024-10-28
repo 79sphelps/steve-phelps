@@ -6,7 +6,7 @@ import allAboutHairAngular from "../../Assets/all-about-hair-p1.png";
 import allAboutHairReact from "../../Assets/all-about-hair-react-1-min.png";
 import realEstateSite from "../../Assets/real-estate-site-home.png";
 import eventPlanningNW from "../../Assets/event-planning-nw-2-p1.png";
-import eventPlanningNW0 from "../../Assets/event-planning-nw-1-p1-w300.png";
+// import eventPlanningNW0 from "../../Assets/event-planning-nw-1-p1-w300.png";
 import calendarAppReact from "../../Assets/calendar-app.png";
 import chatApp from "../../Assets/chat-app.png";
 import musicApp from "../../Assets/music-player-app.png";
@@ -25,7 +25,7 @@ function Projects() {
           Here are some of the React.js and Angular projects I've worked on:
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={northone}
               isBlog={false}
@@ -35,7 +35,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={allAboutHairReact}
               isBlog={false}
@@ -46,7 +46,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={smar}
               isBlog={false}
@@ -59,7 +59,7 @@ function Projects() {
 
 
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={allAboutHairAngular}
               isBlog={false}
@@ -74,7 +74,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={musicApp}
               isBlog={false}
@@ -85,7 +85,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={chatApp}
               isBlog={false}
@@ -96,7 +96,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={realEstateSite}
               isBlog={false}
@@ -107,7 +107,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={eventPlanningNW}
               isBlog={false}
@@ -125,7 +125,7 @@ function Projects() {
             />
           </Col>
 {/* 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={eventPlanningNW0}
               isBlog={false}
@@ -143,7 +143,7 @@ function Projects() {
             />
           </Col> */}
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={calendarAppReact}
               isBlog={false}
