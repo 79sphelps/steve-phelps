@@ -40,7 +40,7 @@ function Projects() {
               imgPath={allAboutHairReact}
               isBlog={false}
               title="All About Hair - React"
-              description="This is the React.js/Redux version of the original Angular app. It is a complete rework and it uses Redux-Saga for async calls, Bootstrap for styling, and Auth0 for auth. It includes a fully functional backoffice area for updating site pages. MongoDB Cloud Atlas was used for free cloud storage."
+              description="This is the React.js/TanStack Query version of the original Angular app. It is a complete rework and it uses TanStack Query for async calls, Bootstrap for styling, and Auth0 for auth. It includes a fully functional backoffice area for updating site pages. MongoDB Cloud Atlas was used for free cloud storage."
               ghLink="https://github.com/79sphelps/all-about-hair-react"
               demoLink="https://all-about-hair-react.onrender.com/"
             />
