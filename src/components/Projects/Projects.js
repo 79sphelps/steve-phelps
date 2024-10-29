@@ -37,9 +37,20 @@ function Projects() {
 
           <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
+              imgPath={realEstateSite}
+              isBlog={false}
+              title="Real Estate Broker Site"
+              description="This is the front end of a real estate broker website built using older style React and Redux for state management. It uses the redux-saga library to make and handle asynchronous calls to the back end. The app leverages the react-bootstrap library for UI. The app includes APIs for authorized CRUD operations, authentication and access management (via OAuth), and simple/complex forms with custom validation. It uses the compound component pattern and the Styled Components library to style the components."
+              ghLink="https://github.com/79sphelps/real-estate-rentals-frontend"
+              demoLink="https://real-estate-rentals-frontend.onrender.com/"
+            />
+          </Col>
+
+          <Col lg={4} md={6} sm={12} className="project-card">
+            <ProjectCard
               imgPath={allAboutHairReact}
               isBlog={false}
-              title="All About Hair - React"
+              title="All About Hair - React (WIP)"
               description="This is the React.js/TanStack Query version of the original Angular app. It is a complete rework and it uses TanStack Query for async calls, Bootstrap for styling, and Auth0 for auth. It includes a fully functional backoffice area for updating site pages. MongoDB Cloud Atlas was used for free cloud storage."
               ghLink="https://github.com/79sphelps/all-about-hair-react"
               demoLink="https://all-about-hair-react.onrender.com/"
@@ -56,8 +67,6 @@ function Projects() {
               demoLink="https://smar-investments-1-llc-frontend.onrender.com/"
             />
           </Col>
-
-
 
           <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
@@ -93,17 +102,6 @@ function Projects() {
               description="This is a React.js chat application used for communication with my family. It leverages the Scaledrone API which is a real-time messaging API that makes building chat rooms easier."
               // ghLink="https://github.com/79sphelps/scaledrone-chat-app"
               demoLink="https://scaledrone-chat-app-22bw.onrender.com/"
-            />
-          </Col>
-
-          <Col lg={4} md={6} sm={12} className="project-card">
-            <ProjectCard
-              imgPath={realEstateSite}
-              isBlog={false}
-              title="Real Estate Broker Site"
-              description="This is the front end of a real estate broker website built using older style React and Redux for state management. It uses the redux-saga library to make and handle asynchronous calls to the back end. The app leverages the react-bootstrap library for UI. The app includes APIs for authorized CRUD operations, authentication and access management (via OAuth), and simple/complex forms with custom validation. It uses the compound component pattern and the Styled Components library to style the components."
-              ghLink="https://github.com/79sphelps/real-estate-rentals-frontend"
-              demoLink="https://real-estate-rentals-frontend.onrender.com/"
             />
           </Col>
 
