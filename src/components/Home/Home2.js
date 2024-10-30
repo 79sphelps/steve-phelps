@@ -21,16 +21,18 @@ function Home2() {
             </h1>
             <p className="home-about-body">
               I am a full stack JavaScript developer with 10+ years of
-              experience prepared for role with strong expertise in
-              JavaScript/TypeScript, React.js, Redux/RTK/TanStack Query, Hooks,
-              HTML, and CSS. Adept at building responsive and user-friendly web
-              applications. Known for effective team collaboration, focus, and
-              delivering high-quality results. Flexible and reliable, adapting
-              seamlessly to changing project requirements. My backend experience
-              has primarily been with Node.js. Other experience includes
-              Angular, Git, Docker, cloud application architecture, microservice
-              development, AWS, remote work culture, and collaborating with
-              distributed teams communicating via Slack and Zoom.
+              experience in software. I have worked on Angular frontends using
+              NgRX/RxJS for about 4 years and have worked with React.js using
+              Redux, RTK, TanStack Query, and hooks for over 5 years. I have
+              strong expertise in JavaScript, TypeScript, and React.js and am
+              currently ramping on Next.js and TailWind CSS. Adept at building
+              responsive and user-friendly web applications. Known for effective
+              team collaboration, focus, and delivering high-quality results. My
+              backend experience has primarily been with Node.js and Express.
+              Other experience includes agile delivery methods, Git, Docker,
+              cloud application architecture, microservice development, AWS,
+              remote work culture, and collaborating with distributed teams
+              communicating via Slack and Zoom.
               <br />
               <br />
               My current focus is on &nbsp;
