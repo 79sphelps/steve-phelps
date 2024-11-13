@@ -83,7 +83,7 @@ function Projects() {
             />
           </Col>
 
-          <Col lg={4} md={6} sm={12} className="project-card">
+          {/* <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={musicApp}
               isBlog={false}
@@ -103,7 +103,7 @@ function Projects() {
               // ghLink="https://github.com/79sphelps/scaledrone-chat-app"
               demoLink="https://scaledrone-chat-app-22bw.onrender.com/"
             />
-          </Col>
+          </Col> */}
 
           <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
