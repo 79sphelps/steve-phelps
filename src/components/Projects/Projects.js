@@ -12,6 +12,7 @@ import chatApp from "../../Assets/chat-app.png";
 import musicApp from "../../Assets/music-player-app.png";
 import northone from "../../Assets/northone.png";
 import smar from "../../Assets/smar-investments.png";
+import workday from "../../Assets/workday-kira.png";
 
 function Projects() {
   return (
@@ -25,6 +26,15 @@ function Projects() {
           Here are some of the React.js and Angular projects I've worked on:
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col lg={4} md={6} sm={12} className="project-card">
+            <ProjectCard
+              imgPath={workday}
+              isBlog={false}
+              title="Workday - Kira"
+              description="This was an internal Workday tool that leveraged information provided from Jira and enhanced it to provide better planning and execution tracking for both releases and milestones. I had a chance to work on this project between November 2024 and February 2025. It was built using React/RTK with Material UI on the frontend and Node.js on the backend. MariaDB (MySQL) was used as the datastore."
+              // demoLink="https://northone.com/"
+            />
+          </Col>
           <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={northone}
