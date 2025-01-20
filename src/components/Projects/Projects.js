@@ -8,8 +8,8 @@ import realEstateSite from "../../Assets/real-estate-site-home.png";
 import eventPlanningNW from "../../Assets/event-planning-nw-2-p1.png";
 // import eventPlanningNW0 from "../../Assets/event-planning-nw-1-p1-w300.png";
 import calendarAppReact from "../../Assets/calendar-app.png";
-import chatApp from "../../Assets/chat-app.png";
-import musicApp from "../../Assets/music-player-app.png";
+// import chatApp from "../../Assets/chat-app.png";
+// import musicApp from "../../Assets/music-player-app.png";
 import northone from "../../Assets/northone.png";
 import smar from "../../Assets/smar-investments.png";
 import workday from "../../Assets/workday-kira.png";
@@ -132,7 +132,7 @@ function Projects() {
               ghLink="https://github.com/79sphelps/event-planning-nw-2"
             />
           </Col>
-{/* 
+          {/* 
           <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={eventPlanningNW0}
