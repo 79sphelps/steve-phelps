@@ -13,6 +13,7 @@ import calendarAppReact from "../../Assets/calendar-app.png";
 import northone from "../../Assets/northone.png";
 import smar from "../../Assets/smar-investments.png";
 import workday from "../../Assets/workday-kira.png";
+import nikepdp from "../../Assets/nike-pdp.png";
 
 function Projects() {
   return (
@@ -26,6 +27,15 @@ function Projects() {
           Here are some of the React.js and Angular projects I've worked on:
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col lg={4} md={6} sm={12} className="project-card">
+            <ProjectCard
+              imgPath={nikepdp}
+              isBlog={false}
+              title="Nike.com - Product Display Page"
+              description="Worked as a senior React developer on the Nike.com PDP (Product Display Page) team. This platform is part of the core buying flow on nike.com where consumers can get a detailed look at products before adding to cart."
+              // demoLink="https://northone.com/"
+            />
+          </Col>
           <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={workday}
