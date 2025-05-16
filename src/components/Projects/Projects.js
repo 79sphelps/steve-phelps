@@ -32,7 +32,7 @@ function Projects() {
               imgPath={nikepdp}
               isBlog={false}
               title="Nike.com - Product Display Page"
-              description="Worked as a senior React developer on the Nike.com PDP (Product Display Page) team. This platform is part of the core buying flow on nike.com where consumers can get a detailed look at products before adding to cart."
+              description="Worked as a senior React developer on the Nike.com PDP (Product Display Page) team. This platform is part of the core buying flow on nike.com where consumers can get a detailed look at products before adding to cart. The project leveraged a NextJS web shell client and used several other micro frontends to comprise the makeup of the PDP."
               // demoLink="https://northone.com/"
             />
           </Col>
