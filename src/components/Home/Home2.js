@@ -20,28 +20,16 @@ function Home2() {
               Let me <span className="purple"> introduce </span> myself!
             </h1>
             <p className="home-about-body">
-              I am a full stack JavaScript developer with 10+ years of
-              experience in software. I have worked on Angular frontends using
-              NgRX/RxJS for about 4 years and have worked with React.js using
-              Redux, RTK, TanStack Query, and hooks for over 5 years. I have
-              strong expertise in JavaScript, TypeScript, and React.js and am
-              currently ramping on Next.js and TailWind CSS. Adept at building
-              responsive and user-friendly web applications. Known for effective
-              team collaboration, focus, and delivering high-quality results. My
-              backend experience has primarily been with Node.js and Express.
-              Other experience includes agile delivery methods, Git, Docker,
-              cloud application architecture, microservice development, AWS,
-              remote work culture, and collaborating with distributed teams
-              communicating via Slack and Zoom.
+              I am a senior frontend developer with 10+ years of experience in software. I have worked with modern JavaScript frontend frameworks extensively over the last 8 years, spending several years with React.js using Redux/RTK/TanStack Query, hooks, and Bootstrap/MaterialUI/Tailwind CSS for UI development. Most recently, my focus has been on working with AI tools and integrating GitHub Copilot into my development workflow. I am adept at building responsive and high-quality web applications. My backend experience has primarily been in implementing services and API endpoints with Node.js and Express, but I do have microservice development experience with AWS as well. My background also includes C++, Java, and Python, and I have much experience with algorithms and data structures too. Other experience includes agile delivery methods, Git, cloud application architecture, remote work culture, and collaborating with distributed teams communicating via Slack and Zoom. 
               <br />
-              <br />
+              {/* <br />
               My current focus is on &nbsp;
               <i>
                 <b className="purple">frontend technologies</b> and building
                 applications with{" "}
                 <b className="purple">React.js, Next.js, and Tailwind CSS</b>
               </i>
-              <br />
+              <br /> */}
             </p>
           </Col>
           <Col md={4} className="myAvtar">
