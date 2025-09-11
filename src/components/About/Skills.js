@@ -2,9 +2,9 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 
 const testData = [
-  { type: "React.js", bgcolor: "#6a1b9a", completed: 85 },
+  { type: "React.js", bgcolor: "#6a1b9a", completed: 90 },
   { type: "Redux/RTK/TanStack Query", bgcolor: "#00695c", completed: 85 },
-  { type: "Next.js", bgcolor: "#6a1b9a", completed: 50 },
+  { type: "Next.js", bgcolor: "#6a1b9a", completed: 60 },
   { type: "Bootstrap/Tailwind CSS", bgcolor: "#00695c", completed: 75 },
   { type: "REST API, GraphQL", bgcolor: "#6a1b9a", completed: 85 },
   { type: "JavaScript", bgcolor: "#ef6c00", completed: 90 },
