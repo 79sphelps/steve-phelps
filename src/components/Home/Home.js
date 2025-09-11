@@ -27,14 +27,19 @@ function Home() {
               </h1>
               <h3 className="heading-subtext">
                 My name is<strong className="main-name"> Steve Phelps</strong>.
-                I'm a front-end developer based in Happy Valley, OR. My focus is
-                on creating modern front-end applications using
-                React.js/Next.js.
+                I'm a full stack developer based in Happy Valley, OR. My focus is
+                on building modern high-performance React/Next.js applications.
               </h3>
-              <h3 className="heading-subtext">
+              {/* <h3 className="heading-subtext">
                 I'm passionate about cutting-edge, beautiful interfaces, and
                 intuitively implemented UX.
+              </h3> */}
+              <h3 className="heading-subtext">
+                I'm passionate about optimization, performance, AI, architecture, state management patterns, and component design patterns, in addition to intuitively implemented UX.
               </h3>
+              {/* <h3 className="heading-subtext">
+                I thrive at the intersection of web development and creative problem-solving, and I'm ready to deliver impactful, scalable solutions using modern frameworks like React.js, Next.js, and Node.js.
+              </h3> */}
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
                 {/* <h2><b>Steve Phelps</b></h2>

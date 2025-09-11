@@ -17,10 +17,10 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              Let me <span className="purple"> introduce </span> myself!
+              <span className="purple">About Me</span>
             </h1>
             <p className="home-about-body">
-              I am a senior frontend developer with 10+ years of experience in software. I have worked with modern JavaScript frontend frameworks extensively over the last 8 years, spending several years with React.js using Redux/RTK/TanStack Query, hooks, and Bootstrap/MaterialUI/Tailwind CSS for UI development. Most recently, my focus has been on working with AI tools and integrating GitHub Copilot into my development workflow. I am adept at building responsive and high-quality web applications. My backend experience has primarily been in implementing services and API endpoints with Node.js and Express, but I do have microservice development experience with AWS as well. My background also includes C++, Java, and Python, and I have much experience with algorithms and data structures too. Other experience includes agile delivery methods, Git, cloud application architecture, remote work culture, and collaborating with distributed teams communicating via Slack and Zoom. 
+              Full Stack Developer with 10+ years of experience building high-performance React/Next.js applications, specializing in modern JavaScript/TypeScript ecosystems, delivering impactful solutions with React.js, Next.js, Node.js, and Express. Experienced across the full stack (with some AWS) and passionate about leveraging AI tools to accelerate delivery and innovation. scalable state management, performance optimization, and intuitive UI design.
               <br />
               {/* <br />
               My current focus is on &nbsp;
