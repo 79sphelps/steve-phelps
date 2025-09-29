@@ -11,6 +11,7 @@ import calendarAppReact from "../../Assets/calendar-app.png";
 // import chatApp from "../../Assets/chat-app.png";
 // import musicApp from "../../Assets/music-player-app.png";
 import northone from "../../Assets/northone.png";
+import azlo from "../../Assets/azlo.png";
 import smar from "../../Assets/smar-investments.png";
 import workday from "../../Assets/workday-kira.png";
 import nikepdp from "../../Assets/nike-pdp.png";
@@ -57,6 +58,20 @@ function Projects() {
               demoLink="https://northone.com/"
             />
           </Col>
+
+
+          <Col lg={4} md={6} sm={12} className="project-card">
+            <ProjectCard
+              imgPath={azlo}
+              isBlog={false}
+              title="Azlo - Banking"
+              description="Helped lead the design and implementation of a new customer onboarding frontend in an Nx mono repo using Angular 9/10 with NgRX and RxJS, while maintaining multiple Angular applications and building RESTful APIs for distributed microservices, improving performance, scalability, and user experience."
+              // ghLink="https://github.com/79sphelps/real-estate-rentals-frontend"
+              // demoLink="https://real-estate-rentals-frontend.onrender.com/"
+            />
+          </Col>
+
+
 
           <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
