@@ -3,6 +3,7 @@ import { Row, Col } from "react-bootstrap";
 
 const testData = [
   { type: "React.js", bgcolor: "#6a1b9a", completed: 90 },
+  { type: "Angular", bgcolor: "#6a1b9a", completed: 60 },
   { type: "Redux/RTK/TanStack Query", bgcolor: "#00695c", completed: 85 },
   { type: "Next.js", bgcolor: "#6a1b9a", completed: 60 },
   { type: "Bootstrap/Tailwind CSS", bgcolor: "#00695c", completed: 75 },
