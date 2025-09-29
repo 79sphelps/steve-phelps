@@ -20,7 +20,7 @@ function Home2() {
               <span className="purple">About Me</span>
             </h1>
             <p className="home-about-body">
-              Full Stack Developer with 10+ years of experience building high-performance React/Next.js applications, specializing in modern JavaScript/TypeScript ecosystems, delivering impactful solutions with React.js, Next.js, Node.js, and Express. Experienced across the full stack (with some AWS) and passionate about leveraging AI tools to accelerate delivery and innovation. scalable state management, performance optimization, and intuitive UI design.
+              Full Stack Developer with 10+ years of experience building high-performance React/Next.js and Angular applications, specializing in modern JavaScript/TypeScript ecosystems, delivering impactful solutions with React.js, Next.js, Node.js, and Express. Experienced across the full stack (with some AWS) and passionate about leveraging AI tools to accelerate delivery and innovation. scalable state management, performance optimization, and intuitive UI design.
               <br />
               {/* <br />
               My current focus is on &nbsp;

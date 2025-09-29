@@ -27,7 +27,7 @@ function Home() {
               </h1>
               <h3 className="heading-subtext">
                 My name is<strong className="main-name"> Steve Phelps</strong>.
-                I'm a full stack developer based in Happy Valley, OR. My focus is
+                I'm a full stack (frontend-focused) developer based in Happy Valley, OR. My focus is
                 on building modern high-performance React/Next.js applications.
               </h3>
               {/* <h3 className="heading-subtext">
