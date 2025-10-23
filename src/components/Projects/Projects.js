@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { ToastContainer, toast } from 'react-toastify';
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import allAboutHairAngular from "../../Assets/all-about-hair-p1.png";
@@ -17,9 +18,32 @@ import workday from "../../Assets/workday-kira.png";
 import nikepdp from "../../Assets/nike-pdp.png";
 
 function Projects() {
+  useEffect(() => {
+    // toast.info(
+    //   "The backend services are using the free tier of Render.com hosting, and at the moment the entire month of October usage limits have been reached. The services will not return fetched REST API data until next month when usage renews."
+    // );
+        toast(
+      "The backend services of these apps are using the \<b>free\</b> tier of Render.com hosting, and at the moment the entire month of October usage limits have been reached. The services will NOT return fetched REST API data until next month when usage renews."
+    );
+  }, []);
+
   return (
     <Container fluid className="project-section">
       <Particle />
+        <ToastContainer 
+          position="top-center"
+          autoClose={30000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+
+          // transition={Bounce}
+        />
       <Container>
         <h1 className="project-heading">
           Recent <strong className="purple">Projects </strong>
@@ -59,19 +83,14 @@ function Projects() {
             />
           </Col>
 
-
           <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={azlo}
               isBlog={false}
               title="Azlo - Banking"
               description="Helped lead the design and implementation of a new customer onboarding frontend in an Nx mono repo using Angular 9/10 with NgRX and RxJS, while maintaining multiple Angular applications and building RESTful APIs for distributed microservices, improving performance, scalability, and user experience."
-              // ghLink="https://github.com/79sphelps/real-estate-rentals-frontend"
-              // demoLink="https://real-estate-rentals-frontend.onrender.com/"
             />
           </Col>
-
-
 
           <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
