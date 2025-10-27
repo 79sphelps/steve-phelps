@@ -19,11 +19,9 @@ import nikepdp from "../../Assets/nike-pdp.png";
 
 function Projects() {
   useEffect(() => {
-    // toast.info(
-    //   "The backend services are using the free tier of Render.com hosting, and at the moment the entire month of October usage limits have been reached. The services will not return fetched REST API data until next month when usage renews."
-    // );
-        toast(
-      "The backend services of these apps are using the \<b>free\</b> tier of Render.com hosting, and at the moment the entire month of October usage limits have been reached. The services will NOT return fetched REST API data until next month when usage renews."
+    // toast.info();
+    toast(
+      "The backend services of these apps are using the free tier of Render.com hosting, and at the moment the entire month of October usage limits have been reached. The services will NOT return fetched REST API data until next month when usage renews."
     );
   }, []);
 
@@ -59,7 +57,7 @@ function Projects() {
               title="Nike.com - Product Display Page"
               // description="Worked as a senior React developer on the Nike.com PDP (Product Display Page) team. This platform is part of the core buying flow on nike.com where consumers can get a detailed look at products before adding to cart. The project leveraged a NextJS web shell client and used several other micro frontends to comprise the makeup of the PDP."
               description="Enhanced Nike.com’s core Product Display Page (PDP) with a small team, improving the buying flow and user experience after a full refactor, while collaborating closely with design, product, and QA to ensure high-quality, aligned delivery."
-              // demoLink="https://northone.com/"
+              demoLink="https://www.nike.com/t/mind-002-mens-pregame-shoes-rdCHsAh1/HQ4308-003"
             />
           </Col>
           <Col lg={4} md={6} sm={12} className="project-card">
@@ -69,7 +67,7 @@ function Projects() {
               title="Workday - Kira"
               // description="This was an internal Workday tool that leveraged information provided from Jira and enhanced it to provide better planning and execution tracking for both releases and milestones. I had a chance to work on this project between November 2024 and February 2025. It was built using React/RTK with Material UI on the frontend and Node.js on the backend. MariaDB (MySQL) was used as the datastore."
               description="Developed and enhanced Workday’s internal Kira application, a planning and execution tracking tool that integrated Jira and internal data to streamline milestone tracking and release planning for engineering teams."
-              // demoLink="https://northone.com/"
+              // demoLink=""
             />
           </Col>
           <Col lg={4} md={6} sm={12} className="project-card">
