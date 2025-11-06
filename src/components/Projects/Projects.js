@@ -21,7 +21,8 @@ function Projects() {
   useEffect(() => {
     // toast.info();
     toast(
-      "The backend services of these apps are using the free tier of Render.com hosting, and at the moment the entire month of October usage limits have been reached. The services will NOT return fetched REST API data until next month when usage renews."
+      // "The backend services of these apps are using the free tier of Render.com hosting, and at the moment the entire month of October usage limits have been reached. The services will NOT return fetched REST API data until next month when usage renews."
+      "The backend hosting services are using the free tier of Render.com and so there will be a delay when loading a given demo site due to the services being brought back from sleep."
     );
   }, []);
 
