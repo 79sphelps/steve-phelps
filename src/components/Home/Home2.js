@@ -14,7 +14,7 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
+        <Row style={{ border: '1px solid #3146ff', borderRadius: '20px', boxShadow: '5px 5px 5px #3146ff' }}>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
               <span className="purple">Quick Snapshot</span>
