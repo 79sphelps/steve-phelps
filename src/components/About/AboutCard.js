@@ -25,13 +25,19 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Music
+              <div className="flex flex-row items-center">
+              <ImPointRight className='mr-3' /> Playing Music
+              </div>
             </li>
             <li className="about-activity">
-              <ImPointRight /> Learning German
+              <div className="flex flex-row items-center">
+              <ImPointRight className='mr-3' /> Learning German
+              </div>
             </li>
             <li className="about-activity">
-              <ImPointRight /> Traveling
+              <div className="flex flex-row items-center">
+              <ImPointRight className='mr-3' /> Traveling
+              </div>
             </li>
           </ul>
           {/* <p style={{ color: "rgb(155 126 172)" }}>

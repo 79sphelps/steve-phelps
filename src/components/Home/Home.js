@@ -5,6 +5,8 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 
+import RotatingText from '../ReactBitsComponents/RotatingText';
+
 function Home() {
   return (
     <section>
@@ -34,9 +36,27 @@ function Home() {
                 I'm passionate about cutting-edge, beautiful interfaces, and
                 intuitively implemented UX.
               </h3> */}
-              <h3 className="heading-subtext">
+              {/* <h3 className="heading-subtext">
                 I'm passionate about optimization, performance, AI, architecture, state management patterns, and component design patterns, in addition to intuitively implemented UX.
+              </h3> */}
+
+              <h3 className="heading-subtext" style={{ marginTop: '10px'}}>
+                I'm passionate about...
+                <RotatingText
+                  texts={['Optimization,', 'Performance,', 'AI integration,', 'Application Architecture,', 'State Management Patterns,', 'Component Design,', '...and Intuitively Implemented UX!']}
+                  mainClassName="px-2 sm:px-2 md:px-3 bg-blue-800 text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                  staggerFrom={"last"}
+                  initial={{ y: "100%" }}
+                  animate={{ y: 0 }}
+                  exit={{ y: "-120%" }}
+                  staggerDuration={0.025}
+                  splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                  // rotationInterval={2000}
+                  rotationInterval={3000}
+                />
               </h3>
+
               {/* <h3 className="heading-subtext">
                 I thrive at the intersection of web development and creative problem-solving, and I'm ready to deliver impactful, scalable solutions using modern frameworks like React.js, Next.js, and Node.js.
               </h3> */}

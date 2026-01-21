@@ -20,7 +20,7 @@ function Home2() {
               <span className="purple">About Me</span>
             </h1>
             <p className="home-about-body">
-              Full Stack Developer with 10+ years of experience building high-performance React/Next.js and Angular applications, specializing in modern JavaScript/TypeScript ecosystems, delivering impactful solutions with React.js, Next.js, Node.js, and Express. Experienced across the full stack (with some AWS) and passionate about leveraging AI tools to accelerate delivery and innovation. scalable state management, performance optimization, and intuitive UI design.
+              Full Stack Developer with 10+ years of experience building high-performance React/Next.js and Angular applications, specializing in modern JavaScript/TypeScript ecosystems, delivering impactful solutions with React.js, Next.js, Node.js, and Express. Experienced across the full stack (with some AWS) and passionate about scalable state management, performance optimization, intuitive UI design, and leveraging AI tools to accelerate delivery and innovation.
               <br />
               {/* <br />
               My current focus is on &nbsp;
@@ -55,9 +55,11 @@ function Home2() {
                   href="https://github.com/79sphelps"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
-                  <AiFillGithub />
+                  <div className='flex flex-row justify-center items-center'>
+                  <AiFillGithub style={{ marginTop: '8px' }} />
+                  </div>
                 </a>
               </li>
               <li className="social-icons">
@@ -65,9 +67,11 @@ function Home2() {
                   href="https://www.linkedin.com/in/steve-phelps-1614192b/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
-                  <FaLinkedinIn />
+                  <div className='flex flex-row justify-center items-center'>
+                  <FaLinkedinIn style={{ marginTop: '8px' }} />
+                  </div>
                 </a>
               </li>
               <li className="social-icons">
@@ -77,7 +81,9 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <div className='flex flex-row justify-center items-center'>
+                  <AiFillInstagram style={{ marginTop: '8px' }} />
+                  </div>
                 </a>
               </li>
             </ul>

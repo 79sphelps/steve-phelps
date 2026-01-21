@@ -24,22 +24,32 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <div className="flex justify-center items-center">
+          <DiJavascript1 />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <div className="flex justify-center items-center">
+          <DiReact />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiAngularSimple />
+        <div className="flex justify-center items-center">
+          <DiAngularSimple />
+        </div>
       </Col>
       {/* <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
       </Col> */}
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <div className="flex justify-center items-center">
+          <SiNextdotjs />
+        </div>
       </Col>
-          <Col xs={4} md={2} className="tech-icons">
-      <DiNodejs />
+      <Col xs={4} md={2} className="tech-icons">
+        <div className="flex justify-center items-center">
+          <DiNodejs />
+        </div>
       </Col>
     </Row>
   );

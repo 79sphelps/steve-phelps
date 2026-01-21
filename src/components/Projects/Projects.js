@@ -17,6 +17,8 @@ import smar from "../../Assets/smar-investments.png";
 import workday from "../../Assets/workday-kira.png";
 import nikepdp from "../../Assets/nike-pdp.png";
 
+import BlurText from "../ReactBitsComponents/BlurText";
+
 function Projects() {
   useEffect(() => {
     // toast.info();
@@ -45,7 +47,15 @@ function Projects() {
         />
       <Container>
         <h1 className="project-heading">
-          Recent <strong className="purple">Projects </strong>
+          {/* Recent <strong className="purple">Projects </strong> */}
+          <BlurText
+              text="Recent Projects"
+              delay={200}
+              animateBy="words"
+              direction="top"
+              // onAnimationComplete={handleAnimationComplete}
+              className="text-5xl mb-8 text-blue-800 justify-center"
+            />
         </h1>
         <p style={{ color: "white" }}>
           Here are some of the React.js and Angular projects I've worked on:

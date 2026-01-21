@@ -7,6 +7,8 @@ import TrackVisibility from "react-on-screen";
 import "./Contact.css";
 import contactImg from "../../Assets/contact-img.svg";
 
+import BlurText from "../ReactBitsComponents/BlurText";
+
 const ContactForm = () => {
   let initialContactData = {
     user_name: "",
@@ -63,7 +65,17 @@ const ContactForm = () => {
         {/* <Particle /> */}
         <Container>
           <Row style={{ justifyContent: "center", padding: "10px" }}>
-            <h1>Get in Touch</h1>
+            {/* <h1>Get in Touch</h1> */}
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              <BlurText
+                text="Get in Touch"
+                delay={200}
+                animateBy="words"
+                direction="top"
+                // onAnimationComplete={handleAnimationComplete}
+                className="text-5xl mb-8 text-blue-800 justify-center"
+              />
+            </h1>
 
             <div style={{ display: "inline" }}>
               <b className="purple">PHONE: </b>503-462-2135

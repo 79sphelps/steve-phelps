@@ -8,7 +8,14 @@ import laptopImg from "../../Assets/about.png";
 // import Toolstack from "./Toolstack";
 import Skills from "./Skills";
 
+import BlurText from "../ReactBitsComponents/BlurText";
+
 function About() {
+
+  const handleAnimationComplete = () => {
+    console.log('Animation completed!');
+  };
+
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -23,7 +30,15 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              About <strong className="purple">Me</strong>
+              {/* About <strong className="purple">Me</strong> */}
+              <BlurText
+                text="About Me"
+                delay={200}
+                animateBy="words"
+                direction="top"
+                onAnimationComplete={handleAnimationComplete}
+                className="text-5xl mb-8 text-blue-800 justify-center"
+              />
             </h1>
             <Aboutcard />
           </Col>
@@ -36,7 +51,15 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Tool Stack </strong>
+          {/* Professional <strong className="purple">Tool Stack </strong> */}
+          <BlurText
+                text="Professional Tool Stack"
+                delay={200}
+                animateBy="words"
+                direction="top"
+                onAnimationComplete={handleAnimationComplete}
+                className="text-5xl mb-8 text-blue-800 justify-center"
+              />
         </h1>
 
         <Techstack />
