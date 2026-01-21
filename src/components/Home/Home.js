@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 
-import RotatingText from '../ReactBitsComponents/RotatingText';
+import RotatingText from "../ReactBitsComponents/RotatingText";
 
 function Home() {
   return (
@@ -29,8 +29,25 @@ function Home() {
               </h1>
               <h3 className="heading-subtext">
                 My name is<strong className="main-name"> Steve Phelps</strong>.
-                I'm a full stack (frontend-focused) developer based in Happy Valley, OR. My focus is
-                on building modern high-performance React/Next.js applications.
+                {/* I'm a full stack (frontend-focused) developer based in Happy Valley, OR. My focus is
+                on building modern high-performance React/Next.js applications. */}
+              </h3>
+              <h3 className="heading-subtext">
+                I build scalable, high-quality web applications that turn
+                complex requirements into reliable, intuitive user experiences.
+              </h3>
+              <h3 className="heading-subtext">
+                With 10+ years of experience working across consumer and
+                enterprise platforms—including Nike, Workday, and fintech
+                products—I specialize in React, TypeScript, and frontend
+                architecture for mission-critical systems. I’m comfortable
+                owning features end-to-end, collaborating closely with product
+                and design, and delivering software that holds up under
+                real-world usage.
+              </h3>
+              <h3 className="heading-subtext">
+                I focus on clarity, performance, and maintainability—building
+                software teams and users can trust.
               </h3>
               {/* <h3 className="heading-subtext">
                 I'm passionate about cutting-edge, beautiful interfaces, and
@@ -40,10 +57,18 @@ function Home() {
                 I'm passionate about optimization, performance, AI, architecture, state management patterns, and component design patterns, in addition to intuitively implemented UX.
               </h3> */}
 
-              <h3 className="heading-subtext" style={{ marginTop: '10px'}}>
+              <h3 className="heading-subtext" style={{ marginTop: "10px" }}>
                 I'm passionate about...
                 <RotatingText
-                  texts={['Optimization,', 'Performance,', 'AI integration,', 'Application Architecture,', 'State Management Patterns,', 'Component Design,', '...and Intuitively Implemented UX!']}
+                  texts={[
+                    "Optimization,",
+                    "Performance,",
+                    "AI integration,",
+                    "Application Architecture,",
+                    "State Management Patterns,",
+                    "Component Design,",
+                    "...and Intuitively Implemented UX!",
+                  ]}
                   mainClassName="px-2 sm:px-2 md:px-3 bg-blue-800 text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
                   staggerFrom={"last"}
                   initial={{ y: "100%" }}

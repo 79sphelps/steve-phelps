@@ -331,6 +331,7 @@ button:focus {
 .heading-subtext {
   font-size: 1.5em !important;
   padding-left: 45px !important;
+  margin-bottom: 15px;
 }
 
 .main-name {
@@ -604,6 +605,15 @@ button:focus {
   padding-bottom: 30px !important;
   /* background-image: var(--section-background-color) !important; */
   color: white !important;
+}
+
+.about-me-paragraph {
+  /* display: flex;
+  justify-content: left;
+  align-items: left; */
+  text-align: left;
+  margin-bottom: 15px;
+  text-indent: 30px;
 }
 
 .tech-icons {

@@ -19,7 +19,7 @@ import {
   SiGraphql,
   SiJest,
   SiGit,
-  SiNextdotjs
+  SiNextdotjs,
 } from "react-icons/si";
 
 function Toolstack() {

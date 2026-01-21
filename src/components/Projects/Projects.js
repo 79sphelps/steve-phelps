@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import allAboutHairAngular from "../../Assets/all-about-hair-p1.png";
@@ -24,44 +24,44 @@ function Projects() {
     // toast.info();
     toast(
       // "The backend services of these apps are using the free tier of Render.com hosting, and at the moment the entire month of October usage limits have been reached. The services will NOT return fetched REST API data until next month when usage renews."
-      "The backend hosting services are using the free tier of Render.com and so there will be a delay when loading a given demo site due to the services being brought back from sleep."
+      "The backend hosting services are using the free tier of Render.com and so there will be a delay when loading a given demo site due to the services being brought back from sleep.",
     );
   }, []);
 
   return (
     <Container fluid className="project-section">
       <Particle />
-        <ToastContainer 
-          position="top-center"
-          autoClose={30000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick={false}
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
+      <ToastContainer
+        position="top-center"
+        autoClose={30000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
 
-          // transition={Bounce}
-        />
+        // transition={Bounce}
+      />
       <Container>
         <h1 className="project-heading">
           {/* Recent <strong className="purple">Projects </strong> */}
           <BlurText
-              text="Recent Projects"
-              delay={200}
-              animateBy="words"
-              direction="top"
-              // onAnimationComplete={handleAnimationComplete}
-              className="text-5xl mb-8 text-blue-800 justify-center"
-            />
+            text="Recent Projects"
+            delay={200}
+            animateBy="words"
+            direction="top"
+            // onAnimationComplete={handleAnimationComplete}
+            className="text-5xl mb-8 text-blue-800 justify-center"
+          />
         </h1>
         <p style={{ color: "white" }}>
           Here are some of the React.js and Angular projects I've worked on:
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col lg={4} md={6} sm={12} className="project-card">
+          <Col lg={4} md={6} sm={12} className="project-card">
             <ProjectCard
               imgPath={nikepdp}
               isBlog={false}

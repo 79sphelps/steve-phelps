@@ -11,9 +11,8 @@ import Skills from "./Skills";
 import BlurText from "../ReactBitsComponents/BlurText";
 
 function About() {
-
   const handleAnimationComplete = () => {
-    console.log('Animation completed!');
+    console.log("Animation completed!");
   };
 
   return (
@@ -53,13 +52,13 @@ function About() {
         <h1 className="project-heading">
           {/* Professional <strong className="purple">Tool Stack </strong> */}
           <BlurText
-                text="Professional Tool Stack"
-                delay={200}
-                animateBy="words"
-                direction="top"
-                onAnimationComplete={handleAnimationComplete}
-                className="text-5xl mb-8 text-blue-800 justify-center"
-              />
+            text="Professional Tool Stack"
+            delay={200}
+            animateBy="words"
+            direction="top"
+            onAnimationComplete={handleAnimationComplete}
+            className="text-5xl mb-8 text-blue-800 justify-center"
+          />
         </h1>
 
         <Techstack />

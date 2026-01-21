@@ -70,9 +70,13 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="logo-text d-flex" style={{ marginBottom: "2px" }}>
+        <Navbar.Brand
+          href="/"
+          className="logo-text d-flex"
+          style={{ marginBottom: "2px" }}
+        >
           {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
-          Steve Phelps - Developer
+          Senior Frontend / Full Stack Engineer
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -87,10 +91,20 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)} className="navbar-item-text">
-              {/* <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}> */}
-                <div className='flex flex-row items-center'>
-                { size.width > 1010 ? <AiOutlineHome style={{ marginBottom: "2px", marginRight: '5px' }} /> : null } Home
+              <Nav.Link
+                as={Link}
+                to="/"
+                onClick={() => updateExpanded(false)}
+                className="navbar-item-text"
+              >
+                {/* <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}> */}
+                <div className="flex flex-row items-center">
+                  {size.width > 1010 ? (
+                    <AiOutlineHome
+                      style={{ marginBottom: "2px", marginRight: "5px" }}
+                    />
+                  ) : null}{" "}
+                  Home
                 </div>
               </Nav.Link>
             </Nav.Item>
@@ -102,8 +116,13 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
                 className="navbar-item-text"
               >
-                <div className='flex flex-row items-center'>
-                { size.width > 1010 ? <AiOutlineUser style={{ marginBottom: "2px", marginRight: '5px' }} /> : null } About
+                <div className="flex flex-row items-center">
+                  {size.width > 1010 ? (
+                    <AiOutlineUser
+                      style={{ marginBottom: "2px", marginRight: "5px" }}
+                    />
+                  ) : null}{" "}
+                  About
                 </div>
               </Nav.Link>
             </Nav.Item>
@@ -115,8 +134,13 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
                 className="navbar-item-text"
               >
-                <div className='flex flex-row items-center'>
-                { size.width > 1010 ? <AiOutlineUser style={{ marginBottom: "2px", marginRight: '5px' }} /> : null } Contact
+                <div className="flex flex-row items-center">
+                  {size.width > 1010 ? (
+                    <AiOutlineUser
+                      style={{ marginBottom: "2px", marginRight: "5px" }}
+                    />
+                  ) : null}{" "}
+                  Contact
                 </div>
               </Nav.Link>
             </Nav.Item>
@@ -128,8 +152,13 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
                 className="navbar-item-text"
               >
-                <div className='flex flex-row items-center'>
-                { size.width > 1010 ? <AiOutlineFundProjectionScreen style={{ marginBottom: "2px", marginRight: '5px' }}/> : null } Projects
+                <div className="flex flex-row items-center">
+                  {size.width > 1010 ? (
+                    <AiOutlineFundProjectionScreen
+                      style={{ marginBottom: "2px", marginRight: "5px" }}
+                    />
+                  ) : null}{" "}
+                  Projects
                 </div>
               </Nav.Link>
             </Nav.Item>
@@ -141,8 +170,13 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
                 className="navbar-item-text"
               >
-                <div className='flex flex-row items-center'>
-                { size.width > 1010 ? <CgFileDocument style={{ marginBottom: "2px", marginRight: '5px' }} /> : null } Resume
+                <div className="flex flex-row items-center">
+                  {size.width > 1010 ? (
+                    <CgFileDocument
+                      style={{ marginBottom: "2px", marginRight: "5px" }}
+                    />
+                  ) : null}{" "}
+                  Resume
                 </div>
               </Nav.Link>
             </Nav.Item>
@@ -153,9 +187,13 @@ function NavBar() {
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <div className='flex flex-row items-center'>
-                { size.width > 1010 ? <CgGitFork style={{ fontSize: "1.2em", marginRight: '5px' }} /> : null }
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <div className="flex flex-row items-center">
+                  {size.width > 1010 ? (
+                    <CgGitFork
+                      style={{ fontSize: "1.2em", marginRight: "5px" }}
+                    />
+                  ) : null}
+                  <AiFillStar style={{ fontSize: "1.1em" }} />
                 </div>
               </Button>
             </Nav.Item>

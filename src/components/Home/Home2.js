@@ -17,10 +17,17 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              <span className="purple">About Me</span>
+              <span className="purple">Quick Snapshot</span>
             </h1>
             <p className="home-about-body">
-              Full Stack Developer with 10+ years of experience building high-performance React/Next.js and Angular applications, specializing in modern JavaScript/TypeScript ecosystems, delivering impactful solutions with React.js, Next.js, Node.js, and Express. Experienced across the full stack (with some AWS) and passionate about scalable state management, performance optimization, intuitive UI design, and leveraging AI tools to accelerate delivery and innovation.
+              Full Stack Developer with 10+ years of experience building
+              high-performance React/Next.js and Angular applications,
+              specializing in modern JavaScript/TypeScript ecosystems,
+              delivering impactful solutions with React.js, Next.js, Node.js,
+              and Express. Experienced across the full stack (with some AWS) and
+              passionate about scalable state management, performance
+              optimization, intuitive UI design, and leveraging AI tools to
+              accelerate delivery and innovation.
               <br />
               {/* <br />
               My current focus is on &nbsp;
@@ -57,8 +64,8 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <div className='flex flex-row justify-center items-center'>
-                  <AiFillGithub style={{ marginTop: '8px' }} />
+                  <div className="flex flex-row justify-center items-center">
+                    <AiFillGithub style={{ marginTop: "8px" }} />
                   </div>
                 </a>
               </li>
@@ -69,8 +76,8 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <div className='flex flex-row justify-center items-center'>
-                  <FaLinkedinIn style={{ marginTop: '8px' }} />
+                  <div className="flex flex-row justify-center items-center">
+                    <FaLinkedinIn style={{ marginTop: "8px" }} />
                   </div>
                 </a>
               </li>
@@ -81,8 +88,8 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <div className='flex flex-row justify-center items-center'>
-                  <AiFillInstagram style={{ marginTop: '8px' }} />
+                  <div className="flex flex-row justify-center items-center">
+                    <AiFillInstagram style={{ marginTop: "8px" }} />
                   </div>
                 </a>
               </li>

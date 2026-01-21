@@ -30,7 +30,7 @@ const ContactForm = () => {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         e.target,
-        process.env.REACT_APP_PUBLIC_KEY
+        process.env.REACT_APP_PUBLIC_KEY,
       )
       .then(
         (result) => {
@@ -46,7 +46,7 @@ const ContactForm = () => {
           setTimeout(() => {
             setStateMessage(null);
           }, 5000); // hide message after 5 seconds
-        }
+        },
       );
 
     // Clears the form after sending the email
