@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import Particle from "../Particle";
+import Particle from "../Particle";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import TrackVisibility from "react-on-screen";
@@ -62,7 +62,7 @@ const ContactForm = () => {
   return (
     <section className="contact" id="contact">
       <Container fluid className="about-section">
-        {/* <Particle /> */}
+        <Particle />
         <Container>
           <Row style={{ justifyContent: "center", padding: "10px" }}>
             {/* <h1>Get in Touch</h1> */}
