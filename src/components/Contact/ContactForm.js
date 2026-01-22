@@ -16,8 +16,6 @@ const ContactForm = () => {
   const [contactData, setContactData] = useState(initialContactData);
   const [hasErrors, setHasErrors] = useState(false);
 
-  console.log(Object.values(contactData));
-
   const sendEmail = (e) => {
     e.persist();
     e.preventDefault();
@@ -78,9 +76,6 @@ const ContactForm = () => {
 
     setHasErrors(Object.keys(errors).length > 0);
     setContactData(values => ({...values, errors: errors}));
-
-    console.log('hasErrors: ', hasErrors);
-    console.log(contactData);
   }
 
   return (
