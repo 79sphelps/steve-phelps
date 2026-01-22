@@ -36,6 +36,7 @@ I specialize in React, TypeScript, and frontend architecture, with a strong focu
 <p>
 Frontend
 </p>
+<p>
 <ul>
 <li>React, Next.js, TypeScript, JavaScript
 </li>
@@ -43,10 +44,13 @@ Frontend
 </li>
 <li>Material UI, Bootstrap, Styled Components, CSS/SCSS
 </li>
+</ul>
+</p>
 
 <p>
 Backend & APIs
 </p>
+<p>
 <ul>
 <li>Node.js, Express
 </li>
@@ -60,6 +64,7 @@ Backend & APIs
 <p>
 Testing & Tooling
 </p>
+<p>
 <ul>
 <li>Jest, React Testing Library
 </li>
