@@ -276,6 +276,12 @@ button:focus {
   text-align: left;
 }
 
+@media (max-width: 435px) {
+  .home-content {
+    padding: 2rem 0 2rem !important;
+  }
+}
+
 .home-contact-text {
   font-size: 20px;
 }
