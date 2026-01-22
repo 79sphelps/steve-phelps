@@ -102,8 +102,7 @@ function AboutCard() {
             </li>
             <li className="about-activity">
               <div className="flex flex-row items-center">
-                <ImPointRight className="mr-3" /> Traveling (national parks and
-                small towns with history!)
+                <ImPointRight className="mr-3" /> Traveling
               </div>
             </li>
           </ul>

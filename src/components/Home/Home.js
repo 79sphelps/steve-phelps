@@ -64,12 +64,12 @@ function Home() {
                     "Optimization,",
                     "Performance,",
                     "AI integration,",
-                    "Application Architecture,",
-                    "State Management Patterns,",
+                    "App Architecture,",
+                    "State Management,",
                     "Component Design,",
-                    "...and Intuitively Implemented UX!",
+                    "Intuitive UX",
                   ]}
-                  mainClassName="px-2 sm:px-2 md:px-3 bg-blue-800 text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                  mainClassName="mt-1 px-2 sm:px-2 md:px-3 bg-blue-800 text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
                   staggerFrom={"last"}
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}

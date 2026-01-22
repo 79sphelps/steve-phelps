@@ -302,6 +302,12 @@ button:focus {
   }
 }
 
+@media (max-width: 435px) {
+  .logo-text {
+    font-size: 0.45em !important;
+  }
+}
+
 .navbar-item-text {
   font-size: 1.0em !important;
 }
@@ -405,6 +411,7 @@ button:focus {
   text-align: left;
 
   padding-left: 30px;
+  padding-right: 30px;
 }
 
 .home-about-social {
