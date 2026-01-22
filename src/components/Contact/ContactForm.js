@@ -8,7 +8,11 @@ const ContactForm = () => {
     user_name: "",
     email: "",
     message: "",
-    errors: {},
+    errors: {
+      user_name: '',
+      email: '',
+      message: '',
+    },
   };
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -57,7 +61,7 @@ const ContactForm = () => {
   };
 
   const validateName = (user_name) => (/^[A-Za-z ]+$/g).test(user_name);
-  const validateEmail = (email) => (/^\S+@\S+.\S+$/g).test(email);
+  const validateEmail = (email) => (/^\S+@\S+\.\S+$/g).test(email);
   const validateTextArea = (message) => (message.length > 0);
 
   const validate = (name, value) => {
