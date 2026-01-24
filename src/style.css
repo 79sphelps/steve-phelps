@@ -256,9 +256,7 @@ button:focus {
   height: 100%;
 }
 
-.home-header {
-  padding-top: 80px !important;
-}
+
 
 .home-section {
   position: relative;
@@ -268,18 +266,37 @@ button:focus {
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  /* padding: 9rem 0 2rem !important; */
   color: whitesmoke;
-  text-align: left;
+  /* text-align: left; */
+
+
+  display: flex !important;
+  flex-direction: row !important;
 }
 
 @media (max-width: 435px) {
   .home-content {
     padding: 2rem 0 2rem !important;
+
+    display: flex !important;
   }
+}
+
+.home-header {
+  /* padding-top: 80px !important; */
+  padding-top: 80px !important;
+  color: whitesmoke;
+  text-align: left;
 }
 
 .home-contact-text {
@@ -290,6 +307,24 @@ button:focus {
   .home-contact-text  {
     font-size: 0.8em !important;
   }
+}
+
+.heading {
+  font-size: 2.4em !important;
+  padding-left: 50px !important;
+}
+
+.heading-name {
+  font-size: 2.5em !important;
+  /* padding-left: 45px !important; */
+
+}
+
+.heading-subtext {
+  font-size: 1.5em !important;
+  /* padding-left: 45px !important; */
+
+  margin-bottom: 15px;
 }
 
 .logo-text {
@@ -330,21 +365,7 @@ button:focus {
   }
 }
 
-.heading {
-  font-size: 2.4em !important;
-  padding-left: 50px !important;
-}
 
-.heading-name {
-  font-size: 2.5em !important;
-  padding-left: 45px !important;
-}
-
-.heading-subtext {
-  font-size: 1.5em !important;
-  padding-left: 45px !important;
-  margin-bottom: 15px;
-}
 
 .main-name {
   /* color: #cd5ff8; */
@@ -416,8 +437,8 @@ button:focus {
   font-size: 1.2em !important;
   text-align: left;
 
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .home-about-social {
@@ -636,6 +657,7 @@ button:focus {
   padding-bottom: 30px !important;
   /* background-image: var(--section-background-color) !important; */
   color: white !important;
+  font-size: 20px;
 }
 
 .about-me-paragraph {
@@ -645,6 +667,7 @@ button:focus {
   text-align: left;
   margin-bottom: 15px;
   text-indent: 30px;
+  font-size: 20px;
 }
 
 .tech-icons {

@@ -15,15 +15,17 @@ function About() {
     <Container fluid className="about-section">
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <Col
+        {/* <Row style={{ justifyContent: "center", padding: "10px" }}> */}
+        <Row >
+          {/* <Col
             md={7}
             style={{
               justifyContent: "center",
               paddingTop: "30px",
               paddingBottom: "50px",
             }}
-          >
+          > */}
+          <Col style={{ textAlign: 'left' }}>
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               <BlurText
                 text={ ABOUT_ME_HEADING }

@@ -18,36 +18,33 @@ import {
   HOME_PHONE,
   HOME_CITY,
   HOME_STATE,
-} from './home-profile-info';
+} from "./home-profile-info";
 
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
         <Particle />
-        <Container className="home-content">
+        {/* <Container className="home-content" style={{ marginLeft: '0px', paddingLeft: '0px', border: '1px solid dodgerblue' }}> */}
+        <Container>
           <Row>
-            <Col md={7} className="home-header">
+            {/* <Col md={7} className="home-header" style={{ marginLeft: '0px', paddingLeft: '0px', border: '1px solid dodgerblue' }}> */}
+            <Col className="home-header">
               <h1 className="heading-name">
-                { HOME_GREETING }
+                {HOME_GREETING}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
               <h3 className="heading-subtext">
-                { HOME_GREETING_MSG }<strong className="main-name"> { HOME_NAME }</strong>.
+                {HOME_GREETING_MSG}
+                <strong className="main-name"> {HOME_NAME}</strong>.
               </h3>
-              <h3 className="heading-subtext">
-                { HOME_PROFILE_HEADING_1 }
-              </h3>
-              <h3 className="heading-subtext">
-                { HOME_PROFILE_HEADING_2 }
-              </h3>
-              <h3 className="heading-subtext">
-                { HOME_PROFILE_HEADING_3 }
-              </h3>
+              <h3 className="heading-subtext">{HOME_PROFILE_HEADING_1}</h3>
+              <h3 className="heading-subtext">{HOME_PROFILE_HEADING_2}</h3>
+              <h3 className="heading-subtext">{HOME_PROFILE_HEADING_3}</h3>
               <h3 className="heading-subtext" style={{ marginTop: "10px" }}>
-                { HOME_INTERESTS_TEXT }
+                {HOME_INTERESTS_TEXT}
                 <RotatingText
                   texts={HOME_INTERESTS_ARY}
                   mainClassName="mt-1 px-2 sm:px-2 md:px-3 bg-blue-800 text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
@@ -62,26 +59,31 @@ function Home() {
                   rotationInterval={3000}
                 />
               </h3>
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
+
+              {/* <Type /> */}
+
+              <div>
+                {/* <div style={{ padding: '50px', textAlign: "left" }}> */}
                 {/* <ul class="information margin-tb-30"> */}
-                <br />
-                <br />
-                <br />
                 {/* <ul style={{ fontSize: "1.5rem" }}> */}
                 {/* <ul style={{ fontSize: "20px" }}> */}
-                <ul className="home-contact-text">
+                {/* <ul className="home-contact-text"> */}
+                <ul>
                   <li>
-                    <b className="purple">PHONE: </b>{ HOME_PHONE }
+                    <b className="purple">PHONE: </b>
+                    {HOME_PHONE}
                   </li>
                   <li>
-                    <b className="purple">EMAIL: </b>{ HOME_EMAIL }
+                    <b className="purple">EMAIL: </b>
+                    {HOME_EMAIL}
                   </li>
                   <li>
-                    <b className="purple">CITY: </b>{ HOME_CITY }
+                    <b className="purple">CITY: </b>
+                    {HOME_CITY}
                   </li>
                   <li>
-                    <b className="purple">STATE: </b>{ HOME_STATE }
+                    <b className="purple">STATE: </b>
+                    {HOME_STATE}
                   </li>
                 </ul>
               </div>
