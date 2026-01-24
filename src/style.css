@@ -434,6 +434,10 @@ button:focus {
   padding-inline-start: 0 !important;
 }
 
+.home-social-icon-component {
+  margin-top: 8px;
+}
+
 .home-social-icons {
   position: relative !important;
   display: inline-block !important;

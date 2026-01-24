@@ -1,19 +1,21 @@
 import { Row, Col } from "react-bootstrap";
+import BlurText from "../ReactBitsComponents/BlurText";
 
 const testData = [
-  { type: "React.js", bgcolor: "#6a1b9a", completed: 90 },
-  { type: "Angular", bgcolor: "#6a1b9a", completed: 70 },
-  { type: "Redux/RTK/TanStack Query", bgcolor: "#00695c", completed: 85 },
-  { type: "NgRX/RxJS", bgcolor: "#00695c", completed: 70 },
-  { type: "Next.js", bgcolor: "#6a1b9a", completed: 60 },
-  { type: "Bootstrap/Tailwind CSS", bgcolor: "#00695c", completed: 75 },
-  { type: "REST API, GraphQL", bgcolor: "#6a1b9a", completed: 85 },
-  { type: "JavaScript", bgcolor: "#ef6c00", completed: 90 },
   { type: "TypeScript", bgcolor: "#ef6c00", completed: 75 },
-  { type: "Node.js/Express", bgcolor: "#6a1b9a", completed: 75 },
+  { type: "JavaScript", bgcolor: "#ef6c00", completed: 90 },
+  { type: "React.js", bgcolor: "#6a1b9a", completed: 90 },
+  { type: "Next.js", bgcolor: "#6a1b9a", completed: 60 },
+  { type: "Redux/RTK/TanStack Query", bgcolor: "#00695c", completed: 85 },
+  { type: "REST API, GraphQL", bgcolor: "#00695c", completed: 85 },
+  { type: "Bootstrap/Tailwind CSS", bgcolor: "#00695c", completed: 75 },
+  { type: "HTML/CSS", bgcolor: "#00695c", completed: 85 },
+  { type: "Angular", bgcolor: "#6a1b9a", completed: 70 },
+  { type: "NgRX/RxJS", bgcolor: "#00695c", completed: 70 },
+  { type: "Node.js/Express", bgcolor: "#ef6c00", completed: 75 },
   { type: "Python", bgcolor: "#ef6c00", completed: 75 },
-  { type: "Java", bgcolor: "#ef6c00", completed: 40 },
-  { type: "C++", bgcolor: "#ef6c00", completed: 75 },
+  // { type: "Java", bgcolor: "#ef6c00", completed: 40 },
+  // { type: "C++", bgcolor: "#ef6c00", completed: 75 },
 ];
 
 const ProgressBar2 = (props) => {
@@ -69,7 +71,15 @@ function renderBars() {
 const ProgrammingLanguageBars = () => {
   return (
     <div>
-      <h2 className="title">Skills</h2>
+      <h2 className="title">
+        <BlurText
+          text="Skills"
+          delay={200}
+          animateBy="words"
+          direction="top"
+          className="text-5xl mb-8 text-blue-800 justify-center"
+        />
+      </h2>
       {renderBars()}
     </div>
   );

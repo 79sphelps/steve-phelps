@@ -9,9 +9,9 @@ const ContactForm = () => {
     email: "",
     message: "",
     errors: {
-      user_name: '',
-      email: '',
-      message: '',
+      user_name: "",
+      email: "",
+      message: "",
     },
   };
 
@@ -60,27 +60,36 @@ const ContactForm = () => {
     validate(name, value);
   };
 
-  const validateName = (user_name) => (/^[A-Za-z ]+$/g).test(user_name);
-  const validateEmail = (email) => (/^\S+@\S+\.\S+$/g).test(email);
-  const validateTextArea = (message) => (message.length > 0);
+  const validateName = (user_name) => /^[A-Za-z ]+$/g.test(user_name);
+  const validateEmail = (email) => /^\S+@\S+\.\S+$/g.test(email);
+  const validateTextArea = (message) => message.length > 0;
 
   const validate = (name, value) => {
     let errors = {};
     setHasErrors(false);
 
-    if (name === 'user_name' && !validateName(value)) {
-      errors.user_name = 'The user name must be valid.';
+    if (name === "user_name" && !validateName(value)) {
+      errors.user_name = "The user name must be valid.";
     }
-    if (name === 'email' && !validateEmail(value)) {
-      errors.email = 'The email must be valid.';
+    if (name === "email" && !validateEmail(value)) {
+      errors.email = "The email must be valid.";
     }
-    if (name === 'message' && !validateTextArea(value)) {
-      errors.message = 'The user must supply a valid message to respond to.';
+    if (name === "message" && !validateTextArea(value)) {
+      errors.message = "The user must supply a valid message to respond to.";
     }
 
     setHasErrors(Object.keys(errors).length > 0);
-    setContactData(values => ({...values, errors: errors}));
-  }
+    setContactData((values) => ({ ...values, errors: errors }));
+  };
+
+  const getFormStatus = () => {
+    return (
+      hasErrors ||
+      contactData.user_name === "" ||
+      contactData.email === "" ||
+      contactData.message === ""
+    );
+  };
 
   return (
     <form onSubmit={sendEmail}>
@@ -92,11 +101,13 @@ const ContactForm = () => {
           placeholder="Name"
           onChange={handleInputChange}
         />
-        { hasErrors && (contactData.errors.user_name || contactData.user_name === '') && (
-          <div style={{color: 'tomato'}}>{contactData.errors.user_name}</div>
-        )}
+        {hasErrors &&
+          (contactData.errors.user_name || contactData.user_name === "") && (
+            <div style={{ color: "tomato" }}>
+              {contactData.errors.user_name}
+            </div>
+          )}
       </Col>
-
       <Col size={12} sm={12} className="px-1">
         <input
           type="email"
@@ -105,11 +116,11 @@ const ContactForm = () => {
           placeholder="Email Address"
           onChange={handleInputChange}
         />
-        { hasErrors && (contactData.errors.email || contactData.email === '') && (
-          <div style={{color: 'tomato'}}>{contactData.errors.email}</div>
-        )}
+        {hasErrors &&
+          (contactData.errors.email || contactData.email === "") && (
+            <div style={{ color: "tomato" }}>{contactData.errors.email}</div>
+          )}
       </Col>
-
       <textarea
         rows="6"
         name="message"
@@ -117,18 +128,23 @@ const ContactForm = () => {
         placeholder="Message"
         onChange={handleInputChange}
       ></textarea>
-      { hasErrors && (contactData.errors.message || contactData.message === '') && (
-        <div style={{color: 'tomato'}}>{contactData.errors.message}</div>
-      )}
+      {hasErrors &&
+        (contactData.errors.message || contactData.message === "") && (
+          <div style={{ color: "tomato" }}>{contactData.errors.message}</div>
+        )}
       {/* <button type='submit' disabled={isSubmitting}>
         Send
       </button> */}
-      <input 
-      type="submit"
-      style={hasErrors || contactData.user_name === '' || contactData.email === '' || contactData.message === '' ?  { background: 'tomato' } : { background: 'dodgerblue'}}
-      value={hasErrors || contactData.user_name === '' || contactData.email === '' || contactData.message === '' ? 'Form Incomplete' : 'Send'} 
-      disabled={hasErrors || contactData.user_name === '' || contactData.email === '' || contactData.message === ''} 
-      /> 
+      <input
+        type="submit"
+        style={
+          getFormStatus()
+            ? { background: "tomato" }
+            : { background: "dodgerblue" }
+        }
+        value={getFormStatus() ? "Form Incomplete" : "Send"}
+        disabled={getFormStatus()}
+      />
       {stateMessage && <p>{stateMessage}</p>}
     </form>
   );

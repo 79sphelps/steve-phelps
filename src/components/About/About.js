@@ -1,20 +1,16 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
+import BlurText from "../ReactBitsComponents/BlurText";
+import laptopImg from "../../Assets/about.png";
 // import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
 // import Toolstack from "./Toolstack";
 import Skills from "./Skills";
-
-import BlurText from "../ReactBitsComponents/BlurText";
+import { ABOUT_ME_HEADING, ABOUT_TECH_STACK_TEXT } from "./about-info";
 
 function About() {
-  const handleAnimationComplete = () => {
-    console.log("Animation completed!");
-  };
-
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -29,13 +25,11 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              {/* About <strong className="purple">Me</strong> */}
               <BlurText
-                text="About Me"
+                text={ ABOUT_ME_HEADING }
                 delay={200}
                 animateBy="words"
                 direction="top"
-                onAnimationComplete={handleAnimationComplete}
                 className="text-5xl mb-8 text-blue-800 justify-center"
               />
             </h1>
@@ -50,26 +44,20 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          {/* Professional <strong className="purple">Tool Stack </strong> */}
           <BlurText
-            text="Professional Tool Stack"
+            text={ ABOUT_TECH_STACK_TEXT }
             delay={200}
             animateBy="words"
             direction="top"
-            onAnimationComplete={handleAnimationComplete}
             className="text-5xl mb-8 text-blue-800 justify-center"
           />
         </h1>
-
         <Techstack />
-
         {/* <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack /> */}
-
         <Skills />
-
         {/* <Github /> */}
       </Container>
     </Container>

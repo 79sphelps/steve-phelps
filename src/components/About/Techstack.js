@@ -12,6 +12,11 @@ import {
   // DiJava,
 } from "react-icons/di";
 import {
+  SiTypescript,
+  SiRedux,
+  SiReactquery,
+  SiGraphql,
+  SiExpress,
   // SiRedis,
   // SiFirebase,
   SiNextdotjs,
@@ -19,11 +24,34 @@ import {
   // SiPostgresql,
 } from "react-icons/si";
 // import { TbBrandGolang } from "react-icons/tb";
+import { ABOUT_TECH_ARRAY } from "./about-info";
+
+const TECH = {
+  'javascript': <DiJavascript1 />,
+  'typescript': <SiTypescript />,
+  'react': <DiReact />,
+  'angular': <DiAngularSimple />,
+  'nextjs': <SiNextdotjs />,
+  'nodejs': <DiNodejs />,
+  'redux': <SiRedux />,
+  'reactquery': <SiReactquery />,
+  'graphql': <SiGraphql />,
+  'express': <SiExpress />,
+}
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+      
+      { ABOUT_TECH_ARRAY.map((item, idx) => (
+        <Col xs={4} md={2} className="tech-icons">
+          <div className="flex justify-center items-center">
+            { TECH[item] }
+          </div>
+        </Col>
+      ))}
+
+      {/* <Col xs={4} md={2} className="tech-icons">
         <div className="flex justify-center items-center">
           <DiJavascript1 />
         </div>
@@ -38,9 +66,6 @@ function Techstack() {
           <DiAngularSimple />
         </div>
       </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <div className="flex justify-center items-center">
           <SiNextdotjs />
@@ -50,7 +75,7 @@ function Techstack() {
         <div className="flex justify-center items-center">
           <DiNodejs />
         </div>
-      </Col>
+      </Col> */}
     </Row>
   );
 }

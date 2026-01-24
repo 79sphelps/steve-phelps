@@ -6,6 +6,7 @@ import "./Contact.css";
 import contactImg from "../../Assets/contact-img.svg";
 import BlurText from "../ReactBitsComponents/BlurText";
 import ContactForm from "./ContactForm";
+import { HOME_PHONE, HOME_EMAIL } from "../Home/home-profile-info";
 
 const Contact = () => {
   return (
@@ -14,7 +15,6 @@ const Contact = () => {
         {/* <Particle /> */}
         <Container>
           <Row style={{ justifyContent: "center", padding: "10px" }}>
-
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               <BlurText
                 text="Get in Touch"
@@ -25,15 +25,13 @@ const Contact = () => {
                 className="text-5xl mb-8 text-blue-800 justify-center"
               />
             </h1>
-
             <div style={{ display: "inline" }}>
-              <b className="purple">PHONE: </b>503-462-2135
+              <b className="purple">PHONE: </b>{ HOME_PHONE }
             </div>
             <div style={{ display: "inline" }}>
               <b className="purple">EMAIL: </b>
-              <a href="mailto:79sphelps@gmail.com">79sphelps&#64;gmail.com</a>
+              <a href={`mailto:${HOME_EMAIL}`}>{ HOME_EMAIL }</a>
             </div>
-
             <Col size={12} md={6}>
               <TrackVisibility>
                 {({ isVisible = true }) => (
@@ -47,7 +45,6 @@ const Contact = () => {
                 )}
               </TrackVisibility>
             </Col>
-
             <Col
               //   md={7}
               style={{
