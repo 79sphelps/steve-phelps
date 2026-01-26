@@ -6,7 +6,7 @@ import "./Contact.css";
 import contactImg from "../../Assets/contact-img.svg";
 import BlurText from "../ReactBitsComponents/BlurText";
 import ContactForm from "./ContactForm";
-import { HOME_PHONE, HOME_EMAIL } from "../Home/home-profile-info";
+import { HOME_PHONE, HOME_EMAIL, HOME_LINKEDIN } from "../Home/home-profile-info";
 
 const Contact = () => {
   return (
@@ -26,13 +26,26 @@ const Contact = () => {
               />
             </h1>
             <div style={{ display: "inline" }}>
-              <b className="purple">PHONE: </b>{ HOME_PHONE }
+              <b className="purple">PHONE: </b>
+              {HOME_PHONE}
             </div>
             <div style={{ display: "inline" }}>
               <b className="purple">EMAIL: </b>
-              <a href={`mailto:${HOME_EMAIL}`}>{ HOME_EMAIL }</a>
+              <a href={`mailto:${HOME_EMAIL}`}>{HOME_EMAIL}</a>
             </div>
-            <Col size={12} md={6}>
+            <div style={{ display: "inline" }}>
+              <b className="purple">LINKEDIN: </b>
+              <a href={HOME_LINKEDIN}>{HOME_LINKEDIN}</a>
+            </div>
+            <Col
+              size={12}
+              md={6}
+              style={{
+                justifyContent: "center",
+                paddingTop: "30px",
+                paddingBottom: "50px",
+              }}
+            >
               <TrackVisibility>
                 {({ isVisible = true }) => (
                   <img

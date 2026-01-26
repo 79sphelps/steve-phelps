@@ -4,32 +4,32 @@ export const ABOUT_TECH_STACK_TEXT = "Professional Tool Stack";
 
 export const ABOUT_PARAGRAPH_TEXT_ARRAY = [
   `I'm a senior frontend and full stack engineer with over a decade of
-            experience building and maintaining production web applications used
-            by internal teams and large-scale consumer platforms.`,
+  experience building and maintaining production web applications used
+  by internal teams and large-scale consumer platforms.`,
   `Throughout my career, I’ve worked across e-commerce, fintech,
-            enterprise tools, and internal platforms—most recently at Nike and
-            Workday—where I helped design, build, and evolve React-based systems
-            supporting high-traffic user flows and mission-critical business
-            workflows. I specialize in translating complex, often ambiguous
-            requirements into clear, maintainable frontend architecture that
-            performs well and scales over time.`,
+    enterprise tools, and internal platforms—most recently at Nike and
+    Workday—where I helped design, build, and evolve React-based systems
+    supporting high-traffic user flows and mission-critical business
+    workflows. I specialize in translating complex, often ambiguous
+    requirements into clear, maintainable frontend architecture that
+    performs well and scales over time.`,
   `My strongest skills sit at the intersection of frontend
-            architecture, state management, and product thinking. I care deeply
-            about performance, accessibility, and long-term maintainability, and
-            I’m comfortable taking ownership of features from early discovery
-            through delivery and iteration. I work closely with product
-            managers, designers, and backend engineers to ensure the UI isn’t
-            just visually polished, but reliable and intuitive under real-world
-            conditions.`,
-  `I’m drawn to teams that value thoughtful engineering, clear
-            communication, and ownership. I enjoy mentoring, contributing to
-            shared standards, and raising the quality bar without
-            over-engineering. Above all, I take pride in building software that
-            people depend on—software that is easy to use, hard to break, and
-            built with intention.`,
+    architecture, state management, and product thinking. I care deeply
+    about performance, accessibility, and long-term maintainability, and
+    I’m comfortable taking ownership of features from early discovery
+    through delivery and iteration. I work closely with product
+    managers, designers, and backend engineers to ensure the UI isn’t
+    just visually polished, but reliable and intuitive under real-world
+    conditions.`,
+  // `I’m drawn to teams that value thoughtful engineering, clear
+  //   communication, and ownership. I enjoy mentoring, contributing to
+  //   shared standards, and raising the quality bar without
+  //   over-engineering. Above all, I take pride in building software that
+  //   people depend on—software that is easy to use, hard to break, and
+  //   built with intention.`,
   `Outside of work, I continue sharpening my skills through hands-on
-            projects, technical study, and keeping current with modern React,
-            TypeScript, and frontend best practices.`,
+    projects, technical study, and keeping current with modern React,
+    TypeScript, and frontend best practices.`,
 ];
 
 export const ABOUT_OTHER_ACTIVITIES_TEXT = `Apart from developing, some other activities that I really enjoy are...`;

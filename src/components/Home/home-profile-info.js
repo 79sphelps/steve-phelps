@@ -39,6 +39,7 @@ export const HOME_PHONE = "503-462-2135";
 export const HOME_EMAIL = "79sphelps@gmail.com";
 export const HOME_CITY = "Happy Valley";
 export const HOME_STATE = "Oregon";
+export const HOME_LINKEDIN = "https://www.linkedin.com/in/steve-phelps-1614192b/";
 
 export const HOME_PROFILE_SNAPSHOT_TEXT = `
 Full Stack Developer with 10+ years of experience building

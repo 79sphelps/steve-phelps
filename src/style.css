@@ -314,12 +314,12 @@ button:focus {
 .heading-name {
   font-size: 2.5em !important;
   /* padding-left: 45px !important; */
+  padding-bottom: 30px;
 }
 
 .heading-subtext {
   font-size: 1.5em !important;
   /* padding-left: 45px !important; */
-
   margin-bottom: 15px;
 }
 
@@ -568,7 +568,7 @@ button:focus {
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
-  opacity: 0.9 !important;
+  /* opacity: 0.9 !important; */
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
@@ -654,6 +654,7 @@ button:focus {
   /* background-image: var(--section-background-color) !important; */
   color: white !important;
   font-size: 20px;
+  padding-left: 0px !important;
 }
 
 .about-me-paragraph {
@@ -664,6 +665,7 @@ button:focus {
   margin-bottom: 15px;
   text-indent: 30px;
   font-size: 20px;
+  padding-left: 0px !important;
 }
 
 .tech-icons {
