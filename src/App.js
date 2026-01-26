@@ -10,7 +10,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Preloader = lazy(() => import("../src/components/Pre"));
-const Navbar = lazy(() => import("./components/Navbar"));
+const NavBar = lazy(() => import("./components/Navbar"));
 const Home = lazy(() => import("./components/Home/Home"));
 const About = lazy(() => import("./components/About/About"));
 const Projects = lazy(() => import("./components/Projects/Projects"));
@@ -33,19 +33,20 @@ const App = () => {
     <Router forceRefresh={true}>
       {/* <Preloader load={load} /> */}
       <Suspense fallback={<Preloader load={load} />}>
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-        <Footer />
-      </div>
+        {/* <div className="App" id={load ? "no-scroll" : "scroll"}> */}
+        <div className="App">
+          <NavBar />
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/project" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+          <Footer />
+        </div>
       </Suspense>
     </Router>
   );

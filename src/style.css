@@ -51,33 +51,6 @@ button:focus {
 }
 
 /* --------- */
-/*Scrollbar   */
-/* --------- */
-
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #2d1950;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  /* background: rgba(178, 121, 216, 0.959); */
-  background: #3146ff;
-  border-radius: 12px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  /* background: rgba(222, 130, 235, 0.911); */
-  background: #3146ff;
-  border-radius: 12px;
-}
-
-/* --------- */
 /* Navbar Section  */
 /* --------- */
 .sticky {
