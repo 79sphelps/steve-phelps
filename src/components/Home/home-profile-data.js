@@ -26,13 +26,12 @@ users can trust.
 
 export const HOME_INTERESTS_TEXT = "I'm passionate about...";
 export const HOME_INTERESTS_ARY = [
-  "Optimization,",
-  "Performance,",
-  "AI integration,",
-  "App Architecture,",
-  "State Management,",
+  "Performance Optimization,",
+  // "AI integration Strategy,",
+  "Application Architecture,",
+  "State Management Patterns,",
   "Component Design,",
-  "Intuitive UX",
+  "and Intuitive UX",
 ];
 
 export const HOME_PHONE = "503-462-2135";

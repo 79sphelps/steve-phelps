@@ -5,9 +5,9 @@ import {
   ABOUT_PARAGRAPH_TEXT_ARRAY,
   ABOUT_OTHER_ACTIVITIES_TEXT,
   ABOUT_ACTIVITIES_ARRAY,
-} from "./about-info";
+} from "./about-data";
 
-function AboutCard() {
+const AboutCard = () => {
   return (
     <Card className="quote-card-view">
       <Card.Body>

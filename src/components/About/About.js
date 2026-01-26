@@ -8,9 +8,9 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 // import Toolstack from "./Toolstack";
 import Skills from "./Skills";
-import { ABOUT_ME_HEADING, ABOUT_TECH_STACK_TEXT } from "./about-info";
+import { ABOUT_ME_HEADING, ABOUT_TECH_STACK_TEXT } from "./about-data";
 
-function About() {
+const About = () => {
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -37,8 +37,6 @@ function About() {
             </h1>
             <Aboutcard />
           </Col>
-
-
           <Col
             md={5}
             style={{ paddingTop: "120px", paddingBottom: "50px" }}

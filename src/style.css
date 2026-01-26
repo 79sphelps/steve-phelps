@@ -159,11 +159,6 @@ button:focus {
   color: rgb(250, 250, 250) !important;
 }
 
-.logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
-}
-
 .navbar-nav .nav-link {
   color: white !important;
   padding-right: 1rem !important;
@@ -178,6 +173,11 @@ button:focus {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
+}
+
+.nav-item-icon {
+  margin-bottom: 2px;
+  margin-right: 5px;
 }
 
 .navbar-nav .nav-item {
@@ -323,9 +323,28 @@ button:focus {
   margin-bottom: 15px;
 }
 
+.logo {
+  /* height: 1.4em !important; */
+  width: 2.5em !important;
+
+  /* clip-path: circle(50%); */
+  border-radius: 50%;
+  /* object-fit: cover; */
+}
+
 .logo-text {
   font-size: 1.0em !important;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+
+.logo-text img {
+  margin-right: 5px;
+}
+
 
 @media (max-width: 1200px) {
   .logo-text {
@@ -476,7 +495,8 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  /* background: #68187a; */
+  background: #3146ff;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -484,13 +504,18 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  /* box-shadow: 0 0 15px #801f95; */
+  box-shadow: 0 0 15px #384088;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
+  /* color: #87209e;
   box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  text-shadow: 0 0 2px #87209e; */
+
+  color: #4f5585;
+  box-shadow: 0 0 5px #4f5585;
+  text-shadow: 0 0 2px #4f5585;
 }
 
 .social-icons {
@@ -500,7 +525,8 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  /* color: #700c86 !important; */
+  color: #3146ff !important;
 }
 
 /* --------- */

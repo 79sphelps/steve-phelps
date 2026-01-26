@@ -2,30 +2,30 @@ import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-// import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 // import { ImBlog } from "react-icons/im";
+import { AiFillStar } from "react-icons/ai";
+import myImg from "../Assets/my_photo-min.jpg";
 import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
-import { CgFileDocument } from "react-icons/cg";
+  NAV_LINKS_ARY,
+  ICON_BREAKPOINT_WIDTH,
+  PROFESSIONAL_TITLE,
+  GITHUB_URL,
+} from "./navbar-data";
 
-function NavBar() {
+const NavBar = () => {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
+  const scrollHandler = () => {
     if (window.scrollY >= 20) {
       updateNavbar(true);
     } else {
       updateNavbar(false);
     }
-  }
+  };
 
   window.addEventListener("scroll", scrollHandler);
 
@@ -38,25 +38,17 @@ function NavBar() {
     useEffect(() => {
       // only execute all the code below in client side
       if (typeof window !== "undefined") {
-        // Handler to call on window resize
-        function handleResize() {
-          // Set window width/height to state
+        const handleResize = () => {
           setWindowSize({
             width: window.innerWidth,
             height: window.innerHeight,
           });
-        }
-
-        // Add event listener
+        };
         window.addEventListener("resize", handleResize);
-
-        // Call handler right away so state gets updated with initial window size
         handleResize();
-
-        // Remove event listener on cleanup
         return () => window.removeEventListener("resize", handleResize);
       }
-    }, []); // Empty array ensures that effect is only run on mount
+    }, []);
     return windowSize;
   };
 
@@ -75,14 +67,12 @@ function NavBar() {
           className="logo-text d-flex"
           style={{ marginBottom: "2px" }}
         >
-          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
-          Senior Frontend / Full Stack Engineer
+          <img src={myImg} className="img-fluid logo" alt="brand" />
+          {PROFESSIONAL_TITLE}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
+          onClick={() => updateExpanded(expand ? false : "expanded")}
         >
           <span></span>
           <span></span>
@@ -90,105 +80,29 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/"
-                onClick={() => updateExpanded(false)}
-                className="navbar-item-text"
-              >
-                {/* <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}> */}
-                <div className="flex flex-row items-center">
-                  {size.width > 1010 ? (
-                    <AiOutlineHome
-                      style={{ marginBottom: "2px", marginRight: "5px" }}
-                    />
-                  ) : null}{" "}
-                  Home
-                </div>
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-                className="navbar-item-text"
-              >
-                <div className="flex flex-row items-center">
-                  {size.width > 1010 ? (
-                    <AiOutlineUser
-                      style={{ marginBottom: "2px", marginRight: "5px" }}
-                    />
-                  ) : null}{" "}
-                  About
-                </div>
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/contact"
-                onClick={() => updateExpanded(false)}
-                className="navbar-item-text"
-              >
-                <div className="flex flex-row items-center">
-                  {size.width > 1010 ? (
-                    <AiOutlineUser
-                      style={{ marginBottom: "2px", marginRight: "5px" }}
-                    />
-                  ) : null}{" "}
-                  Contact
-                </div>
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-                className="navbar-item-text"
-              >
-                <div className="flex flex-row items-center">
-                  {size.width > 1010 ? (
-                    <AiOutlineFundProjectionScreen
-                      style={{ marginBottom: "2px", marginRight: "5px" }}
-                    />
-                  ) : null}{" "}
-                  Projects
-                </div>
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-                className="navbar-item-text"
-              >
-                <div className="flex flex-row items-center">
-                  {size.width > 1010 ? (
-                    <CgFileDocument
-                      style={{ marginBottom: "2px", marginRight: "5px" }}
-                    />
-                  ) : null}{" "}
-                  Resume
-                </div>
-              </Nav.Link>
-            </Nav.Item>
-
+            {NAV_LINKS_ARY.map((item, idx) => (
+              <Nav.Item key={idx}>
+                <Nav.Link
+                  as={Link}
+                  to={item.to}
+                  onClick={() => updateExpanded(false)}
+                  className="navbar-item-text"
+                >
+                  <div className="flex flex-row items-center">
+                    {size.width > ICON_BREAKPOINT_WIDTH ? item.icon : null}{" "}
+                    {item.text}
+                  </div>
+                </Nav.Link>
+              </Nav.Item>
+            ))}
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/79sphelps"
+                href={GITHUB_URL}
                 target="_blank"
                 className="fork-btn-inner"
               >
                 <div className="flex flex-row items-center">
-                  {size.width > 1010 ? (
+                  {size.width > ICON_BREAKPOINT_WIDTH ? (
                     <CgGitFork
                       style={{ fontSize: "1.2em", marginRight: "5px" }}
                     />
@@ -202,6 +116,6 @@ function NavBar() {
       </Container>
     </Navbar>
   );
-}
+};
 
 export default NavBar;

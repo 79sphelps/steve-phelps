@@ -24,7 +24,7 @@ import {
   // SiPostgresql,
 } from "react-icons/si";
 // import { TbBrandGolang } from "react-icons/tb";
-import { ABOUT_TECH_ARRAY } from "./about-info";
+import { ABOUT_TECH_ARRAY } from "./about-data";
 
 const TECH = {
   'javascript': <DiJavascript1 />,
@@ -39,7 +39,7 @@ const TECH = {
   'express': <SiExpress />,
 }
 
-function Techstack() {
+const Techstack = () => {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       

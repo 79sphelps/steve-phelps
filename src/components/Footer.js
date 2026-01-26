@@ -1,52 +1,33 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { OWNERSHIP_TEXT, FOOTER_LINKS_ARY } from "./footer-data";
 
-function Footer() {
+const Footer = () => {
   // let date = new Date();
   // let year = date.getFullYear();
   return (
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Steve Phelps Portfolio Site</h3>
+          <h3>{ OWNERSHIP_TEXT }</h3>
         </Col>
         {/* <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} SP</h3>
         </Col> */}
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/79sphelps"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/steve-phelps-1614192b/"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/stevenlphelps/"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
+            { FOOTER_LINKS_ARY.map((item, idx) => (
+              <li className="social-icons" key={idx}>
+                <a
+                  href={ item.url }
+                  style={{ color: "white" }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  { item.icon }
+                </a>
+              </li>
+            ))}
           </ul>
         </Col>
       </Row>

@@ -6,7 +6,7 @@ import "./Contact.css";
 import contactImg from "../../Assets/contact-img.svg";
 import BlurText from "../ReactBitsComponents/BlurText";
 import ContactForm from "./ContactForm";
-import { HOME_PHONE, HOME_EMAIL, HOME_LINKEDIN } from "../Home/home-profile-info";
+import { HOME_PHONE, HOME_EMAIL, HOME_LINKEDIN } from "../Home/home-profile-data";
 
 const Contact = () => {
   return (

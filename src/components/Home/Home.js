@@ -18,9 +18,9 @@ import {
   HOME_PHONE,
   HOME_CITY,
   HOME_STATE,
-} from "./home-profile-info";
+} from "./home-profile-data";
 
-function Home() {
+const Home = () => {
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -86,7 +86,17 @@ function Home() {
                 </ul>
               </div>
             </Col>
-            <Col md={5} style={{ paddingBottom: 20, paddingTop: 80, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+            <Col
+              md={5}
+              style={{
+                paddingBottom: 20,
+                paddingTop: 80,
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <img
                 src={homeLogo}
                 alt="home pic"

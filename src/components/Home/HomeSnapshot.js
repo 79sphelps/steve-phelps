@@ -13,7 +13,7 @@ import {
   HOME_SOCIALS_ARY,
   HOME_SOCIALS_TEXT,
   HOME_CONNECT_WITH_ME_TEXT,
-} from "./home-profile-info";
+} from "./home-profile-data";
 
 const SOCIALS = {
   github: <AiFillGithub className='home-social-icon-component' />,
@@ -21,7 +21,7 @@ const SOCIALS = {
   instagram: <AiFillInstagram className='home-social-icon-component' />,
 };
 
-function HomeSnapshot() {
+const HomeSnapshot = () => {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>

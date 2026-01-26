@@ -85,7 +85,7 @@ const ProgrammingLanguageBars = () => {
   );
 };
 
-function Skills() {
+const Skills = () => {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col

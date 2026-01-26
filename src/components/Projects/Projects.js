@@ -9,9 +9,10 @@ import {
   PROJECTS_HEADING_TEXT,
   PROJECTS_HEADING_SUBTEXT,
   PROJECTS_TOAST_TEXT,
-} from "./project-info";
+} from "./project-data";
+// import ToastMessage from "./ToastMessage";
 
-function Projects() {
+const Projects = () => {
   useEffect(() => {
     // toast.info();
     toast(PROJECTS_TOAST_TEXT);
@@ -22,6 +23,7 @@ function Projects() {
       <Particle />
       <ToastContainer
         position="top-center"
+        style={{ top: '230px'}}
         autoClose={30000}
         hideProgressBar={false}
         newestOnTop={false}
@@ -33,22 +35,21 @@ function Projects() {
         theme="light"
         // transition={Bounce}
       />
+      {/* <ToastMessage /> */}
       <Container>
         <h1 className="project-heading">
-          {/* Recent <strong className="purple">Projects </strong> */}
           <BlurText
             text={PROJECTS_HEADING_TEXT}
             delay={200}
             animateBy="words"
             direction="top"
-            // onAnimationComplete={handleAnimationComplete}
             className="text-5xl mb-8 text-blue-800 justify-center"
           />
         </h1>
         <p style={{ color: "white" }}>{PROJECTS_HEADING_SUBTEXT}</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {PROJECTS_ARY.map((item, idx) => (
-            <Col lg={4} md={6} sm={12} className="project-card">
+            <Col lg={4} md={6} sm={12} className="project-card" key={idx}>
               <ProjectCard
                 imgPath={item.imgPath}
                 isBlog={item.isBlog}

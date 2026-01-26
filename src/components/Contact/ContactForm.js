@@ -142,7 +142,7 @@ const ContactForm = () => {
             ? { background: "tomato" }
             : { background: "dodgerblue" }
         }
-        value={getFormStatus() ? "Form Incomplete" : "Send"}
+        value={getFormStatus() ? "Complete Form to Send" : "Send"}
         disabled={getFormStatus()}
       />
       {stateMessage && <p>{stateMessage}</p>}
