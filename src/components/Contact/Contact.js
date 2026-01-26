@@ -2,6 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import Particle from "../Particle";
 import TrackVisibility from "react-on-screen";
+import {
+  AiOutlinePhone,
+  AiOutlineLinkedin,
+  AiOutlineMail,
+} from "react-icons/ai";
 import "./Contact.css";
 import contactImg from "../../Assets/contact-img.svg";
 import BlurText from "../ReactBitsComponents/BlurText";
@@ -25,16 +30,19 @@ const Contact = () => {
                 className="text-5xl mb-8 text-blue-800 justify-center"
               />
             </h1>
-            <div style={{ display: "inline" }}>
-              <b className="purple">PHONE: </b>
+            <div style={{ display: "inline", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <AiOutlinePhone className='home-contact-info-icon'/>
+              <b className="purple" style={{ marginRight: '5px' }}>-</b>
               {HOME_PHONE}
             </div>
-            <div style={{ display: "inline" }}>
-              <b className="purple">EMAIL: </b>
+            <div style={{ display: "inline", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <AiOutlineMail className='home-contact-info-icon' />
+              <b className="purple"  style={{ marginRight: '5px' }}>-</b>
               <a href={`mailto:${HOME_EMAIL}`}>{HOME_EMAIL}</a>
             </div>
-            <div style={{ display: "inline" }}>
-              <b className="purple">LINKEDIN: </b>
+            <div style={{ display: "inline", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <AiOutlineLinkedin className='home-contact-info-icon' />
+              <b className="purple" style={{ marginRight: '5px' }}>-</b>
               <a href={HOME_LINKEDIN}>{HOME_LINKEDIN}</a>
             </div>
             <Col

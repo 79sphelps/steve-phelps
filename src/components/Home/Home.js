@@ -1,5 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import {
+  AiOutlinePhone,
+  AiOutlineMail,
+} from "react-icons/ai";
 import Particle from "../Particle";
 import RotatingText from "../ReactBitsComponents/RotatingText";
 import homeLogo from "../../Assets/home-main.svg";
@@ -68,19 +72,25 @@ const Home = () => {
                 {/* <ul className="home-contact-text"> */}
                 <ul>
                   <li>
-                    <b className="purple">PHONE: </b>
+                    <div style={{ display: 'flex', flexDirection: 'row' }}>
+                    <AiOutlinePhone className='home-contact-info-icon'/>
+                    <b className="purple" style={{ marginRight: '5px' }}>-</b>
                     {HOME_PHONE}
+                    </div>
                   </li>
                   <li>
-                    <b className="purple">EMAIL: </b>
+                    <div style={{ display: 'flex', flexDirection: 'row' }}>
+                    <AiOutlineMail className='home-contact-info-icon' />
+                    <b className="purple" style={{ marginRight: '5px' }}>-</b>
                     {HOME_EMAIL}
+                    </div>
                   </li>
                   <li>
-                    <b className="purple">CITY: </b>
+                    <b className="purple" style={{ marginRight: '5px' }}>CITY: </b>
                     {HOME_CITY}
                   </li>
                   <li>
-                    <b className="purple">STATE: </b>
+                    <b className="purple" style={{ marginRight: '5px' }}>STATE: </b>
                     {HOME_STATE}
                   </li>
                 </ul>
