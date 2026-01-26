@@ -4,7 +4,7 @@ import Particle from "../Particle";
 import RotatingText from "../ReactBitsComponents/RotatingText";
 import homeLogo from "../../Assets/home-main.svg";
 import HomeSnapshot from "./HomeSnapshot";
-import Type from "./Type";
+// import Type from "./Type";
 import {
   HOME_NAME,
   HOME_GREETING,
@@ -59,9 +59,7 @@ function Home() {
                   rotationInterval={3000}
                 />
               </h3>
-
               {/* <Type /> */}
-
               <div>
                 {/* <div style={{ padding: '50px', textAlign: "left" }}> */}
                 {/* <ul class="information margin-tb-30"> */}
@@ -88,7 +86,7 @@ function Home() {
                 </ul>
               </div>
             </Col>
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} style={{ paddingBottom: 20, paddingTop: 80, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
               <img
                 src={homeLogo}
                 alt="home pic"
