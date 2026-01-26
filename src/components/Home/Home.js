@@ -1,9 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiOutlinePhone,
-  AiOutlineMail,
-} from "react-icons/ai";
+import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 import Particle from "../Particle";
 import RotatingText from "../ReactBitsComponents/RotatingText";
 import homeLogo from "../../Assets/home-main.svg";
@@ -72,47 +69,40 @@ const Home = () => {
                 {/* <ul className="home-contact-text"> */}
                 <ul>
                   <li>
-                    <div style={{ display: 'flex', flexDirection: 'row' }}>
-                    <AiOutlinePhone className='home-contact-info-icon'/>
-                    <b className="purple" style={{ marginRight: '5px' }}>-</b>
-                    {HOME_PHONE}
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <AiOutlinePhone className="home-contact-info-icon" />
+                      <b className="blue" style={{ marginRight: "5px" }}>
+                        -
+                      </b>
+                      {HOME_PHONE}
                     </div>
                   </li>
                   <li>
-                    <div style={{ display: 'flex', flexDirection: 'row' }}>
-                    <AiOutlineMail className='home-contact-info-icon' />
-                    <b className="purple" style={{ marginRight: '5px' }}>-</b>
-                    {HOME_EMAIL}
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <AiOutlineMail className="home-contact-info-icon" />
+                      <b className="blue" style={{ marginRight: "5px" }}>
+                        -
+                      </b>
+                      {HOME_EMAIL}
                     </div>
                   </li>
                   <li>
-                    <b className="purple" style={{ marginRight: '5px' }}>CITY: </b>
+                    <b className="blue" style={{ marginRight: "5px" }}>
+                      CITY:{" "}
+                    </b>
                     {HOME_CITY}
                   </li>
                   <li>
-                    <b className="purple" style={{ marginRight: '5px' }}>STATE: </b>
+                    <b className="blue" style={{ marginRight: "5px" }}>
+                      STATE:{" "}
+                    </b>
                     {HOME_STATE}
                   </li>
                 </ul>
               </div>
             </Col>
-            <Col
-              md={5}
-              style={{
-                paddingBottom: 20,
-                paddingTop: 80,
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+            <Col md={5} className="home-right-hero-img">
+              <img src={homeLogo} alt="home pic" className="img-fluid" />
             </Col>
           </Row>
         </Container>
@@ -120,6 +110,6 @@ const Home = () => {
       <HomeSnapshot />
     </section>
   );
-}
+};
 
 export default Home;

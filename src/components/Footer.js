@@ -20,7 +20,6 @@ const Footer = () => {
               <li className="social-icons" key={idx}>
                 <a
                   href={ item.url }
-                  style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

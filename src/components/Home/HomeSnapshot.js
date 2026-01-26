@@ -35,7 +35,7 @@ const HomeSnapshot = () => {
         >
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              <span className="purple">Quick Snapshot</span>
+              <span className="blue">Quick Snapshot</span>
             </h1>
             <p className="home-about-body">
               {HOME_PROFILE_SNAPSHOT_TEXT}

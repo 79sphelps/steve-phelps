@@ -16,7 +16,7 @@ import { HOME_PHONE, HOME_EMAIL, HOME_LINKEDIN } from "../Home/home-profile-data
 const Contact = () => {
   return (
     <section className="contact" id="contact">
-      <Container fluid className="about-section">
+      <Container fluid className="contact-section">
         {/* <Particle /> */}
         <Container>
           <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -26,24 +26,23 @@ const Contact = () => {
                 delay={200}
                 animateBy="words"
                 direction="top"
-                // onAnimationComplete={handleAnimationComplete}
                 className="text-5xl mb-8 text-blue-800 justify-center"
               />
             </h1>
-            <div style={{ display: "inline", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <AiOutlinePhone className='home-contact-info-icon'/>
-              <b className="purple" style={{ marginRight: '5px' }}>-</b>
+            <div className='contact-info'>
+              <AiOutlinePhone className='contact-info-icon'/>
+              <b className="blue">-</b>
               {HOME_PHONE}
             </div>
-            <div style={{ display: "inline", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <AiOutlineMail className='home-contact-info-icon' />
-              <b className="purple"  style={{ marginRight: '5px' }}>-</b>
+            <div className='contact-info'>
+              <AiOutlineMail className='contact-info-icon' />
+              <b className="blue">-</b>
               <a href={`mailto:${HOME_EMAIL}`}>{HOME_EMAIL}</a>
             </div>
-            <div style={{ display: "inline", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <AiOutlineLinkedin className='home-contact-info-icon' />
-              <b className="purple" style={{ marginRight: '5px' }}>-</b>
-              <a href={HOME_LINKEDIN}>{HOME_LINKEDIN}</a>
+            <div className='contact-info'>
+              <AiOutlineLinkedin className='contact-info-icon' />
+              <b className="blue">-</b>
+              <a href={HOME_LINKEDIN}>Go to LinkedIn Profile</a>
             </div>
             <Col
               size={12}
