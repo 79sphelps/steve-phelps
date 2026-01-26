@@ -1,22 +1,23 @@
-import React, { useState, useEffect } from "react";
-import Preloader from "../src/components/Pre";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import Footer from "./components/Footer";
-import Resume from "./components/Resume/ResumeNew";
-import Contact from "./components/Contact/Contact";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   Navigate,
 } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+const Preloader = lazy(() => import("../src/components/Pre"));
+const Navbar = lazy(() => import("./components/Navbar"));
+const Home = lazy(() => import("./components/Home/Home"));
+const About = lazy(() => import("./components/About/About"));
+const Projects = lazy(() => import("./components/Projects/Projects"));
+const Footer = lazy(() => import("./components/Footer"));
+const Resume = lazy(() => import("./components/Resume/ResumeNew"));
+const Contact = lazy(() => import("./components/Contact/Contact"));
+const ScrollToTop = lazy(() => import("./components/ScrollToTop"));
 
 const App = () => {
   const [load, upadateLoad] = useState(true);
@@ -30,7 +31,8 @@ const App = () => {
 
   return (
     <Router forceRefresh={true}>
-      <Preloader load={load} />
+      {/* <Preloader load={load} /> */}
+      <Suspense fallback={<Preloader load={load} />}>
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
@@ -44,6 +46,7 @@ const App = () => {
         </Routes>
         <Footer />
       </div>
+      </Suspense>
     </Router>
   );
 }

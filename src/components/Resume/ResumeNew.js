@@ -29,7 +29,7 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <div className="flex flex-row items-center justify-center">
-              <AiOutlineDownload class="mr-3" />
+              <AiOutlineDownload className="mr-3" />
               Download CV
             </div>
           </Button>
@@ -79,7 +79,7 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <div className="flex flex-row items-center justify-center">
-              <AiOutlineDownload class="mr-3" />
+              <AiOutlineDownload className="mr-3" />
               Download CV
             </div>
           </Button>
