@@ -34,7 +34,6 @@ function ResumeNew() {
             </div>
           </Button>
         </Row>
-
         <Row className="resume">
           <Document
             file={pdf}
@@ -44,7 +43,6 @@ function ResumeNew() {
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
-
         <Row className="resume">
           <Document
             file={pdf}
@@ -54,23 +52,6 @@ function ResumeNew() {
             <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
-
-        <Row className="resume">
-          <Document
-            file={pdf}
-            className="d-flex justify-content-center"
-            loading={<Loading />}
-          >
-            <Page pageNumber={3} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
-
-        {/* <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={4} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row> */}
-
         <Row style={{ justifyContent: "center", position: "relative", marginTop: '50px' }}>
           <Button
             variant="primary"
