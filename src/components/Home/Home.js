@@ -13,13 +13,15 @@ import {
   HOME_PROFILE_HEADING_1,
   HOME_PROFILE_HEADING_2,
   HOME_PROFILE_HEADING_3,
-  HOME_INTERESTS_TEXT,
-  HOME_INTERESTS_ARY,
+  // HOME_INTERESTS_TEXT,
+  // HOME_INTERESTS_ARY,
   HOME_EMAIL,
   HOME_PHONE,
   HOME_CITY,
   HOME_STATE,
+  HOME_HOW_I_WORK_TEXT,
 } from "./home-profile-data";
+import { ABOUT_CORE_FOCUS_AREAS_TEXT, ABOUT_CORE_FOCUS_ARY } from "../About/about-data";
 
 const Home = () => {
   return (
@@ -44,11 +46,14 @@ const Home = () => {
               <h3 className="heading-subtext">{HOME_PROFILE_HEADING_1}</h3>
               <h3 className="heading-subtext">{HOME_PROFILE_HEADING_2}</h3>
               <h3 className="heading-subtext">{HOME_PROFILE_HEADING_3}</h3>
+              <h3 className="heading-subtext">{HOME_HOW_I_WORK_TEXT}</h3>
               <h3 className="heading-subtext" style={{ marginTop: "10px" }}>
-                {HOME_INTERESTS_TEXT}
+                {ABOUT_CORE_FOCUS_AREAS_TEXT}
+                <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                 <RotatingText
-                  texts={HOME_INTERESTS_ARY}
-                  mainClassName="mt-1 px-2 sm:px-2 md:px-3 bg-blue-800 text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                  // texts={HOME_INTERESTS_ARY}
+                  texts={ABOUT_CORE_FOCUS_ARY}
+                  mainClassName="w-100 mt-1 px-2 sm:px-2 md:px-3 bg-blue-800 text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
                   staggerFrom={"last"}
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
@@ -59,6 +64,7 @@ const Home = () => {
                   // rotationInterval={2000}
                   rotationInterval={3000}
                 />
+                </div>
               </h3>
               {/* <Type /> */}
               <div>

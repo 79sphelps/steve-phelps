@@ -42,7 +42,6 @@ const TECH = {
 const Techstack = () => {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      
       { ABOUT_TECH_ARRAY.map((item, idx) => (
         <Col xs={4} md={2} className="tech-icons" key={idx}>
           <div className="flex justify-center items-center">

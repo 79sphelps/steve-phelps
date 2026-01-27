@@ -2,17 +2,19 @@ export const ABOUT_ME_HEADING = "About Me";
 
 export const ABOUT_TECH_STACK_TEXT = "Professional Tool Stack";
 
+export const ABOUT_CORE_FOCUS_AREAS_TEXT = 'Core focus areas:';
+
+export const ABOUT_CORE_FOCUS_ARY = [
+  'React, TypeScript, Next.js',
+  'Design systems & component libraries',
+  'Performance, accessibility, and UX quality',
+  'Product-driven frontend architecture',
+  'Cross-functional collaboration in fast-moving teams',
+];
+
 export const ABOUT_PARAGRAPH_TEXT_ARRAY = [
-  `I'm a senior frontend and full stack engineer with over a decade of
-  experience building and maintaining production web applications used
-  by internal teams and large-scale consumer platforms.`,
-  `Throughout my career, I’ve worked across e-commerce, fintech,
-    enterprise tools, and internal platforms—most recently at Nike and
-    Workday—where I helped design, build, and evolve React-based systems
-    supporting high-traffic user flows and mission-critical business
-    workflows. I specialize in translating complex, often ambiguous
-    requirements into clear, maintainable frontend architecture that
-    performs well and scales over time.`,
+  `I’m a Senior Frontend Engineer with 10+ years of experience building scalable, high-impact web applications, specializing in React, TypeScript, and user-facing product experiences that balance performance, accessibility, and polish.`,
+  `Most recently at Nike, I worked on the core Product Display Page (PDP) — a high-traffic, revenue-critical surface — where I partnered closely with design, product, and QA to ship performant, accessible UI after a major refactor. The work demanded strong frontend architecture, attention to UX detail, and confidence shipping changes at scale.`,
   `My strongest skills sit at the intersection of frontend
     architecture, state management, and product thinking. I care deeply
     about performance, accessibility, and long-term maintainability, and
@@ -21,12 +23,9 @@ export const ABOUT_PARAGRAPH_TEXT_ARRAY = [
     managers, designers, and backend engineers to ensure the UI isn’t
     just visually polished, but reliable and intuitive under real-world
     conditions.`,
-  // `I’m drawn to teams that value thoughtful engineering, clear
-  //   communication, and ownership. I enjoy mentoring, contributing to
-  //   shared standards, and raising the quality bar without
-  //   over-engineering. Above all, I take pride in building software that
-  //   people depend on—software that is easy to use, hard to break, and
-  //   built with intention.`,
+  `Previously, I’ve built and maintained fintech and SaaS applications at Workday, NorthOne, and Azlo, delivering secure, data-driven interfaces for banking, onboarding, and internal planning workflows. Across roles, I’ve focused on translating complex business logic into intuitive, trustworthy user experiences.`,
+  `I’m strongest on the frontend but comfortable working across the stack when needed — collaborating on API contracts, integrating services, and thinking end-to-end about product quality. I enjoy owning ambiguous problems, mentoring teammates, and continuously improving frontend systems, patterns, and developer experience.`,
+  `I’m currently focused on Senior Frontend Engineer / Product Engineer roles where I can own meaningful UI surfaces, work closely with design and product, and help teams ship high-quality experiences at scale.`,
   `Outside of work, I continue sharpening my skills through hands-on
     projects, technical study, and keeping current with modern React,
     TypeScript, and frontend best practices.`,
