@@ -302,7 +302,8 @@ button:focus {
 }
 
 .heading-subtext {
-  font-size: 1.5em !important;
+  /* font-size: 1.5em !important; */
+  font-size: 1.2em !important;
   /* padding-left: 45px !important; */
   margin-bottom: 15px;
 }
@@ -412,7 +413,6 @@ button:focus {
   padding-bottom: 20px !important;
   /* padding-top: 70px !important; */
   padding-top: 20px !important;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -431,8 +431,8 @@ button:focus {
   /* padding-top: 50px; */
   padding-top: 20px;
   font-size: 1.2em !important;
+  /* font-size: 20px; */  /* About Page */
   text-align: left;
-
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -536,10 +536,23 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  /* background-image: var(--section-background-color) !important; */
-  color: white !important;
-  font-size: 20px;
   padding-left: 0px !important;
+
+  color: white !important;
+  /* font-size: 20px; */
+  /* font-size: 1.2em !important; */
+  /* font-size: 2.2em !important; */
+  
+  z-index: -1;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  /* padding-top: 30px !important; */
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .about-me-paragraph {
@@ -548,8 +561,9 @@ button:focus {
   align-items: left; */
   text-align: left;
   margin-bottom: 15px;
-  text-indent: 30px;
-  font-size: 20px;
+  /* text-indent: 30px; */
+  /* font-size: 20px; */
+  font-size: 0.9em !important;
   padding-left: 0px !important;
 }
 

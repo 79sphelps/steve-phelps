@@ -15,26 +15,17 @@ const About = () => {
     <Container fluid className="about-section">
       <Particle />
       <Container>
-        {/* <Row style={{ justifyContent: "center", padding: "10px" }}> */}
-        <Row >
-          {/* <Col
-            md={7}
-            style={{
-              justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
-            }}
-          > */}
+        <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+          <BlurText
+            text={ ABOUT_ME_HEADING }
+            delay={200}
+            animateBy="words"
+            direction="top"
+            className="text-5xl mb-8 text-blue-800 justify-center"
+          />
+        </h1>
+        <Row>
           <Col style={{ textAlign: 'left' }}>
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <BlurText
-                text={ ABOUT_ME_HEADING }
-                delay={200}
-                animateBy="words"
-                direction="top"
-                className="text-5xl mb-8 text-blue-800 justify-center"
-              />
-            </h1>
             <Aboutcard />
           </Col>
           <Col
