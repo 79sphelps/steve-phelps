@@ -81,8 +81,8 @@ export const HOME_SOCIALS_ARY = [
     url: "https://www.linkedin.com/in/steve-phelps-1614192b/",
     icon: "linkedin",
   },
-  {
-    url: "https://www.instagram.com/stevenlphelps/",
-    icon: "instagram",
-  },
+  // {
+  //   url: "https://www.instagram.com/stevenlphelps/",
+  //   icon: "instagram",
+  // },
 ];
