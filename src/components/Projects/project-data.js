@@ -96,24 +96,6 @@ export const PROJECTS_ARY = [
     ghLink: "",
   },
   {
-    imgPath: realEstateSite,
-    isBlog: false,
-    title: "Real Estate Broker Site - Tessa Goldy",
-    role: "Senior Full Stack Engineer",
-    scope:
-      "Customer- and client-facing application supporting secure data entry and administrative workflows.",
-    tech: "React, JavaScript, Redux, redux-saga, react-bootstrap, Styled Components, OAuth, REST APIs, Git",
-    description: `
-      Developed a customer- and client-facing real estate website using React and Redux, supporting 
-      authenticated user flows, data-driven forms, and secure CRUD operations. Implemented redux-saga 
-      to manage asynchronous API interactions and applied the compound component pattern to build reusable, 
-      scalable UI components. Focused on predictable state management, form validation, and long-term 
-      maintainability in a production environment.
-        `,
-    demoLink: "https://real-estate-rentals-frontend.onrender.com/",
-    ghLink: "https://github.com/79sphelps/real-estate-rentals-frontend",
-  },
-  {
     imgPath: allAboutHairReact,
     isBlog: false,
     title: "Small Business - All About Hair (Happy Valley)",
@@ -130,6 +112,25 @@ export const PROJECTS_ARY = [
         `,
     demoLink: "https://all-about-hair-react.onrender.com/",
     ghLink: "https://github.com/79sphelps/all-about-hair-react",
+  },
+  {
+    imgPath: realEstateSite,
+    isBlog: false,
+    title: "Real Estate Broker Site - Tessa Goldy",
+    role: "Senior Full Stack Engineer",
+    scope:
+      "Customer- and client-facing application supporting secure data entry and administrative workflows.",
+    tech: "React, JavaScript, Redux, redux-saga, react-bootstrap, Styled Components, OAuth, REST APIs, Git",
+    description: `
+      Developed a customer- and client-facing real estate website using React and Redux, supporting 
+      authenticated user flows, data-driven forms, and secure CRUD operations. Implemented redux-saga 
+      to manage asynchronous API interactions and applied the compound component pattern to build reusable, 
+      scalable UI components. Focused on predictable state management, form validation, and long-term 
+      maintainability in a production environment.
+        `,
+    // demoLink: "https://real-estate-rentals-frontend.onrender.com/",
+    demoLink: "",
+    ghLink: "https://github.com/79sphelps/real-estate-rentals-frontend",
   },
   {
     imgPath: smar,
