@@ -10,7 +10,7 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
-const RESUME_PDF = "./public/assets/Resume(Trimmed)-StevePhelps-Jan2026-Frontend.pdf";
+const RESUME_PDF = "/assets/Resume(Trimmed)-StevePhelps-Jan2026-Frontend.pdf";
 
 
 const ResumePage = () => {

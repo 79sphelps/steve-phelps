@@ -14,7 +14,7 @@ import {
   GITHUB_URL,
 } from "../../lib/navbar-data";
 
-const MY_IMG = "./public/assets/my_photo-min.jpg";
+const MY_IMG = "/assets/my_photo-min.jpg";
 
 
 const NavBar = () => {

@@ -1,16 +1,16 @@
-const ALL_ABOUT_HAIR_ANGULAR_IMG = "./public/assets/all-about-hair-p1.png";
-const ALL_ABOUT_HAIR_REACT_IMG = "./public/assets/all-about-hair-react-1-min.png";
-const REAL_ESTATE_SITE_IMG = "./public/assets/real-estate-site-home.png";
-const EVENT_PLANNING_NW_IMG = "./public/assets/event-planning-nw-2-p1.png";
-// const eventPlanningNW0 = "./public/assets/event-planning-nw-1-p1-w300.png";
-const CALENDAR_APP_REACT_IMG = "./public/assets/calendar-app.png";
-// const chatApp = "./public/assets/chat-app.png";
-// const musicApp = "./public/assets/music-player-app.png";
-const NORTHONE_IMG = "./public/assets/northone.png";
-const AZLO_IMG = "./public/assets/azlo.png";
-const SMAR_IMG = "./public/assets/smar-investments.png";
-const WORKDAY_IMG = "./public/assets/workday-kira.png";
-const NIKE_PDP_IMG = "./public/assets/nike-pdp.png";
+const ALL_ABOUT_HAIR_ANGULAR_IMG = "/assets/all-about-hair-p1.png";
+const ALL_ABOUT_HAIR_REACT_IMG = "/assets/all-about-hair-react-1-min.png";
+const REAL_ESTATE_SITE_IMG = "/assets/real-estate-site-home.png";
+const EVENT_PLANNING_NW_IMG = "/assets/event-planning-nw-2-p1.png";
+// const eventPlanningNW0 = "/assets/event-planning-nw-1-p1-w300.png";
+const CALENDAR_APP_REACT_IMG = "/assets/calendar-app.png";
+// const chatApp = "/assets/chat-app.png";
+// const musicApp = "/assets/music-player-app.png";
+const NORTHONE_IMG = "/assets/northone.png";
+const AZLO_IMG = "/assets/azlo.png";
+const SMAR_IMG = "/assets/smar-investments.png";
+const WORKDAY_IMG = "/assets/workday-kira.png";
+const NIKE_PDP_IMG = "/assets/nike-pdp.png";
 
 export const PROJECTS_HEADING_TEXT = "Recent Projects";
 

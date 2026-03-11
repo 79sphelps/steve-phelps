@@ -22,7 +22,7 @@ import {
 } from "../lib/home-profile-data";
 import { ABOUT_CORE_FOCUS_AREAS_TEXT, ABOUT_CORE_FOCUS_ARY } from "../lib/about-data";
 
-const HOME_LOGO_IMG = "./public/assets/home-main.svg";
+const HOME_LOGO_IMG = "/assets/home-main.svg";
 
 
 const HomePage = () => {

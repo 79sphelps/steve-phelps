@@ -10,7 +10,7 @@ import Aboutcard from "../features/about/AboutCard";
 import Skills from "../features/about/Skills";
 import { ABOUT_ME_HEADING, ABOUT_TECH_STACK_TEXT } from "../lib/about-data";
 
-const LAPTOP_IMG = "./public/assets/about.png";
+const LAPTOP_IMG = "/assets/about.png";
 
 
 const AboutPage = () => {

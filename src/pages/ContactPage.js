@@ -12,7 +12,7 @@ import ContactForm from "../features/contact/ContactForm";
 import { HOME_PHONE, HOME_EMAIL, HOME_LINKEDIN } from "../lib/home-profile-data";
 import "../app/styles/Contact.css";
 
-const CONTACT_IMG = "./public/assets/contact-img.svg";
+const CONTACT_IMG = "/assets/contact-img.svg";
 
 
 const ContactPage = () => {

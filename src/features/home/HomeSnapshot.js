@@ -14,7 +14,7 @@ import {
   HOME_CONNECT_WITH_ME_TEXT,
 } from "../../lib/home-profile-data";
 
-const MY_IMG = "./public/assets/my_photo-min.jpg";
+const MY_IMG = "/assets/my_photo-min.jpg";
 
 const SOCIALS = {
   github: <AiFillGithub className='home-social-icon-component' />,
