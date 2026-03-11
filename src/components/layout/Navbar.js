@@ -13,8 +13,7 @@ import {
   PROFESSIONAL_TITLE,
   GITHUB_URL,
 } from "../../lib/navbar-data";
-
-const MY_IMG = "/assets/my_photo-min.jpg";
+import MY_IMG from "../../assets/my_photo-min.jpg";
 
 
 const NavBar = () => {

@@ -11,8 +11,7 @@ import BlurText from "../components/ui/ReactBitsComponents/BlurText";
 import ContactForm from "../features/contact/ContactForm";
 import { HOME_PHONE, HOME_EMAIL, HOME_LINKEDIN } from "../lib/home-profile-data";
 import "../app/styles/Contact.css";
-
-const CONTACT_IMG = "/assets/contact-img.svg";
+import CONTACT_IMG from "../assets/contact-img.svg";
 
 
 const ContactPage = () => {

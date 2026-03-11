@@ -21,8 +21,7 @@ import {
   HOME_HOW_I_WORK_TEXT,
 } from "../lib/home-profile-data";
 import { ABOUT_CORE_FOCUS_AREAS_TEXT, ABOUT_CORE_FOCUS_ARY } from "../lib/about-data";
-
-const HOME_LOGO_IMG = "/assets/home-main.svg";
+import HOME_LOGO_IMG from "../assets/home-main.svg";
 
 
 const HomePage = () => {

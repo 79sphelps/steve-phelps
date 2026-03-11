@@ -9,8 +9,7 @@ import Aboutcard from "../features/about/AboutCard";
 // import Toolstack from "./Toolstack";
 import Skills from "../features/about/Skills";
 import { ABOUT_ME_HEADING, ABOUT_TECH_STACK_TEXT } from "../lib/about-data";
-
-const LAPTOP_IMG = "/assets/about.png";
+import LAPTOP_IMG from "../assets/about.png";
 
 
 const AboutPage = () => {

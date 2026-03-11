@@ -1,16 +1,16 @@
-const ALL_ABOUT_HAIR_ANGULAR_IMG = "/assets/all-about-hair-p1.png";
-const ALL_ABOUT_HAIR_REACT_IMG = "/assets/all-about-hair-react-1-min.png";
-const REAL_ESTATE_SITE_IMG = "/assets/real-estate-site-home.png";
-const EVENT_PLANNING_NW_IMG = "/assets/event-planning-nw-2-p1.png";
+import ALL_ABOUT_HAIR_ANGULAR_IMG from "../assets/all-about-hair-p1.png";
+import ALL_ABOUT_HAIR_REACT_IMG from "../assets/all-about-hair-react-1-min.png";
+import REAL_ESTATE_SITE_IMG from "../assets/real-estate-site-home.png";
+import EVENT_PLANNING_NW_IMG from "../assets/event-planning-nw-2-p1.png";
 // const eventPlanningNW0 = "/assets/event-planning-nw-1-p1-w300.png";
-const CALENDAR_APP_REACT_IMG = "/assets/calendar-app.png";
+import CALENDAR_APP_REACT_IMG from "../assets/calendar-app.png";
 // const chatApp = "/assets/chat-app.png";
 // const musicApp = "/assets/music-player-app.png";
-const NORTHONE_IMG = "/assets/northone.png";
-const AZLO_IMG = "/assets/azlo.png";
-const SMAR_IMG = "/assets/smar-investments.png";
-const WORKDAY_IMG = "/assets/workday-kira.png";
-const NIKE_PDP_IMG = "/assets/nike-pdp.png";
+import NORTHONE_IMG from "../assets/northone.png";
+import AZLO_IMG from "../assets/azlo.png";
+import SMAR_IMG from "../assets/smar-investments.png";
+import WORKDAY_IMG from "../assets/workday-kira.png";
+import NIKE_PDP_IMG from "../assets/nike-pdp.png";
 
 export const PROJECTS_HEADING_TEXT = "Recent Projects";
 
