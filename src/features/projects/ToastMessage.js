@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Toast from "react-bootstrap/Toast";
 import { Row, Col } from "react-bootstrap";
-import { PROJECTS_TOAST_TEXT } from "./project-data";
+import { PROJECTS_TOAST_TEXT } from "../../lib/project-data";
+
+
 function ToastMessage() {
   const [show, setShow] = useState(true);
 

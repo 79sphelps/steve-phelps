@@ -3,8 +3,6 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiSlack,
-  // SiVercel,
-  // SiMacos,
   SiRender,
   SiReact,
   SiRedux,
@@ -21,6 +19,7 @@ import {
   SiGit,
   SiNextdotjs,
 } from "react-icons/si";
+
 
 const Toolstack = () => {
   return (

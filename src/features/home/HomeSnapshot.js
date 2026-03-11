@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/my_photo-min.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -13,13 +12,16 @@ import {
   HOME_SOCIALS_ARY,
   HOME_SOCIALS_TEXT,
   HOME_CONNECT_WITH_ME_TEXT,
-} from "./home-profile-data";
+} from "../../lib/home-profile-data";
+
+const MY_IMG = "./public/assets/my_photo-min.jpg";
 
 const SOCIALS = {
   github: <AiFillGithub className='home-social-icon-component' />,
   linkedin: <FaLinkedinIn className='home-social-icon-component' />,
   instagram: <AiFillInstagram className='home-social-icon-component' />,
 };
+
 
 const HomeSnapshot = () => {
   return (
@@ -45,7 +47,7 @@ const HomeSnapshot = () => {
           <Col md={4} className="myAvtar">
             <Tilt>
               <img
-                src={myImg}
+                src={MY_IMG}
                 className="img-fluid"
                 style={{ borderRadius: "12px", width: "200px" }}
                 alt="avatar"

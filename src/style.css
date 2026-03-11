@@ -36,7 +36,8 @@ button:focus {
   z-index: 999999;
   /* background-color: #0c0513; */
   background-color: rgba(8, 24, 17, 0.904);
-  background-image: url(./Assets/pre.svg);
+  /* background-image: url(./Assets/pre.svg); */
+  background-image: url('/public/assets/pre.svg');
   background-repeat: no-repeat;
   background-position: center;
 }

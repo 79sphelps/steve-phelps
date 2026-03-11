@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { GITHUB_URL } from "./navbar-data";
-import { HOME_LINKEDIN } from "./Home/home-profile-data";
+import { HOME_LINKEDIN } from "./home-profile-data";
 
 export const OWNERSHIP_TEXT = "Steve Phelps Portfolio Site";
 // export const INSTAGRAM_URL = "https://www.instagram.com/stevenlphelps/";

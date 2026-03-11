@@ -105,12 +105,14 @@
 }
 
 .contact-submit button:hover {
-  color: #fff;
+  /* color: #fff; */
+  color: #ddd;
 }
 
 .contact-submit button::before {
   content: "";
-  background: #121212;
+  /* background: #121212; */
+  background: #ddd;
   width: 0;
   height: 100%;
   position: absolute;

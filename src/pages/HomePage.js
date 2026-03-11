@@ -1,10 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
-import Particle from "../Particle";
-import RotatingText from "../ReactBitsComponents/RotatingText";
-import homeLogo from "../../Assets/home-main.svg";
-import HomeSnapshot from "./HomeSnapshot";
+import Particle from "../components/ui/Particle";
+import RotatingText from "../components/ui/ReactBitsComponents/RotatingText";
+import HomeSnapshot from "../features/home/HomeSnapshot";
 // import Type from "./Type";
 import {
   HOME_NAME,
@@ -20,10 +19,13 @@ import {
   HOME_CITY,
   HOME_STATE,
   HOME_HOW_I_WORK_TEXT,
-} from "./home-profile-data";
-import { ABOUT_CORE_FOCUS_AREAS_TEXT, ABOUT_CORE_FOCUS_ARY } from "../About/about-data";
+} from "../lib/home-profile-data";
+import { ABOUT_CORE_FOCUS_AREAS_TEXT, ABOUT_CORE_FOCUS_ARY } from "../lib/about-data";
 
-const Home = () => {
+const HOME_LOGO_IMG = "./public/assets/home-main.svg";
+
+
+const HomePage = () => {
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -108,7 +110,7 @@ const Home = () => {
               </div>
             </Col>
             <Col md={5} className="home-right-hero-img">
-              <img src={homeLogo} alt="home pic" className="img-fluid" />
+              <img src={HOME_LOGO_IMG} alt="home pic" className="img-fluid" />
             </Col>
           </Row>
         </Container>
@@ -118,4 +120,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

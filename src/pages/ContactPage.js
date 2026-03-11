@@ -7,13 +7,15 @@ import {
   AiOutlineLinkedin,
   AiOutlineMail,
 } from "react-icons/ai";
-import "./Contact.css";
-import contactImg from "../../Assets/contact-img.svg";
-import BlurText from "../ReactBitsComponents/BlurText";
-import ContactForm from "./ContactForm";
-import { HOME_PHONE, HOME_EMAIL, HOME_LINKEDIN } from "../Home/home-profile-data";
+import BlurText from "../components/ui/ReactBitsComponents/BlurText";
+import ContactForm from "../features/contact/ContactForm";
+import { HOME_PHONE, HOME_EMAIL, HOME_LINKEDIN } from "../lib/home-profile-data";
+import "../app/styles/Contact.css";
 
-const Contact = () => {
+const CONTACT_IMG = "./public/assets/contact-img.svg";
+
+
+const ContactPage = () => {
   return (
     <section className="contact" id="contact">
       <Container fluid className="contact-section">
@@ -59,7 +61,7 @@ const Contact = () => {
                     //   className={
                     // isVisible ? "animate__animated animate__zoomIn" : ""
                     //   }
-                    src={contactImg}
+                    src={CONTACT_IMG}
                     alt="Contact Me"
                   />
                 )}
@@ -82,4 +84,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

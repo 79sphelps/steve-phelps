@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Resume(Trimmed)-StevePhelps-Jan2026-Frontend.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
-import Loading from "./Loading";
+import Particle from "../components/ui/Particle";
+import Loading from "../components/feedback/Loading";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
-function ResumeNew() {
+const RESUME_PDF = "./public/assets/Resume(Trimmed)-StevePhelps-Jan2026-Frontend.pdf";
+
+
+const ResumePage = () => {
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
@@ -24,7 +27,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={RESUME_PDF}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
@@ -34,28 +37,31 @@ function ResumeNew() {
             </div>
           </Button>
         </Row>
+
         <Row className="resume">
           <Document
-            file={pdf}
+            file={RESUME_PDF}
             className="d-flex justify-content-center"
             loading={<Loading />}
           >
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
+
         <Row className="resume">
           <Document
-            file={pdf}
+            file={RESUME_PDF}
             className="d-flex justify-content-center"
             loading={<Loading />}
           >
             <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
+
         <Row style={{ justifyContent: "center", position: "relative", marginTop: '50px' }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={RESUME_PDF}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
@@ -70,4 +76,4 @@ function ResumeNew() {
   );
 }
 
-export default ResumeNew;
+export default ResumePage;

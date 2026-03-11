@@ -7,13 +7,15 @@ import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 // import { ImBlog } from "react-icons/im";
 import { AiFillStar } from "react-icons/ai";
-import myImg from "../Assets/my_photo-min.jpg";
 import {
   NAV_LINKS_ARY,
   ICON_BREAKPOINT_WIDTH,
   PROFESSIONAL_TITLE,
   GITHUB_URL,
-} from "./navbar-data";
+} from "../../lib/navbar-data";
+
+const MY_IMG = "./public/assets/my_photo-min.jpg";
+
 
 const NavBar = () => {
   const [expand, updateExpanded] = useState(false);
@@ -67,7 +69,7 @@ const NavBar = () => {
           className="logo-text d-flex"
           style={{ marginBottom: "2px" }}
         >
-          <img src={myImg} className="img-fluid logo" alt="brand" />
+          <img src={MY_IMG} className="img-fluid logo" alt="brand" />
           {PROFESSIONAL_TITLE}
         </Navbar.Brand>
         <Navbar.Toggle

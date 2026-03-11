@@ -1,5 +1,5 @@
 import { Row, Col } from "react-bootstrap";
-import BlurText from "../ReactBitsComponents/BlurText";
+import BlurText from "../../components/ui/ReactBitsComponents/BlurText";
 
 // const testData = [
 //   { type: "TypeScript", bgcolor: "#ef6c00", completed: 75 },
@@ -43,9 +43,6 @@ const backendData = [
   // { type: "C++", bgcolor: "#ef6c00", completed: 75 },
 ];
 
-// const platformsData = [
-
-// ];
 
 const ProgressBar2 = (props) => {
   const { bgcolor, completed } = props;

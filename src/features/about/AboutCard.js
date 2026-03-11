@@ -5,7 +5,8 @@ import {
   ABOUT_PARAGRAPH_TEXT_ARRAY,
   ABOUT_OTHER_ACTIVITIES_TEXT,
   ABOUT_ACTIVITIES_ARRAY,
-} from "./about-data";
+} from "../../lib/about-data";
+
 
 const AboutCard = () => {
   return (

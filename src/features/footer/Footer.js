@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { OWNERSHIP_TEXT, FOOTER_LINKS_ARY } from "./footer-data";
+import { OWNERSHIP_TEXT, FOOTER_LINKS_ARY } from "../../lib/footer-data";
+
 
 const Footer = () => {
   // let date = new Date();

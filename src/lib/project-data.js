@@ -1,16 +1,16 @@
-import allAboutHairAngular from "../../Assets/all-about-hair-p1.png";
-import allAboutHairReact from "../../Assets/all-about-hair-react-1-min.png";
-import realEstateSite from "../../Assets/real-estate-site-home.png";
-import eventPlanningNW from "../../Assets/event-planning-nw-2-p1.png";
-// import eventPlanningNW0 from "../../Assets/event-planning-nw-1-p1-w300.png";
-import calendarAppReact from "../../Assets/calendar-app.png";
-// import chatApp from "../../Assets/chat-app.png";
-// import musicApp from "../../Assets/music-player-app.png";
-import northone from "../../Assets/northone.png";
-import azlo from "../../Assets/azlo.png";
-import smar from "../../Assets/smar-investments.png";
-import workday from "../../Assets/workday-kira.png";
-import nikepdp from "../../Assets/nike-pdp.png";
+const ALL_ABOUT_HAIR_ANGULAR_IMG = "./public/assets/all-about-hair-p1.png";
+const ALL_ABOUT_HAIR_REACT_IMG = "./public/assets/all-about-hair-react-1-min.png";
+const REAL_ESTATE_SITE_IMG = "./public/assets/real-estate-site-home.png";
+const EVENT_PLANNING_NW_IMG = "./public/assets/event-planning-nw-2-p1.png";
+// const eventPlanningNW0 = "./public/assets/event-planning-nw-1-p1-w300.png";
+const CALENDAR_APP_REACT_IMG = "./public/assets/calendar-app.png";
+// const chatApp = "./public/assets/chat-app.png";
+// const musicApp = "./public/assets/music-player-app.png";
+const NORTHONE_IMG = "./public/assets/northone.png";
+const AZLO_IMG = "./public/assets/azlo.png";
+const SMAR_IMG = "./public/assets/smar-investments.png";
+const WORKDAY_IMG = "./public/assets/workday-kira.png";
+const NIKE_PDP_IMG = "./public/assets/nike-pdp.png";
 
 export const PROJECTS_HEADING_TEXT = "Recent Projects";
 
@@ -23,7 +23,7 @@ export const PROJECTS_HEADING_SUBTEXT =
 
 export const PROJECTS_ARY = [
   {
-    imgPath: nikepdp,
+    imgPath: NIKE_PDP_IMG,
     isBlog: false,
     title: "Nike.com — Product Display Page (PDP)",
     role: "Senior Frontend Engineer",
@@ -42,7 +42,7 @@ export const PROJECTS_ARY = [
     ghLink: "",
   },
   {
-    imgPath: workday,
+    imgPath: WORKDAY_IMG,
     isBlog: false,
     title: "Workday — Kira Internal Milestone & Tracking Tool",
     role: "Senior Frontend / Full Stack Engineer",
@@ -60,7 +60,7 @@ export const PROJECTS_ARY = [
     ghLink: "",
   },
   {
-    imgPath: northone,
+    imgPath: NORTHONE_IMG,
     isBlog: false,
     title: "NorthOne — Web & Mobile Banking Applications",
     role: "Senior Full Stack Engineer",
@@ -78,7 +78,7 @@ export const PROJECTS_ARY = [
     ghLink: "",
   },
   {
-    imgPath: azlo,
+    imgPath: AZLO_IMG,
     isBlog: false,
     title: "Azlo — Customer Onboarding Application and Services",
     role: "Senior Full Stack Engineer",
@@ -96,7 +96,7 @@ export const PROJECTS_ARY = [
     ghLink: "",
   },
   {
-    imgPath: allAboutHairReact,
+    imgPath: ALL_ABOUT_HAIR_REACT_IMG,
     isBlog: false,
     title: "Small Business - All About Hair (Happy Valley)",
     role: "Senior Full Stack Engineer",
@@ -114,7 +114,7 @@ export const PROJECTS_ARY = [
     ghLink: "https://github.com/79sphelps/all-about-hair-react",
   },
   {
-    imgPath: realEstateSite,
+    imgPath: REAL_ESTATE_SITE_IMG,
     isBlog: false,
     title: "Real Estate Broker Site - Tessa Goldy",
     role: "Senior Full Stack Engineer",
@@ -133,7 +133,7 @@ export const PROJECTS_ARY = [
     ghLink: "https://github.com/79sphelps/real-estate-rentals-frontend",
   },
   {
-    imgPath: smar,
+    imgPath: SMAR_IMG,
     isBlog: false,
     title: "SMAR Investments 1, LLC",
     role: "Senior Full Stack Engineer",
@@ -151,7 +151,7 @@ export const PROJECTS_ARY = [
     ghLink: "https://github.com/79sphelps/smar-investments-1-llc-frontend",
   },
   {
-    imgPath: allAboutHairAngular,
+    imgPath: ALL_ABOUT_HAIR_ANGULAR_IMG,
     isBlog: false,
     title: "Small Business - All About Hair (Happy Valley) (LEGACY)",
     role: "Senior Full Stack Engineer",
@@ -169,7 +169,7 @@ export const PROJECTS_ARY = [
     ghLink: "",
   },
   {
-    imgPath: eventPlanningNW,
+    imgPath: EVENT_PLANNING_NW_IMG,
     isBlog: false,
     title: "Small Business — Event Planning NW (Happy Valley) (LEGACY)",
     role: "Full Stack Engineer",
@@ -187,7 +187,7 @@ export const PROJECTS_ARY = [
     ghLink: "https://github.com/79sphelps/event-planning-nw-2",
   },
   {
-    imgPath: calendarAppReact,
+    imgPath: CALENDAR_APP_REACT_IMG,
     isBlog: false,
     title: "Personal — Calendar Application",
     role: "Full Stack Engineer",

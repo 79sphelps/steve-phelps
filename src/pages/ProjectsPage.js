@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
-import Particle from "../Particle";
-import BlurText from "../ReactBitsComponents/BlurText";
-import ProjectCard from "./ProjectCards";
+import Particle from "../components/ui/Particle";
+import BlurText from "../components/ui/ReactBitsComponents/BlurText";
+import ProjectCard from "../features/projects/ProjectCards";
 import {
   PROJECTS_ARY,
   PROJECTS_HEADING_TEXT,
   PROJECTS_HEADING_SUBTEXT,
   PROJECTS_TOAST_TEXT,
-} from "./project-data";
+} from "../lib/project-data";
 // import ToastMessage from "./ToastMessage";
 
 const Projects = () => {

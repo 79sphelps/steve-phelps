@@ -1,16 +1,19 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
-import BlurText from "../ReactBitsComponents/BlurText";
-import laptopImg from "../../Assets/about.png";
+import Particle from "../components/ui/Particle";
+import BlurText from "../components/ui/ReactBitsComponents/BlurText";
+// import laptopImg from "../../Assets/about.png";
 // import Github from "./Github";
-import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
+import Techstack from "../features/about/Techstack";
+import Aboutcard from "../features/about/AboutCard";
 // import Toolstack from "./Toolstack";
-import Skills from "./Skills";
-import { ABOUT_ME_HEADING, ABOUT_TECH_STACK_TEXT } from "./about-data";
+import Skills from "../features/about/Skills";
+import { ABOUT_ME_HEADING, ABOUT_TECH_STACK_TEXT } from "../lib/about-data";
 
-const About = () => {
+const LAPTOP_IMG = "./public/assets/about.png";
+
+
+const AboutPage = () => {
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -33,7 +36,7 @@ const About = () => {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img src={LAPTOP_IMG} alt="about" className="img-fluid" />
           </Col>
         </Row>
         <h1 className="project-heading">
@@ -57,4 +60,4 @@ const About = () => {
   );
 }
 
-export default About;
+export default AboutPage;
