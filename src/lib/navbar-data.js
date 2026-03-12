@@ -7,6 +7,7 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 
 export const PROFESSIONAL_TITLE = "Senior Frontend Engineer";
+
 export const GITHUB_URL = "https://github.com/79sphelps";
 
 export const ICON_BREAKPOINT_WIDTH = 1010;

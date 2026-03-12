@@ -19,6 +19,7 @@ import {
   HOME_CITY,
   HOME_STATE,
   HOME_HOW_I_WORK_TEXT,
+  PROFESSIONAL_SUBTITLE
 } from "../lib/home-profile-data";
 import { ABOUT_CORE_FOCUS_AREAS_TEXT, ABOUT_CORE_FOCUS_ARY } from "../lib/about-data";
 import HOME_LOGO_IMG from "../assets/home-main.svg";
@@ -40,10 +41,13 @@ const HomePage = () => {
                   👋🏻
                 </span>
               </h1>
+              
               <h3 className="heading-subtext">
                 {HOME_GREETING_MSG}
                 <strong className="main-name"> {HOME_NAME}</strong>.
               </h3>
+              <h2 className="heading-subtext">Title: {PROFESSIONAL_SUBTITLE}</h2>
+
               <h3 className="heading-subtext">{HOME_PROFILE_HEADING_1}</h3>
               <h3 className="heading-subtext">{HOME_PROFILE_HEADING_2}</h3>
               <h3 className="heading-subtext">{HOME_PROFILE_HEADING_3}</h3>

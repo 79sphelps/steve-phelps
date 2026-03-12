@@ -12,6 +12,7 @@ export const ABOUT_CORE_FOCUS_ARY = [
   'Cross-functional collaboration in fast-moving teams',
 ];
 
+// Senior Frontend Engineer
 export const ABOUT_PARAGRAPH_TEXT_ARRAY = [
   `I’m a Senior Frontend Engineer with 10+ years of experience building scalable, high-impact web applications, specializing in React, TypeScript, and user-facing product experiences that balance performance, accessibility, and polish.`,
   `Most recently at Nike, I worked on the core Product Display Page (PDP) — a high-traffic, revenue-critical surface — where I partnered closely with design, product, and QA to ship performant, accessible UI after a major refactor. The work demanded strong frontend architecture, attention to UX detail, and confidence shipping changes at scale.`,
@@ -30,6 +31,31 @@ export const ABOUT_PARAGRAPH_TEXT_ARRAY = [
     projects, technical study, and keeping current with modern React,
     TypeScript, and frontend best practices.`,
 ];
+
+// Senior Product Engineer
+// export const ABOUT_PARAGRAPH_TEXT_ARRAY = [
+//   `I’m a Senior Frontend Engineer with more than 10 years of experience building scalable, high-impact 
+//   product interfaces. My work focuses on the intersection of frontend architecture, product workflows, 
+//   and user experience, with a strong emphasis on building systems that perform well at scale and remain 
+//   maintainable over time.`,
+// `Most recently at Nike, I worked on the Product Display Page (PDP), one of the most heavily trafficked 
+// surfaces on Nike.com. Following a major refactor, I worked with a great team of devs, design, product, 
+// and QA to help ship performant, accessible UI improvements while maintaining stability on a revenue-critical 
+// part of the site. The work required thoughtful frontend architecture, careful coordination across the team, 
+// and attention to UX details that matter at scale.`,
+// `Earlier in my career I built fintech and SaaS product interfaces at Workday, NorthOne, and Azlo. These 
+// platforms supported banking products, onboarding systems, and internal planning tools, where reliability, 
+// data accuracy, and clear workflows were essential. Across these roles I focused on translating complex 
+// business requirements into intuitive, trustworthy user interfaces.`,
+// `My strongest skills sit at the intersection of frontend architecture, state management, and product 
+// thinking. I enjoy designing systems that allow teams to ship faster while maintaining code quality, 
+// performance, and accessibility. I’m also comfortable working across the stack when needed — collaborating 
+// on API design, integrating backend services, and thinking holistically about product reliability.`,
+// `More than anything, I enjoy solving ambiguous product problems, collaborating closely with designers and 
+// product managers, and continuously improving the frontend systems that teams rely on.`,
+// `Outside of work I continue sharpening my skills through hands-on projects, technical study, and exploring 
+// modern patterns in React, TypeScript, and frontend architecture.`,
+// ];
 
 export const ABOUT_OTHER_ACTIVITIES_TEXT = `Apart from developing, some other activities that I really enjoy are...`;
 
