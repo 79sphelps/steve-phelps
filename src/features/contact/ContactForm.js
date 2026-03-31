@@ -37,8 +37,7 @@ const ContactForm = () => {
       return /\S+@\S+\.\S+/g.test(value) ? "" : "(please provide email in valid format)";
     }
     if (name === "message") {
-        console.log('here: ', value)
-      return /^[A-Za-z ]{25,}$/g.test(value)
+      return /^[A-Za-z .,?]{25,}$/g.test(value)
         ? ""
         : "(minimum 25 characters; only alphanumeric chars)";
     }
@@ -46,19 +45,16 @@ const ContactForm = () => {
   };
 
   const validateAll = () => {
-    const newErrors = {
-      name: validateField("name", formData.name),
-      email: validateField("email", formData.email),
-      message: validateField("message", formData.message),
-    };
-    const newTouched = {
-      name: true,
-      email: true,
-      message: true,
-    };
-    setErrors(newErrors);
-    setTouched(newTouched);
-    return Object.keys(newErrors).length === 0;
+    const nE = {};
+    const nT = {};
+    (Object.keys(formData)).forEach(key => {
+      nT[key] = true;
+      const e = validateField(key, formData[key]);
+      if (e) nE[key] = e;
+    })
+    setErrors(nE);
+    setTouched(nT);
+    return Object.keys(nE).length === 0;
   };
 
   const handleChange = (e) => {
@@ -92,7 +88,7 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-        //   setStateMessage("Message sent!");
+          setStateMessage("Message sent!");
           setSubmitted(false);
           setTimeout(() => {
             setStateMessage(null);
@@ -107,8 +103,12 @@ const ContactForm = () => {
         },
       );
 
-    // Clears the form after sending the email
     e.target.reset();
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
@@ -150,13 +150,8 @@ const ContactForm = () => {
       {errors.message && (!!errors.message && (touched.message || submitted)) && (
         <div style={{ color: "tomato" }}>{errors.message}</div>
       )}
-      {/* <button type='submit' disabled={isSubmitting}>
-            Send
-        </button> */}
-
       <button
         type="submit"
-        disabled={(Object.values(errors).every(e => e === ''))}
         style={(Object.values(errors).every(e => e === '')) 
             ? { color: "dodgerblue" } 
             : { color: "tomato" }}
