@@ -30,6 +30,26 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const scriptId = "ai-widget-script";
+
+    // prevent duplicate injection
+    if (document.getElementById(scriptId)) return;
+
+    const script = document.createElement("script");
+    script.id = scriptId;
+    script.src = "https://ai-chat-and-lead-capture.onrender.com/widget.js";
+    script.async = true;
+    script.setAttribute("data-key", "test_user");
+
+    document.body.appendChild(script);
+
+    return () => {
+      // optional cleanup (usually NOT needed for widgets)
+      // script.remove();
+    };
+  }, []);
+
   return (
     <Router
       forceRefresh={true}
