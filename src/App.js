@@ -30,26 +30,26 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    // const scriptId = "ai-widget-script";
-    const scriptId = "ai-widget-root";
+  // useEffect(() => {
+  //   // const scriptId = "ai-widget-script";
+  //   const scriptId = "ai-widget-root";
 
-    // prevent duplicate injection
-    if (document.getElementById(scriptId)) return;
+  //   // prevent duplicate injection
+  //   if (document.getElementById(scriptId)) return;
 
-    const script = document.createElement("script");
-    script.id = scriptId;
-    script.src = "https://ai-chat-and-lead-capture.onrender.com/widget.js";
-    script.async = true;
-    script.setAttribute("data-key", "test_user");
+  //   const script = document.createElement("script");
+  //   script.id = scriptId;
+  //   script.src = "https://ai-chat-and-lead-capture.onrender.com/widget.js";
+  //   script.async = true;
+  //   script.setAttribute("data-key", "test_user");
 
-    document.body.appendChild(script);
+  //   document.body.appendChild(script);
 
-    return () => {
-      // optional cleanup (usually NOT needed for widgets)
-      // script.remove();
-    };
-  }, []);
+  //   return () => {
+  //     // optional cleanup (usually NOT needed for widgets)
+  //     // script.remove();
+  //   };
+  // }, []);
 
   return (
     <Router
