@@ -31,7 +31,8 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    const scriptId = "ai-widget-script";
+    // const scriptId = "ai-widget-script";
+    const scriptId = "ai-widget-root";
 
     // prevent duplicate injection
     if (document.getElementById(scriptId)) return;
