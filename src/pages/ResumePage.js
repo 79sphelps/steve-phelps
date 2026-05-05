@@ -7,7 +7,7 @@ import Particle from "../components/ui/Particle";
 import Loading from "../components/feedback/Loading";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
-import RESUME_PDF from "../assets/Resume(Trimmed)-StevePhelps-Jan2026-Frontend.pdf";
+import RESUME_PDF from "../assets/Resume(Trimmed)-StevePhelps-May2026-Frontend.pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
@@ -54,6 +54,16 @@ const ResumePage = () => {
             loading={<Loading />}
           >
             <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
+          </Document>
+        </Row>
+
+        <Row className="resume">
+          <Document
+            file={RESUME_PDF}
+            className="d-flex justify-content-center"
+            loading={<Loading />}
+          >
+            <Page pageNumber={3} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
 
