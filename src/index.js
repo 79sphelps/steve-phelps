@@ -2,9 +2,10 @@ import React from "react";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createRoot } from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
-import { router } from "./app/router";
+// import { RouterProvider } from "react-router-dom";
+// import { router } from "./app/router";
 // import "./index.css";
+
 const delay = () => import("./index.css");
 setTimeout(() => delay(), 0);
 

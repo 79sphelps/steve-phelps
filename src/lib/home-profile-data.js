@@ -1,5 +1,6 @@
 export const HOME_NAME = "Steve Phelps";
-export const PROFESSIONAL_SUBTITLE = "Senior Frontend Engineer | React, TypeScript | Product Systems & Frontend Architecture";
+// export const PROFESSIONAL_SUBTITLE = "Senior Frontend Engineer | React, TypeScript | Product Systems & Frontend Architecture";
+export const PROFESSIONAL_SUBTITLE = "Senior Frontend / Product Engineer | React, TypeScript | AI-Native UX & LLM Product Integrations | Design Systems";
 
 export const HOME_GREETING = "Welcome";
 
@@ -27,10 +28,18 @@ export const HOME_GREETING_MSG = "My name is ";
 // users can trust.
 // `;
 
+
+
+export const HOME_PROFILE_HEADING_0 = `
+I build AI-native product experiences and AI-augmented frontend systems using React and TypeScript—designing interfaces that incorporate LLM-driven outputs, streaming data, and intelligent workflows.
+`;
+
 export const HOME_PROFILE_HEADING_1 = `
 I’m a Senior Frontend Engineer specializing in product-driven frontend systems built 
 with React and TypeScript. I focus on building complex, high-impact user interfaces 
-that translate real product workflows into fast, reliable, and intuitive experiences.
+that translate real product workflows into fast, reliable, and intuitive experiences. 
+I also actively use AI-assisted development tools (Cursor, ChatGPT, Claude) to accelerate 
+engineering workflows, system design exploration, and implementation velocity.
 `;
 
 export const HOME_PROFILE_HEADING_2 = `

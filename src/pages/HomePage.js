@@ -9,6 +9,7 @@ import {
   HOME_NAME,
   HOME_GREETING,
   HOME_GREETING_MSG,
+  HOME_PROFILE_HEADING_0,
   HOME_PROFILE_HEADING_1,
   HOME_PROFILE_HEADING_2,
   HOME_PROFILE_HEADING_3,
@@ -47,7 +48,7 @@ const HomePage = () => {
                 <strong className="main-name"> {HOME_NAME}</strong>.
               </h3>
               <h2 className="heading-subtext">Title: {PROFESSIONAL_SUBTITLE}</h2>
-
+              <h3 className="heading-subtext">{HOME_PROFILE_HEADING_0}</h3>
               <h3 className="heading-subtext">{HOME_PROFILE_HEADING_1}</h3>
               <h3 className="heading-subtext">{HOME_PROFILE_HEADING_2}</h3>
               <h3 className="heading-subtext">{HOME_PROFILE_HEADING_3}</h3>
