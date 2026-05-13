@@ -11,6 +11,7 @@ import AZLO_IMG from "../assets/azlo.png";
 import SMAR_IMG from "../assets/smar-investments.png";
 import WORKDAY_IMG from "../assets/workday-kira.png";
 import NIKE_PDP_IMG from "../assets/nike-pdp.png";
+import AI_CHAT_AND_LEAD_CAPTURE_WIDGET from "../assets/ai-chat-and-lead-capture-widget.png";
 
 export const PROJECTS_HEADING_TEXT = "Recent Projects";
 
@@ -22,6 +23,29 @@ export const PROJECTS_HEADING_SUBTEXT =
   "Here are some of the React.js and Angular projects I've worked on:";
 
 export const PROJECTS_ARY = [
+  {
+    imgPath: AI_CHAT_AND_LEAD_CAPTURE_WIDGET,
+    isBlog: false,
+    title: "AI Chat & Lead Capture Widget",
+    role: "Senior Frontend / AI Product Engineer",
+    scope:
+      "Embeddable AI-powered portfolio and lead capture experience with custom intent routing, conversational UX flows, and reusable widget architecture.",
+    tech: "React, TypeScript, TailwindCSS v4, Vite, OpenAI API, Node.js, Express, Zustand-style state patterns, REST APIs, Accessibility (WCAG), Micro Widget Architecture",
+    description: `
+      Designed and built a fully embeddable AI chat and lead capture widget used to 
+      showcase portfolio experience, answer recruiter and client questions, and convert 
+      inbound interest into structured lead submissions. Architected a custom intent-matching 
+      system with configurable AI conversation flows, slot-based entity extraction, soft 
+      decision gating, contextual lead capture, and OpenAI-powered fallback responses. 
+      
+      Developed the widget as a portable frontend integration that can be embedded into 
+      external host applications while maintaining isolated styling, scalable state management, 
+      and production-ready conversational UX patterns. Focused heavily on accessibility, 
+      maintainability, conversational reliability, and extensible configuration-driven design.`,
+    // demoLink:
+    //   "https://steve-phelps-portfolio.onrender.com/",
+    ghLink: "",
+  },
   {
     imgPath: NIKE_PDP_IMG,
     isBlog: false,
