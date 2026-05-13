@@ -23,7 +23,7 @@ const ScrollToTop  = lazy(() => import("./utils/ScrollToTop"));
 // widget-bundle.js  → sets window.WidgetApp (your compiled React component)
 // widget.js         → the IIFE loader that mounts window.WidgetApp
 // They MUST load in this order. The loader is chained inside bundle.onload.
-const CHAT_STATUS   = false;
+const CHAT_STATUS   = true;
 const WIDGET_BASE   = "https://ai-chat-and-lead-capture.onrender.com";
 const BUNDLE_URL    = `${WIDGET_BASE}/widget-bundle.iife.js`;
 const LOADER_URL    = `${WIDGET_BASE}/widget.js`;

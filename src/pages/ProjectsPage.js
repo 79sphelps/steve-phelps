@@ -61,6 +61,7 @@ const Projects = () => {
                 description={item.description}
                 demoLink={item.demoLink}
                 ghLink={item.ghLink}
+                demoVideo={item.demoVideo}
               />
             </Col>
           ))}

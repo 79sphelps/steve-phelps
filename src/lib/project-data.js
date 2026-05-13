@@ -12,6 +12,7 @@ import SMAR_IMG from "../assets/smar-investments.png";
 import WORKDAY_IMG from "../assets/workday-kira.png";
 import NIKE_PDP_IMG from "../assets/nike-pdp.png";
 import AI_CHAT_AND_LEAD_CAPTURE_WIDGET from "../assets/ai-chat-and-lead-capture-widget.png";
+import AI_CHAT_AND_LEAD_CAPTURE_VIDEO from "../assets/ai-chat-and-lead-capture-widget.mov";
 
 export const PROJECTS_HEADING_TEXT = "Recent Projects";
 
@@ -44,6 +45,7 @@ export const PROJECTS_ARY = [
       maintainability, conversational reliability, and extensible configuration-driven design.`,
     // demoLink:
     //   "https://steve-phelps-portfolio.onrender.com/",
+    demoVideo: AI_CHAT_AND_LEAD_CAPTURE_VIDEO,
     ghLink: "",
   },
   {
