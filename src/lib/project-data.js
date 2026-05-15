@@ -13,6 +13,8 @@ import WORKDAY_IMG from "../assets/workday-kira.png";
 import NIKE_PDP_IMG from "../assets/nike-pdp.png";
 import AI_CHAT_AND_LEAD_CAPTURE_WIDGET from "../assets/ai-chat-and-lead-capture-widget.png";
 import AI_CHAT_AND_LEAD_CAPTURE_VIDEO from "../assets/ai-chat-and-lead-capture-widget.mov";
+import AI_SEARCH_RAG_HYBRID_VIDEO from "../assets/ai-search-rag-hybrid-demo.mov";
+import AI_SEARCH_RAG_HYBRID_IMAGE from "../assets/ai-search-rag-hybrid-demo.png";
 
 export const PROJECTS_HEADING_TEXT = "Recent Projects";
 
@@ -44,8 +46,35 @@ export const PROJECTS_ARY = [
       and production-ready conversational UX patterns. Focused heavily on accessibility, 
       maintainability, conversational reliability, and extensible configuration-driven design.`,
     // demoLink:
-    //   "https://steve-phelps-portfolio.onrender.com/",
+    //   "",
     demoVideo: AI_CHAT_AND_LEAD_CAPTURE_VIDEO,
+    ghLink: "",
+  },
+  {
+    imgPath: AI_SEARCH_RAG_HYBRID_IMAGE,
+    isBlog: false,
+    title: "AI Search + RAG Hybrid Assistant",
+    role: "Senior Full Stack / AI Engineer",
+    scope:
+      "Hybrid AI search and retrieval system combining semantic vector search, retrieval-augmented generation (RAG), and conversational answer orchestration.",
+    tech: "React, TypeScript, Node.js, Express, OpenAI API, Vector Embeddings, Retrieval-Augmented Generation (RAG), Semantic Search, Vite, TailwindCSS, REST APIs, Context Ranking, Prompt Orchestration",
+    description: `
+      Designed and built a hybrid AI search and retrieval assistant capable of combining 
+      semantic vector search with retrieval-augmented generation workflows to deliver 
+      context-aware conversational responses across structured and unstructured knowledge sources. 
+      
+      Architected a multi-stage retrieval pipeline including embedding generation, similarity-based 
+      document ranking, contextual chunk retrieval, prompt enrichment, and AI response synthesis. 
+      Implemented configurable search orchestration patterns to improve answer relevance, reduce 
+      hallucinations, and support scalable knowledge retrieval across large datasets.
+      
+      Developed reusable frontend search experiences with conversational UX patterns, loading-state 
+      orchestration, contextual source injection, and maintainable API abstraction layers. Focused 
+      heavily on retrieval accuracy, AI response grounding, extensible system architecture, and 
+      production-oriented developer workflows.`,
+    // demoLink:
+    //   "https://your-demo-link.com",
+    demoVideo: AI_SEARCH_RAG_HYBRID_VIDEO,
     ghLink: "",
   },
   {
