@@ -110,7 +110,7 @@ const App = () => {
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/project" element={<ProjectsPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/resume" element={<ResumePage />} />

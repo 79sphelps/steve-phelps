@@ -29,7 +29,7 @@ export const NAV_LINKS_ARY = [
         text: 'Contact',
     },
         {
-        to: '/project',
+        to: '/projects',
         icon: <AiOutlineFundProjectionScreen className='nav-item-icon' />,
         text: 'Projects',
     },
