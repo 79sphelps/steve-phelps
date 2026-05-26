@@ -27,7 +27,19 @@ const CHAT_STATUS   = true;
 const WIDGET_BASE   = "https://ai-chat-and-lead-capture.onrender.com";
 const BUNDLE_URL    = `${WIDGET_BASE}/widget-bundle.iife.js`;
 const LOADER_URL    = `${WIDGET_BASE}/widget.js`;
-const WIDGET_API_KEY = process.env.REACT_APP_WIDGET_API_KEY ?? "test_user";
+// const WIDGET_API_KEY = process.env.REACT_APP_WIDGET_API_KEY ?? "test_user";
+
+const WIDGET_API_KEY =
+  process.env.REACT_APP_WIDGET_API_KEY ??
+  "test_user";
+
+const WIDGET_TENANT_ID =
+  process.env.REACT_APP_WIDGET_TENANT_ID ??
+  "steve-portfolio";
+
+const WIDGET_CONFIG_PATH =
+  process.env.REACT_APP_WIDGET_CONFIG_PATH ??
+  "";
  
 const App = () => {
   const [load, updateLoad] = useState(true);
@@ -54,8 +66,8 @@ const App = () => {
     // ── Step 2: set API key via config object ────────────────────────────────
     // document.currentScript is null on dynamic injection so data-key won't
     // work here. The loader checks window.AI_WIDGET_CONFIG.apiKey first.
-    window.AI_WIDGET_CONFIG = { apiKey: WIDGET_API_KEY };
- 
+    // window.AI_WIDGET_CONFIG = { apiKey: WIDGET_API_KEY };
+
     // ── Step 3: load widget-bundle.js first (sets window.WidgetApp) ──────────
     const bundle   = document.createElement("script");
     bundle.id      = "ai-widget-bundle";
@@ -73,6 +85,24 @@ const App = () => {
       loader.src     = LOADER_URL;
       loader.async   = true;
  
+      // ── Runtime widget config ─────────────────────────────
+      loader.setAttribute(
+        "data-tenant-id",
+        WIDGET_TENANT_ID,
+      );
+
+      loader.setAttribute(
+        "data-key",
+        WIDGET_API_KEY,
+      );
+
+      if (WIDGET_CONFIG_PATH) {
+        loader.setAttribute(
+          "data-config",
+          WIDGET_CONFIG_PATH,
+        );
+      }
+
       loader.onerror = () =>
         console.error("[AI Widget] Failed to load loader from:", LOADER_URL);
  
