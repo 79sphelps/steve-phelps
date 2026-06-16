@@ -39,7 +39,7 @@ const WIDGET_TENANT_ID =
 
 const WIDGET_CONFIG_PATH =
   process.env.REACT_APP_WIDGET_CONFIG_PATH ??
-  "";
+  "personal/steve-personal";
  
 const App = () => {
   const [load, updateLoad] = useState(true);
