@@ -38,9 +38,9 @@ const WIDGET_API_KEY =
 //   process.env.REACT_APP_WIDGET_TENANT_ID ??
 //   "steve-portfolio";
 
-const WIDGET_CONFIG_PATH =
-  process.env.REACT_APP_WIDGET_CONFIG_PATH ??
-  "personal/steve-personal";
+// const WIDGET_CONFIG_PATH =
+//   process.env.REACT_APP_WIDGET_CONFIG_PATH ??
+//   "personal/steve-personal";
  
 const App = () => {
   const [load, updateLoad] = useState(true);
@@ -97,12 +97,12 @@ const App = () => {
         WIDGET_API_KEY,
       );
 
-      if (WIDGET_CONFIG_PATH) {
-        loader.setAttribute(
-          "data-config",
-          WIDGET_CONFIG_PATH,
-        );
-      }
+      // if (WIDGET_CONFIG_PATH) {
+      //   loader.setAttribute(
+      //     "data-config",
+      //     WIDGET_CONFIG_PATH,
+      //   );
+      // }
 
       loader.onerror = () =>
         console.error("[AI Widget] Failed to load loader from:", LOADER_URL);
