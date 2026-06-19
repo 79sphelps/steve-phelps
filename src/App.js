@@ -34,9 +34,9 @@ const WIDGET_API_KEY =
   "fdeCIYZoQtcJOuqiBTAcFqUwnjA3";
   // "fdeCIYZoQtcJOuqiBTAcFqUwnjA3";
 
-const WIDGET_TENANT_ID =
-  process.env.REACT_APP_WIDGET_TENANT_ID ??
-  "steve-portfolio";
+// const WIDGET_TENANT_ID =
+//   process.env.REACT_APP_WIDGET_TENANT_ID ??
+//   "steve-portfolio";
 
 const WIDGET_CONFIG_PATH =
   process.env.REACT_APP_WIDGET_CONFIG_PATH ??
@@ -87,10 +87,10 @@ const App = () => {
       loader.async   = true;
  
       // ── Runtime widget config ─────────────────────────────
-      loader.setAttribute(
-        "data-tenant-id",
-        WIDGET_TENANT_ID,
-      );
+      // loader.setAttribute(
+      //   "data-tenant-id",
+      //   WIDGET_TENANT_ID,
+      // );
 
       loader.setAttribute(
         "data-key",
