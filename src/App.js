@@ -32,7 +32,7 @@ const LOADER_URL    = `${WIDGET_BASE}/widget.js`;
 const WIDGET_API_KEY =
   process.env.REACT_APP_WIDGET_API_KEY ??
   // "fdeCIYZoQtcJOuqiBTAcFqUwnjA3";
-  "pk_02fe2ea47244441aa645836e56fcfb2a";
+  "pk_7f2a325159a14dfb8fffd78d26b7d805";
 
 // const WIDGET_TENANT_ID =
 //   process.env.REACT_APP_WIDGET_TENANT_ID ??
