@@ -3,7 +3,6 @@
 // import { Row, Col } from "react-bootstrap";
 // import { PROJECTS_TOAST_TEXT } from "../../lib/project-data";
 
-
 // function ToastMessage() {
 //   const [show, setShow] = useState(true);
 
