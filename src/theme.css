@@ -1,0 +1,22 @@
+@theme {
+
+  --color-primary:
+    #3b5cff;
+
+  --color-primary-soft:
+    #6677ff;
+
+  --color-surface:
+    rgba(255,255,255,0.06);
+
+  --color-border:
+    rgba(255,255,255,0.12);
+
+
+  --radius-card:
+    1.75rem;
+
+  --shadow-card:
+    0 20px 60px rgba(0,0,0,.25);
+
+}

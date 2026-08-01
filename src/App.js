@@ -6,6 +6,9 @@ import {
   Navigate,
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+// import "./index.css";
+
 import "./style.css";
 import "./App.css";
  
@@ -138,6 +141,7 @@ const App = () => {
         {/* <div className="App" id={load ? "no-scroll" : "scroll"}> */}
         <div className="App">
           <NavBar />
+  
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<HomePage />} />

@@ -1,85 +1,89 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-// import Particle from "../Particle";
+import { Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
+
 import {
   AiOutlinePhone,
   AiOutlineLinkedin,
   AiOutlineMail,
 } from "react-icons/ai";
-import BlurText from "../components/ui/ReactBitsComponents/BlurText";
+
+import Page from "../components/layout/Page";
+import Section from "../components/layout/Section";
+
 import ContactForm from "../features/contact/ContactForm";
-import { HOME_PHONE, HOME_EMAIL, HOME_LINKEDIN } from "../lib/home-profile-data";
-import "../app/styles/Contact.css";
+
+import {
+  HOME_PHONE,
+  HOME_EMAIL,
+  HOME_LINKEDIN,
+} from "../lib/home-profile-data";
+
 import CONTACT_IMG from "../assets/contact-img.svg";
 
+import "./ContactPage.css";
 
 const ContactPage = () => {
   return (
-    <section className="contact" id="contact">
-      <Container fluid className="contact-section">
-        {/* <Particle /> */}
-        <Container>
-          <Row style={{ justifyContent: "center", padding: "10px" }}>
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <BlurText
-                text="Get in Touch"
-                delay={200}
-                animateBy="words"
-                direction="top"
-                className="text-5xl mb-8 text-blue-800 justify-center"
-              />
-            </h1>
-            <div className='contact-info'>
-              <AiOutlinePhone className='contact-info-icon'/>
-              <b className="blue">-</b>
-              {HOME_PHONE}
-            </div>
-            <div className='contact-info'>
-              <AiOutlineMail className='contact-info-icon' />
-              <b className="blue">-</b>
-              <a href={`mailto:${HOME_EMAIL}`}>{HOME_EMAIL}</a>
-            </div>
-            <div className='contact-info'>
-              <AiOutlineLinkedin className='contact-info-icon' />
-              <b className="blue">-</b>
-              <a href={HOME_LINKEDIN}>Go to LinkedIn Profile</a>
-            </div>
-            <Col
-              size={12}
-              md={6}
-              style={{
-                justifyContent: "center",
-                paddingTop: "30px",
-                paddingBottom: "50px",
-              }}
-            >
+    <Page
+      title="Get in Touch"
+      subtitle="Whether you're looking for a Frontend Engineer, React consultant, or would simply like to connect, I'd love to hear from you."
+    >
+      {/* Contact Links */}
+
+      <Section>
+        <div className="contact-links">
+          <a className="contact-link-item" href={`tel:${HOME_PHONE}`}>
+            <AiOutlinePhone />
+
+            <span>{HOME_PHONE}</span>
+          </a>
+
+          <a className="contact-link-item" href={`mailto:${HOME_EMAIL}`}>
+            <AiOutlineMail />
+
+            <span>{HOME_EMAIL}</span>
+          </a>
+
+          <a
+            className="contact-link-item"
+            href={HOME_LINKEDIN}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiOutlineLinkedin />
+
+            <span>LinkedIn Profile</span>
+          </a>
+        </div>
+      </Section>
+
+      {/* Contact Content */}
+
+      <Section>
+        <div className="contact-main-card">
+          <Row className="align-items-center g-5">
+            <Col lg={5}>
               <TrackVisibility>
                 {({ isVisible = true }) => (
                   <img
-                    //   className={
-                    // isVisible ? "animate__animated animate__zoomIn" : ""
-                    //   }
                     src={CONTACT_IMG}
-                    alt="Contact Me"
+                    alt="Contact"
+                    className={`contact-image ${
+                      isVisible ? "contact-image-visible" : ""
+                    }`}
                   />
                 )}
               </TrackVisibility>
             </Col>
-            <Col
-              //   md={7}
-              style={{
-                justifyContent: "center",
-                paddingTop: "30px",
-                paddingBottom: "50px",
-              }}
-            >
+
+            <Col lg={7}>
               <ContactForm />
             </Col>
           </Row>
-        </Container>
-      </Container>
-    </section>
+        </div>
+      </Section>
+    </Page>
   );
 };
 

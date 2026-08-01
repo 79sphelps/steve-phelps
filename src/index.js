@@ -4,10 +4,10 @@ import reportWebVitals from "./reportWebVitals";
 import { createRoot } from "react-dom/client";
 // import { RouterProvider } from "react-router-dom";
 // import { router } from "./app/router";
-// import "./index.css";
+import "./index.css";
 
-const delay = () => import("./index.css");
-setTimeout(() => delay(), 0);
+// const delay = () => import("./index.css");
+// setTimeout(() => delay(), 0);
 
 const root = createRoot(document.getElementById("root"));
 root.render(

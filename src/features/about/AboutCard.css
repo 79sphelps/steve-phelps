@@ -1,0 +1,212 @@
+/* ============================
+   About Card Content
+   Premium SaaS Visual DNA
+============================ */
+
+/*
+  Parent component owns:
+  - background
+  - border
+  - shadow
+  - hover
+
+  This component owns:
+  - content spacing
+  - typography
+*/
+
+.about-card {
+  width: 100%;
+}
+
+.about-card-body {
+  padding: 0;
+}
+
+/* ============================
+   Content
+============================ */
+
+.about-card-content {
+  margin: 0;
+}
+
+/* ============================
+   Paragraphs
+============================ */
+
+.about-me-paragraph {
+  color: #475569;
+
+  font-size: 1.05rem;
+
+  line-height: 1.95;
+
+  margin-bottom: 22px;
+}
+
+.about-me-paragraph strong {
+  color: #0f172a;
+}
+
+/* ============================
+   Activities Heading
+============================ */
+
+.about-other-title {
+  margin-top: 40px;
+
+  margin-bottom: 22px;
+
+  font-size: 1.15rem;
+
+  font-weight: 700;
+
+  color: #0f172a;
+
+  letter-spacing: -0.02em;
+}
+
+.about-other-title::after {
+  content: "";
+
+  display: block;
+
+  margin-top: 10px;
+
+  width: 45px;
+
+  height: 3px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, #2563eb, #6366f1);
+}
+
+/* ============================
+   Activity List
+============================ */
+
+.about-activities-list {
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+.about-activity {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+
+  margin-bottom: 16px;
+
+  color: #475569;
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+
+  transition: color 0.25s ease;
+}
+
+.about-activity:hover {
+  color: #1e293b;
+}
+
+/* ============================
+   Icon
+============================ */
+
+.about-activity-icon {
+  color: #2563eb;
+
+  flex-shrink: 0;
+
+  margin-top: 5px;
+
+  font-size: 1rem;
+}
+
+/* ============================
+   Tablet
+============================ */
+
+@media (max-width: 991px) {
+  .about-me-paragraph {
+    font-size: 1rem;
+
+    line-height: 1.85;
+  }
+}
+
+/* ============================
+   Mobile
+============================ */
+
+@media (max-width: 767px) {
+  .about-me-paragraph {
+    font-size: 0.97rem;
+
+    line-height: 1.75;
+
+    margin-bottom: 18px;
+  }
+
+  .about-other-title {
+    margin-top: 28px;
+
+    margin-bottom: 18px;
+
+    font-size: 1.05rem;
+  }
+
+  .about-activity {
+    gap: 10px;
+
+    font-size: 0.95rem;
+
+    margin-bottom: 14px;
+  }
+}
+
+/* ============================
+   Small Phones
+============================ */
+
+@media (max-width: 480px) {
+  .about-me-paragraph {
+    font-size: 0.94rem;
+  }
+
+  .about-activity {
+    font-size: 0.92rem;
+  }
+}
+
+/* ============================
+   Mobile Content Spacing Update
+============================ */
+
+@media (max-width: 767px) {
+  .about-card-body {
+    padding-left: 14px;
+
+    padding-right: 14px;
+  }
+
+  .about-card-content {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-card-body {
+    padding-left: 8px;
+
+    padding-right: 8px;
+  }
+}

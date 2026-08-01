@@ -1,0 +1,232 @@
+/* ==========================================================
+   Github Section
+   Premium SaaS Visual DNA
+========================================================== */
+
+.github-section {
+  margin-top: 2rem;
+
+  margin-bottom: 4rem;
+}
+
+/* ==========================================================
+   Main Card
+========================================================== */
+
+.github-card {
+  position: relative;
+
+  overflow: hidden;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.94),
+    rgba(248, 250, 252, 0.86)
+  );
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(148, 163, 184, 0.55);
+
+  border-radius: 32px;
+
+  padding: 2.75rem;
+
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08),
+    0 12px 30px rgba(59, 130, 246, 0.08);
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.github-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(59, 130, 246, 0.55);
+
+  box-shadow: 0 35px 80px rgba(15, 23, 42, 0.12),
+    0 18px 40px rgba(59, 130, 246, 0.18);
+}
+
+/* subtle background glow */
+
+.github-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+
+  height: 220px;
+
+  border-radius: 50%;
+
+  top: -100px;
+
+  right: -100px;
+
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.14),
+    transparent 70%
+  );
+
+  pointer-events: none;
+}
+
+/* ==========================================================
+   Heading
+========================================================== */
+
+.github-heading {
+  position: relative;
+
+  z-index: 2;
+
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+.github-heading h1,
+.github-heading h2 {
+  color: #1e3a8a;
+
+  font-weight: 700;
+
+  letter-spacing: -0.03em;
+}
+
+.github-heading span {
+  color: #2563eb;
+}
+
+.github-subtitle {
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: 1rem;
+
+  font-size: 1.05rem;
+
+  color: #64748b;
+
+  max-width: 700px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  line-height: 1.8;
+}
+
+/* ==========================================================
+   Calendar
+========================================================== */
+
+.github-calendar-wrapper {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  justify-content: center;
+
+  width: 100%;
+
+  overflow-x: auto;
+
+  padding: 1rem 0.5rem 0.75rem;
+}
+
+.github-calendar-wrapper svg {
+  max-width: 100%;
+}
+
+.github-calendar-wrapper > div {
+  margin: 0 auto;
+}
+
+/* ==========================================================
+   Calendar Surface Enhancement
+========================================================== */
+
+.github-calendar-wrapper rect {
+  rx: 4;
+}
+
+/* ==========================================================
+   Scrollbar
+========================================================== */
+
+.github-calendar-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.github-calendar-wrapper::-webkit-scrollbar-track {
+  background: rgba(226, 232, 240, 0.6);
+
+  border-radius: 999px;
+}
+
+.github-calendar-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(96, 165, 250, 0.55);
+
+  border-radius: 999px;
+}
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+@media (max-width: 992px) {
+  .github-card {
+    padding: 2rem;
+
+    border-radius: 26px;
+  }
+}
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width: 768px) {
+  .github-section {
+    margin-top: 1rem;
+
+    margin-bottom: 2.5rem;
+  }
+
+  .github-card {
+    padding: 1.5rem;
+
+    border-radius: 24px;
+  }
+
+  .github-subtitle {
+    font-size: 0.95rem;
+
+    line-height: 1.65;
+  }
+}
+
+/* ==========================================================
+   Small Phones
+========================================================== */
+
+@media (max-width: 480px) {
+  .github-card {
+    padding: 1.1rem;
+
+    border-radius: 20px;
+  }
+
+  .github-subtitle {
+    font-size: 0.88rem;
+  }
+}

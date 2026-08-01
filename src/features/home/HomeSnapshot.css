@@ -1,0 +1,317 @@
+/* ==========================================================
+   Home Snapshot
+   Premium SaaS Visual DNA
+========================================================== */
+
+/* ==========================================================
+   Section Layout
+========================================================== */
+
+.home-snapshot-section {
+  position: relative;
+
+  width: 100%;
+
+  padding: 70px 0 80px;
+}
+
+.home-snapshot-section > .container {
+  position: relative;
+
+  z-index: 2;
+}
+
+/* ==========================================================
+   Main Snapshot Card
+========================================================== */
+
+.snapshot-card {
+  display: flex;
+
+  align-items: center;
+
+  padding: 42px;
+
+  border-radius: 32px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.92),
+    rgba(248, 250, 252, 0.82)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.32);
+
+  backdrop-filter: blur(24px);
+
+  -webkit-backdrop-filter: blur(24px);
+
+  box-shadow: 0 20px 55px rgba(15, 23, 42, 0.08),
+    0 40px 90px rgba(59, 130, 246, 0.06);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.snapshot-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(59, 130, 246, 0.35);
+
+  box-shadow: 0 35px 80px rgba(15, 23, 42, 0.12),
+    0 50px 100px rgba(59, 130, 246, 0.1);
+}
+
+/* ==========================================================
+   Content
+========================================================== */
+
+.snapshot-content {
+  padding: 10px 25px;
+}
+
+.snapshot-heading {
+  margin-bottom: 20px;
+
+  font-size: clamp(2rem, 4vw, 2.8rem);
+
+  font-weight: 750;
+
+  letter-spacing: -0.035em;
+
+  color: #0f172a;
+}
+
+.snapshot-heading span {
+  color: #2563eb;
+}
+
+.snapshot-description {
+  max-width: 720px;
+
+  color: #475569;
+
+  font-size: 1.05rem;
+
+  line-height: 1.85;
+}
+
+/* ==========================================================
+   Avatar
+========================================================== */
+
+.snapshot-avatar-wrapper {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.snapshot-avatar-card {
+  padding: 14px;
+
+  border-radius: 30px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.96),
+    rgba(241, 245, 249, 0.88)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.3);
+
+  backdrop-filter: blur(20px);
+
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.1);
+}
+
+.snapshot-avatar {
+  width: 220px;
+
+  max-width: 100%;
+
+  display: block;
+
+  border-radius: 22px;
+}
+
+/* ==========================================================
+   Social
+========================================================== */
+
+.snapshot-social {
+  text-align: center;
+
+  padding-top: 55px;
+}
+
+.snapshot-social h2 {
+  margin-bottom: 10px;
+
+  color: #0f172a;
+
+  font-size: clamp(1.5rem, 3vw, 2rem);
+
+  font-weight: 700;
+}
+
+.snapshot-social p {
+  color: #64748b;
+
+  font-size: 1rem;
+}
+
+.snapshot-social-links {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 14px;
+
+  list-style: none;
+
+  padding: 0;
+
+  margin-top: 25px;
+}
+
+.snapshot-social-item a {
+  width: 52px;
+
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.96),
+    rgba(248, 250, 252, 0.9)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.25);
+
+  color: #334155;
+
+  font-size: 1.3rem;
+
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+
+  transition: transform 0.25s ease, color 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.snapshot-social-item a:hover {
+  transform: translateY(-5px);
+
+  color: #2563eb;
+
+  border-color: rgba(59, 130, 246, 0.4);
+
+  box-shadow: 0 25px 50px rgba(37, 99, 235, 0.18);
+}
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+@media (max-width: 991px) {
+  .home-snapshot-section {
+    padding: 60px 0 70px;
+  }
+
+  .snapshot-card {
+    padding: 32px;
+  }
+
+  .snapshot-content {
+    padding: 10px;
+  }
+
+  .snapshot-avatar {
+    width: 190px;
+  }
+}
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width: 767px) {
+  .home-snapshot-section {
+    padding: 45px 0 55px;
+  }
+
+  .snapshot-card {
+    padding: 24px;
+
+    border-radius: 24px;
+  }
+
+  .snapshot-content {
+    text-align: center;
+  }
+
+  .snapshot-heading {
+    font-size: 1.8rem;
+  }
+
+  .snapshot-description {
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+  }
+
+  .snapshot-avatar-wrapper {
+    margin-top: 25px;
+  }
+
+  .snapshot-avatar {
+    width: 165px;
+  }
+
+  .snapshot-social {
+    padding-top: 40px;
+  }
+}
+
+/* ==========================================================
+   Small Phones
+========================================================== */
+
+@media (max-width: 480px) {
+  .snapshot-card {
+    padding: 18px;
+  }
+
+  .snapshot-heading {
+    font-size: 1.55rem;
+  }
+
+  .snapshot-description {
+    font-size: 0.9rem;
+  }
+
+  .snapshot-social-links {
+    gap: 10px;
+  }
+
+  .snapshot-social-item a {
+    width: 44px;
+
+    height: 44px;
+
+    border-radius: 14px;
+
+    font-size: 1.15rem;
+  }
+}

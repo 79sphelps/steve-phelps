@@ -1,16 +1,127 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+/* @import "tailwindcss";
 
+body {
+  background: black;
+} */
+
+@import "./theme.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-body {
+/* body {
   margin: 0;
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to left, rgb(5, 90, 42), rgb(16, 28, 21));
+} */
+  /* background-image: linear-gradient(to left, #708238, rgb(20 15 35)); */
   /* background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35)); */
   /* background-image: linear-gradient(to left, rgb(5, 90, 42), rgb(20 15 35)); */
-  background-image: linear-gradient(to left, rgb(5, 90, 42), rgb(16, 28, 21));
-  /* background-image: linear-gradient(to left, #708238, rgb(20 15 35)); */
+
+
+  @import "./theme.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #0f172a;
+  overflow-x: hidden;
+
+  background:
+    radial-gradient(
+      circle at 10% 15%,
+      rgba(96, 165, 250, 0.18),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 88% 12%,
+      rgba(99, 102, 241, 0.16),
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 75% 82%,
+      rgba(168, 85, 247, 0.12),
+      transparent 34%
+    ),
+    linear-gradient(
+      180deg,
+      #f9fbff 0%,
+      #f5f8ff 28%,
+      #edf4ff 65%,
+      #e8f1ff 100%
+    );
+
+  background-attachment: fixed;
+}
+
+/* subtle texture */
+
+body::before {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  pointer-events: none;
+  z-index: -2;
+
+  background-image:
+    linear-gradient(
+      rgba(148, 163, 184, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(148, 163, 184, 0.06) 1px,
+      transparent 1px
+    );
+
+  background-size: 72px 72px;
+
+  opacity: .65;
+}
+
+/* soft lighting */
+
+body::after {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  pointer-events: none;
+  z-index: -1;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(255,255,255,.65),
+      transparent 50%
+    );
+
+  opacity: .75;
 }

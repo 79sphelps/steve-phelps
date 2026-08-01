@@ -1,38 +1,48 @@
 .App {
-  text-align: center;
-}
+  position: relative;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  isolation: isolate;
 }
 
+/*
+  Creates a centered content column without changing
+  your Bootstrap Containers.
+*/
+.App::before {
+  content: "";
+
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+
+  left: 50%;
+
+  width: min(1500px, 96vw);
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+
+  z-index: -1;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.18),
+      rgba(255,255,255,.05)
+    );
+
+  border-left: 1px solid rgba(255,255,255,.28);
+  border-right: 1px solid rgba(255,255,255,.28);
+}
+
+/* remove CRA defaults */
+
+.App-logo,
+.App-header,
 .App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  all: unset;
 }

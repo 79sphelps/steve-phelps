@@ -1,0 +1,271 @@
+/* ============================
+   About Page Content
+   Premium SaaS Visual DNA
+============================ */
+
+/* ============================
+   Main Content
+============================ */
+
+.about-content-row {
+  margin-bottom: 90px;
+}
+
+/* ============================
+   About Card
+============================ */
+
+.about-description-column {
+  text-align: left;
+}
+
+.about-card-wrapper {
+  padding: 45px;
+
+  border-radius: 32px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.96),
+    rgba(248, 250, 252, 0.88)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.45);
+
+  backdrop-filter: blur(24px);
+
+  -webkit-backdrop-filter: blur(24px);
+
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08),
+    0 40px 90px rgba(59, 130, 246, 0.06);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card-wrapper:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 35px 80px rgba(15, 23, 42, 0.12),
+    0 50px 110px rgba(59, 130, 246, 0.1);
+}
+
+/* Existing AboutCard typography */
+
+.about-card-wrapper p {
+  color: #475569;
+
+  font-size: 1.08rem;
+
+  line-height: 1.9;
+}
+
+.about-card-wrapper strong {
+  color: #0f172a;
+}
+
+/* ============================
+   Image Card
+============================ */
+
+.about-image-column {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.about-image-card {
+  padding: 28px;
+
+  border-radius: 32px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.96),
+    rgba(241, 245, 249, 0.9)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.45);
+
+  backdrop-filter: blur(20px);
+
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.1);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 35px 75px rgba(15, 23, 42, 0.14);
+}
+
+.about-image {
+  max-height: 420px;
+
+  object-fit: contain;
+
+  border-radius: 22px;
+}
+
+/* ============================
+   Technology Section
+============================ */
+
+.about-tech-section {
+  margin-top: 70px;
+}
+
+.techstack-wrapper {
+  padding: 40px;
+
+  border-radius: 32px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.94),
+    rgba(248, 250, 252, 0.86)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.45);
+
+  backdrop-filter: blur(22px);
+
+  -webkit-backdrop-filter: blur(22px);
+
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+}
+
+.skills-wrapper {
+  margin-top: 55px;
+}
+
+/* ============================
+   Tech Stack Compatibility
+============================ */
+
+.tech-icons {
+  background: rgba(255, 255, 255, 0.82) !important;
+
+  border: 1px solid rgba(148, 163, 184, 0.35) !important;
+
+  color: #334155;
+
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tech-icons:hover {
+  transform: translateY(-5px) scale(1.03);
+
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.16);
+}
+
+/* ============================
+   Responsive
+============================ */
+
+@media (max-width: 991px) {
+  .about-content-row {
+    gap: 40px;
+  }
+
+  .about-image-column {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-content-row {
+    margin-bottom: 60px;
+  }
+
+  .about-card-wrapper {
+    padding: 25px;
+
+    border-radius: 24px;
+  }
+
+  .about-card-wrapper p {
+    font-size: 1rem;
+  }
+
+  .about-image-card {
+    padding: 20px;
+
+    border-radius: 24px;
+  }
+
+  .about-image {
+    max-height: 300px;
+  }
+
+  .techstack-wrapper {
+    padding: 25px;
+
+    border-radius: 24px;
+  }
+}
+
+.about-layout-row {
+  align-items: flex-start;
+}
+
+.about-story-card {
+  /* padding:45px; */
+  padding: 25px;
+
+  border-radius: 32px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(248, 250, 252, 0.88)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.45);
+
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+}
+
+.about-profile-column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.about-sidebar-card {
+  padding: 28px;
+
+  border-radius: 28px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(248, 250, 252, 0.88)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.45);
+
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+.about-sidebar-card h3 {
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.05em;
+
+  text-transform: uppercase;
+
+  color: #334155;
+
+  margin-bottom: 20px;
+}

@@ -1,10 +1,12 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
-import Particle from "../components/ui/Particle";
+import { Row, Col } from "react-bootstrap";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+
+import Page from "../components/layout/Page";
+import Section from "../components/layout/Section";
+
 import RotatingText from "../components/ui/ReactBitsComponents/RotatingText";
-import HomeSnapshot from "../features/home/HomeSnapshot";
-// import Type from "./Type";
+
 import {
   HOME_NAME,
   HOME_GREETING,
@@ -13,114 +15,125 @@ import {
   HOME_PROFILE_HEADING_1,
   HOME_PROFILE_HEADING_2,
   HOME_PROFILE_HEADING_3,
-  // HOME_INTERESTS_TEXT,
-  // HOME_INTERESTS_ARY,
   HOME_EMAIL,
   HOME_PHONE,
   HOME_CITY,
   HOME_STATE,
   HOME_HOW_I_WORK_TEXT,
-  PROFESSIONAL_SUBTITLE
+  PROFESSIONAL_SUBTITLE,
 } from "../lib/home-profile-data";
-import { ABOUT_CORE_FOCUS_AREAS_TEXT, ABOUT_CORE_FOCUS_ARY } from "../lib/about-data";
+
+import {
+  ABOUT_CORE_FOCUS_AREAS_TEXT,
+  ABOUT_CORE_FOCUS_ARY,
+} from "../lib/about-data";
+
 import HOME_LOGO_IMG from "../assets/home-main.svg";
 
+import HomeSnapshot from "../features/home/HomeSnapshot";
+
+import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
-        <Particle />
-        {/* <Container className="home-content" style={{ marginLeft: '0px', paddingLeft: '0px', border: '1px solid dodgerblue' }}> */}
-        <Container>
-          <Row>
-            {/* <Col md={7} className="home-header" style={{ marginLeft: '0px', paddingLeft: '0px', border: '1px solid dodgerblue' }}> */}
-            <Col className="home-header">
+    <Page pageClassName="home-page" containerClassName="home-container">
+      <Row className="align-items-center gy-5 home-hero-row">
+        {/* LEFT SIDE */}
+
+        <Col lg={7} xl={7} className="home-header">
+          <Section className="hero-card">
+            <div className="hero-introduction">
               <h1 className="heading-name">
                 {HOME_GREETING}
-                <span className="wave" role="img" aria-labelledby="wave">
+
+                <span className="wave" role="img" aria-label="wave">
                   👋🏻
                 </span>
               </h1>
-              
-              <h3 className="heading-subtext">
+
+              <h2 className="hero-name">
                 {HOME_GREETING_MSG}
                 <strong className="main-name"> {HOME_NAME}</strong>.
-              </h3>
-              <h2 className="heading-subtext">Title: {PROFESSIONAL_SUBTITLE}</h2>
-              <h3 className="heading-subtext">{HOME_PROFILE_HEADING_0}</h3>
-              <h3 className="heading-subtext">{HOME_PROFILE_HEADING_1}</h3>
-              <h3 className="heading-subtext">{HOME_PROFILE_HEADING_2}</h3>
-              <h3 className="heading-subtext">{HOME_PROFILE_HEADING_3}</h3>
-              <h3 className="heading-subtext">{HOME_HOW_I_WORK_TEXT}</h3>
-              <h3 className="heading-subtext" style={{ marginTop: "10px" }}>
-                {ABOUT_CORE_FOCUS_AREAS_TEXT}
-                <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                <RotatingText
-                  // texts={HOME_INTERESTS_ARY}
-                  texts={ABOUT_CORE_FOCUS_ARY}
-                  mainClassName="w-100 mt-1 px-2 sm:px-2 md:px-3 bg-blue-800 text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
-                  staggerFrom={"last"}
-                  initial={{ y: "100%" }}
-                  animate={{ y: 0 }}
-                  exit={{ y: "-120%" }}
-                  staggerDuration={0.025}
-                  splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                  // rotationInterval={2000}
-                  rotationInterval={5000}
-                />
-                </div>
-              </h3>
-              {/* <Type /> */}
-              <div>
-                {/* <div style={{ padding: '50px', textAlign: "left" }}> */}
-                {/* <ul class="information margin-tb-30"> */}
-                {/* <ul style={{ fontSize: "1.5rem" }}> */}
-                {/* <ul style={{ fontSize: "20px" }}> */}
-                {/* <ul className="home-contact-text"> */}
-                <ul>
-                  <li>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
-                      <AiOutlinePhone className="home-contact-info-icon" />
-                      <b className="blue" style={{ marginRight: "5px" }}>
-                        -
-                      </b>
-                      {HOME_PHONE}
-                    </div>
-                  </li>
-                  <li>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
-                      <AiOutlineMail className="home-contact-info-icon" />
-                      <b className="blue" style={{ marginRight: "5px" }}>
-                        -
-                      </b>
-                      {HOME_EMAIL}
-                    </div>
-                  </li>
-                  <li>
-                    <b className="blue" style={{ marginRight: "5px" }}>
-                      CITY:{" "}
-                    </b>
-                    {HOME_CITY}
-                  </li>
-                  <li>
-                    <b className="blue" style={{ marginRight: "5px" }}>
-                      STATE:{" "}
-                    </b>
-                    {HOME_STATE}
-                  </li>
-                </ul>
-              </div>
-            </Col>
-            <Col md={5} className="home-right-hero-img">
-              <img src={HOME_LOGO_IMG} alt="home pic" className="img-fluid" />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
+              </h2>
+
+              <p className="hero-title">{PROFESSIONAL_SUBTITLE}</p>
+            </div>
+
+            <div className="hero-summary">
+              <p>{HOME_PROFILE_HEADING_0}</p>
+
+              <p>{HOME_PROFILE_HEADING_1}</p>
+
+              <p>{HOME_PROFILE_HEADING_2}</p>
+
+              <p>{HOME_PROFILE_HEADING_3}</p>
+
+              <p className="hero-work-style">{HOME_HOW_I_WORK_TEXT}</p>
+            </div>
+          </Section>
+        </Col>
+
+        {/* RIGHT SIDE */}
+
+        <Col lg={5} xl={5} className="home-right-hero-img">
+          <Section className="hero-image-wrapper">
+            <img
+              src={HOME_LOGO_IMG}
+              alt="Steve Phelps"
+              className="img-fluid hero-image"
+            />
+          </Section>
+
+          {/* Focus */}
+
+          <div className="hero-focus-card">
+            <div className="hero-focus-title">
+              {ABOUT_CORE_FOCUS_AREAS_TEXT}
+            </div>
+
+            <div className="hero-rotating-wrapper">
+              <RotatingText
+                texts={ABOUT_CORE_FOCUS_ARY}
+                mainClassName="hero-rotating-text"
+                rotationInterval={5000}
+              />
+            </div>
+          </div>
+
+          {/* Contact */}
+
+          <div className="hero-contact-card">
+            <div className="hero-contact-title">Contact</div>
+
+            <div className="hero-contact-item">
+              <AiOutlinePhone className="home-contact-info-icon" />
+
+              <span>{HOME_PHONE}</span>
+            </div>
+
+            <div className="hero-contact-item">
+              <AiOutlineMail className="home-contact-info-icon" />
+
+              <span>{HOME_EMAIL}</span>
+            </div>
+
+            <div className="hero-contact-item">
+              <span className="hero-contact-label">City</span>
+
+              <span>{HOME_CITY}</span>
+            </div>
+
+            <div className="hero-contact-item">
+              <span className="hero-contact-label">State</span>
+
+              <span>{HOME_STATE}</span>
+            </div>
+          </div>
+        </Col>
+      </Row>
+
       <HomeSnapshot />
-    </section>
+    </Page>
   );
 };
 

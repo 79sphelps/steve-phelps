@@ -1,122 +1,76 @@
 export const HOME_NAME = "Steve Phelps";
-// export const PROFESSIONAL_SUBTITLE = "Senior Frontend Engineer | React, TypeScript | Product Systems & Frontend Architecture";
-export const PROFESSIONAL_SUBTITLE = "Senior Frontend / Product Engineer | React, TypeScript | AI-Native UX & LLM Product Integrations | Design Systems";
+
+export const PROFESSIONAL_SUBTITLE =
+  "Senior Frontend / Product Engineer | React, TypeScript | AI-Enhanced Experiences & Modern UI Architecture";
 
 export const HOME_GREETING = "Welcome";
 
 export const HOME_GREETING_MSG = "My name is ";
 
-
-// export const HOME_PROFILE_HEADING_1 = `
-// I'm primarily a Senior Frontend Engineer who can work across the stack when needed.
-// I build scalable, high-quality web applications that turn complex requirements 
-// into reliable, intuitive user experiences.
-// `;
-
-// export const HOME_PROFILE_HEADING_2 = `
-// With 10+ years of experience working across consumer and
-// enterprise platforms—including Nike, Workday, and fintech
-// products—I specialize in React, TypeScript, and frontend
-// architecture for mission-critical systems. I’m comfortable
-// owning features end-to-end, collaborating closely with product
-// and design, and delivering software that holds up under
-// real-world usage.
-// `;
-
-// export const HOME_PROFILE_HEADING_3 = `
-// I focus on clarity, performance, and maintainability—building software teams and 
-// users can trust.
-// `;
-
-
-
 export const HOME_PROFILE_HEADING_0 = `
-I build AI-native product experiences and AI-augmented frontend systems using React and TypeScript—designing interfaces that incorporate LLM-driven outputs, streaming data, and intelligent workflows.
+I’m a Senior Frontend Engineer focused on building modern product experiences with React, TypeScript, and thoughtful UI architecture. I specialize in creating intuitive interfaces that simplify complex workflows and help users accomplish meaningful goals.
 `;
 
 export const HOME_PROFILE_HEADING_1 = `
-I’m a Senior Frontend Engineer specializing in product-driven frontend systems built 
-with React and TypeScript. I focus on building complex, high-impact user interfaces 
-that translate real product workflows into fast, reliable, and intuitive experiences. 
-I also actively use AI-assisted development tools (Cursor, ChatGPT, Claude) to accelerate 
-engineering workflows, system design exploration, and implementation velocity.
+I build scalable frontend systems for complex applications — combining strong engineering fundamentals, product thinking, and modern development practices. I have experience designing component architectures, data-driven interfaces, and AI-enhanced workflows that improve both user experience and engineering velocity.
 `;
 
 export const HOME_PROFILE_HEADING_2 = `
-With over 10 years of experience across consumer and fintech platforms—including Nike, 
-Workday, and NorthOne—I’ve worked on high-traffic product surfaces, data-driven dashboards, 
-and mission-critical application workflows.
+With 10+ years of experience across consumer, enterprise, and fintech platforms — including Nike, Workday, NorthOne, and Azlo — I’ve contributed to high-impact products serving real-world users at scale. My background includes customer-facing applications, secure financial workflows, dashboards, and complex business systems.
 `;
 
 export const HOME_PROFILE_HEADING_3 = `
-I care deeply about frontend architecture, performance, accessibility, and long-term 
-maintainability, and I enjoy working closely with product and design teams to ship 
-software that holds up under real-world usage.
+I care deeply about frontend architecture, accessibility, performance, and maintainable codebases. I enjoy partnering with product and design teams to turn ambiguous requirements into polished, reliable software.
 `;
 
 export const HOME_HOW_I_WORK_TEXT = `
-I work best in close collaboration with design and product, focusing on clarity, 
-maintainability, and user trust. I value simple solutions, strong UI foundations, 
-and shipping incrementally with quality.
+I work best on collaborative product teams where engineering, design, and product work closely together. I value clear communication, thoughtful architecture, incremental delivery, and building experiences users can trust.
 `;
 
 export const HOME_INTERESTS_TEXT = "I'm passionate about...";
+
 export const HOME_INTERESTS_ARY = [
+  "Frontend Architecture,",
+  "AI-Enhanced Applications,",
   "Performance Optimization,",
-  // "AI integration Strategy,",
-  "Application Architecture,",
+  "Component Design Systems,",
   "State Management Patterns,",
-  "Component Design,",
   "and Intuitive UX",
 ];
 
 export const HOME_PHONE = "503-462-2135";
+
 export const HOME_EMAIL = "79sphelps@gmail.com";
+
 export const HOME_CITY = "Happy Valley";
+
 export const HOME_STATE = "Oregon";
+
 export const HOME_LINKEDIN =
   "https://www.linkedin.com/in/steve-phelps-1614192b/";
 
-// export const HOME_PROFILE_SNAPSHOT_TEXT = `
-// Full Stack Developer with 10+ years of experience building
-// high-performance React/Next.js and Angular applications,
-// specializing in modern JavaScript/TypeScript ecosystems,
-// delivering impactful solutions with React.js, Next.js, Node.js,
-// and Express. Experienced across the full stack (with some AWS) and
-// passionate about scalable state management, performance
-// optimization, intuitive UI design, and leveraging AI tools to
-// accelerate delivery and innovation.
-// `;
+// Product Engineer Snapshot
 
-// Senior React Developer - Description
-// export const HOME_PROFILE_SNAPSHOT_TEXT = `
-// I’m a Senior Frontend Engineer with 10+ years of experience building high-impact,
-// customer-facing web applications using React and TypeScript.
-// I specialize in translating complex business and financial workflows into clean,
-// performant, and accessible user experiences. I’ve worked on large-scale,
-// revenue-critical products at companies like Nike, Workday, NorthOne, and Azlo,
-// collaborating closely with product, design, and engineering teams to ship reliable
-// UI at scale.
-// I’m product-minded, frontend-focused, and comfortable owning features end-to-end —
-// from architecture and implementation to polish, performance, and accessibility.
-// `;
-
-// Frontend Product Engineer - Description
 export const HOME_PROFILE_SNAPSHOT_TEXT = `
 I’m a Senior Frontend Engineer with 10+ years of experience building scalable, 
-high-impact product interfaces using React and TypeScript. My work focuses on 
-translating complex business workflows and data-driven systems into clean, 
-performant, and accessible user experiences.
-I’ve contributed to large-scale consumer and fintech products at companies like 
-Nike, Workday, NorthOne, and Azlo, building interfaces that support everything 
-from high-traffic ecommerce surfaces to secure banking workflows.
-I’m particularly interested in frontend architecture, performance optimization, 
-and complex product systems, and I enjoy owning features end-to-end — from 
-technical design and implementation through polish, performance, and long-term 
-maintainability.
+high-quality product interfaces using React and TypeScript.
+
+I specialize in transforming complex workflows, data-heavy applications, and 
+business requirements into clean, performant, and accessible user experiences. 
+My background includes large-scale consumer products, enterprise platforms, 
+and fintech applications at companies including Nike, Workday, NorthOne, and Azlo.
+
+I bring a product-focused mindset to engineering — partnering closely with 
+design and product teams, owning features end-to-end, and building frontend 
+systems that are maintainable, reliable, and built for real users.
+
+I’m especially interested in modern frontend architecture, AI-enhanced 
+applications, performance optimization, and using emerging tools to improve 
+the way software is designed and delivered.
 `;
 
 export const HOME_SOCIALS_TEXT = "FIND ME ON";
+
 export const HOME_CONNECT_WITH_ME_TEXT = "Feel free to connect with me";
 
 export const HOME_SOCIALS_ARY = [
@@ -128,8 +82,4 @@ export const HOME_SOCIALS_ARY = [
     url: "https://www.linkedin.com/in/steve-phelps-1614192b/",
     icon: "linkedin",
   },
-  // {
-  //   url: "https://www.instagram.com/stevenlphelps/",
-  //   icon: "instagram",
-  // },
 ];

@@ -1,0 +1,19 @@
+:root {
+  --color-bg-primary: #101c15;
+  --color-bg-secondary: #1b2b20;
+
+  --color-primary: #0d6efd;
+  --color-accent: #6ee7b7;
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cbd5e1;
+
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+
+  --shadow-card:
+    0 20px 40px rgba(0,0,0,.25);
+
+  --transition:
+    all .3s ease;
+}

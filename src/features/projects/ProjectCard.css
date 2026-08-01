@@ -1,0 +1,309 @@
+/* ==========================================================
+   Project Card
+   Premium SaaS Visual DNA
+========================================================== */
+
+.project-card-view {
+  width: 100%;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  border-radius: 28px !important;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.96),
+    rgba(248, 250, 252, 0.82)
+  ) !important;
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(148, 163, 184, 0.55) !important;
+
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.1),
+    0 10px 25px rgba(59, 130, 246, 0.06);
+
+  color: #0f172a;
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.project-card-view:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(49, 70, 255, 0.55) !important;
+
+  box-shadow: 0 30px 65px rgba(15, 23, 42, 0.14),
+    0 15px 35px rgba(49, 70, 255, 0.16);
+}
+
+/* ==========================================================
+   Image
+========================================================== */
+
+.project-image-wrapper {
+  padding: 20px 20px 0;
+}
+
+.project-card-view img {
+  width: 100%;
+
+  height: 240px;
+
+  object-fit: cover;
+
+  border-radius: 22px;
+
+  border: 1px solid rgba(148, 163, 184, 0.35);
+
+  opacity: 0.96;
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card-view:hover img {
+  transform: scale(1.03);
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12);
+}
+
+/* ==========================================================
+   Body
+========================================================== */
+
+.project-card-body {
+  padding: 1.5rem 1.5rem 1.75rem;
+}
+
+.project-card-title {
+  color: #1e3a8a !important;
+
+  font-size: 1.35rem;
+
+  font-weight: 700;
+
+  letter-spacing: -0.02em;
+
+  margin-bottom: 1rem;
+}
+
+.project-card-text {
+  color: #475569;
+
+  font-size: 0.95rem;
+
+  line-height: 1.7;
+
+  margin-bottom: 1rem;
+}
+
+.project-card-text strong {
+  color: #1e293b;
+}
+
+/* ==========================================================
+   Buttons
+========================================================== */
+
+.project-buttons {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.75rem;
+
+  margin-top: 1.25rem;
+}
+
+.project-button {
+  display: flex !important;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 0.45rem;
+
+  border: none !important;
+
+  padding: 0.65rem 1rem !important;
+
+  border-radius: 999px !important;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  color: white !important;
+
+  background: linear-gradient(135deg, #3146ff, #6366f1) !important;
+
+  box-shadow: 0 12px 25px rgba(49, 70, 255, 0.25);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 18px 35px rgba(49, 70, 255, 0.35);
+}
+
+/* Secondary button support */
+
+.project-button.secondary {
+  background: rgba(241, 245, 249, 0.9) !important;
+
+  color: #334155 !important;
+
+  border: 1px solid rgba(148, 163, 184, 0.55) !important;
+}
+
+.project-button.secondary:hover {
+  background: white !important;
+
+  color: #3146ff !important;
+}
+
+/* ==========================================================
+   Video Modal
+========================================================== */
+
+.project-video-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 1rem;
+
+  background: rgba(15, 23, 42, 0.78);
+
+  backdrop-filter: blur(10px);
+}
+
+.project-video-modal {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 900px;
+
+  background: #0f172a;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+.project-video {
+  width: 100%;
+
+  display: block;
+}
+
+.project-video-close {
+  position: absolute;
+
+  top: 15px;
+
+  right: 15px;
+
+  z-index: 2;
+
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: white;
+
+  color: #0f172a;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================================
+   Large Screens
+========================================================== */
+
+@media (min-width: 1200px) {
+  .project-card-body {
+    padding: 1.75rem 1.75rem 2rem;
+  }
+}
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+@media (max-width: 992px) {
+  .project-card-view img {
+    height: 220px;
+  }
+
+  .project-card-body {
+    padding: 1.35rem;
+  }
+}
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width: 576px) {
+  .project-card-view {
+    border-radius: 24px !important;
+  }
+
+  .project-image-wrapper {
+    padding: 15px 15px 0;
+  }
+
+  .project-card-view img {
+    height: 190px;
+
+    border-radius: 18px;
+  }
+
+  .project-card-body {
+    padding: 1.2rem;
+  }
+
+  .project-card-title {
+    font-size: 1.15rem;
+  }
+
+  .project-card-text {
+    font-size: 0.88rem;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+  }
+
+  .project-button {
+    width: 100%;
+  }
+}

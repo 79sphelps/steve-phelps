@@ -2,79 +2,32 @@ export const ABOUT_ME_HEADING = "About Me";
 
 export const ABOUT_TECH_STACK_TEXT = "Professional Tool Stack";
 
-export const ABOUT_CORE_FOCUS_AREAS_TEXT = 'Core focus areas:';
+export const ABOUT_CORE_FOCUS_AREAS_TEXT = "Core focus areas:";
 
-// export const ABOUT_CORE_FOCUS_ARY = [
-//   'React, TypeScript, Next.js',
-//   'Design systems & component libraries',
-//   'Performance, accessibility, and UX quality',
-//   'Product-driven frontend architecture',
-//   'Cross-functional collaboration in fast-moving teams',
-// ];
 export const ABOUT_CORE_FOCUS_ARY = [
-  'AI-native user interfaces (LLM-driven UX patterns)',
-  'AI integration in production frontend systems',
-  'AI-assisted development workflows (Cursor, Claude)',
-  'Product-driven frontend architecture',
-  'Complex, data-rich UI systems',
-  'Performance, accessibility, and UX quality'
+  "React, TypeScript, and modern frontend architecture",
+  "AI-enhanced product experiences and intelligent workflows",
+  "Design systems and scalable component libraries",
+  "Complex data-driven application interfaces",
+  "Performance, accessibility, and UX quality",
+  "Product-focused engineering collaboration",
 ];
-
-
-// Senior Frontend Engineer
-// export const ABOUT_PARAGRAPH_TEXT_ARRAY = [
-//   `I’m a Senior Frontend Engineer with 10+ years of experience building scalable, high-impact web applications, specializing in React, TypeScript, and user-facing product experiences that balance performance, accessibility, and polish.`,
-//   `Most recently at Nike, I worked on the core Product Display Page (PDP) — a high-traffic, revenue-critical surface — where I partnered closely with design, product, and QA to ship performant, accessible UI after a major refactor. The work demanded strong frontend architecture, attention to UX detail, and confidence shipping changes at scale.`,
-//   `My strongest skills sit at the intersection of frontend
-//     architecture, state management, and product thinking. I care deeply
-//     about performance, accessibility, and long-term maintainability, and
-//     I’m comfortable taking ownership of features from early discovery
-//     through delivery and iteration. I work closely with product
-//     managers, designers, and backend engineers to ensure the UI isn’t
-//     just visually polished, but reliable and intuitive under real-world
-//     conditions.`,
-//   `Previously, I’ve built and maintained fintech and SaaS applications at Workday, NorthOne, and Azlo, delivering secure, data-driven interfaces for banking, onboarding, and internal planning workflows. Across roles, I’ve focused on translating complex business logic into intuitive, trustworthy user experiences.`,
-//   `I’m strongest on the frontend but comfortable working across the stack when needed — collaborating on API contracts, integrating services, and thinking end-to-end about product quality. I enjoy owning ambiguous problems, mentoring teammates, and continuously improving frontend systems, patterns, and developer experience.`,
-//   `I’m currently focused on Senior Frontend Engineer / Product Engineer roles where I can own meaningful UI surfaces, work closely with design and product, and help teams ship high-quality experiences at scale.`,
-//   `Outside of work, I continue sharpening my skills through hands-on
-//     projects, technical study, and keeping current with modern React,
-//     TypeScript, and frontend best practices.`,
-// ];
 
 export const ABOUT_PARAGRAPH_TEXT_ARRAY = [
-  `I’m a Senior Frontend / Product Engineer with 10+ years of experience building scalable, high-impact web applications, specializing in React and TypeScript. My focus is on designing and delivering frontend systems that translate complex product workflows into fast, intuitive, and reliable user experiences.`,
-  `Most recently at Nike, I worked on the core Product Display Page (PDP) — a high-traffic, revenue-critical surface — where I partnered closely with design, product, and QA to ship a fully refactored experience at scale. That work required strong frontend architecture, performance discipline, and careful attention to UX consistency under real-world traffic conditions.`,
-  `In recent work and exploration, I’ve expanded into AI-native product development and AI-augmented frontend systems, focusing on how large language models can be embedded into user experiences in meaningful ways. This includes designing interfaces that handle streaming or partial AI outputs, integrating LLM-driven workflows into product surfaces, and thinking carefully about latency, uncertainty, and trust in AI-generated content.`,
-  `I’ve also incorporated AI-assisted development workflows into my engineering process, using tools like ChatGPT, Claude, and Cursor-style environments to accelerate system design, explore architectural tradeoffs, and increase iteration speed while maintaining production-level code quality and engineering rigor.`,
-  `Across roles at Nike, Workday, NorthOne, and Azlo, I’ve consistently worked on high-scale, data-driven systems—from ecommerce surfaces to fintech onboarding and banking workflows—where reliability, performance, and clarity are critical.`,
-  `I’m strongest on the frontend but think in systems: collaborating on API design, structuring scalable architectures, and owning product experiences end-to-end. I enjoy working on ambiguous problems, improving developer velocity, and building interfaces that bridge traditional product systems with emerging AI-driven capabilities.`,
-  `Outside of work, I continue to deepen my understanding of modern frontend architecture, AI integration patterns, and the evolving role of AI in product engineering.`
-];
+  `I’m a Senior Frontend / Product Engineer with 10+ years of experience building scalable, high-impact web applications using React, TypeScript, and modern frontend architecture. I specialize in translating complex product requirements into fast, intuitive, and maintainable user experiences.`,
 
-// Senior Product Engineer
-// export const ABOUT_PARAGRAPH_TEXT_ARRAY = [
-//   `I’m a Senior Frontend Engineer with more than 10 years of experience building scalable, high-impact 
-//   product interfaces. My work focuses on the intersection of frontend architecture, product workflows, 
-//   and user experience, with a strong emphasis on building systems that perform well at scale and remain 
-//   maintainable over time.`,
-// `Most recently at Nike, I worked on the Product Display Page (PDP), one of the most heavily trafficked 
-// surfaces on Nike.com. Following a major refactor, I worked with a great team of devs, design, product, 
-// and QA to help ship performant, accessible UI improvements while maintaining stability on a revenue-critical 
-// part of the site. The work required thoughtful frontend architecture, careful coordination across the team, 
-// and attention to UX details that matter at scale.`,
-// `Earlier in my career I built fintech and SaaS product interfaces at Workday, NorthOne, and Azlo. These 
-// platforms supported banking products, onboarding systems, and internal planning tools, where reliability, 
-// data accuracy, and clear workflows were essential. Across these roles I focused on translating complex 
-// business requirements into intuitive, trustworthy user interfaces.`,
-// `My strongest skills sit at the intersection of frontend architecture, state management, and product 
-// thinking. I enjoy designing systems that allow teams to ship faster while maintaining code quality, 
-// performance, and accessibility. I’m also comfortable working across the stack when needed — collaborating 
-// on API design, integrating backend services, and thinking holistically about product reliability.`,
-// `More than anything, I enjoy solving ambiguous product problems, collaborating closely with designers and 
-// product managers, and continuously improving the frontend systems that teams rely on.`,
-// `Outside of work I continue sharpening my skills through hands-on projects, technical study, and exploring 
-// modern patterns in React, TypeScript, and frontend architecture.`,
-// ];
+  `Most recently at Nike, I worked on the core Product Display Page (PDP) — a high-traffic, revenue-critical customer experience. I partnered closely with engineering, product, design, and QA teams to deliver performant, accessible UI improvements following a major refactor. The work required strong architectural thinking, attention to detail, and confidence shipping changes on a platform used at significant scale.`,
+
+  `Throughout my career, I’ve focused on building frontend systems that balance engineering quality with real customer and business needs. My experience includes ecommerce platforms, fintech applications, onboarding systems, dashboards, and internal enterprise tools where reliability, performance, and clarity are essential.`,
+
+  `I’m also actively exploring how AI is changing the future of product engineering. I’ve built experience integrating AI-assisted workflows into my development process and exploring patterns for intelligent user interfaces, LLM-powered features, and experiences that help users accomplish complex tasks more effectively.`,
+
+  `My strongest skills sit at the intersection of frontend architecture, product thinking, and user experience. I enjoy designing scalable component systems, improving developer workflows, collaborating across disciplines, and owning features from early concepts through implementation, refinement, and long-term maintenance.`,
+
+  `Across roles at Nike, Workday, NorthOne, and Azlo, I’ve contributed to products ranging from large-scale ecommerce experiences to secure financial platforms. These experiences have strengthened my ability to navigate ambiguity, solve complex frontend problems, and build software that teams and users can trust.`,
+
+  `Outside of work, I continue sharpening my skills through hands-on projects, technical exploration, and staying current with modern React, TypeScript, AI-assisted development, and evolving frontend engineering practices.`,
+];
 
 export const ABOUT_OTHER_ACTIVITIES_TEXT = `Apart from developing, some other activities that I really enjoy are...`;
 
@@ -90,44 +43,9 @@ export const ABOUT_TECH_ARRAY = [
   "javascript",
   "typescript",
   "redux",
-  "reactquery",
+  "reactQuery",
   "graphql",
   "nodejs",
   "express",
   "angular",
 ];
-
-{
-  /* <p style={{ textAlign: "left" }}>
-In my recent role at Nike, I helped optimize the Product Display
-Page—core to the customer product discovery journey. Working as a
-senior React developer, I focused on performance, speed, and
-efficiency within a Next.js web shell and multiple micro frontends,
-directly impacting the shopping experience for millions of users.
-<br />
-<br />
-Before that, at Workday, I helped to re-architect an internal
-planning and milestone tracking project, merging Jira data with
-internal systems. By leveraging React, RTK, Material UI, and
-Node.js, I improved maintainability, streamlined workflows, and
-built robust visualizations with Recharts for enterprise-scale
-planning.
-<br />
-<br />
-At NorthOne, I assisted with enhancing and optimizing the front-end
-React.js and React Native banking applications, adding features like
-outgoing wire transfers and mobile check deposits while cleaning up
-significant technical debt. Earlier at Azlo, my work rebuilding the
-Angular onboarding flow using NgRX and RxJS boosted conversion
-rates, reduced customer support workload, and strengthened fraud
-protection.
-<br />
-<br />
-Earlier in my career at Intel and McAfee, I built internal tools,
-web dashboards, and web automation frameworks that improved product
-health visibility and optimized platform operations.
-<br />
-<br />
-Apart from developing, some other activities that I love to do!
-</p> */
-}

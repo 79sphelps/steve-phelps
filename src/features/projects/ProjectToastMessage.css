@@ -1,0 +1,274 @@
+/* ==========================================================
+   Project Toast
+   Premium SaaS Visual DNA
+========================================================== */
+
+.project-toast {
+  position: fixed;
+
+  top: 220px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: min(90vw, 520px);
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 1rem;
+
+  padding: 1.2rem 1.35rem;
+
+  border-radius: 24px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.96),
+    rgba(248, 250, 252, 0.88)
+  );
+
+  backdrop-filter: blur(20px);
+
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(148, 163, 184, 0.55);
+
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.15),
+    0 12px 30px rgba(49, 70, 255, 0.12);
+
+  z-index: 9999;
+
+  animation: toastSlideIn 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================================
+   Countdown Progress Bar
+========================================================== */
+
+.project-toast-progress {
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+
+  height: 4px;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  border-radius: 0 0 24px 24px;
+
+  background: rgba(49, 70, 255, 0.12);
+}
+
+.project-toast-progress::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+
+  background: linear-gradient(90deg, #3146ff, #6366f1);
+
+  transform-origin: left;
+
+  animation: toastProgress var(--toast-duration) linear forwards;
+}
+
+@keyframes toastProgress {
+  from {
+    transform: scaleX(1);
+  }
+
+  to {
+    transform: scaleX(0);
+  }
+}
+
+/* ==========================================================
+   Animation
+========================================================== */
+
+/* @keyframes toastSlideIn {
+
+
+    from {
+
+
+        opacity:0;
+
+
+        transform:
+
+            translate(-50%, -30px)
+            scale(.96);
+
+
+    }
+
+
+    to {
+
+
+        opacity:1;
+
+
+        transform:
+
+            translate(-50%, 0)
+            scale(1);
+
+
+    }
+
+
+} */
+@keyframes toastSlideIn {
+  from {
+    opacity: 0;
+
+    margin-top: -30px;
+
+    scale: 0.96;
+  }
+
+  to {
+    opacity: 1;
+
+    margin-top: 0;
+
+    scale: 1;
+  }
+}
+
+/* ==========================================================
+   Icon
+========================================================== */
+
+.project-toast-icon {
+  width: 42px;
+
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #3146ff, #6366f1);
+
+  color: white;
+
+  font-size: 1.2rem;
+
+  box-shadow: 0 10px 25px rgba(49, 70, 255, 0.3);
+}
+
+/* ==========================================================
+   Content
+========================================================== */
+
+.project-toast-content {
+  flex: 1;
+}
+
+.project-toast-title {
+  color: #1e3a8a;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  letter-spacing: -0.01em;
+
+  margin-bottom: 0.35rem;
+}
+
+.project-toast-message {
+  color: #475569;
+
+  font-size: 0.9rem;
+
+  line-height: 1.5;
+}
+
+/* ==========================================================
+   Close
+========================================================== */
+
+.project-toast-close {
+  background: none;
+
+  border: none;
+
+  color: #64748b;
+
+  font-size: 1.5rem;
+
+  cursor: pointer;
+
+  line-height: 1;
+
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.project-toast-close:hover {
+  color: #3146ff;
+
+  transform: scale(1.15);
+}
+
+/* ==========================================================
+   Hover Polish
+========================================================== */
+
+.project-toast:hover {
+  border-color: rgba(49, 70, 255, 0.35);
+
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.18),
+    0 15px 35px rgba(49, 70, 255, 0.16);
+}
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width: 576px) {
+  .project-toast {
+    top: 90px;
+
+    width: calc(100vw - 30px);
+
+    padding: 1rem;
+
+    border-radius: 20px;
+  }
+
+  .project-toast-icon {
+    width: 36px;
+
+    height: 36px;
+
+    font-size: 1rem;
+  }
+
+  .project-toast-title {
+    font-size: 0.9rem;
+  }
+
+  .project-toast-message {
+    font-size: 0.82rem;
+  }
+}

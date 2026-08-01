@@ -1,56 +1,63 @@
-import React, { useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { ToastContainer, toast } from "react-toastify";
-import Particle from "../components/ui/Particle";
-import BlurText from "../components/ui/ReactBitsComponents/BlurText";
-import ProjectCard from "../features/projects/ProjectCards";
+import React, { useCallback, useEffect, useState } from "react";
+import { Row, Col } from "react-bootstrap";
+
+import Page from "../components/layout/Page";
+import Section from "../components/layout/Section";
+
+import ProjectToastMessage from "../features/projects/ProjectToastMessage";
+import ProjectCard from "../features/projects/ProjectCard";
+
 import {
   PROJECTS_ARY,
   PROJECTS_HEADING_TEXT,
   PROJECTS_HEADING_SUBTEXT,
   PROJECTS_TOAST_TEXT,
 } from "../lib/project-data";
-// import ToastMessage from "./ToastMessage";
 
+import "./ProjectsPage.css";
+
+const SESSION_KEY = "projects_toast_seen_v1";
 
 const Projects = () => {
+  const [showToast, setShowToast] = useState(false);
+
   useEffect(() => {
-    // toast.info();
-    toast(PROJECTS_TOAST_TEXT);
+    const seen = sessionStorage.getItem(SESSION_KEY);
+
+    if (!seen) {
+      setShowToast(true);
+
+      sessionStorage.setItem(SESSION_KEY, "true");
+    }
+  }, []);
+
+  const handleToastClose = useCallback(() => {
+    setShowToast(false);
   }, []);
 
   return (
-    <Container fluid className="project-section">
-      <Particle />
-      <ToastContainer
-        position="top-center"
-        style={{ top: '230px'}}
-        autoClose={30000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick={false}
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-        // transition={Bounce}
-      />
-      {/* <ToastMessage /> */}
-      <Container>
-        <h1 className="project-heading">
-          <BlurText
-            text={PROJECTS_HEADING_TEXT}
-            delay={200}
-            animateBy="words"
-            direction="top"
-            className="text-5xl mb-8 text-blue-800 justify-center"
-          />
-        </h1>
-        <p style={{ color: "white" }}>{PROJECTS_HEADING_SUBTEXT}</p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+    <Page title={PROJECTS_HEADING_TEXT} subtitle={PROJECTS_HEADING_SUBTEXT}>
+      {showToast && (
+        <ProjectToastMessage
+          message={PROJECTS_TOAST_TEXT}
+          duration={6000}
+          onClose={handleToastClose}
+        />
+      )}
+
+      <Section>
+        <Row className="projects-grid">
           {PROJECTS_ARY.map((item, idx) => (
-            <Col lg={4} md={6} sm={12} className="project-card" key={idx}>
+            <Col
+              key={idx}
+              lg={4}
+              md={6}
+              sm={12}
+              className="project-column"
+              style={{
+                animationDelay: `${idx * 0.12}s`,
+              }}
+            >
               <ProjectCard
                 imgPath={item.imgPath}
                 isBlog={item.isBlog}
@@ -66,9 +73,9 @@ const Projects = () => {
             </Col>
           ))}
         </Row>
-      </Container>
-    </Container>
+      </Section>
+    </Page>
   );
-}
+};
 
 export default Projects;

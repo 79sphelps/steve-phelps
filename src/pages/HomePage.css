@@ -1,0 +1,523 @@
+/* ==========================================================
+   Home Page
+   Premium SaaS Visual DNA
+========================================================== */
+
+/* ==========================================================
+   Page Layout
+========================================================== */
+
+.home-page {
+  padding-top: 7.5rem;
+
+  overflow-x: hidden;
+}
+
+.home-container {
+  width: 100%;
+
+  /* max-width:100%; */
+
+  overflow-x: hidden;
+}
+
+.home-hero-row {
+  width: 100%;
+
+  /* margin-left:0;
+
+    margin-right:0; */
+}
+
+.home-header {
+  padding-top: 20px;
+}
+
+/* ==========================================================
+   Hero Content
+========================================================== */
+
+.hero-card {
+  width: 100%;
+
+  padding: 48px;
+}
+
+.hero-introduction {
+  margin-bottom: 34px;
+}
+
+.heading-name {
+  font-size: clamp(2.3rem, 5vw, 3.4rem);
+
+  font-weight: 800;
+
+  color: #0f172a;
+
+  margin-bottom: 18px;
+
+  line-height: 1.15;
+}
+
+.main-name {
+  color: #2563eb;
+}
+
+.hero-name {
+  font-size: 1.8rem;
+
+  line-height: 1.45;
+
+  font-weight: 500;
+
+  color: #334155;
+
+  margin-bottom: 18px;
+}
+
+.hero-title {
+  font-size: 1.15rem;
+
+  font-weight: 600;
+
+  color: #64748b;
+}
+
+/* ==========================================================
+   Wave
+========================================================== */
+
+.wave {
+  display: inline-block;
+
+  transform-origin: 70% 70%;
+
+  animation: wave-animation 2.1s infinite;
+}
+
+@keyframes wave-animation {
+  0%,
+  60%,
+  100% {
+    transform: rotate(0);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+/* ==========================================================
+   Summary
+========================================================== */
+
+.hero-summary {
+  color: #475569;
+
+  font-size: 1.06rem;
+
+  line-height: 1.9;
+}
+
+.hero-summary p {
+  margin-bottom: 20px;
+}
+
+.hero-work-style {
+  color: #0f172a;
+
+  font-weight: 700;
+}
+
+/* ==========================================================
+   Right Column
+========================================================== */
+
+.home-right-hero-img {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding-top: 70px;
+
+  gap: 1.75rem;
+}
+
+.home-right-hero-img .hero-focus-card,
+.home-right-hero-img .hero-contact-card {
+  width: 100%;
+}
+
+/* ==========================================================
+   Image
+========================================================== */
+
+.hero-image-wrapper {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 34px;
+}
+
+.hero-image {
+  max-height: 470px;
+
+  width: auto;
+
+  filter: drop-shadow(0 25px 35px rgba(37, 99, blue, 0.15));
+}
+
+/* ==========================================================
+   Focus Area
+========================================================== */
+
+.hero-focus-card {
+  width: 100%;
+
+  padding: 22px;
+
+  border-radius: 24px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(244, 247, 255, 0.95),
+    rgba(236, 243, 255, 0.75)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.hero-focus-title {
+  font-size: 0.78rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  color: #64748b;
+
+  margin-bottom: 14px;
+}
+
+.hero-rotating-wrapper {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 48px;
+}
+
+.hero-rotating-text {
+  color: #2563eb;
+
+  font-size: 1.2rem;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+/* ==========================================================
+   Contact
+========================================================== */
+
+.hero-contact-card {
+  width: 100%;
+
+  padding-top: 24px;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.hero-contact-title {
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  color: #0f172a;
+
+  margin-bottom: 16px;
+}
+
+.hero-contact-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #475569;
+
+  margin-bottom: 12px;
+
+  font-size: 0.95rem;
+}
+
+.hero-contact-label {
+  min-width: 58px;
+
+  color: #0f172a;
+
+  font-weight: 700;
+}
+
+.home-contact-info-icon {
+  color: #2563eb;
+
+  font-size: 1.15rem;
+
+  transition: 0.25s;
+}
+
+.home-contact-info-icon:hover {
+  transform: scale(1.15);
+}
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+@media (max-width: 991px) {
+  .home-page {
+    padding-top: 6.5rem;
+  }
+
+  .home-hero-row {
+    margin-left: 0;
+
+    margin-right: 0;
+  }
+
+  .home-header {
+    padding-top: 10px;
+  }
+
+  .home-right-hero-img {
+    padding-top: 30px;
+  }
+
+  .hero-image {
+    max-height: 400px;
+  }
+}
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width: 767px) {
+  .home-page {
+    padding-top: 7rem;
+
+    padding-left: 0;
+
+    padding-right: 0;
+  }
+
+  /* .home-container {
+
+        padding-left:12px;
+
+        padding-right:12px;
+
+    } */
+
+  .home-hero-row {
+    width: 100%;
+
+    margin-left: 0;
+
+    margin-right: 0;
+
+    text-align: center;
+  }
+
+  .home-header {
+    padding-top: 0;
+
+    width: 100%;
+  }
+
+  .hero-card {
+    padding: 28px 20px;
+
+    text-align: center;
+  }
+
+  .hero-introduction {
+    margin-bottom: 24px;
+  }
+
+  .heading-name {
+    font-size: 2.15rem;
+
+    text-align: center;
+  }
+
+  .hero-name {
+    font-size: 1.35rem;
+
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 1rem;
+
+    text-align: center;
+  }
+
+  .hero-summary {
+    font-size: 0.95rem;
+
+    line-height: 1.75;
+
+    text-align: center;
+  }
+
+  .hero-summary p {
+    margin-bottom: 16px;
+  }
+
+  .home-right-hero-img {
+    width: 100%;
+
+    padding-top: 15px;
+
+    gap: 1.25rem;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+
+    padding: 18px;
+  }
+
+  .hero-image {
+    max-height: 320px;
+  }
+
+  .hero-focus-card {
+    padding: 18px;
+
+    text-align: center;
+  }
+
+  .hero-focus-title {
+    text-align: center;
+  }
+
+  .hero-rotating-text {
+    font-size: 1.05rem;
+  }
+
+  .hero-contact-card {
+    text-align: center;
+  }
+
+  .hero-contact-item {
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+}
+
+/* ==========================================================
+   Small Phones
+========================================================== */
+
+@media (max-width: 480px) {
+  .home-page {
+    padding-top: 6.5rem;
+  }
+
+  /* .home-container {
+
+        padding-left:8px;
+
+        padding-right:8px;
+
+    } */
+
+  .hero-card {
+    padding: 22px 14px;
+
+    border-radius: 24px;
+  }
+
+  .heading-name {
+    font-size: 1.9rem;
+  }
+
+  .hero-name {
+    font-size: 1.2rem;
+  }
+
+  .hero-summary {
+    font-size: 0.9rem;
+  }
+
+  .hero-image {
+    max-height: 260px;
+  }
+
+  .hero-contact-item {
+    font-size: 0.88rem;
+
+    gap: 8px;
+  }
+}
+
+/* ==========================================================
+   Bootstrap Row Safety Fix
+========================================================== */
+
+/* @media(max-width:767px){
+
+
+    .row {
+
+        --bs-gutter-x:0;
+
+    }
+
+
+
+    .col,
+    [class*="col-"] {
+
+        padding-left:0;
+
+        padding-right:0;
+
+    }
+
+} */

@@ -1,0 +1,174 @@
+/* ==========================================================
+   Contact Form
+   Clean Premium SaaS Form Surface
+========================================================== */
+
+.contact-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1.5rem;
+
+  width: 100%;
+}
+
+/* ==========================================================
+   Fields
+========================================================== */
+
+.contact-field {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.contact-field label {
+  margin-bottom: 0.55rem;
+
+  color: #334155;
+
+  font-size: 0.9rem;
+
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+
+  padding: 0.95rem 1.1rem;
+
+  border-radius: 16px;
+
+  border: 1px solid rgba(148, 163, 184, 0.35);
+
+  background: rgba(248, 250, 252, 0.8);
+
+  color: #0f172a;
+
+  font-size: 1rem;
+
+  transition: 0.25s ease;
+}
+
+.contact-form textarea {
+  min-height: 180px;
+
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+
+  background: white;
+
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+/* ==========================================================
+   Errors
+========================================================== */
+
+.contact-error {
+  margin-top: 0.45rem;
+
+  color: #dc2626;
+
+  font-size: 0.82rem;
+}
+
+/* ==========================================================
+   Submit
+========================================================== */
+
+.contact-submit {
+  margin-top: 0.5rem;
+
+  padding: 1rem 1.75rem;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background: linear-gradient(135deg, #2563eb, #6366f1);
+
+  color: white;
+
+  font-weight: 700;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.25);
+}
+
+.contact-submit:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 25px 50px rgba(37, 99, 235, 0.35);
+}
+
+.contact-submit:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+/* ==========================================================
+   Status
+========================================================== */
+
+.contact-status {
+  margin-top: 1rem;
+
+  padding: 1rem;
+
+  border-radius: 14px;
+
+  font-weight: 600;
+}
+
+.contact-status.success {
+  background: #dcfce7;
+
+  color: #166534;
+}
+
+.contact-status.error {
+  background: #fee2e2;
+
+  color: #991b1b;
+}
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width: 768px) {
+  .contact-form {
+    gap: 1.15rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+
+    border-radius: 14px;
+  }
+
+  .contact-submit {
+    width: 100%;
+  }
+}

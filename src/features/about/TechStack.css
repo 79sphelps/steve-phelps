@@ -1,0 +1,139 @@
+/* ============================
+   Tech Stack
+   Sidebar Optimized Layout
+============================ */
+
+.tech-stack-grid {
+  width: 100%;
+
+  justify-content: center;
+
+  row-gap: 18px;
+}
+
+.tech-stack-column {
+  display: flex;
+}
+
+/* ============================
+   Card
+============================ */
+
+.tech-stack-card {
+  width: 100%;
+
+  min-height: 105px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 18px 12px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(248, 250, 252, 0.88)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.55);
+
+  border-radius: 22px;
+
+  backdrop-filter: blur(18px);
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.07);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.tech-stack-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(59, 130, 246, 0.45);
+
+  box-shadow: 0 25px 55px rgba(15, 23, 42, 0.12);
+}
+
+/* ============================
+   Icon
+============================ */
+
+.tech-stack-icon {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 2.4rem;
+
+  color: #2563eb;
+}
+
+.tech-stack-card:hover .tech-stack-icon {
+  transform: scale(1.08);
+}
+
+/* ============================
+   Label
+============================ */
+
+.tech-stack-name {
+  text-align: center;
+
+  color: #334155;
+
+  font-size: 0.78rem;
+
+  line-height: 1.25;
+
+  font-weight: 650;
+}
+
+/* ============================
+   Tablet
+============================ */
+
+@media (max-width: 992px) {
+  .tech-stack-icon {
+    font-size: 2.2rem;
+  }
+
+  .tech-stack-card {
+    min-height: 100px;
+  }
+}
+
+/* ============================
+   Mobile
+============================ */
+
+@media (max-width: 576px) {
+  .tech-stack-grid {
+    row-gap: 14px;
+  }
+
+  .tech-stack-card {
+    min-height: 95px;
+
+    padding: 14px 8px;
+
+    border-radius: 18px;
+  }
+
+  .tech-stack-icon {
+    font-size: 2rem;
+  }
+
+  .tech-stack-name {
+    font-size: 0.72rem;
+  }
+}
