@@ -5,7 +5,7 @@ import Page from "../components/layout/Page";
 import Section from "../components/layout/Section";
 
 import Aboutcard from "../features/about/AboutCard";
-import TechStack from "../features/about/TechStack";
+import TechnologyStack from "../features/about/TechnologyStack.js";
 import Skills from "../features/about/Skills";
 
 import { ABOUT_ME_HEADING } from "../lib/about-data";
@@ -59,7 +59,7 @@ const AboutPage = () => {
             <div className="about-sidebar-card">
               <h3>Technology Stack</h3>
 
-              <TechStack />
+              <TechnologyStack />
             </div>
           </Col>
         </Row>

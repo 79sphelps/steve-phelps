@@ -23,7 +23,7 @@ import {
 
 import { TbSparkles, TbBrain, TbRobot } from "react-icons/tb";
 
-import "./TechStack.css";
+import "./TechnologyStack.css";
 
 const TECH = [
   {
@@ -131,7 +131,7 @@ const TECH = [
   },
 ];
 
-const TechStack = () => {
+const TechnologyStack = () => {
   return (
     <Row className="tech-stack-grid">
       {TECH.map((tech, idx) => (
@@ -147,4 +147,4 @@ const TechStack = () => {
   );
 };
 
-export default TechStack;
+export default TechnologyStack;
