@@ -94,7 +94,7 @@
   align-items: center;
 }
 
-.about-image-card {
+/* .about-image-card {
   padding: 28px;
 
   border-radius: 22px;
@@ -114,6 +114,11 @@
   box-shadow: 0 30px 75px rgba(0, 0, 0, 0.4);
 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+.about-sidebar{
+    padding-top:24px;
+
+    border-top:1px solid rgba(148,163,184,.18);
 }
 
 .about-image-card:hover {
@@ -122,13 +127,25 @@
   box-shadow: 0 45px 90px rgba(0, 0, 0, 0.5);
 }
 
-.about-image {
+.about-image-wrapper{
+    display:flex;
+    justify-content:center;
+    padding:0 0 24px;
+}
+
+.about-image{
+    width:100%;
+    max-width:420px;
+    height:auto;
+}
+
+/* .about-image {
   max-height: 420px;
 
   object-fit: contain;
 
   border-radius: 16px;
-}
+} */
 
 /* ==========================================================
    Technology Section
@@ -191,11 +208,33 @@
    About Layout
 ========================================================== */
 
-.about-layout-row {
+/* .about-layout-row {
   align-items: flex-start;
 }
 
-.about-story-card {
+.about-story-column,
+.about-profile-column {
+  display: flex;
+} */
+
+.about-layout-row{
+    display:flex;
+    align-items:stretch;
+}
+
+.about-story-column,
+.about-profile-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.about-story-column > *,
+.about-profile-column > *{
+    flex:1;
+}
+
+
+/* .about-story-card {
   padding: 25px;
 
   border-radius: 22px;
@@ -209,16 +248,46 @@
   border: 1px solid rgba(148, 163, 184, 0.25);
 
   box-shadow: 0 30px 75px rgba(0, 0, 0, 0.35);
-}
+} */
+ /* .about-story-card {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  height: 100%;
+
+  padding: 25px;
+
+  border-radius: 22px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.86),
+    rgba(30, 41, 59, 0.72)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.25);
+
+  box-shadow: 0 30px 75px rgba(0, 0, 0, 0.35);
+} */
 
 /* ==========================================================
    Sidebar Cards
 ========================================================== */
 
-.about-profile-column {
+/* .about-profile-column {
   display: flex;
 
   flex-direction: column;
+
+  gap: 24px;
+} */
+.about-profile-column {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
 
   gap: 24px;
 }

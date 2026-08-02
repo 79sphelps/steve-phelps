@@ -35,9 +35,9 @@ const AboutPage = () => {
           ================================= */}
 
           <Col lg={7} className="about-story-column">
-            <div className="about-story-card">
-              <Aboutcard />
-            </div>
+            {/* <div className="about-story-card"> */}
+            <Aboutcard />
+            {/* </div> */}
           </Col>
 
           {/* ================================
@@ -47,7 +47,8 @@ const AboutPage = () => {
           <Col lg={5} className="about-profile-column">
             {/* Profile Image */}
 
-            <div className="about-image-card">
+            {/* <div className="about-image-card"> */}
+            <div className="about-image-wrapper">
               <img
                 src={LAPTOP_IMG}
                 alt="About"
@@ -57,7 +58,8 @@ const AboutPage = () => {
 
             {/* Technology Snapshot */}
 
-            <div className="about-sidebar-card">
+            {/* <div className="about-sidebar-card"> */}
+            <div className="about-sidebar">
               <h3>Technology Stack</h3>
 
               <TechnologyStack />

@@ -43,7 +43,8 @@ const HomePage = () => {
         {/* LEFT SIDE */}
 
         <Col lg={7} xl={7} className="home-header">
-          <Section className="hero-card">
+          {/* <Section className="hero-card"> */}
+          <Section>
             <div className="hero-introduction">
               {/* <h1 className="heading-name">
                 {HOME_GREETING}
@@ -92,12 +93,15 @@ const HomePage = () => {
         {/* RIGHT SIDE */}
 
         <Col lg={5} xl={5} className="home-right-hero-img">
-          <Section className="hero-image-wrapper">
-            <img
-              src={HOME_LOGO_IMG}
-              alt="Steve Phelps"
-              className="img-fluid hero-image"
-            />
+          {/* <Section className="hero-image-wrapper"> */}
+          <Section>
+            <div className="hero-image-wrapper">
+              <img
+                src={HOME_LOGO_IMG}
+                alt="Steve Phelps"
+                className="img-fluid hero-image"
+              />
+            </div>
           </Section>
 
           {/* Focus */}

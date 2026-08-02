@@ -57,13 +57,13 @@ const SkillCard = ({ title, skills }) => {
 const Skills = () => {
   return (
     <section className="skills-section">
-      <Row className="skills-grid g-4">
+      <Row className="skills-grid g-4 justify-content-center">
         {SKILL_GROUPS.map((group, index) => (
           <Col
             key={group.title}
             xs={12}
             md={6}
-            xl={3}
+            xl={4}
             className="skills-column"
             style={{
               animationDelay: `${index * 0.1}s`,

@@ -47,11 +47,11 @@ const TECH = [
     label: "Next.js",
     category: "Frontend",
   },
-  {
-    icon: <SiAngular />,
-    label: "Angular",
-    category: "Frontend",
-  },
+  // {
+  //   icon: <SiAngular />,
+  //   label: "Angular",
+  //   category: "Frontend",
+  // },
   {
     icon: <SiRedux />,
     label: "Redux / RTK",
@@ -99,16 +99,16 @@ const TECH = [
     label: "AI Engineering",
     category: "AI",
   },
-  {
-    icon: <TbSparkles />,
-    label: "Generative AI",
-    category: "AI",
-  },
-  {
-    icon: <TbRobot />,
-    label: "AI Agents",
-    category: "AI",
-  },
+  // {
+  //   icon: <TbSparkles />,
+  //   label: "Generative AI",
+  //   category: "AI",
+  // },
+  // {
+  //   icon: <TbRobot />,
+  //   label: "AI Agents",
+  //   category: "AI",
+  // },
   {
     icon: <SiAnthropic />,
     label: "Claude AI",
@@ -120,11 +120,11 @@ const TECH = [
     label: "Vite",
     category: "Tools",
   },
-  {
-    icon: <SiStorybook />,
-    label: "Storybook",
-    category: "Tools",
-  },
+  // {
+  //   icon: <SiStorybook />,
+  //   label: "Storybook",
+  //   category: "Tools",
+  // },
   {
     icon: <SiFramer />,
     label: "Framer Motion",
