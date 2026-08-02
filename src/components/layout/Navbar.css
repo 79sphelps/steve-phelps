@@ -2,9 +2,7 @@
    Premium Floating Smart Navbar
 ====================================== */
 
-
 .premium-navbar {
-
   position: fixed;
 
   top: 18px;
@@ -15,616 +13,305 @@
 
   width: min(1280px, calc(100% - 32px));
 
-  z-index:1000;
+  z-index: 1000;
 
+  padding: 14px 22px;
 
-  padding:14px 22px;
+  border-radius: 22px;
 
+  transition: transform 0.35s ease, opacity 0.35s ease, background 0.35s ease,
+    box-shadow 0.35s ease, border-color 0.35s ease;
 
-  border-radius:22px;
+  background: rgba(255, 255, 255, 0.72);
 
+  backdrop-filter: blur(24px);
 
-  transition:
-    transform .35s ease,
-    opacity .35s ease,
-    background .35s ease,
-    box-shadow .35s ease,
-    border-color .35s ease;
+  -webkit-backdrop-filter: blur(24px);
 
+  border: 1px solid rgba(148, 163, 184, 0.2);
 
-  background:
-    rgba(255,255,255,.72);
-
-
-  backdrop-filter:
-    blur(24px);
-
-
-  -webkit-backdrop-filter:
-    blur(24px);
-
-
-  border:
-    1px solid rgba(148,163,184,.20);
-
-
-  box-shadow:
-
-    0 15px 45px rgba(15,23,42,.08);
-
-
+  box-shadow: 0 15px 45px rgba(15, 23, 42, 0.08);
 }
-
-
 
 /* ======================================
    Scrolled Compact State
 ====================================== */
 
-
 .premium-navbar.scrolled {
+  background: rgba(255, 255, 255, 0.88);
 
+  border: 1px solid rgba(148, 163, 184, 0.3);
 
-  background:
-    rgba(255,255,255,.88);
-
-
-  border:
-    1px solid rgba(148,163,184,.30);
-
-
-  box-shadow:
-
-    0 18px 55px rgba(15,23,42,.14);
-
-
+  box-shadow: 0 18px 55px rgba(15, 23, 42, 0.14);
 }
-
-
 
 /* ======================================
    Hidden While Scrolling Down
 ====================================== */
 
-
 .premium-navbar.hidden {
+  transform: translate(-50%, -140%);
 
+  opacity: 0.2;
 
-  transform:
-
-    translate(-50%, -140%);
-
-
-  opacity:.2;
-
-
-  pointer-events:none;
-
-
+  pointer-events: none;
 }
-
-
 
 /* ======================================
    Brand
 ====================================== */
 
+.navbar-brand-wrapper {
+  display: flex;
 
-.navbar-brand-wrapper{
+  align-items: center;
 
+  gap: 14px;
 
-  display:flex;
+  color: #0f172a !important;
 
-  align-items:center;
+  font-weight: 700;
 
-  gap:14px;
+  font-size: 1rem;
 
-
-  color:#0f172a !important;
-
-
-  font-weight:700;
-
-
-  font-size:1rem;
-
-
-  letter-spacing:-.02em;
-
-
+  letter-spacing: -0.02em;
 }
 
+.navbar-avatar {
+  width: 44px;
 
+  height: 44px;
 
-.navbar-avatar{
+  object-fit: cover;
 
+  border-radius: 50%;
 
-  width:44px;
+  border: 2px solid rgba(255, 255, 255, 0.95);
 
-  height:44px;
-
-
-  object-fit:cover;
-
-
-  border-radius:50%;
-
-
-  border:
-
-    2px solid rgba(255,255,255,.95);
-
-
-  box-shadow:
-
-    0 10px 30px rgba(15,23,42,.12);
-
-
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
 }
-
-
 
 /* ======================================
    Navigation
 ====================================== */
 
+.navbar-nav {
+  align-items: center;
 
-.navbar-nav{
-
-
-  align-items:center;
-
-  gap:6px;
-
-
+  gap: 6px;
 }
 
-
-
-.navbar-nav .nav-item{
-
-  margin:0;
-
+.navbar-nav .nav-item {
+  margin: 0;
 }
 
+.premium-nav-link {
+  position: relative;
 
+  display: flex;
 
-.premium-nav-link{
+  align-items: center;
 
+  justify-content: center;
 
-  position:relative;
+  padding: 0.75rem 1.05rem !important;
 
+  color: #475569 !important;
 
-  display:flex;
+  font-weight: 600;
 
+  border-radius: 14px;
 
-  align-items:center;
-
-
-  justify-content:center;
-
-
-  padding:.75rem 1.05rem !important;
-
-
-  color:#475569 !important;
-
-
-  font-weight:600;
-
-
-  border-radius:14px;
-
-
-  transition:.28s ease;
-
-
+  transition: 0.28s ease;
 }
 
+.nav-link-content {
+  display: flex;
 
+  align-items: center;
 
-.nav-link-content{
-
-
-  display:flex;
-
-
-  align-items:center;
-
-
-  gap:8px;
-
-
+  gap: 8px;
 }
 
+.premium-nav-link:hover {
+  color: #3146ff !important;
 
-
-
-.premium-nav-link:hover{
-
-
-  color:#3146ff !important;
-
-
-  background:
-
-    rgba(49,70,255,.08);
-
-
+  background: rgba(49, 70, 255, 0.08);
 }
 
+.premium-nav-link.active {
+  color: #3146ff !important;
 
-
-
-.premium-nav-link.active{
-
-
-  color:#3146ff !important;
-
-
-  background:
-
-    rgba(49,70,255,.10);
-
-
+  background: rgba(49, 70, 255, 0.1);
 }
-
-
-
 
 /* ======================================
    Animated Active Indicator
 ====================================== */
 
+.premium-nav-link::after {
+  content: "";
 
-.premium-nav-link::after{
+  position: absolute;
 
+  left: 12px;
 
-  content:"";
+  right: 12px;
 
+  bottom: 6px;
 
-  position:absolute;
+  height: 2px;
 
+  border-radius: 999px;
 
-  left:12px;
+  transform: scaleX(0);
 
+  transform-origin: center;
 
-  right:12px;
+  transition: 0.25s ease;
 
-
-  bottom:6px;
-
-
-  height:2px;
-
-
-  border-radius:999px;
-
-
-  transform:scaleX(0);
-
-
-  transform-origin:center;
-
-
-  transition:.25s ease;
-
-
-  background:#3146ff;
-
-
+  background: #3146ff;
 }
-
-
-
 
 .premium-nav-link:hover::after,
-
-.premium-nav-link.active::after{
-
-
-  transform:scaleX(1);
-
-
+.premium-nav-link.active::after {
+  transform: scaleX(1);
 }
-
-
 
 /* ======================================
    Mobile Toggle
 ====================================== */
 
+.premium-toggler {
+  border: none !important;
 
-.premium-toggler{
+  padding: 4px;
 
-
-  border:none !important;
-
-
-  padding:4px;
-
-
-  box-shadow:none !important;
-
-
+  box-shadow: none !important;
 }
 
-
-
-.premium-toggler:focus{
-
-
-  box-shadow:none !important;
-
-
+.premium-toggler:focus {
+  box-shadow: none !important;
 }
 
+.premium-toggler span {
+  display: block;
 
+  width: 26px;
 
-.premium-toggler span{
+  height: 3px;
 
+  margin: 5px;
 
-  display:block;
+  border-radius: 999px;
 
-
-  width:26px;
-
-
-  height:3px;
-
-
-  margin:5px;
-
-
-  border-radius:999px;
-
-
-  background:#3146ff;
-
-
+  background: #3146ff;
 }
-
-
 
 /* ======================================
    Github Button
 ====================================== */
 
+.github-button {
+  display: flex !important;
 
-.github-button{
+  align-items: center;
 
+  justify-content: center;
 
-  display:flex !important;
+  gap: 8px;
 
+  margin-left: 12px;
 
-  align-items:center;
+  padding: 10px 18px !important;
 
+  border-radius: 14px !important;
 
-  justify-content:center;
+  border: 1px solid rgba(49, 70, 255, 0.18) !important;
 
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(245, 248, 255, 0.95)
+  ) !important;
 
-  gap:8px;
+  color: #3146ff !important;
 
+  font-weight: 600;
 
-  margin-left:12px;
-
-
-  padding:10px 18px !important;
-
-
-  border-radius:14px !important;
-
-
-
-  border:
-
-    1px solid rgba(49,70,255,.18) !important;
-
-
-
-  background:
-
-
-    linear-gradient(
-
-      135deg,
-
-      rgba(255,255,255,.8),
-
-      rgba(245,248,255,.95)
-
-    ) !important;
-
-
-
-  color:#3146ff !important;
-
-
-
-  font-weight:600;
-
-
-  transition:.28s ease;
-
-
+  transition: 0.28s ease;
 }
 
+.github-button:hover {
+  transform: translateY(-2px);
 
-
-.github-button:hover{
-
-
-  transform:
-
-    translateY(-2px);
-
-
-
-  box-shadow:
-
-
-    0 14px 34px rgba(49,70,255,.15);
-
-
+  box-shadow: 0 14px 34px rgba(49, 70, 255, 0.15);
 }
-
-
 
 /* ======================================
    Mobile Menu
 ====================================== */
 
+@media (max-width: 991px) {
+  .premium-navbar {
+    top: 12px;
 
-@media(max-width:991px){
+    width: calc(100% - 18px);
 
-
-  .premium-navbar{
-
-
-    top:12px;
-
-
-    width:
-
-      calc(100% - 18px);
-
-
-    padding:
-
-      14px 18px;
-
-
+    padding: 14px 18px;
   }
 
-
-
-  .premium-navbar.hidden{
-
-
-    transform:
-
-      translate(-50%, -130%);
-
-
+  .premium-navbar.hidden {
+    transform: translate(-50%, -130%);
   }
 
+  .navbar-collapse {
+    margin-top: 18px;
 
+    padding: 18px;
 
+    border-radius: 20px;
 
-  .navbar-collapse{
+    background: rgba(255, 255, 255, 0.94);
 
+    backdrop-filter: blur(22px);
 
-    margin-top:18px;
+    border: 1px solid rgba(148, 163, 184, 0.18);
 
-
-    padding:18px;
-
-
-    border-radius:20px;
-
-
-
-    background:
-
-      rgba(255,255,255,.94);
-
-
-
-    backdrop-filter:
-
-      blur(22px);
-
-
-
-    border:
-
-      1px solid rgba(148,163,184,.18);
-
-
-
-    box-shadow:
-
-      0 18px 45px rgba(15,23,42,.10);
-
-
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.1);
   }
 
+  .navbar-nav {
+    gap: 8px;
 
-
-
-  .navbar-nav{
-
-
-    gap:8px;
-
-
-    align-items:stretch !important;
-
-
+    align-items: stretch !important;
   }
 
+  .premium-nav-link {
+    justify-content: flex-start;
 
-
-
-  .premium-nav-link{
-
-
-    justify-content:flex-start;
-
-
-    padding:14px !important;
-
-
+    padding: 14px !important;
   }
 
+  .github-button {
+    margin-top: 14px;
 
-
-
-  .github-button{
-
-
-    margin-top:14px;
-
-
-    margin-left:0;
-
-
+    margin-left: 0;
   }
-
-
 }
-
-
 
 /* ======================================
    Small Phones
 ====================================== */
 
-
-@media(max-width:480px){
-
-
-  .navbar-brand-wrapper{
-
-
-    font-size:.88rem;
-
-
+@media (max-width: 480px) {
+  .navbar-brand-wrapper {
+    font-size: 0.88rem;
   }
 
+  .navbar-avatar {
+    width: 38px;
 
-
-  .navbar-avatar{
-
-
-    width:38px;
-
-
-    height:38px;
-
-
+    height: 38px;
   }
-
-
-
 }

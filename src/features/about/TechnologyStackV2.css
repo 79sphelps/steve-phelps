@@ -3,389 +3,248 @@
    Premium SaaS Visual DNA
 ========================================================== */
 
-
 /* ==========================================================
    Grid Layout
 ========================================================== */
 
 .tech-stack-grid {
+  width: 100%;
 
-  width:100%;
+  justify-content: center;
 
-  justify-content:center;
+  row-gap: 18px;
 
-  row-gap:18px;
+  margin-left: 0 !important;
 
+  margin-right: 0 !important;
 }
-
 
 .tech-stack-column {
+  display: flex;
 
-  display:flex;
+  justify-content: center;
 
+  align-items: stretch;
+
+  padding-left: 8px;
+
+  padding-right: 8px;
 }
-
-
 
 /* ==========================================================
    Card
 ========================================================== */
 
 .tech-stack-card {
+  position: relative;
 
-  position:relative;
+  overflow: hidden;
 
-  overflow:hidden;
+  width: 100%;
 
+  min-height: 105px;
 
-  width:100%;
+  display: flex;
 
+  flex-direction: column;
 
-  min-height:105px;
+  justify-content: center;
 
+  align-items: center;
 
-  display:flex;
+  gap: 10px;
 
-  flex-direction:column;
+  padding: 18px 12px;
 
-  justify-content:center;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.96),
+    rgba(248, 250, 252, 0.9)
+  );
 
-  align-items:center;
+  border: 1px solid rgba(148, 163, 184, 0.55);
 
+  border-radius: 22px;
 
-  gap:10px;
+  backdrop-filter: blur(20px);
 
+  -webkit-backdrop-filter: blur(20px);
 
-  padding:18px 12px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.07),
+    0 10px 25px rgba(59, 130, 246, 0.04);
 
-
-
-  background:
-
-    linear-gradient(
-      145deg,
-      rgba(255,255,255,.96),
-      rgba(248,250,252,.90)
-    );
-
-
-
-  border:
-
-    1px solid rgba(148,163,184,.55);
-
-
-
-  border-radius:22px;
-
-
-
-  backdrop-filter:
-
-    blur(20px);
-
-
-
-  -webkit-backdrop-filter:
-
-    blur(20px);
-
-
-
-  box-shadow:
-
-
-    0 15px 35px rgba(15,23,42,.07),
-
-
-    0 10px 25px rgba(59,130,246,.04);
-
-
-
-  transition:
-
-
-    transform .3s ease,
-
-
-    box-shadow .3s ease,
-
-
-    border-color .3s ease;
-
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
-
-
-
 
 /* ==========================================================
    Soft Glow Accent
 ========================================================== */
 
 .tech-stack-card::before {
+  content: "";
 
-  content:"";
+  position: absolute;
 
+  width: 110px;
 
-  position:absolute;
+  height: 110px;
 
+  right: -45px;
 
-  width:110px;
+  top: -45px;
 
+  border-radius: 50%;
 
-  height:110px;
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.16),
+    transparent 70%
+  );
 
+  pointer-events: none;
 
-  right:-45px;
-
-
-  top:-45px;
-
-
-  border-radius:50%;
-
-
-  background:
-
-
-    radial-gradient(
-      circle,
-      rgba(59,130,246,.16),
-      transparent 70%
-    );
-
-
-  pointer-events:none;
-
-
-  opacity:.75;
-
+  opacity: 0.75;
 }
-
-
 
 /* ==========================================================
    Hover
 ========================================================== */
 
 .tech-stack-card:hover {
+  transform: translateY(-6px);
 
+  border-color: rgba(59, 130, 246, 0.55);
 
-  transform:
-
-    translateY(-6px);
-
-
-
-  border-color:
-
-    rgba(59,130,246,.55);
-
-
-
-  box-shadow:
-
-
-    0 30px 70px rgba(15,23,42,.12),
-
-
-    0 20px 45px rgba(37,99,235,.12);
-
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.12),
+    0 20px 45px rgba(37, 99, 235, 0.12);
 }
-
-
-
 
 /* ==========================================================
    Icon
 ========================================================== */
 
 .tech-stack-icon {
+  display: flex;
 
+  justify-content: center;
 
-  display:flex;
+  align-items: center;
 
+  font-size: 2.4rem;
 
-  justify-content:center;
+  color: #2563eb;
 
-
-  align-items:center;
-
-
-
-  font-size:2.4rem;
-
-
-
-  color:#2563eb;
-
-
-
-  transition:
-
-
-    transform .25s ease,
-
-
-    filter .25s ease;
-
-
+  transition: transform 0.25s ease, filter 0.25s ease;
 }
-
-
 
 .tech-stack-card:hover .tech-stack-icon {
+  transform: scale(1.12);
 
-
-  transform:
-
-    scale(1.12);
-
-
-
-  filter:
-
-    drop-shadow(
-      0 8px 18px rgba(37,99,235,.25)
-    );
-
-
+  filter: drop-shadow(0 8px 18px rgba(37, 99, 235, 0.25));
 }
-
-
 
 /* ==========================================================
    Label
 ========================================================== */
 
 .tech-stack-name {
+  text-align: center;
 
+  color: #334155;
 
-  text-align:center;
+  font-size: 0.78rem;
 
+  line-height: 1.25;
 
+  font-weight: 650;
 
-  color:#334155;
-
-
-
-  font-size:.78rem;
-
-
-
-  line-height:1.25;
-
-
-
-  font-weight:650;
-
-
-
-  letter-spacing:-.01em;
-
-
+  letter-spacing: -0.01em;
 }
-
-
 
 /* ==========================================================
    Tablet
 ========================================================== */
 
-@media(max-width:992px){
-
-
-  .tech-stack-icon {
-
-
-    font-size:
-
-      2.2rem;
-
-
+@media (max-width: 992px) {
+  .tech-stack-grid {
+    justify-content: center;
   }
 
+  .tech-stack-column {
+    display: flex;
 
+    justify-content: center;
+  }
 
   .tech-stack-card {
-
-
-    min-height:
-
-      100px;
-
-
+    text-align: center;
   }
 
+  .tech-stack-icon {
+    font-size: 2.2rem;
+  }
 
+  .tech-stack-name {
+    text-align: center;
+  }
 }
-
-
 
 /* ==========================================================
    Mobile
 ========================================================== */
 
-@media(max-width:576px){
-
-
+@media (max-width: 576px) {
   .tech-stack-grid {
+    width: 100%;
 
+    margin-left: 0 !important;
 
-    row-gap:
+    margin-right: 0 !important;
 
-      14px;
-
-
+    row-gap: 14px;
   }
 
+  .tech-stack-column {
+    width: 50%;
 
+    max-width: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    padding-left: 6px;
+
+    padding-right: 6px;
+  }
 
   .tech-stack-card {
+    width: 100%;
 
+    min-height: 95px;
 
-    min-height:
+    padding: 14px 8px;
 
-      95px;
+    border-radius: 18px;
 
+    display: flex;
 
+    justify-content: center;
 
-    padding:
+    align-items: center;
 
-      14px 8px;
-
-
-
-    border-radius:
-
-      18px;
-
-
+    text-align: center;
   }
-
-
 
   .tech-stack-icon {
-
-
-    font-size:
-
-      2rem;
-
-
+    font-size: 2rem;
   }
-
-
 
   .tech-stack-name {
+    width: 100%;
 
+    text-align: center;
 
-    font-size:
-
-      .72rem;
-
-
+    font-size: 0.72rem;
   }
-
-
 }

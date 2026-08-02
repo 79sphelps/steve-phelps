@@ -3,323 +3,200 @@
    Phase 1 Dark Editorial / Premium Developer DNA
 ========================================================== */
 
-
 /* ==========================================================
    Base Page
 ========================================================== */
 
 .page {
+  position: relative;
 
-    position:relative;
+  min-height: 100vh;
 
-    min-height:100vh;
+  padding-top: 140px;
 
-    padding-top:140px;
+  padding-bottom: 80px;
 
-    padding-bottom:80px;
-
-    overflow:hidden;
-
+  overflow: hidden;
 }
-
 
 .page-container {
+  position: relative;
 
-    position:relative;
-
-    z-index:2;
-
+  z-index: 2;
 }
-
-
 
 /* ==========================================================
    Page Header
 ========================================================== */
 
-
 .page-header {
+  max-width: 920px;
 
-    max-width:920px;
+  margin: 0 auto 64px;
 
-    margin:0 auto 64px;
-
-    text-align:center;
-
+  text-align: center;
 }
-
-
 
 .page-heading-wrapper {
-
-    margin-bottom:22px;
-
+  margin-bottom: 22px;
 }
-
-
 
 /* ==========================================================
    Typography
 ========================================================== */
 
-
 .page-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
 
-    font-size:clamp(2.5rem,5vw,4rem);
+  font-weight: 800;
 
-    font-weight:800;
+  letter-spacing: -0.045em;
 
-    letter-spacing:-0.045em;
+  line-height: 1.05;
 
-    line-height:1.05;
+  color: #e2e8f0;
 
-    color:#e2e8f0;
-
-    text-shadow:
-
-        0 10px 35px rgba(0,0,0,.35);
-
+  text-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
 }
-
-
 
 .page-subtitle {
+  max-width: 780px;
 
-    max-width:780px;
+  margin: 0 auto;
 
-    margin:0 auto;
+  color: #94a3b8;
 
-    color:#94a3b8;
+  font-size: 1.1rem;
 
-    font-size:1.1rem;
+  line-height: 1.85;
 
-    line-height:1.85;
-
-    font-weight:500;
-
+  font-weight: 500;
 }
-
-
 
 /* ==========================================================
    Header Action
 ========================================================== */
 
-
 .page-header-action {
-
-    margin-top:34px;
-
+  margin-top: 34px;
 }
-
-
 
 /* ==========================================================
    Optional Accent Support
 ========================================================== */
 
-
 .page-title span,
 .page-title strong {
-
-    color:#60a5fa;
-
+  color: #60a5fa;
 }
-
-
 
 /* ==========================================================
    Content Surfaces
    Used by child pages
 ========================================================== */
 
-
 .page-section {
-
-    position:relative;
-
+  position: relative;
 }
-
-
 
 .page-panel {
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.78),
+    rgba(2, 6, 23, 0.65)
+  );
 
-    background:
+  border: 1px solid rgba(148, 163, 184, 0.18);
 
-        linear-gradient(
-            145deg,
-            rgba(15,23,42,.78),
-            rgba(2,6,23,.65)
-        );
+  backdrop-filter: blur(22px);
 
+  -webkit-backdrop-filter: blur(22px);
 
-    border:
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
 
-        1px solid rgba(148,163,184,.18);
-
-
-    backdrop-filter:blur(22px);
-
-    -webkit-backdrop-filter:blur(22px);
-
-
-    box-shadow:
-
-        0 30px 80px rgba(0,0,0,.35);
-
-
-    transition:
-
-        transform .3s ease,
-        border-color .3s ease,
-        box-shadow .3s ease;
-
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
-
-
 
 .page-panel:hover {
+  transform: translateY(-4px);
 
-    transform:translateY(-4px);
+  border-color: rgba(96, 165, 250, 0.35);
 
-
-    border-color:
-
-        rgba(96,165,250,.35);
-
-
-    box-shadow:
-
-        0 40px 100px rgba(0,0,0,.45);
-
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.45);
 }
-
-
 
 /* ==========================================================
    Tablet
 ========================================================== */
 
+@media (max-width: 991px) {
+  .page {
+    padding-top: 120px;
 
-@media (max-width:991px){
+    padding-bottom: 65px;
+  }
 
+  .page-header {
+    margin-bottom: 52px;
+  }
 
-    .page {
+  .page-title {
+    font-size: 3rem;
+  }
 
-        padding-top:120px;
-
-        padding-bottom:65px;
-
-    }
-
-
-    .page-header {
-
-        margin-bottom:52px;
-
-    }
-
-
-    .page-title {
-
-        font-size:3rem;
-
-    }
-
-
-    .page-subtitle {
-
-        font-size:1rem;
-
-    }
-
-
+  .page-subtitle {
+    font-size: 1rem;
+  }
 }
-
-
 
 /* ==========================================================
    Mobile
 ========================================================== */
 
+@media (max-width: 768px) {
+  .page {
+    padding-top: 110px;
 
-@media (max-width:768px){
+    padding-bottom: 50px;
+  }
 
+  .page-header {
+    margin-bottom: 40px;
 
-    .page {
+    padding-left: 16px;
 
-        padding-top:110px;
+    padding-right: 16px;
+  }
 
-        padding-bottom:50px;
+  .page-title {
+    font-size: 2.3rem;
+  }
 
-    }
+  .page-subtitle {
+    font-size: 0.96rem;
 
+    line-height: 1.7;
+  }
 
-    .page-header {
-
-        margin-bottom:40px;
-
-        padding-left:16px;
-
-        padding-right:16px;
-
-    }
-
-
-    .page-title {
-
-        font-size:2.3rem;
-
-    }
-
-
-    .page-subtitle {
-
-        font-size:.96rem;
-
-        line-height:1.7;
-
-    }
-
-
-    .page-header-action {
-
-        margin-top:26px;
-
-    }
-
-
+  .page-header-action {
+    margin-top: 26px;
+  }
 }
-
-
 
 /* ==========================================================
    Small Phones
 ========================================================== */
 
+@media (max-width: 480px) {
+  .page {
+    padding-top: 95px;
+  }
 
-@media (max-width:480px){
+  .page-title {
+    font-size: 2rem;
+  }
 
-
-    .page {
-
-        padding-top:95px;
-
-    }
-
-
-    .page-title {
-
-        font-size:2rem;
-
-    }
-
-
-    .page-subtitle {
-
-        font-size:.9rem;
-
-    }
-
-
+  .page-subtitle {
+    font-size: 0.9rem;
+  }
 }

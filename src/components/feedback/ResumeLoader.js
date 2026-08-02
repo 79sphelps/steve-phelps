@@ -1,7 +1,8 @@
 import React from "react";
 import { AiOutlineFilePdf } from "react-icons/ai";
 
-import "./ResumeLoader.css";
+// import "./ResumeLoader.css";
+import "./ResumeLoaderV2.css";
 
 const ResumeLoader = ({ progress = 0 }) => {
   return (

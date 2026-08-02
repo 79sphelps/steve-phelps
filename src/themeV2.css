@@ -1,50 +1,17 @@
 @theme {
+  --color-primary: #70b7ff;
 
+  --color-primary-soft: #3b82f6;
 
-  --color-primary:
+  --color-background: #050914;
 
-    #70b7ff;
+  --color-surface: rgba(8, 15, 28, 0.72);
 
+  --color-border: rgba(255, 255, 255, 0.08);
 
-  --color-primary-soft:
+  --color-border-blue: rgba(112, 183, 255, 0.22);
 
-    #3b82f6;
+  --radius-card: 0.875rem;
 
-
-
-  --color-background:
-
-    #050914;
-
-
-
-  --color-surface:
-
-    rgba(8,15,28,.72);
-
-
-
-  --color-border:
-
-    rgba(255,255,255,.08);
-
-
-
-  --color-border-blue:
-
-    rgba(112,183,255,.22);
-
-
-
-  --radius-card:
-
-    0.875rem;
-
-
-
-  --shadow-card:
-
-    0 30px 80px rgba(0,0,0,.45);
-
-
+  --shadow-card: 0 30px 80px rgba(0, 0, 0, 0.45);
 }

@@ -2,398 +2,197 @@
    Global Theme
 ========================================================== */
 
-
 :root {
+  --accent: #70b7ff;
 
+  --accent-hover: #93caff;
 
-  --accent:
-    #70b7ff;
+  --accent-electric: #3b82f6;
 
+  --text-primary: #f8fafc;
 
-  --accent-hover:
-    #93caff;
+  --text-secondary: #cbd5e1;
 
+  --text-light: #94a3b8;
 
-  --accent-electric:
-    #3b82f6;
+  --surface-dark: rgba(8, 15, 28, 0.72);
 
+  --surface-glass: rgba(15, 23, 42, 0.65);
 
+  --border-light: rgba(255, 255, 255, 0.08);
 
-  --text-primary:
-    #f8fafc;
+  --border-blue: rgba(112, 183, 255, 0.22);
 
+  --shadow-soft: 0 20px 50px rgba(0, 0, 0, 0.35);
 
-  --text-secondary:
-    #cbd5e1;
+  --shadow-large: 0 40px 100px rgba(0, 0, 0, 0.55);
 
-
-  --text-light:
-    #94a3b8;
-
-
-
-  --surface-dark:
-    rgba(8,15,28,.72);
-
-
-  --surface-glass:
-    rgba(15,23,42,.65);
-
-
-
-  --border-light:
-
-    rgba(255,255,255,.08);
-
-
-
-  --border-blue:
-
-    rgba(112,183,255,.22);
-
-
-
-  --shadow-soft:
-
-    0 20px 50px rgba(0,0,0,.35);
-
-
-
-  --shadow-large:
-
-    0 40px 100px rgba(0,0,0,.55);
-
-
-
-  --transition:
-
-    .28s cubic-bezier(.4,0,.2,1);
-
+  --transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 /* ==========================================================
    Helpers
 ========================================================== */
 
-
 .blue {
-
-  color:var(--accent)!important;
-
+  color: var(--accent) !important;
 }
-
 
 button:focus,
 .btn:focus {
-
-  box-shadow:none!important;
-
+  box-shadow: none !important;
 }
-
 
 a {
+  color: inherit;
 
-  color:inherit;
-
-  text-decoration:none;
-
+  text-decoration: none;
 }
-
-
 
 img {
+  max-width: 100%;
 
-  max-width:100%;
-
-  display:block;
-
+  display: block;
 }
-
-
 
 /* ==========================================================
    Scrollbars
 ========================================================== */
 
-
 ::-webkit-scrollbar {
-
-  width:10px;
-
+  width: 10px;
 }
-
 
 ::-webkit-scrollbar-track {
-
-  background:#020617;
-
+  background: #020617;
 }
-
 
 ::-webkit-scrollbar-thumb {
+  border-radius: 999px;
 
-
-  border-radius:999px;
-
-
-  background:
-
-    linear-gradient(
-
-      180deg,
-
-      #70b7ff,
-
-      #2563eb
-
-    );
-
+  background: linear-gradient(180deg, #70b7ff, #2563eb);
 }
-
-
 
 ::-webkit-scrollbar-thumb:hover {
-
-
-  background:
-
-    linear-gradient(
-
-      180deg,
-
-      #93caff,
-
-      #3b82f6
-
-    );
-
+  background: linear-gradient(180deg, #93caff, #3b82f6);
 }
-
-
-
 
 /* ==========================================================
    Preloader
 ========================================================== */
 
-
 #preloader {
+  position: fixed;
 
+  inset: 0;
 
-  position:fixed;
+  z-index: 999999;
 
-  inset:0;
+  background: #050914;
 
+  background-image: url("./assets/pre.svg");
 
-  z-index:999999;
+  background-repeat: no-repeat;
 
-
-  background:#050914;
-
-
-  background-image:
-
-    url("./assets/pre.svg");
-
-
-  background-repeat:no-repeat;
-
-
-  background-position:center;
-
+  background-position: center;
 }
-
-
 
 #preloader-none {
-
-  opacity:0;
-
+  opacity: 0;
 }
-
-
 
 #no-scroll {
+  overflow: hidden;
 
-  overflow:hidden;
-
-  height:100vh;
-
+  height: 100vh;
 }
-
-
-
 
 /* ==========================================================
    Typography
 ========================================================== */
 
-
 .heading {
+  font-size: 2.4rem;
 
+  font-weight: 700;
 
-  font-size:2.4rem;
-
-
-  font-weight:700;
-
-
-  color:var(--text-primary);
-
+  color: var(--text-primary);
 }
-
-
 
 .heading-subtext {
+  font-size: 1.2rem;
 
-
-  font-size:1.2rem;
-
-
-  color:var(--text-secondary);
-
+  color: var(--text-secondary);
 }
-
-
-
-
 
 /* ==========================================================
    Branding
 ========================================================== */
 
-
 .logo {
+  width: 2.5em;
 
-
-  width:2.5em;
-
-  border-radius:50%;
-
+  border-radius: 50%;
 }
-
-
 
 .logo-text {
+  display: flex;
 
+  align-items: center;
 
-  display:flex;
+  gap: 0.45rem;
 
-  align-items:center;
+  font-size: 1rem;
 
-  gap:.45rem;
+  font-weight: 700;
 
-
-  font-size:1rem;
-
-
-  font-weight:700;
-
-
-  color:#f8fafc;
-
+  color: #f8fafc;
 }
-
-
 
 .navbar-item-text {
+  font-size: 1rem;
 
-
-  font-size:1rem;
-
-
-  font-weight:600;
-
-
+  font-weight: 600;
 }
-
-
-
 
 /* ==========================================================
    Typewriter
 ========================================================== */
 
-
 .Typewriter__wrapper {
+  color: var(--accent);
 
+  font-size: 2rem;
 
-  color:var(--accent);
-
-
-  font-size:2rem;
-
-
-  font-weight:700;
-
-
+  font-weight: 700;
 }
-
-
 
 .Typewriter__cursor {
+  color: var(--accent);
 
-
-  color:var(--accent);
-
-
-  font-size:2rem;
-
-
+  font-size: 2rem;
 }
-
-
-
-
 
 /* ==========================================================
    Utilities
 ========================================================== */
 
-
 .shadow-soft {
-
-  box-shadow:var(--shadow-soft);
-
+  box-shadow: var(--shadow-soft);
 }
-
-
 
 .shadow-large {
-
-  box-shadow:var(--shadow-large);
-
+  box-shadow: var(--shadow-large);
 }
-
-
 
 .glass {
+  background: var(--surface-glass);
 
+  backdrop-filter: blur(18px);
 
-  background:
-
-    var(--surface-glass);
-
-
-  backdrop-filter:
-
-    blur(18px);
-
-
-  border:
-
-    1px solid
-
-    var(--border-light);
-
+  border: 1px solid var(--border-light);
 }
 
-
-
 .transition {
-
-  transition:var(--transition);
-
+  transition: var(--transition);
 }

@@ -1,0 +1,444 @@
+/* ==========================================================
+   Footer
+   Premium SaaS Visual DNA
+========================================================== */
+
+.footer {
+  position: relative;
+
+  width: 100%;
+
+  margin-top: 70px;
+
+  padding: 70px 20px 40px;
+
+  color: #0f172a;
+
+  overflow: hidden;
+
+  /*
+     Blend naturally into the page instead
+     of creating a hard section break.
+  */
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(248, 250, 252, 0) 0%,
+      rgba(248, 250, 252, 0.35) 12%,
+      rgba(248, 250, 252, 0.72) 32%,
+      rgba(255, 255, 255, 0.96) 100%
+    );
+}
+
+/* ==========================================================
+   Ambient Glows
+========================================================== */
+
+/* .footer::before {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+
+  height: 300px;
+
+  left: -140px;
+
+  bottom: -140px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.12),
+    transparent 72%
+  );
+
+  pointer-events: none;
+} */
+
+.footer::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at 12% 85%,
+      rgba(59, 130, 246, 0.12),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 88% 18%,
+      rgba(99, 102, 241, 0.08),
+      transparent 30%
+    );
+}
+
+.footer::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 90px;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(248, 250, 252, 0),
+      rgba(248, 250, 252, 0.22),
+      transparent
+    );
+}
+
+/* .footer::after {
+  content: "";
+
+  position: absolute;
+
+  width: 260px;
+
+  height: 260px;
+
+  right: -120px;
+
+  top: -120px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.1), transparent 72%);
+
+  pointer-events: none;
+} */
+
+/* ==========================================================
+   Container
+========================================================== */
+
+.footer-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding-top: 40px;
+
+  /* border-top: 1px solid rgba(148, 163, 184, 0.55); */
+  border-top: 1px solid rgba(148, 163, 184, 0.32);
+}
+
+/* ==========================================================
+   Layout
+========================================================== */
+
+.footer-content {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  animation: footerFadeIn 0.7s ease forwards;
+}
+
+.footer-content .footer-copywright,
+.footer-content .footer-body {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+@keyframes footerFadeIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================
+   Branding
+========================================================== */
+
+.footer-name {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 2rem;
+
+  font-weight: 800;
+
+  letter-spacing: -0.04em;
+}
+
+.footer-title {
+  margin-top: 0.75rem;
+
+  color: #1e40af;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  letter-spacing: -0.02em;
+}
+
+.footer-description {
+  max-width: 720px;
+
+  margin: 1.25rem auto 2.25rem;
+
+  color: #334155;
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+/* ==========================================================
+   Social
+========================================================== */
+
+.footer-body {
+  margin-bottom: 2.25rem;
+
+  justify-content: center !important;
+}
+
+.footer-icons {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 16px;
+
+  padding: 0;
+
+  margin: 0;
+
+  list-style: none;
+}
+
+.social-icons {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 52px;
+
+  height: 52px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.97),
+    rgba(248, 250, 252, 0.92)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.65);
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08),
+    0 8px 20px rgba(59, 130, 246, 0.08);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.social-icons a {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 100%;
+
+  height: 100%;
+
+  color: #334155;
+
+  font-size: 1.3rem;
+
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.social-icons:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(49, 70, 255, 0.55);
+
+  background: white;
+
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.12),
+    0 15px 35px rgba(49, 70, 255, 0.18);
+}
+
+.social-icons:hover a {
+  color: #3146ff;
+
+  transform: scale(1.08);
+}
+
+/* ==========================================================
+   Copyright
+========================================================== */
+
+.footer-copywright {
+  padding-top: 2rem;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.footer-copywright h3 {
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  letter-spacing: -0.01em;
+}
+
+/* ==========================================================
+   Accent
+========================================================== */
+
+.footer-accent {
+  color: #2563eb;
+
+  font-weight: 700;
+}
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 50px;
+
+    padding: 55px 20px 32px;
+  }
+
+  .footer-container {
+    padding-top: 30px;
+  }
+
+  .footer-name {
+    font-size: 1.6rem;
+  }
+
+  .footer-title {
+    font-size: 0.95rem;
+  }
+
+  .footer-description {
+    font-size: 0.92rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 2rem;
+  }
+
+  .footer-icons {
+    gap: 12px;
+  }
+
+  .social-icons {
+    width: 46px;
+
+    height: 46px;
+
+    border-radius: 15px;
+  }
+
+  .social-icons a {
+    font-size: 1.15rem;
+  }
+
+  .footer-copywright h3 {
+    font-size: 0.82rem;
+  }
+}
+
+/* ==========================================================
+   Small Phones
+========================================================== */
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 50px 15px 28px;
+  }
+
+  .footer-name {
+    font-size: 1.4rem;
+  }
+
+  .footer-title {
+    font-size: 0.9rem;
+  }
+
+  .footer-description {
+    font-size: 0.88rem;
+  }
+
+  .social-icons {
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 14px;
+  }
+
+  .social-icons a {
+    font-size: 1.05rem;
+  }
+
+  .footer-copywright {
+    padding-top: 1.5rem;
+  }
+}

@@ -1,33 +1,26 @@
 .App {
+  position: relative;
 
-  position:relative;
+  min-height: 100vh;
 
-  min-height:100vh;
-
-  isolation:isolate;
-
+  isolation: isolate;
 }
-
 
 /* ==========================================================
    Animated Background Layer
 ========================================================== */
 
-
 .app-background {
+  position: fixed;
 
-  position:fixed;
+  inset: 0;
 
-  inset:0;
+  z-index: -20;
 
-  z-index:-20;
+  pointer-events: none;
 
-  pointer-events:none;
-
-  overflow:hidden;
-
+  overflow: hidden;
 }
-
 
 /*
   Optional subtle dark overlay above SideRays.
@@ -36,104 +29,63 @@
 */
 
 .app-background::after {
+  content: "";
 
-  content:"";
+  position: absolute;
 
-  position:absolute;
+  inset: 0;
 
-  inset:0;
+  background: radial-gradient(
+    circle at center,
 
+    transparent 0%,
 
-  background:
-
-    radial-gradient(
-
-      circle at center,
-
-      transparent 0%,
-
-      rgba(2,6,23,.45) 85%
-
-    );
-
-
+    rgba(2, 6, 23, 0.45) 85%
+  );
 }
-
-
 
 /* ==========================================================
    Main Content Frame
 ========================================================== */
 
-
 .App::before {
+  content: "";
 
-  content:"";
+  position: fixed;
 
-  position:fixed;
+  top: 0;
 
+  bottom: 0;
 
-  top:0;
+  left: 50%;
 
-  bottom:0;
+  width: min(1500px, 96vw);
 
+  transform: translateX(-50%);
 
-  left:50%;
+  pointer-events: none;
 
+  z-index: -10;
 
-  width:min(1500px,96vw);
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.12),
+    rgba(2, 6, 23, 0.25)
+  );
 
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
 
-  transform:translateX(-50%);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
 
-
-  pointer-events:none;
-
-
-  z-index:-10;
-
-
-  background:
-
-    linear-gradient(
-
-      180deg,
-
-      rgba(15,23,42,.12),
-
-      rgba(2,6,23,.25)
-
-    );
-
-
-  border-left:
-
-    1px solid
-
-    rgba(255,255,255,.05);
-
-
-  border-right:
-
-    1px solid
-
-    rgba(255,255,255,.05);
-
-
-  backdrop-filter:blur(3px);
-
+  backdrop-filter: blur(3px);
 }
-
 
 /* ==========================================================
    CRA Defaults
 ========================================================== */
 
-
 .App-logo,
 .App-header,
 .App-link {
-
-  all:unset;
-
+  all: unset;
 }

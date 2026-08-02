@@ -3,704 +3,326 @@
    Phase 1 Dark Premium Visual DNA
 ========================================================== */
 
-
 /* ==========================================================
    Main Content
 ========================================================== */
 
 .about-content-row {
-
-    margin-bottom:90px;
-
+  margin-bottom: 90px;
 }
-
-
 
 /* ==========================================================
    About Story Card
 ========================================================== */
 
-
 .about-description-column {
-
-    text-align:left;
-
+  text-align: left;
 }
-
-
 
 .about-card-wrapper {
+  padding: 45px;
 
+  border-radius: 22px;
 
-    padding:45px;
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.86),
+    rgba(30, 41, 59, 0.72)
+  );
 
+  border: 1px solid rgba(148, 163, 184, 0.25);
 
-    border-radius:22px;
+  backdrop-filter: blur(24px);
 
+  -webkit-backdrop-filter: blur(24px);
 
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35),
+    0 20px 50px rgba(37, 99, 235, 0.1);
 
-    background:
-
-
-        linear-gradient(
-
-            145deg,
-
-            rgba(15,23,42,.86),
-
-            rgba(30,41,59,.72)
-
-        );
-
-
-
-    border:
-
-
-        1px solid rgba(148,163,184,.25);
-
-
-
-    backdrop-filter:
-
-        blur(24px);
-
-
-    -webkit-backdrop-filter:
-
-        blur(24px);
-
-
-
-    box-shadow:
-
-
-        0 30px 80px rgba(0,0,0,.35),
-
-
-        0 20px 50px rgba(37,99,235,.10);
-
-
-
-    transition:
-
-
-        transform .3s ease,
-
-        box-shadow .3s ease,
-
-        border-color .3s ease;
-
-
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
-
-
 
 .about-card-wrapper::before {
+  content: "";
 
+  position: absolute;
 
-    content:"";
+  inset: 0;
 
+  pointer-events: none;
 
-    position:absolute;
+  background: radial-gradient(
+    circle at top left,
 
-
-    inset:0;
-
-
-    pointer-events:none;
-
-
-    background:
-
-
-        radial-gradient(
-
-            circle at top left,
-
-            rgba(59,130,246,.18),
-
-            transparent 45%
-
-        );
-
-
+    rgba(59, 130, 246, 0.18),
+    transparent 45%
+  );
 }
-
-
 
 .about-card-wrapper:hover {
+  transform: translateY(-6px);
 
+  border-color: rgba(96, 165, 250, 0.45);
 
-    transform:
-
-        translateY(-6px);
-
-
-
-    border-color:
-
-        rgba(96,165,250,.45);
-
-
-
-    box-shadow:
-
-
-        0 45px 100px rgba(0,0,0,.45),
-
-
-        0 30px 70px rgba(37,99,235,.16);
-
-
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.45),
+    0 30px 70px rgba(37, 99, 235, 0.16);
 }
-
-
 
 /* Existing About Typography */
 
-
 .about-card-wrapper p {
+  color: #cbd5e1;
 
+  font-size: 1.08rem;
 
-    color:#cbd5e1;
-
-
-    font-size:1.08rem;
-
-
-    line-height:1.9;
-
-
+  line-height: 1.9;
 }
-
-
 
 .about-card-wrapper strong {
-
-
-    color:#f8fafc;
-
+  color: #f8fafc;
 }
-
-
 
 /* ==========================================================
    Image Card
 ========================================================== */
 
-
 .about-image-column {
+  display: flex;
 
+  justify-content: center;
 
-    display:flex;
-
-
-    justify-content:center;
-
-
-    align-items:center;
-
-
+  align-items: center;
 }
-
-
 
 .about-image-card {
+  padding: 28px;
 
+  border-radius: 22px;
 
-    padding:28px;
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.9),
+    rgba(30, 41, 59, 0.75)
+  );
 
+  border: 1px solid rgba(148, 163, 184, 0.28);
 
-    border-radius:22px;
+  backdrop-filter: blur(22px);
 
+  -webkit-backdrop-filter: blur(22px);
 
+  box-shadow: 0 30px 75px rgba(0, 0, 0, 0.4);
 
-    background:
-
-
-        linear-gradient(
-
-            145deg,
-
-            rgba(15,23,42,.9),
-
-            rgba(30,41,59,.75)
-
-        );
-
-
-
-    border:
-
-
-        1px solid rgba(148,163,184,.28);
-
-
-
-    backdrop-filter:
-
-        blur(22px);
-
-
-
-    -webkit-backdrop-filter:
-
-        blur(22px);
-
-
-
-    box-shadow:
-
-
-        0 30px 75px rgba(0,0,0,.4);
-
-
-
-    transition:
-
-
-        transform .3s ease,
-
-        box-shadow .3s ease;
-
-
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-
 
 .about-image-card:hover {
+  transform: translateY(-6px);
 
-
-    transform:
-
-        translateY(-6px);
-
-
-
-    box-shadow:
-
-
-        0 45px 90px rgba(0,0,0,.5);
-
-
+  box-shadow: 0 45px 90px rgba(0, 0, 0, 0.5);
 }
-
-
 
 .about-image {
+  max-height: 420px;
 
+  object-fit: contain;
 
-    max-height:420px;
-
-
-    object-fit:contain;
-
-
-    border-radius:16px;
-
-
+  border-radius: 16px;
 }
-
-
 
 /* ==========================================================
    Technology Section
 ========================================================== */
 
-
 .about-tech-section {
-
-
-    margin-top:70px;
-
-
+  margin-top: 70px;
 }
-
-
 
 .techstack-wrapper {
+  padding: 40px;
 
+  border-radius: 22px;
 
-    padding:40px;
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.84),
+    rgba(30, 41, 59, 0.72)
+  );
 
+  border: 1px solid rgba(148, 163, 184, 0.25);
 
-    border-radius:22px;
+  backdrop-filter: blur(22px);
 
+  -webkit-backdrop-filter: blur(22px);
 
-
-    background:
-
-
-        linear-gradient(
-
-            145deg,
-
-            rgba(15,23,42,.84),
-
-            rgba(30,41,59,.72)
-
-        );
-
-
-
-    border:
-
-
-        1px solid rgba(148,163,184,.25);
-
-
-
-    backdrop-filter:
-
-        blur(22px);
-
-
-
-    -webkit-backdrop-filter:
-
-        blur(22px);
-
-
-
-    box-shadow:
-
-
-        0 30px 80px rgba(0,0,0,.35);
-
-
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
 }
-
-
 
 .skills-wrapper {
-
-
-    margin-top:55px;
-
-
+  margin-top: 55px;
 }
-
-
 
 /* ==========================================================
    Tech Stack Icons
 ========================================================== */
 
-
 .tech-icons {
+  background: rgba(30, 41, 59, 0.75) !important;
 
+  border: 1px solid rgba(148, 163, 184, 0.3) !important;
 
-    background:
+  color: #e2e8f0;
 
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 
-        rgba(30,41,59,.75) !important;
-
-
-
-    border:
-
-
-        1px solid rgba(148,163,184,.3) !important;
-
-
-
-    color:#e2e8f0;
-
-
-
-    box-shadow:
-
-
-        0 15px 35px rgba(0,0,0,.25);
-
-
-
-    transition:
-
-
-        transform .25s ease,
-
-        box-shadow .25s ease,
-
-        border-color .25s ease;
-
-
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
-
-
 
 .tech-icons:hover {
+  transform: translateY(-5px) scale(1.03);
 
+  border-color: rgba(96, 165, 250, 0.55) !important;
 
-    transform:
-
-        translateY(-5px) scale(1.03);
-
-
-
-    border-color:
-
-        rgba(96,165,250,.55) !important;
-
-
-
-    box-shadow:
-
-
-        0 25px 60px rgba(37,99,235,.2);
-
-
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.2);
 }
-
-
 
 /* ==========================================================
    About Layout
 ========================================================== */
 
-
 .about-layout-row {
-
-
-    align-items:flex-start;
-
-
+  align-items: flex-start;
 }
-
-
 
 .about-story-card {
+  padding: 25px;
 
+  border-radius: 22px;
 
-    padding:25px;
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.86),
+    rgba(30, 41, 59, 0.72)
+  );
 
+  border: 1px solid rgba(148, 163, 184, 0.25);
 
-    border-radius:22px;
-
-
-
-    background:
-
-
-        linear-gradient(
-
-            145deg,
-
-            rgba(15,23,42,.86),
-
-            rgba(30,41,59,.72)
-
-        );
-
-
-
-    border:
-
-
-        1px solid rgba(148,163,184,.25);
-
-
-
-    box-shadow:
-
-
-        0 30px 75px rgba(0,0,0,.35);
-
-
+  box-shadow: 0 30px 75px rgba(0, 0, 0, 0.35);
 }
-
-
 
 /* ==========================================================
    Sidebar Cards
 ========================================================== */
 
-
 .about-profile-column {
+  display: flex;
 
+  flex-direction: column;
 
-    display:flex;
-
-
-    flex-direction:column;
-
-
-    gap:24px;
-
-
+  gap: 24px;
 }
-
-
 
 .about-sidebar-card {
+  padding: 28px;
 
+  border-radius: 20px;
 
-    padding:28px;
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.88),
+    rgba(30, 41, 59, 0.72)
+  );
 
+  border: 1px solid rgba(148, 163, 184, 0.25);
 
-    border-radius:20px;
-
-
-
-    background:
-
-
-        linear-gradient(
-
-            145deg,
-
-            rgba(15,23,42,.88),
-
-            rgba(30,41,59,.72)
-
-        );
-
-
-
-    border:
-
-
-        1px solid rgba(148,163,184,.25);
-
-
-
-    box-shadow:
-
-
-        0 25px 60px rgba(0,0,0,.35);
-
-
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
 }
-
-
 
 .about-sidebar-card h3 {
+  font-size: 1rem;
 
+  font-weight: 700;
 
-    font-size:1rem;
+  letter-spacing: 0.08em;
 
+  text-transform: uppercase;
 
-    font-weight:700;
+  color: #f8fafc;
 
-
-    letter-spacing:.08em;
-
-
-    text-transform:uppercase;
-
-
-
-    color:#f8fafc;
-
-
-    margin-bottom:20px;
-
-
+  margin-bottom: 20px;
 }
-
-
 
 /* ==========================================================
    Responsive
 ========================================================== */
 
+@media (max-width: 991px) {
+  .about-content-row {
+    gap: 40px;
+  }
 
-@media(max-width:991px){
-
-
-    .about-content-row {
-
-
-        gap:40px;
-
-
-    }
-
-
-
-    .about-image-column {
-
-
-        margin-top:25px;
-
-
-    }
-
-
+  .about-image-column {
+    margin-top: 25px;
+  }
 }
 
+@media (max-width: 767px) {
+  .about-content-row {
+    margin-bottom: 60px;
+  }
 
+  .about-card-wrapper {
+    padding: 25px;
 
-@media(max-width:767px){
+    border-radius: 18px;
+  }
 
+  .about-card-wrapper p {
+    font-size: 1rem;
+  }
 
-    .about-content-row {
+  .about-image-card {
+    padding: 20px;
 
+    border-radius: 18px;
+  }
 
-        margin-bottom:60px;
+  .about-image {
+    max-height: 300px;
+  }
 
+  .techstack-wrapper {
+    padding: 25px;
 
-    }
+    border-radius: 18px;
+  }
+}
 
+/* ==========================================================
+   Technology Sidebar Mobile Alignment
+========================================================== */
 
+.about-sidebar-card {
+  width: 100%;
+}
 
-    .about-card-wrapper {
+.about-sidebar-card .tech-stack-grid {
+  width: calc(100% + 16px);
 
+  margin-left: -8px !important;
 
-        padding:25px;
+  margin-right: -8px !important;
+}
 
+@media (max-width: 767px) {
+  .about-sidebar-card {
+    padding: 20px;
 
-        border-radius:18px;
+    text-align: center;
+  }
 
-
-    }
-
-
-
-    .about-card-wrapper p {
-
-
-        font-size:1rem;
-
-
-    }
-
-
-
-    .about-image-card {
-
-
-        padding:20px;
-
-
-        border-radius:18px;
-
-
-    }
-
-
-
-    .about-image {
-
-
-        max-height:300px;
-
-
-    }
-
-
-
-    .techstack-wrapper {
-
-
-        padding:25px;
-
-
-        border-radius:18px;
-
-
-    }
-
-
+  .about-sidebar-card h3 {
+    text-align: center;
+  }
 }

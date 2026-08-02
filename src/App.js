@@ -182,7 +182,7 @@ const ProjectsPage = lazy(() => import("./pages/ProjectsPage"));
 const ResumePage = lazy(() => import("./pages/ResumePage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const NavBar = lazy(() => import("./components/layout/Navbar"));
-const Footer = lazy(() => import("./features/footer/Footer"));
+const Footer = lazy(() => import("./components/layout/Footer"));
 const Preloader = lazy(() => import("./components/feedback/Pre"));
 const ScrollToTop = lazy(() => import("./utils/ScrollToTop"));
 

@@ -3,545 +3,242 @@
    Premium SaaS Founder Visual DNA
 ========================================================== */
 
-
 /* ==========================================================
    Contact Links
 ========================================================== */
 
 .contact-links {
+  display: flex;
 
-  display:flex;
+  justify-content: center;
 
-  justify-content:center;
+  align-items: center;
 
-  align-items:center;
+  flex-wrap: wrap;
 
-  flex-wrap:wrap;
-
-
-  gap:1rem;
-
+  gap: 1rem;
 }
-
-
 
 .contact-link-item {
+  display: flex;
 
-  display:flex;
+  align-items: center;
 
-  align-items:center;
+  gap: 0.75rem;
 
-  gap:.75rem;
+  padding: 0.85rem 1.3rem;
 
+  border-radius: 999px;
 
+  color: #334155;
 
-  padding:
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.92),
+    rgba(248, 250, 252, 0.82)
+  );
 
-    .85rem 1.3rem;
+  border: 1px solid rgba(148, 163, 184, 0.45);
 
+  backdrop-filter: blur(20px);
 
+  -webkit-backdrop-filter: blur(20px);
 
-  border-radius:999px;
+  text-decoration: none;
 
+  font-weight: 650;
 
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
 
-  color:#334155;
-
-
-
-  background:
-
-    linear-gradient(
-      145deg,
-      rgba(255,255,255,.92),
-      rgba(248,250,252,.82)
-    );
-
-
-
-  border:
-
-    1px solid rgba(148,163,184,.45);
-
-
-
-  backdrop-filter:
-
-    blur(20px);
-
-
-
-  -webkit-backdrop-filter:
-
-    blur(20px);
-
-
-
-  text-decoration:none;
-
-
-
-  font-weight:650;
-
-
-
-  box-shadow:
-
-
-    0 12px 30px rgba(15,23,42,.06);
-
-
-
-  transition:
-
-
-    transform .28s ease,
-
-
-    color .28s ease,
-
-
-    border-color .28s ease,
-
-
-    box-shadow .28s ease;
-
+  transition: transform 0.28s ease, color 0.28s ease, border-color 0.28s ease,
+    box-shadow 0.28s ease;
 }
-
-
 
 .contact-link-item svg {
+  color: #2563eb;
 
-  color:#2563eb;
+  font-size: 1.25rem;
 
-  font-size:1.25rem;
-
-
-  transition:
-
-    transform .25s ease;
-
+  transition: transform 0.25s ease;
 }
-
-
 
 .contact-link-item:hover {
+  transform: translateY(-5px);
 
+  color: #2563eb;
 
-  transform:
+  border-color: rgba(37, 99, 235, 0.45);
 
-    translateY(-5px);
-
-
-
-  color:#2563eb;
-
-
-
-  border-color:
-
-
-    rgba(37,99,235,.45);
-
-
-
-  box-shadow:
-
-
-    0 22px 50px rgba(15,23,42,.12),
-
-
-    0 12px 35px rgba(37,99,235,.12);
-
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.12),
+    0 12px 35px rgba(37, 99, 235, 0.12);
 }
-
-
 
 .contact-link-item:hover svg {
-
-
-  transform:
-
-    scale(1.12);
-
+  transform: scale(1.12);
 }
-
-
 
 /* ==========================================================
    Main Contact Card
 ========================================================== */
 
 .contact-main-card {
+  position: relative;
 
-  position:relative;
+  overflow: hidden;
 
-  overflow:hidden;
+  padding: 48px;
 
+  border-radius: 32px;
 
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.96),
+    rgba(248, 250, 252, 0.88)
+  );
 
-  padding:48px;
+  border: 1px solid rgba(148, 163, 184, 0.45);
 
+  backdrop-filter: blur(24px);
 
+  -webkit-backdrop-filter: blur(24px);
 
-  border-radius:32px;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08),
+    0 40px 90px rgba(37, 99, 235, 0.06);
 
-
-
-  background:
-
-
-    linear-gradient(
-      145deg,
-      rgba(255,255,255,.96),
-      rgba(248,250,252,.88)
-    );
-
-
-
-  border:
-
-
-    1px solid rgba(148,163,184,.45);
-
-
-
-  backdrop-filter:
-
-
-    blur(24px);
-
-
-
-  -webkit-backdrop-filter:
-
-
-    blur(24px);
-
-
-
-  box-shadow:
-
-
-    0 25px 60px rgba(15,23,42,.08),
-
-
-    0 40px 90px rgba(37,99,235,.06);
-
-
-
-  transition:
-
-
-    transform .3s ease,
-
-
-    box-shadow .3s ease,
-
-
-    border-color .3s ease;
-
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
-
-
 
 .contact-main-card:hover {
+  transform: translateY(-4px);
 
+  border-color: rgba(59, 130, 246, 0.4);
 
-  transform:
-
-
-    translateY(-4px);
-
-
-
-  border-color:
-
-
-    rgba(59,130,246,.4);
-
-
-
-  box-shadow:
-
-
-    0 35px 80px rgba(15,23,42,.12),
-
-
-    0 50px 110px rgba(59,130,246,.10);
-
+  box-shadow: 0 35px 80px rgba(15, 23, 42, 0.12),
+    0 50px 110px rgba(59, 130, 246, 0.1);
 }
-
-
 
 /* ==========================================================
    Ambient Glow
 ========================================================== */
 
 .contact-main-card::before {
+  content: "";
 
+  position: absolute;
 
-  content:"";
+  width: 220px;
 
+  height: 220px;
 
-  position:absolute;
+  top: -100px;
 
+  right: -90px;
 
-  width:220px;
+  border-radius: 50%;
 
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.16),
+    transparent 70%
+  );
 
-  height:220px;
-
-
-  top:-100px;
-
-
-  right:-90px;
-
-
-
-  border-radius:50%;
-
-
-
-  background:
-
-
-    radial-gradient(
-      circle,
-      rgba(59,130,246,.16),
-      transparent 70%
-    );
-
-
-
-  pointer-events:none;
-
+  pointer-events: none;
 }
-
-
 
 /* ==========================================================
    Image
 ========================================================== */
 
 .contact-image {
+  position: relative;
 
+  z-index: 2;
 
-  position:relative;
+  width: 100%;
 
+  max-width: 420px;
 
-  z-index:2;
+  display: block;
 
+  margin: auto;
 
+  filter: drop-shadow(0 30px 45px rgba(37, 99, 235, 0.18));
 
-  width:100%;
-
-
-
-  max-width:420px;
-
-
-
-  display:block;
-
-
-
-  margin:auto;
-
-
-
-  filter:
-
-
-    drop-shadow(
-      0 30px 45px rgba(37,99,235,.18)
-    );
-
-
-
-  transition:
-
-
-    transform .45s ease;
-
-
+  transition: transform 0.45s ease;
 }
-
-
 
 .contact-image:hover {
-
-
-  transform:
-
-
-    translateY(-10px);
-
+  transform: translateY(-10px);
 }
-
-
 
 .contact-image-visible {
-
-
-  animation:
-
-
-    contactFloat .8s ease forwards;
-
+  animation: contactFloat 0.8s ease forwards;
 }
-
-
 
 @keyframes contactFloat {
-
-
   from {
+    opacity: 0;
 
-
-    opacity:0;
-
-
-    transform:
-
-
-      translateY(35px)
-
-      scale(.96);
-
-
+    transform: translateY(35px) scale(0.96);
   }
-
-
 
   to {
+    opacity: 1;
 
-
-    opacity:1;
-
-
-    transform:
-
-
-      translateY(0)
-
-      scale(1);
-
-
+    transform: translateY(0) scale(1);
   }
-
-
 }
-
-
 
 /* ==========================================================
    Tablet
 ========================================================== */
 
-@media(max-width:991px){
-
-
+@media (max-width: 991px) {
   .contact-main-card {
-
-
-    padding:36px;
-
-
+    padding: 36px;
   }
-
-
 }
-
-
 
 /* ==========================================================
    Mobile
 ========================================================== */
 
-@media(max-width:767px){
-
-
+@media (max-width: 767px) {
   .contact-links {
+    flex-direction: column;
 
+    align-items: stretch;
 
-    flex-direction:column;
-
-
-    align-items:stretch;
-
-
-    margin-bottom:2rem;
-
-
+    margin-bottom: 2rem;
   }
-
-
 
   .contact-link-item {
-
-
-    justify-content:center;
-
-
+    justify-content: center;
   }
-
-
 
   .contact-main-card {
+    padding: 24px 18px;
 
-
-    padding:24px 18px;
-
-
-    border-radius:26px;
-
-
+    border-radius: 26px;
   }
-
-
 
   .contact-image {
+    max-width: 300px;
 
-
-    max-width:300px;
-
-
-    margin-bottom:1rem;
-
-
+    margin-bottom: 1rem;
   }
-
-
 }
-
-
 
 /* ==========================================================
    Small Phones
 ========================================================== */
 
-@media(max-width:480px){
-
-
+@media (max-width: 480px) {
   .contact-main-card {
-
-
-    padding:20px 14px;
-
-
+    padding: 20px 14px;
   }
-
-
 
   .contact-link-item {
-
-
-    font-size:.9rem;
-
-
+    font-size: 0.9rem;
   }
-
-
 }

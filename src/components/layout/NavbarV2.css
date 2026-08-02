@@ -3,776 +3,350 @@
    Matches SideRays + Edgy Visual DNA
 ====================================== */
 
-
 /* ======================================
    Base Navbar
 ====================================== */
 
-
 .premium-navbar {
+  position: fixed;
 
-  position:fixed;
+  top: 18px;
 
-  top:18px;
+  left: 50%;
 
-  left:50%;
+  transform: translateX(-50%);
 
-  transform:translateX(-50%);
+  width: min(1280px, calc(100% - 32px));
 
+  z-index: 1000;
 
-  width:min(1280px, calc(100% - 32px));
+  padding: 12px 22px;
 
+  border-radius: 16px;
 
-  z-index:1000;
+  transition: transform 0.35s ease, opacity 0.35s ease, background 0.35s ease,
+    box-shadow 0.35s ease, border-color 0.35s ease;
 
+  background: rgba(8, 15, 28, 0.72);
 
-  padding:12px 22px;
+  backdrop-filter: blur(24px);
 
+  -webkit-backdrop-filter: blur(24px);
 
-  border-radius:16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 
-
-  transition:
-
-    transform .35s ease,
-    opacity .35s ease,
-    background .35s ease,
-    box-shadow .35s ease,
-    border-color .35s ease;
-
-
-
-  background:
-
-    rgba(8,15,28,.72);
-
-
-
-  backdrop-filter:
-
-    blur(24px);
-
-
-
-  -webkit-backdrop-filter:
-
-    blur(24px);
-
-
-
-  border:
-
-    1px solid rgba(255,255,255,.10);
-
-
-
-  box-shadow:
-
-
-    0 18px 55px rgba(0,0,0,.45);
-
-
-
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.45);
 }
-
-
 
 /* subtle blue glow */
 
 .premium-navbar::before {
+  content: "";
 
+  position: absolute;
 
-  content:"";
+  inset: -1px;
 
+  border-radius: inherit;
 
-  position:absolute;
+  pointer-events: none;
 
+  background: linear-gradient(
+    120deg,
+    rgba(112, 183, 255, 0.25),
+    transparent 35%,
 
-  inset:-1px;
+    transparent 65%,
 
+    rgba(59, 130, 246, 0.25)
+  );
 
-  border-radius:inherit;
+  opacity: 0.55;
 
-
-  pointer-events:none;
-
-
-
-  background:
-
-    linear-gradient(
-
-      120deg,
-
-      rgba(112,183,255,.25),
-
-      transparent 35%,
-
-      transparent 65%,
-
-      rgba(59,130,246,.25)
-
-    );
-
-
-  opacity:.55;
-
-
-  z-index:-1;
-
-
+  z-index: -1;
 }
-
-
 
 /* ======================================
    Scrolled Compact State
 ====================================== */
 
-
 .premium-navbar.scrolled {
+  background: rgba(5, 9, 20, 0.88);
 
+  border: 1px solid rgba(112, 183, 255, 0.18);
 
-  background:
-
-    rgba(5,9,20,.88);
-
-
-
-  border:
-
-    1px solid rgba(112,183,255,.18);
-
-
-
-  box-shadow:
-
-
-    0 22px 70px rgba(0,0,0,.60);
-
-
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.6);
 }
-
-
 
 /* ======================================
    Hidden While Scrolling Down
 ====================================== */
 
-
 .premium-navbar.hidden {
+  transform: translate(-50%, -140%);
 
+  opacity: 0.15;
 
-  transform:
-
-    translate(-50%,-140%);
-
-
-  opacity:.15;
-
-
-  pointer-events:none;
-
-
+  pointer-events: none;
 }
-
-
-
 
 /* ======================================
    Brand
 ====================================== */
 
-
 .navbar-brand-wrapper {
+  display: flex;
 
+  align-items: center;
 
-  display:flex;
+  gap: 14px;
 
+  color: #f8fafc !important;
 
-  align-items:center;
+  font-weight: 700;
 
+  font-size: 1rem;
 
-  gap:14px;
-
-
-
-  color:#f8fafc !important;
-
-
-
-  font-weight:700;
-
-
-
-  font-size:1rem;
-
-
-
-  letter-spacing:-.02em;
-
-
+  letter-spacing: -0.02em;
 }
-
-
 
 .navbar-avatar {
+  width: 44px;
 
+  height: 44px;
 
-  width:44px;
+  object-fit: cover;
 
-  height:44px;
+  border-radius: 50%;
 
+  border: 2px solid rgba(112, 183, 255, 0.65);
 
-  object-fit:cover;
-
-
-  border-radius:50%;
-
-
-  border:
-
-    2px solid rgba(112,183,255,.65);
-
-
-
-  box-shadow:
-
-
-    0 10px 35px rgba(0,0,0,.45);
-
-
-
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
 }
-
-
-
 
 /* ======================================
    Navigation
 ====================================== */
 
-
 .navbar-nav {
+  align-items: center;
 
-
-  align-items:center;
-
-
-  gap:8px;
-
-
+  gap: 8px;
 }
-
-
 
 .navbar-nav .nav-item {
-
-
-  margin:0;
-
-
+  margin: 0;
 }
-
-
 
 .premium-nav-link {
+  position: relative;
 
+  display: flex;
 
-  position:relative;
+  align-items: center;
 
+  justify-content: center;
 
-  display:flex;
+  padding: 0.7rem 1rem !important;
 
+  color: #cbd5e1 !important;
 
-  align-items:center;
+  font-weight: 600;
 
+  border-radius: 10px;
 
-  justify-content:center;
-
-
-
-  padding:.7rem 1rem !important;
-
-
-
-  color:#cbd5e1 !important;
-
-
-
-  font-weight:600;
-
-
-
-  border-radius:10px;
-
-
-
-  transition:.28s ease;
-
-
-
+  transition: 0.28s ease;
 }
-
-
 
 .nav-link-content {
+  display: flex;
 
+  align-items: center;
 
-  display:flex;
-
-
-  align-items:center;
-
-
-  gap:8px;
-
-
+  gap: 8px;
 }
-
-
-
 
 .premium-nav-link:hover {
+  color: #70b7ff !important;
 
-
-  color:#70b7ff !important;
-
-
-
-  background:
-
-
-    rgba(112,183,255,.08);
-
-
+  background: rgba(112, 183, 255, 0.08);
 }
-
-
-
 
 .premium-nav-link.active {
+  color: #70b7ff !important;
 
-
-  color:#70b7ff !important;
-
-
-
-  background:
-
-
-    rgba(112,183,255,.12);
-
-
+  background: rgba(112, 183, 255, 0.12);
 }
-
-
 
 /* ======================================
    Active Indicator
 ====================================== */
 
-
 .premium-nav-link::after {
+  content: "";
 
+  position: absolute;
 
-  content:"";
+  left: 14px;
 
+  right: 14px;
 
-  position:absolute;
+  bottom: 5px;
 
+  height: 2px;
 
-  left:14px;
+  border-radius: 999px;
 
+  transform: scaleX(0);
 
-  right:14px;
+  transform-origin: center;
 
+  transition: 0.25s ease;
 
-  bottom:5px;
-
-
-  height:2px;
-
-
-
-  border-radius:999px;
-
-
-
-  transform:scaleX(0);
-
-
-
-  transform-origin:center;
-
-
-
-  transition:.25s ease;
-
-
-
-  background:
-
-
-    linear-gradient(
-
-      90deg,
-
-      #70b7ff,
-
-      #3b82f6
-
-    );
-
-
+  background: linear-gradient(90deg, #70b7ff, #3b82f6);
 }
-
-
 
 .premium-nav-link:hover::after,
-
 .premium-nav-link.active::after {
-
-
-  transform:scaleX(1);
-
-
+  transform: scaleX(1);
 }
-
-
-
 
 /* ======================================
    Mobile Toggle
 ====================================== */
 
-
 .premium-toggler {
+  border: none !important;
 
+  padding: 4px;
 
-  border:none !important;
-
-
-  padding:4px;
-
-
-  box-shadow:none !important;
-
-
+  box-shadow: none !important;
 }
-
-
 
 .premium-toggler:focus {
-
-
-  box-shadow:none !important;
-
-
+  box-shadow: none !important;
 }
-
-
 
 .premium-toggler span {
+  display: block;
 
+  width: 26px;
 
-  display:block;
+  height: 3px;
 
+  margin: 5px;
 
-  width:26px;
+  border-radius: 999px;
 
-
-  height:3px;
-
-
-  margin:5px;
-
-
-
-  border-radius:999px;
-
-
-
-  background:
-
-
-    linear-gradient(
-
-      90deg,
-
-      #70b7ff,
-
-      #3b82f6
-
-    );
-
-
+  background: linear-gradient(90deg, #70b7ff, #3b82f6);
 }
-
-
-
 
 /* ======================================
    Github Button
 ====================================== */
 
-
 .github-button {
+  display: flex !important;
 
+  align-items: center;
 
-  display:flex !important;
+  justify-content: center;
 
+  gap: 8px;
 
-  align-items:center;
+  margin-left: 12px;
 
+  padding: 10px 18px !important;
 
-  justify-content:center;
+  border-radius: 10px !important;
 
+  border: 1px solid rgba(112, 183, 255, 0.25) !important;
 
-  gap:8px;
+  background: linear-gradient(
+    135deg,
+    rgba(112, 183, 255, 0.18),
+    rgba(59, 130, 246, 0.08)
+  ) !important;
 
+  color: #70b7ff !important;
 
-  margin-left:12px;
+  font-weight: 700;
 
-
-
-  padding:10px 18px !important;
-
-
-
-  border-radius:10px !important;
-
-
-
-  border:
-
-
-    1px solid rgba(112,183,255,.25) !important;
-
-
-
-  background:
-
-
-    linear-gradient(
-
-      135deg,
-
-      rgba(112,183,255,.18),
-
-      rgba(59,130,246,.08)
-
-    ) !important;
-
-
-
-  color:#70b7ff !important;
-
-
-
-  font-weight:700;
-
-
-
-  transition:.28s ease;
-
-
-
+  transition: 0.28s ease;
 }
-
-
 
 .github-button:hover {
+  transform: translateY(-2px);
 
+  border-color: rgba(112, 183, 255, 0.5) !important;
 
-  transform:
-
-    translateY(-2px);
-
-
-
-  border-color:
-
-    rgba(112,183,255,.5) !important;
-
-
-
-  box-shadow:
-
-
-    0 16px 40px rgba(59,130,246,.25);
-
-
-
+  box-shadow: 0 16px 40px rgba(59, 130, 246, 0.25);
 }
-
-
-
 
 /* ======================================
    Mobile Menu
 ====================================== */
 
-
-@media(max-width:991px){
-
-
+@media (max-width: 991px) {
   .premium-navbar {
+    top: 12px;
 
+    width: calc(100% - 18px);
 
-    top:12px;
-
-
-    width:
-
-      calc(100% - 18px);
-
-
-
-    padding:
-
-      12px 18px;
-
-
+    padding: 12px 18px;
   }
-
-
-
 
   .premium-navbar.hidden {
-
-
-    transform:
-
-      translate(-50%,-130%);
-
-
+    transform: translate(-50%, -130%);
   }
-
-
-
 
   .navbar-collapse {
+    margin-top: 18px;
 
+    padding: 18px;
 
-    margin-top:18px;
+    border-radius: 14px;
 
+    background: rgba(5, 9, 20, 0.92);
 
-    padding:18px;
+    backdrop-filter: blur(24px);
 
+    border: 1px solid rgba(255, 255, 255, 0.1);
 
-    border-radius:14px;
-
-
-
-    background:
-
-
-      rgba(5,9,20,.92);
-
-
-
-    backdrop-filter:
-
-
-      blur(24px);
-
-
-
-    border:
-
-
-      1px solid rgba(255,255,255,.10);
-
-
-
-    box-shadow:
-
-
-      0 25px 60px rgba(0,0,0,.55);
-
-
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
   }
-
-
-
-
 
   .navbar-nav {
+    gap: 8px;
 
-
-    gap:8px;
-
-
-    align-items:stretch !important;
-
-
+    align-items: stretch !important;
   }
-
-
-
 
   .premium-nav-link {
+    justify-content: flex-start;
 
-
-    justify-content:flex-start;
-
-
-    padding:14px !important;
-
-
+    padding: 14px !important;
   }
-
-
-
 
   .github-button {
+    margin-top: 14px;
 
-
-    margin-top:14px;
-
-
-    margin-left:0;
-
-
+    margin-left: 0;
   }
-
-
 }
-
-
-
 
 /* ======================================
    Small Phones
 ====================================== */
 
-
-@media(max-width:480px){
-
-
+@media (max-width: 480px) {
   .navbar-brand-wrapper {
-
-
-    font-size:.88rem;
-
-
+    font-size: 0.88rem;
   }
-
-
-
 
   .navbar-avatar {
+    width: 38px;
 
-
-    width:38px;
-
-
-    height:38px;
-
-
+    height: 38px;
   }
-
-
-
 }

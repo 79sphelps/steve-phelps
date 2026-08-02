@@ -1,777 +1,341 @@
- /* ==========================================================
+/* ==========================================================
    Home Snapshot
    Phase 1 Dark Founder Visual DNA
 ========================================================== */
-
 
 /* ==========================================================
    Section Layout
 ========================================================== */
 
-
 .home-snapshot-section {
+  position: relative;
 
-  position:relative;
+  width: 100%;
 
-  width:100%;
-
-  padding:70px 0 80px;
-
+  padding: 70px 0 80px;
 }
-
-
 
 .home-snapshot-section > .container {
+  position: relative;
 
-  position:relative;
-
-  z-index:2;
-
+  z-index: 2;
 }
-
-
-
-
 
 /* ==========================================================
    Main Snapshot Card
 ========================================================== */
 
-
 .snapshot-card {
+  display: flex;
 
-  display:flex;
+  align-items: center;
 
-  align-items:center;
+  padding: 42px;
 
+  border-radius: 22px;
 
-  padding:42px;
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.78),
+    rgba(5, 9, 20, 0.72)
+  );
 
+  border: 1px solid rgba(255, 255, 255, 0.1);
 
+  backdrop-filter: blur(24px);
 
-  border-radius:22px;
+  -webkit-backdrop-filter: blur(24px);
 
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45), 0 0 50px rgba(59, 130, 246, 0.08);
 
-
-  background:
-
-    linear-gradient(
-
-      145deg,
-
-      rgba(15,23,42,.78),
-
-      rgba(5,9,20,.72)
-
-    );
-
-
-
-  border:
-
-    1px solid rgba(255,255,255,.10);
-
-
-
-  backdrop-filter:
-
-    blur(24px);
-
-
-
-  -webkit-backdrop-filter:
-
-    blur(24px);
-
-
-
-  box-shadow:
-
-
-    0 25px 70px rgba(0,0,0,.45),
-
-
-    0 0 50px rgba(59,130,246,.08);
-
-
-
-  transition:
-
-    transform .3s ease,
-
-    box-shadow .3s ease,
-
-    border-color .3s ease;
-
-
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
-
-
-
 
 .snapshot-card:hover {
+  transform: translateY(-5px);
 
+  border-color: rgba(112, 183, 255, 0.35);
 
-  transform:
-
-    translateY(-5px);
-
-
-
-  border-color:
-
-    rgba(112,183,255,.35);
-
-
-
-  box-shadow:
-
-
-    0 40px 90px rgba(0,0,0,.60),
-
-
-    0 0 70px rgba(59,130,246,.15);
-
-
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.6), 0 0 70px rgba(59, 130, 246, 0.15);
 }
-
-
-
 
 /* subtle edge lighting */
 
 .snapshot-card::before {
+  content: "";
 
+  position: absolute;
 
-  content:"";
+  inset: 0;
 
+  pointer-events: none;
 
-  position:absolute;
+  border-radius: inherit;
 
+  background: linear-gradient(
+    120deg,
+    rgba(112, 183, 255, 0.15),
+    transparent 30%
+  );
 
-  inset:0;
-
-
-  pointer-events:none;
-
-
-  border-radius:inherit;
-
-
-
-  background:
-
-
-    linear-gradient(
-
-      120deg,
-
-      rgba(112,183,255,.15),
-
-      transparent 30%
-
-    );
-
-
-
-  opacity:.6;
-
-
+  opacity: 0.6;
 }
-
-
-
-
 
 /* ==========================================================
    Content
 ========================================================== */
 
-
 .snapshot-content {
-
-  padding:10px 25px;
-
+  padding: 10px 25px;
 }
-
-
 
 .snapshot-heading {
+  margin-bottom: 20px;
 
+  font-size: clamp(2rem, 4vw, 2.8rem);
 
-  margin-bottom:20px;
+  font-weight: 750;
 
+  letter-spacing: -0.035em;
 
-
-  font-size:
-
-    clamp(2rem,4vw,2.8rem);
-
-
-
-  font-weight:750;
-
-
-
-  letter-spacing:-.035em;
-
-
-
-  color:#f8fafc;
-
-
-
+  color: #f8fafc;
 }
-
-
 
 .snapshot-heading span {
-
-
-  color:#70b7ff;
-
-
+  color: #70b7ff;
 }
-
-
-
 
 .snapshot-description {
+  max-width: 720px;
 
+  color: #cbd5e1;
 
-  max-width:720px;
+  font-size: 1.05rem;
 
-
-
-  color:#cbd5e1;
-
-
-
-  font-size:1.05rem;
-
-
-
-  line-height:1.85;
-
-
+  line-height: 1.85;
 }
-
-
-
 
 /* ==========================================================
    Avatar
 ========================================================== */
 
-
 .snapshot-avatar-wrapper {
+  display: flex;
 
+  justify-content: center;
 
-  display:flex;
-
-
-  justify-content:center;
-
-
-  align-items:center;
-
-
+  align-items: center;
 }
-
-
-
 
 .snapshot-avatar-card {
+  padding: 14px;
 
+  border-radius: 20px;
 
-  padding:14px;
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.85),
+    rgba(8, 15, 28, 0.75)
+  );
 
+  border: 1px solid rgba(255, 255, 255, 0.12);
 
+  backdrop-filter: blur(20px);
 
-  border-radius:20px;
+  -webkit-backdrop-filter: blur(20px);
 
-
-
-  background:
-
-
-    linear-gradient(
-
-      145deg,
-
-      rgba(15,23,42,.85),
-
-      rgba(8,15,28,.75)
-
-    );
-
-
-
-  border:
-
-    1px solid rgba(255,255,255,.12);
-
-
-
-  backdrop-filter:
-
-    blur(20px);
-
-
-
-  -webkit-backdrop-filter:
-
-    blur(20px);
-
-
-
-  box-shadow:
-
-
-    0 25px 60px rgba(0,0,0,.5);
-
-
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
 }
-
-
 
 .snapshot-avatar {
+  width: 220px;
 
+  max-width: 100%;
 
-  width:220px;
+  display: block;
 
-
-  max-width:100%;
-
-
-  display:block;
-
-
-
-  border-radius:16px;
-
+  border-radius: 16px;
 }
-
-
-
-
 
 /* ==========================================================
    Social
 ========================================================== */
 
-
 .snapshot-social {
+  text-align: center;
 
-
-  text-align:center;
-
-
-  padding-top:55px;
-
-
+  padding-top: 55px;
 }
-
-
 
 .snapshot-social h2 {
+  margin-bottom: 10px;
 
+  color: #f8fafc;
 
-  margin-bottom:10px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
 
-
-
-  color:#f8fafc;
-
-
-
-  font-size:
-
-    clamp(1.5rem,3vw,2rem);
-
-
-
-  font-weight:700;
-
-
+  font-weight: 700;
 }
-
-
 
 .snapshot-social p {
+  color: #94a3b8;
 
-
-  color:#94a3b8;
-
-
-
-  font-size:1rem;
-
-
+  font-size: 1rem;
 }
-
-
-
 
 .snapshot-social-links {
+  display: flex;
 
+  justify-content: center;
 
-  display:flex;
+  flex-wrap: wrap;
 
+  gap: 14px;
 
-  justify-content:center;
+  list-style: none;
 
+  padding: 0;
 
-  flex-wrap:wrap;
-
-
-  gap:14px;
-
-
-
-  list-style:none;
-
-
-  padding:0;
-
-
-  margin-top:25px;
-
-
+  margin-top: 25px;
 }
-
-
-
 
 .snapshot-social-item a {
+  width: 52px;
 
+  height: 52px;
 
-  width:52px;
+  display: flex;
 
+  align-items: center;
 
-  height:52px;
+  justify-content: center;
 
+  border-radius: 12px;
 
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.85),
+    rgba(8, 15, 28, 0.75)
+  );
 
-  display:flex;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 
+  color: #cbd5e1;
 
-  align-items:center;
+  font-size: 1.3rem;
 
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
 
-  justify-content:center;
-
-
-
-  border-radius:12px;
-
-
-
-  background:
-
-
-    linear-gradient(
-
-      145deg,
-
-      rgba(15,23,42,.85),
-
-      rgba(8,15,28,.75)
-
-    );
-
-
-
-  border:
-
-    1px solid rgba(255,255,255,.10);
-
-
-
-  color:#cbd5e1;
-
-
-
-  font-size:1.3rem;
-
-
-
-  box-shadow:
-
-
-    0 15px 35px rgba(0,0,0,.35);
-
-
-
-  transition:
-
-
-    transform .25s ease,
-
-    color .25s ease,
-
-    box-shadow .25s ease,
-
-    border-color .25s ease;
-
-
+  transition: transform 0.25s ease, color 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
-
-
-
 
 .snapshot-social-item a:hover {
+  transform: translateY(-5px);
 
+  color: #70b7ff;
 
-  transform:
+  border-color: rgba(112, 183, 255, 0.45);
 
-    translateY(-5px);
-
-
-
-  color:#70b7ff;
-
-
-
-  border-color:
-
-    rgba(112,183,255,.45);
-
-
-
-  box-shadow:
-
-
-    0 25px 60px rgba(59,130,246,.25);
-
-
+  box-shadow: 0 25px 60px rgba(59, 130, 246, 0.25);
 }
-
-
-
 
 /* ==========================================================
    Tablet
 ========================================================== */
 
-
-@media(max-width:991px){
-
-
+@media (max-width: 991px) {
   .home-snapshot-section {
-
-
-    padding:
-
-      60px 0 70px;
-
-
+    padding: 60px 0 70px;
   }
-
-
 
   .snapshot-card {
-
-
-    padding:32px;
-
-
+    padding: 32px;
   }
-
-
 
   .snapshot-content {
-
-
-    padding:10px;
-
-
+    padding: 10px;
   }
-
-
 
   .snapshot-avatar {
-
-
-    width:190px;
-
-
+    width: 190px;
   }
-
-
 }
-
-
-
-
 
 /* ==========================================================
    Mobile
 ========================================================== */
 
-
-@media(max-width:767px){
-
-
+@media (max-width: 767px) {
   .home-snapshot-section {
-
-
-    padding:
-
-      45px 0 55px;
-
-
+    padding: 45px 0 55px;
   }
-
-
 
   .snapshot-card {
+    padding: 24px;
 
-
-    padding:24px;
-
-
-    border-radius:18px;
-
-
+    border-radius: 18px;
   }
 
-
-
-  .snapshot-content {
-
-
-    text-align:center;
-
-
-  }
-
-
-
-  .snapshot-heading {
-
-
-    font-size:1.8rem;
-
-
-  }
-
-
-
-  .snapshot-description {
-
-
-    font-size:.95rem;
-
-
-    line-height:1.7;
-
-
-  }
-
-
-
-  .snapshot-avatar-wrapper {
-
-
-    margin-top:25px;
-
-
-  }
-
-
-
-  .snapshot-avatar {
-
-
-    width:165px;
-
-
-  }
-
-
-
-  .snapshot-social {
-
-
-    padding-top:40px;
-
-
-  }
-
-
+.snapshot-content {
+  text-align: left;
 }
 
+.snapshot-heading {
+  text-align: center;
 
+  font-size: 1.8rem;
+}
 
+.snapshot-description {
+  text-align: left;
 
+  font-size: .95rem;
+
+  line-height: 1.7;
+}
+
+  .snapshot-avatar-wrapper {
+    margin-top: 25px;
+  }
+
+  .snapshot-avatar {
+    width: 165px;
+  }
+
+  .snapshot-social {
+    padding-top: 40px;
+  }
+}
 
 /* ==========================================================
    Small Phones
 ========================================================== */
 
-
-@media(max-width:480px){
-
-
+@media (max-width: 480px) {
   .snapshot-card {
-
-
-    padding:18px;
-
-
+    padding: 18px;
   }
-
-
 
   .snapshot-heading {
-
-
-    font-size:1.55rem;
-
-
+    font-size: 1.55rem;
   }
-
-
 
   .snapshot-description {
-
-
-    font-size:.9rem;
-
-
+    font-size: 0.9rem;
   }
-
-
 
   .snapshot-social-links {
-
-
-    gap:10px;
-
-
+    gap: 10px;
   }
-
-
 
   .snapshot-social-item a {
+    width: 44px;
 
+    height: 44px;
 
-    width:44px;
+    border-radius: 10px;
 
-
-    height:44px;
-
-
-
-    border-radius:10px;
-
-
-
-    font-size:1.15rem;
-
-
+    font-size: 1.15rem;
   }
-
-
 }

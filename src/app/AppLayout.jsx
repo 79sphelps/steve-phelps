@@ -5,7 +5,7 @@ import "../style.css";
 import "../App.css";
 
 const NavBar = lazy(() => import("../components/layout/Navbar"));
-const Footer = lazy(() => import("../features/footer/Footer"));
+const Footer = lazy(() => import("../components/layout/Footer"));
 const Preloader = lazy(() => import("../components/feedback/Pre"));
 const ScrollToTop = lazy(() => import("../utils/ScrollToTop"));
 
