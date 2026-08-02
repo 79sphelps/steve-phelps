@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import GitHubCalendar from "react-github-calendar";
 import BlurText from "../../components/ui/ReactBitsComponents/BlurText";
 
-import "./Github.css";
+// import "./Github.css";
+import "./GithubV2.css";
 
 const Github = () => {
   return (

@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { OWNERSHIP_TEXT, FOOTER_LINKS_ARY } from "../../lib/footer-data";
 
 import "./Footer.css";
+// import "./FooterV2.css";
 
 const Footer = () => {
   return (

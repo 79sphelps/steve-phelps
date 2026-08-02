@@ -1,0 +1,325 @@
+/* ==========================================================
+   Shared Page Layout
+   Phase 1 Dark Editorial / Premium Developer DNA
+========================================================== */
+
+
+/* ==========================================================
+   Base Page
+========================================================== */
+
+.page {
+
+    position:relative;
+
+    min-height:100vh;
+
+    padding-top:140px;
+
+    padding-bottom:80px;
+
+    overflow:hidden;
+
+}
+
+
+.page-container {
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+/* ==========================================================
+   Page Header
+========================================================== */
+
+
+.page-header {
+
+    max-width:920px;
+
+    margin:0 auto 64px;
+
+    text-align:center;
+
+}
+
+
+
+.page-heading-wrapper {
+
+    margin-bottom:22px;
+
+}
+
+
+
+/* ==========================================================
+   Typography
+========================================================== */
+
+
+.page-title {
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+    font-weight:800;
+
+    letter-spacing:-0.045em;
+
+    line-height:1.05;
+
+    color:#e2e8f0;
+
+    text-shadow:
+
+        0 10px 35px rgba(0,0,0,.35);
+
+}
+
+
+
+.page-subtitle {
+
+    max-width:780px;
+
+    margin:0 auto;
+
+    color:#94a3b8;
+
+    font-size:1.1rem;
+
+    line-height:1.85;
+
+    font-weight:500;
+
+}
+
+
+
+/* ==========================================================
+   Header Action
+========================================================== */
+
+
+.page-header-action {
+
+    margin-top:34px;
+
+}
+
+
+
+/* ==========================================================
+   Optional Accent Support
+========================================================== */
+
+
+.page-title span,
+.page-title strong {
+
+    color:#60a5fa;
+
+}
+
+
+
+/* ==========================================================
+   Content Surfaces
+   Used by child pages
+========================================================== */
+
+
+.page-section {
+
+    position:relative;
+
+}
+
+
+
+.page-panel {
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(15,23,42,.78),
+            rgba(2,6,23,.65)
+        );
+
+
+    border:
+
+        1px solid rgba(148,163,184,.18);
+
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+
+    box-shadow:
+
+        0 30px 80px rgba(0,0,0,.35);
+
+
+    transition:
+
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+
+.page-panel:hover {
+
+    transform:translateY(-4px);
+
+
+    border-color:
+
+        rgba(96,165,250,.35);
+
+
+    box-shadow:
+
+        0 40px 100px rgba(0,0,0,.45);
+
+}
+
+
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+
+@media (max-width:991px){
+
+
+    .page {
+
+        padding-top:120px;
+
+        padding-bottom:65px;
+
+    }
+
+
+    .page-header {
+
+        margin-bottom:52px;
+
+    }
+
+
+    .page-title {
+
+        font-size:3rem;
+
+    }
+
+
+    .page-subtitle {
+
+        font-size:1rem;
+
+    }
+
+
+}
+
+
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+
+@media (max-width:768px){
+
+
+    .page {
+
+        padding-top:110px;
+
+        padding-bottom:50px;
+
+    }
+
+
+    .page-header {
+
+        margin-bottom:40px;
+
+        padding-left:16px;
+
+        padding-right:16px;
+
+    }
+
+
+    .page-title {
+
+        font-size:2.3rem;
+
+    }
+
+
+    .page-subtitle {
+
+        font-size:.96rem;
+
+        line-height:1.7;
+
+    }
+
+
+    .page-header-action {
+
+        margin-top:26px;
+
+    }
+
+
+}
+
+
+
+/* ==========================================================
+   Small Phones
+========================================================== */
+
+
+@media (max-width:480px){
+
+
+    .page {
+
+        padding-top:95px;
+
+    }
+
+
+    .page-title {
+
+        font-size:2rem;
+
+    }
+
+
+    .page-subtitle {
+
+        font-size:.9rem;
+
+    }
+
+
+}

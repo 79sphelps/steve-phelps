@@ -1,0 +1,83 @@
+@import "./theme.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+
+
+/* ==========================================================
+   Global Reset
+========================================================== */
+
+*,
+*::before,
+*::after {
+
+  box-sizing:border-box;
+
+}
+
+
+html,
+body,
+#root {
+
+  min-height:100%;
+
+}
+
+
+html {
+
+  scroll-behavior:smooth;
+
+  background:#050914;
+
+}
+
+
+body {
+
+  margin:0;
+
+  font-family:"Raleway",sans-serif;
+
+  -webkit-font-smoothing:antialiased;
+
+  -moz-osx-font-smoothing:grayscale;
+
+
+  color:#e2e8f0;
+
+
+  overflow-x:hidden;
+
+
+  background:#050914;
+
+}
+
+
+/*
+  React root becomes the stacking context
+  above animated backgrounds.
+*/
+
+#root {
+
+  position:relative;
+
+  isolation:isolate;
+
+}
+
+
+/*
+  Remove default browser image spacing
+*/
+
+img {
+
+  max-width:100%;
+
+  display:block;
+
+}

@@ -1,0 +1,778 @@
+/* ======================================
+   Phase 1 - Dark Premium Floating Navbar
+   Matches SideRays + Edgy Visual DNA
+====================================== */
+
+
+/* ======================================
+   Base Navbar
+====================================== */
+
+
+.premium-navbar {
+
+  position:fixed;
+
+  top:18px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+
+  width:min(1280px, calc(100% - 32px));
+
+
+  z-index:1000;
+
+
+  padding:12px 22px;
+
+
+  border-radius:16px;
+
+
+  transition:
+
+    transform .35s ease,
+    opacity .35s ease,
+    background .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
+
+
+
+  background:
+
+    rgba(8,15,28,.72);
+
+
+
+  backdrop-filter:
+
+    blur(24px);
+
+
+
+  -webkit-backdrop-filter:
+
+    blur(24px);
+
+
+
+  border:
+
+    1px solid rgba(255,255,255,.10);
+
+
+
+  box-shadow:
+
+
+    0 18px 55px rgba(0,0,0,.45);
+
+
+
+}
+
+
+
+/* subtle blue glow */
+
+.premium-navbar::before {
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+  inset:-1px;
+
+
+  border-radius:inherit;
+
+
+  pointer-events:none;
+
+
+
+  background:
+
+    linear-gradient(
+
+      120deg,
+
+      rgba(112,183,255,.25),
+
+      transparent 35%,
+
+      transparent 65%,
+
+      rgba(59,130,246,.25)
+
+    );
+
+
+  opacity:.55;
+
+
+  z-index:-1;
+
+
+}
+
+
+
+/* ======================================
+   Scrolled Compact State
+====================================== */
+
+
+.premium-navbar.scrolled {
+
+
+  background:
+
+    rgba(5,9,20,.88);
+
+
+
+  border:
+
+    1px solid rgba(112,183,255,.18);
+
+
+
+  box-shadow:
+
+
+    0 22px 70px rgba(0,0,0,.60);
+
+
+}
+
+
+
+/* ======================================
+   Hidden While Scrolling Down
+====================================== */
+
+
+.premium-navbar.hidden {
+
+
+  transform:
+
+    translate(-50%,-140%);
+
+
+  opacity:.15;
+
+
+  pointer-events:none;
+
+
+}
+
+
+
+
+/* ======================================
+   Brand
+====================================== */
+
+
+.navbar-brand-wrapper {
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  gap:14px;
+
+
+
+  color:#f8fafc !important;
+
+
+
+  font-weight:700;
+
+
+
+  font-size:1rem;
+
+
+
+  letter-spacing:-.02em;
+
+
+}
+
+
+
+.navbar-avatar {
+
+
+  width:44px;
+
+  height:44px;
+
+
+  object-fit:cover;
+
+
+  border-radius:50%;
+
+
+  border:
+
+    2px solid rgba(112,183,255,.65);
+
+
+
+  box-shadow:
+
+
+    0 10px 35px rgba(0,0,0,.45);
+
+
+
+}
+
+
+
+
+/* ======================================
+   Navigation
+====================================== */
+
+
+.navbar-nav {
+
+
+  align-items:center;
+
+
+  gap:8px;
+
+
+}
+
+
+
+.navbar-nav .nav-item {
+
+
+  margin:0;
+
+
+}
+
+
+
+.premium-nav-link {
+
+
+  position:relative;
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  justify-content:center;
+
+
+
+  padding:.7rem 1rem !important;
+
+
+
+  color:#cbd5e1 !important;
+
+
+
+  font-weight:600;
+
+
+
+  border-radius:10px;
+
+
+
+  transition:.28s ease;
+
+
+
+}
+
+
+
+.nav-link-content {
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  gap:8px;
+
+
+}
+
+
+
+
+.premium-nav-link:hover {
+
+
+  color:#70b7ff !important;
+
+
+
+  background:
+
+
+    rgba(112,183,255,.08);
+
+
+}
+
+
+
+
+.premium-nav-link.active {
+
+
+  color:#70b7ff !important;
+
+
+
+  background:
+
+
+    rgba(112,183,255,.12);
+
+
+}
+
+
+
+/* ======================================
+   Active Indicator
+====================================== */
+
+
+.premium-nav-link::after {
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+  left:14px;
+
+
+  right:14px;
+
+
+  bottom:5px;
+
+
+  height:2px;
+
+
+
+  border-radius:999px;
+
+
+
+  transform:scaleX(0);
+
+
+
+  transform-origin:center;
+
+
+
+  transition:.25s ease;
+
+
+
+  background:
+
+
+    linear-gradient(
+
+      90deg,
+
+      #70b7ff,
+
+      #3b82f6
+
+    );
+
+
+}
+
+
+
+.premium-nav-link:hover::after,
+
+.premium-nav-link.active::after {
+
+
+  transform:scaleX(1);
+
+
+}
+
+
+
+
+/* ======================================
+   Mobile Toggle
+====================================== */
+
+
+.premium-toggler {
+
+
+  border:none !important;
+
+
+  padding:4px;
+
+
+  box-shadow:none !important;
+
+
+}
+
+
+
+.premium-toggler:focus {
+
+
+  box-shadow:none !important;
+
+
+}
+
+
+
+.premium-toggler span {
+
+
+  display:block;
+
+
+  width:26px;
+
+
+  height:3px;
+
+
+  margin:5px;
+
+
+
+  border-radius:999px;
+
+
+
+  background:
+
+
+    linear-gradient(
+
+      90deg,
+
+      #70b7ff,
+
+      #3b82f6
+
+    );
+
+
+}
+
+
+
+
+/* ======================================
+   Github Button
+====================================== */
+
+
+.github-button {
+
+
+  display:flex !important;
+
+
+  align-items:center;
+
+
+  justify-content:center;
+
+
+  gap:8px;
+
+
+  margin-left:12px;
+
+
+
+  padding:10px 18px !important;
+
+
+
+  border-radius:10px !important;
+
+
+
+  border:
+
+
+    1px solid rgba(112,183,255,.25) !important;
+
+
+
+  background:
+
+
+    linear-gradient(
+
+      135deg,
+
+      rgba(112,183,255,.18),
+
+      rgba(59,130,246,.08)
+
+    ) !important;
+
+
+
+  color:#70b7ff !important;
+
+
+
+  font-weight:700;
+
+
+
+  transition:.28s ease;
+
+
+
+}
+
+
+
+.github-button:hover {
+
+
+  transform:
+
+    translateY(-2px);
+
+
+
+  border-color:
+
+    rgba(112,183,255,.5) !important;
+
+
+
+  box-shadow:
+
+
+    0 16px 40px rgba(59,130,246,.25);
+
+
+
+}
+
+
+
+
+/* ======================================
+   Mobile Menu
+====================================== */
+
+
+@media(max-width:991px){
+
+
+  .premium-navbar {
+
+
+    top:12px;
+
+
+    width:
+
+      calc(100% - 18px);
+
+
+
+    padding:
+
+      12px 18px;
+
+
+  }
+
+
+
+
+  .premium-navbar.hidden {
+
+
+    transform:
+
+      translate(-50%,-130%);
+
+
+  }
+
+
+
+
+  .navbar-collapse {
+
+
+    margin-top:18px;
+
+
+    padding:18px;
+
+
+    border-radius:14px;
+
+
+
+    background:
+
+
+      rgba(5,9,20,.92);
+
+
+
+    backdrop-filter:
+
+
+      blur(24px);
+
+
+
+    border:
+
+
+      1px solid rgba(255,255,255,.10);
+
+
+
+    box-shadow:
+
+
+      0 25px 60px rgba(0,0,0,.55);
+
+
+  }
+
+
+
+
+
+  .navbar-nav {
+
+
+    gap:8px;
+
+
+    align-items:stretch !important;
+
+
+  }
+
+
+
+
+  .premium-nav-link {
+
+
+    justify-content:flex-start;
+
+
+    padding:14px !important;
+
+
+  }
+
+
+
+
+  .github-button {
+
+
+    margin-top:14px;
+
+
+    margin-left:0;
+
+
+  }
+
+
+}
+
+
+
+
+/* ======================================
+   Small Phones
+====================================== */
+
+
+@media(max-width:480px){
+
+
+  .navbar-brand-wrapper {
+
+
+    font-size:.88rem;
+
+
+  }
+
+
+
+
+  .navbar-avatar {
+
+
+    width:38px;
+
+
+    height:38px;
+
+
+  }
+
+
+
+}

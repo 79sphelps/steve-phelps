@@ -1,0 +1,205 @@
+/* ==========================================================
+   Projects Page Content
+   Premium SaaS Visual DNA
+========================================================== */
+
+
+/* ==========================================================
+   Project Grid
+========================================================== */
+
+.projects-grid {
+
+  justify-content:center;
+
+  align-items:stretch;
+
+  row-gap:2.25rem;
+
+}
+
+
+
+/* ==========================================================
+   Project Column
+========================================================== */
+
+
+.project-column {
+
+  display:flex !important;
+
+  flex-direction:column;
+
+  opacity:0;
+
+
+  animation:
+
+    projectFadeIn .7s cubic-bezier(.4,0,.2,1) forwards;
+
+}
+
+
+
+/*
+  Do not force every child.
+  Only size actual cards.
+*/
+
+
+.project-column > .project-card-view,
+.project-column > .card {
+
+  width:100%;
+
+}
+
+
+
+/* ==========================================================
+   Reveal Animation
+========================================================== */
+
+
+@keyframes projectFadeIn {
+
+  from {
+
+    opacity:0;
+
+    transform:
+
+      translateY(35px);
+
+  }
+
+
+  to {
+
+    opacity:1;
+
+    transform:
+
+      translateY(0);
+
+  }
+
+}
+
+
+
+/* ==========================================================
+   Card Glow
+========================================================== */
+
+
+.project-column .project-card-view::after {
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+  width:180px;
+
+
+  height:180px;
+
+
+  top:-90px;
+
+
+  right:-90px;
+
+
+  border-radius:50%;
+
+
+
+  background:
+
+    radial-gradient(
+      circle,
+      rgba(59,130,246,.14),
+      transparent 70%
+    );
+
+
+  pointer-events:none;
+
+}
+
+
+
+
+/* ==========================================================
+   Toast
+========================================================== */
+
+
+.projects-toast {
+
+  top:220px !important;
+
+}
+
+
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+
+@media(max-width:992px){
+
+
+  .projects-grid {
+
+    row-gap:1.9rem;
+
+  }
+
+
+}
+
+
+
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+
+@media(max-width:768px){
+
+
+  .projects-grid {
+
+    row-gap:1.5rem;
+
+  }
+
+
+  .projects-toast {
+
+    top:120px !important;
+
+  }
+
+}
+
+
+
+
+@media(max-width:480px){
+
+  .projects-grid {
+
+    row-gap:1.25rem;
+
+  }
+
+}

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-import "./ContactForm.css";
+// import "./ContactForm.css";
+import "./ContactFormV2.css";
 
 const INITIAL_FORM_STATE = {
   name: "",

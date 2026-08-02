@@ -3,7 +3,8 @@ import { Row, Col } from "react-bootstrap";
 
 import BlurText from "../../components/ui/ReactBitsComponents/BlurText";
 
-import "./Skills.css";
+// import "./Skills.css";
+import "./SkillsV2.css";
 
 const SKILL_GROUPS = [
   {

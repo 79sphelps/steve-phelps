@@ -32,7 +32,8 @@ import HOME_LOGO_IMG from "../assets/home-main.svg";
 
 import HomeSnapshot from "../features/home/HomeSnapshot";
 
-import "./HomePage.css";
+// import "./HomePage.css";
+import "./HomePageV2.css";
 
 const HomePage = () => {
   return (

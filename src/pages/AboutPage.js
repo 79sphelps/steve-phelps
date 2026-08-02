@@ -12,7 +12,8 @@ import { ABOUT_ME_HEADING } from "../lib/about-data";
 
 import LAPTOP_IMG from "../assets/about.png";
 
-import "./AboutPage.css";
+// import "./AboutPage.css";
+import "./AboutPageV2.css";
 
 const AboutPage = () => {
   return (

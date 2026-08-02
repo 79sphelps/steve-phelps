@@ -1,0 +1,547 @@
+/* ==========================================================
+   Contact Page
+   Premium SaaS Founder Visual DNA
+========================================================== */
+
+
+/* ==========================================================
+   Contact Links
+========================================================== */
+
+.contact-links {
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  flex-wrap:wrap;
+
+
+  gap:1rem;
+
+}
+
+
+
+.contact-link-item {
+
+  display:flex;
+
+  align-items:center;
+
+  gap:.75rem;
+
+
+
+  padding:
+
+    .85rem 1.3rem;
+
+
+
+  border-radius:999px;
+
+
+
+  color:#334155;
+
+
+
+  background:
+
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.92),
+      rgba(248,250,252,.82)
+    );
+
+
+
+  border:
+
+    1px solid rgba(148,163,184,.45);
+
+
+
+  backdrop-filter:
+
+    blur(20px);
+
+
+
+  -webkit-backdrop-filter:
+
+    blur(20px);
+
+
+
+  text-decoration:none;
+
+
+
+  font-weight:650;
+
+
+
+  box-shadow:
+
+
+    0 12px 30px rgba(15,23,42,.06);
+
+
+
+  transition:
+
+
+    transform .28s ease,
+
+
+    color .28s ease,
+
+
+    border-color .28s ease,
+
+
+    box-shadow .28s ease;
+
+}
+
+
+
+.contact-link-item svg {
+
+  color:#2563eb;
+
+  font-size:1.25rem;
+
+
+  transition:
+
+    transform .25s ease;
+
+}
+
+
+
+.contact-link-item:hover {
+
+
+  transform:
+
+    translateY(-5px);
+
+
+
+  color:#2563eb;
+
+
+
+  border-color:
+
+
+    rgba(37,99,235,.45);
+
+
+
+  box-shadow:
+
+
+    0 22px 50px rgba(15,23,42,.12),
+
+
+    0 12px 35px rgba(37,99,235,.12);
+
+}
+
+
+
+.contact-link-item:hover svg {
+
+
+  transform:
+
+    scale(1.12);
+
+}
+
+
+
+/* ==========================================================
+   Main Contact Card
+========================================================== */
+
+.contact-main-card {
+
+  position:relative;
+
+  overflow:hidden;
+
+
+
+  padding:48px;
+
+
+
+  border-radius:32px;
+
+
+
+  background:
+
+
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.96),
+      rgba(248,250,252,.88)
+    );
+
+
+
+  border:
+
+
+    1px solid rgba(148,163,184,.45);
+
+
+
+  backdrop-filter:
+
+
+    blur(24px);
+
+
+
+  -webkit-backdrop-filter:
+
+
+    blur(24px);
+
+
+
+  box-shadow:
+
+
+    0 25px 60px rgba(15,23,42,.08),
+
+
+    0 40px 90px rgba(37,99,235,.06);
+
+
+
+  transition:
+
+
+    transform .3s ease,
+
+
+    box-shadow .3s ease,
+
+
+    border-color .3s ease;
+
+}
+
+
+
+.contact-main-card:hover {
+
+
+  transform:
+
+
+    translateY(-4px);
+
+
+
+  border-color:
+
+
+    rgba(59,130,246,.4);
+
+
+
+  box-shadow:
+
+
+    0 35px 80px rgba(15,23,42,.12),
+
+
+    0 50px 110px rgba(59,130,246,.10);
+
+}
+
+
+
+/* ==========================================================
+   Ambient Glow
+========================================================== */
+
+.contact-main-card::before {
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+  width:220px;
+
+
+  height:220px;
+
+
+  top:-100px;
+
+
+  right:-90px;
+
+
+
+  border-radius:50%;
+
+
+
+  background:
+
+
+    radial-gradient(
+      circle,
+      rgba(59,130,246,.16),
+      transparent 70%
+    );
+
+
+
+  pointer-events:none;
+
+}
+
+
+
+/* ==========================================================
+   Image
+========================================================== */
+
+.contact-image {
+
+
+  position:relative;
+
+
+  z-index:2;
+
+
+
+  width:100%;
+
+
+
+  max-width:420px;
+
+
+
+  display:block;
+
+
+
+  margin:auto;
+
+
+
+  filter:
+
+
+    drop-shadow(
+      0 30px 45px rgba(37,99,235,.18)
+    );
+
+
+
+  transition:
+
+
+    transform .45s ease;
+
+
+}
+
+
+
+.contact-image:hover {
+
+
+  transform:
+
+
+    translateY(-10px);
+
+}
+
+
+
+.contact-image-visible {
+
+
+  animation:
+
+
+    contactFloat .8s ease forwards;
+
+}
+
+
+
+@keyframes contactFloat {
+
+
+  from {
+
+
+    opacity:0;
+
+
+    transform:
+
+
+      translateY(35px)
+
+      scale(.96);
+
+
+  }
+
+
+
+  to {
+
+
+    opacity:1;
+
+
+    transform:
+
+
+      translateY(0)
+
+      scale(1);
+
+
+  }
+
+
+}
+
+
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+@media(max-width:991px){
+
+
+  .contact-main-card {
+
+
+    padding:36px;
+
+
+  }
+
+
+}
+
+
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media(max-width:767px){
+
+
+  .contact-links {
+
+
+    flex-direction:column;
+
+
+    align-items:stretch;
+
+
+    margin-bottom:2rem;
+
+
+  }
+
+
+
+  .contact-link-item {
+
+
+    justify-content:center;
+
+
+  }
+
+
+
+  .contact-main-card {
+
+
+    padding:24px 18px;
+
+
+    border-radius:26px;
+
+
+  }
+
+
+
+  .contact-image {
+
+
+    max-width:300px;
+
+
+    margin-bottom:1rem;
+
+
+  }
+
+
+}
+
+
+
+/* ==========================================================
+   Small Phones
+========================================================== */
+
+@media(max-width:480px){
+
+
+  .contact-main-card {
+
+
+    padding:20px 14px;
+
+
+  }
+
+
+
+  .contact-link-item {
+
+
+    font-size:.9rem;
+
+
+  }
+
+
+}

@@ -1,0 +1,326 @@
+/* ==========================================================
+   Resume Page
+   Premium SaaS Visual DNA
+========================================================== */
+
+/* ==========================================================
+   Resume Content Section
+========================================================== */
+
+.resume-content-section {
+  width: 100%;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+/* ==========================================================
+   Download Button
+========================================================== */
+
+.resume-download-top {
+  display: flex;
+
+  justify-content: center;
+
+  margin-bottom: 3rem;
+}
+
+.resume-download-button {
+  display: inline-flex !important;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 0.65rem;
+
+  padding: 0.9rem 1.75rem !important;
+
+  border: none !important;
+
+  border-radius: 999px !important;
+
+  background: linear-gradient(135deg, #2563eb, #6366f1) !important;
+
+  color: white !important;
+
+  font-weight: 700;
+
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.28);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.resume-download-button:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 25px 55px rgba(37, 99, 235, 0.38);
+}
+
+/* ==========================================================
+   PDF Layout
+========================================================== */
+
+.resume-document-wrapper {
+  width: 100%;
+
+  display: flex !important;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin-left: 0 !important;
+
+  margin-right: 0 !important;
+}
+
+.resume-document {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  opacity: 0;
+
+  height: 0;
+
+  overflow: hidden;
+
+  transform: translateY(25px);
+
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.resume-document.resume-visible {
+  opacity: 1;
+
+  height: auto;
+
+  overflow: visible;
+
+  transform: translateY(0);
+}
+
+/* ==========================================================
+   Resume Document Card
+========================================================== */
+
+.resume-page-container {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 960px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  margin-bottom: 3rem;
+
+  padding: 1.35rem;
+
+  border-radius: 32px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.96),
+    rgba(248, 250, 252, 0.88)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.55);
+
+  backdrop-filter: blur(22px);
+
+  -webkit-backdrop-filter: blur(22px);
+
+  box-shadow: 0 30px 75px rgba(15, 23, 42, 0.12),
+    0 15px 35px rgba(37, 99, 235, 0.08);
+
+  overflow: hidden;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.resume-page-container::before {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+
+  height: 220px;
+
+  top: -110px;
+
+  right: -110px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.14),
+    transparent 70%
+  );
+
+  pointer-events: none;
+}
+
+.resume-page-container:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(59, 130, 246, 0.45);
+
+  box-shadow: 0 40px 90px rgba(15, 23, 42, 0.16),
+    0 20px 45px rgba(37, 99, 235, 0.12);
+}
+
+/* ==========================================================
+   PDF Canvas
+========================================================== */
+
+.resume-page-container canvas {
+  position: relative;
+
+  z-index: 2;
+
+  display: block !important;
+
+  width: auto !important;
+
+  max-width: 100% !important;
+
+  height: auto !important;
+
+  margin: 0 auto;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+}
+
+/* ==========================================================
+   Bottom Download
+========================================================== */
+
+.resume-footer-download {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 2rem;
+}
+
+/* ==========================================================
+   Loading / Transition Support
+========================================================== */
+
+.resume-page-container {
+  animation: resumeCardReveal 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes resumeCardReveal {
+  from {
+    opacity: 0;
+
+    transform: translateY(25px) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+@media (max-width: 768px) {
+  .resume-content-section {
+    padding-left: 0;
+
+    padding-right: 0;
+  }
+
+  .resume-document-wrapper {
+    width: 100%;
+
+    padding-left: 0;
+
+    padding-right: 0;
+  }
+
+  .resume-document {
+    width: 100%;
+  }
+
+  .resume-page-container {
+    width: calc(100% - 20px);
+
+    padding: 0.85rem;
+
+    border-radius: 24px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    margin-bottom: 2rem;
+  }
+
+  .resume-page-container canvas {
+    border-radius: 14px;
+  }
+
+  .resume-download-button {
+    width: 100%;
+
+    max-width: 320px;
+  }
+}
+
+/* ==========================================================
+   Small Phones
+========================================================== */
+
+@media (max-width: 480px) {
+  .resume-page-container {
+    width: calc(100% - 10px);
+
+    padding: 0.5rem;
+
+    border-radius: 18px;
+  }
+
+  .resume-page-container canvas {
+    border-radius: 12px;
+  }
+
+  .resume-download-button {
+    font-size: 0.92rem;
+  }
+}
+
+/* ==========================================================
+   Reduced Motion
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .resume-document,
+  .resume-page-container,
+  .resume-download-button {
+    transition: none;
+
+    animation: none;
+  }
+}

@@ -1,0 +1,50 @@
+@theme {
+
+
+  --color-primary:
+
+    #70b7ff;
+
+
+  --color-primary-soft:
+
+    #3b82f6;
+
+
+
+  --color-background:
+
+    #050914;
+
+
+
+  --color-surface:
+
+    rgba(8,15,28,.72);
+
+
+
+  --color-border:
+
+    rgba(255,255,255,.08);
+
+
+
+  --color-border-blue:
+
+    rgba(112,183,255,.22);
+
+
+
+  --radius-card:
+
+    0.875rem;
+
+
+
+  --shadow-card:
+
+    0 30px 80px rgba(0,0,0,.45);
+
+
+}

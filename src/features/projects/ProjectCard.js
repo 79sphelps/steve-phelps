@@ -6,7 +6,8 @@ import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import { FaPlay } from "react-icons/fa";
 
-import "./ProjectCard.css";
+// import "./ProjectCard.css";
+import "./ProjectCardV2.css";
 
 const ProjectCard = ({
   imgPath,

@@ -21,7 +21,8 @@ import {
 
 import CONTACT_IMG from "../assets/contact-img.svg";
 
-import "./ContactPage.css";
+// import "./ContactPage.css";
+import "./ContactPageV2.css";
 
 const ContactPage = () => {
   return (

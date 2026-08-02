@@ -1,0 +1,545 @@
+/* ==========================================================
+   Contact Form
+   Premium SaaS Form Surface
+========================================================== */
+
+
+/* ==========================================================
+   Form Layout
+========================================================== */
+
+.contact-form {
+
+  display:flex;
+
+  flex-direction:column;
+
+
+  gap:1.5rem;
+
+
+  width:100%;
+
+}
+
+
+
+/* ==========================================================
+   Fields
+========================================================== */
+
+.contact-field {
+
+  display:flex;
+
+  flex-direction:column;
+
+}
+
+
+
+.contact-field label {
+
+
+  margin-bottom:.55rem;
+
+
+
+  color:#334155;
+
+
+
+  font-size:.9rem;
+
+
+
+  font-weight:700;
+
+
+
+  letter-spacing:-.01em;
+
+}
+
+
+
+/* ==========================================================
+   Inputs
+========================================================== */
+
+.contact-form input,
+.contact-form textarea {
+
+
+  width:100%;
+
+
+
+  padding:
+
+    .95rem 1.1rem;
+
+
+
+  border-radius:16px;
+
+
+
+  border:
+
+    1px solid rgba(148,163,184,.45);
+
+
+
+  background:
+
+
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.9),
+      rgba(248,250,252,.85)
+    );
+
+
+
+  backdrop-filter:
+
+
+    blur(14px);
+
+
+
+  -webkit-backdrop-filter:
+
+
+    blur(14px);
+
+
+
+  color:#0f172a;
+
+
+
+  font-size:1rem;
+
+
+
+  box-shadow:
+
+
+    inset 0 1px 2px rgba(15,23,42,.03);
+
+
+
+  transition:
+
+
+    border-color .25s ease,
+
+
+    box-shadow .25s ease,
+
+
+    background .25s ease,
+
+
+    transform .25s ease;
+
+}
+
+
+
+.contact-form textarea {
+
+
+  min-height:180px;
+
+
+
+  resize:vertical;
+
+}
+
+
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+
+
+  color:#94a3b8;
+
+}
+
+
+
+/* ==========================================================
+   Focus
+========================================================== */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+
+
+  outline:none;
+
+
+
+  background:
+
+
+    rgba(255,255,255,.98);
+
+
+
+  border-color:
+
+
+    rgba(37,99,235,.75);
+
+
+
+  box-shadow:
+
+
+    0 0 0 4px rgba(37,99,235,.12),
+
+
+    0 12px 30px rgba(37,99,235,.08);
+
+}
+
+
+
+/* ==========================================================
+   Validation
+========================================================== */
+
+.contact-error {
+
+
+  margin-top:.45rem;
+
+
+
+  color:#dc2626;
+
+
+
+  font-size:.82rem;
+
+
+
+  font-weight:600;
+
+}
+
+
+
+/* ==========================================================
+   Submit Button
+========================================================== */
+
+.contact-submit {
+
+
+  position:relative;
+
+
+  overflow:hidden;
+
+
+
+  margin-top:.5rem;
+
+
+
+  padding:
+
+    1rem 1.75rem;
+
+
+
+  border:none;
+
+
+
+  border-radius:16px;
+
+
+
+  background:
+
+
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #6366f1
+    );
+
+
+
+  color:white;
+
+
+
+  font-weight:700;
+
+
+
+  font-size:1rem;
+
+
+
+  cursor:pointer;
+
+
+
+  transition:
+
+
+    transform .3s ease,
+
+
+    box-shadow .3s ease,
+
+
+    opacity .3s ease;
+
+
+
+  box-shadow:
+
+
+    0 18px 40px rgba(37,99,235,.25);
+
+}
+
+
+
+/* subtle shine */
+
+.contact-submit::before {
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+  inset:0;
+
+
+  background:
+
+
+    linear-gradient(
+      120deg,
+      transparent,
+      rgba(255,255,255,.25),
+      transparent
+    );
+
+
+
+  transform:
+
+    translateX(-120%);
+
+
+
+  transition:
+
+    transform .6s ease;
+
+}
+
+
+
+.contact-submit:hover {
+
+
+  transform:
+
+
+    translateY(-4px);
+
+
+
+  box-shadow:
+
+
+    0 28px 60px rgba(37,99,235,.35);
+
+}
+
+
+
+.contact-submit:hover::before {
+
+
+  transform:
+
+
+    translateX(120%);
+
+}
+
+
+
+.contact-submit:active {
+
+
+  transform:
+
+
+    translateY(-1px);
+
+}
+
+
+
+.contact-submit:disabled {
+
+
+  opacity:.6;
+
+
+
+  cursor:not-allowed;
+
+
+
+  transform:none;
+
+
+
+  box-shadow:
+
+
+    none;
+
+}
+
+
+
+/* ==========================================================
+   Status Messages
+========================================================== */
+
+.contact-status {
+
+
+  margin-top:1rem;
+
+
+
+  padding:1rem;
+
+
+
+  border-radius:16px;
+
+
+
+  font-weight:650;
+
+
+
+  backdrop-filter:
+
+
+    blur(12px);
+
+}
+
+
+
+.contact-status.success {
+
+
+  background:
+
+
+    rgba(220,252,231,.75);
+
+
+
+  color:#166534;
+
+
+
+  border:
+
+
+    1px solid rgba(22,101,52,.15);
+
+}
+
+
+
+.contact-status.error {
+
+
+  background:
+
+
+    rgba(254,226,226,.75);
+
+
+
+  color:#991b1b;
+
+
+
+  border:
+
+
+    1px solid rgba(153,27,27,.15);
+
+}
+
+
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media(max-width:768px){
+
+
+  .contact-form {
+
+
+    gap:1.15rem;
+
+
+  }
+
+
+
+  .contact-form input,
+  .contact-form textarea {
+
+
+    font-size:16px;
+
+
+
+    border-radius:14px;
+
+
+  }
+
+
+
+  .contact-submit {
+
+
+    width:100%;
+
+
+  }
+
+
+}

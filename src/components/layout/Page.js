@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 
 import BlurText from "../ui/ReactBitsComponents/BlurText";
 
-import "./Page.css";
+// import "./Page.css";
+import "./PageV2.css";
 
 const Page = ({
   title,
@@ -55,9 +56,7 @@ const Page = ({
               )}
 
               {headerAction && (
-                <div className="page-header-action">
-                  {headerAction}
-                </div>
+                <div className="page-header-action">{headerAction}</div>
               )}
             </header>
           )}

@@ -14,7 +14,8 @@ import {
   PROJECTS_TOAST_TEXT,
 } from "../lib/project-data";
 
-import "./ProjectsPage.css";
+// import "./ProjectsPage.css";
+import "./ProjectsPageV2.css";
 
 const SESSION_KEY = "projects_toast_seen_v1";
 

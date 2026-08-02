@@ -1,0 +1,661 @@
+/* ==========================================================
+   Project Toast Message
+   Premium SaaS Visual DNA
+========================================================== */
+
+
+/* ==========================================================
+   Container
+========================================================== */
+
+.project-toast {
+
+  position:fixed;
+
+
+  top:220px;
+
+
+  left:50%;
+
+
+  transform:translateX(-50%);
+
+
+
+  width:min(90vw,520px);
+
+
+
+  display:flex;
+
+
+  align-items:flex-start;
+
+
+  gap:1rem;
+
+
+
+  padding:1.25rem 1.4rem;
+
+
+
+  border-radius:26px;
+
+
+
+  background:
+
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.96),
+      rgba(248,250,252,.88)
+    );
+
+
+
+  backdrop-filter:
+
+    blur(24px);
+
+
+  -webkit-backdrop-filter:
+
+    blur(24px);
+
+
+
+  border:
+
+    1px solid rgba(148,163,184,.55);
+
+
+
+  box-shadow:
+
+
+    0 25px 60px rgba(15,23,42,.16),
+
+
+    0 20px 45px rgba(49,70,255,.12);
+
+
+
+  z-index:9999;
+
+
+
+  overflow:hidden;
+
+
+
+  animation:
+
+    toastSlideIn .45s cubic-bezier(.4,0,.2,1);
+
+
+
+  transition:
+
+    transform .25s ease,
+
+    box-shadow .25s ease,
+
+    border-color .25s ease;
+
+}
+
+
+
+
+
+/* ==========================================================
+   Ambient Glow
+========================================================== */
+
+
+.project-toast::before {
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+  width:180px;
+
+
+  height:180px;
+
+
+  top:-90px;
+
+
+  right:-90px;
+
+
+  border-radius:50%;
+
+
+
+  background:
+
+
+    radial-gradient(
+      circle,
+      rgba(59,130,246,.18),
+      transparent 70%
+    );
+
+
+
+  pointer-events:none;
+
+}
+
+
+
+
+
+/* ==========================================================
+   Progress Bar
+========================================================== */
+
+
+.project-toast-progress {
+
+
+  position:absolute;
+
+
+  bottom:0;
+
+
+  left:0;
+
+
+  height:4px;
+
+
+  width:100%;
+
+
+
+  overflow:hidden;
+
+
+
+  border-radius:
+
+    0 0 26px 26px;
+
+
+
+  background:
+
+    rgba(49,70,255,.12);
+
+}
+
+
+
+.project-toast-progress::after {
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+  inset:0;
+
+
+
+  background:
+
+    linear-gradient(
+      90deg,
+      #3146ff,
+      #6366f1
+    );
+
+
+
+  transform-origin:left;
+
+
+
+  animation:
+
+    toastProgress var(--toast-duration) linear forwards;
+
+}
+
+
+
+@keyframes toastProgress {
+
+
+  from {
+
+    transform:
+
+      scaleX(1);
+
+  }
+
+
+  to {
+
+    transform:
+
+      scaleX(0);
+
+  }
+
+}
+
+
+
+
+
+/* ==========================================================
+   Entrance Animation
+========================================================== */
+
+
+@keyframes toastSlideIn {
+
+
+  from {
+
+
+    opacity:0;
+
+
+    transform:
+
+      translate(-50%,-30px)
+
+      scale(.96);
+
+
+  }
+
+
+
+  to {
+
+
+    opacity:1;
+
+
+    transform:
+
+      translate(-50%,0)
+
+      scale(1);
+
+
+  }
+
+}
+
+
+
+
+
+/* ==========================================================
+   Icon
+========================================================== */
+
+
+.project-toast-icon {
+
+
+  width:44px;
+
+
+  height:44px;
+
+
+
+  flex-shrink:0;
+
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  justify-content:center;
+
+
+
+  border-radius:50%;
+
+
+
+  background:
+
+
+    linear-gradient(
+      135deg,
+      #3146ff,
+      #6366f1
+    );
+
+
+
+  color:white;
+
+
+
+  font-size:1.2rem;
+
+
+
+  box-shadow:
+
+
+    0 12px 30px rgba(49,70,255,.35);
+
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   Content
+========================================================== */
+
+
+.project-toast-content {
+
+
+  flex:1;
+
+
+  position:relative;
+
+
+  z-index:2;
+
+}
+
+
+
+
+.project-toast-title {
+
+
+  margin-bottom:.35rem;
+
+
+
+  color:#1e3a8a;
+
+
+
+  font-size:1rem;
+
+
+
+  font-weight:750;
+
+
+
+  letter-spacing:-.02em;
+
+}
+
+
+
+
+
+.project-toast-message {
+
+
+  color:#475569;
+
+
+
+  font-size:.92rem;
+
+
+
+  line-height:1.55;
+
+}
+
+
+
+
+
+/* ==========================================================
+   Close Button
+========================================================== */
+
+
+.project-toast-close {
+
+
+  background:none;
+
+
+  border:none;
+
+
+
+  padding:4px;
+
+
+
+  color:#64748b;
+
+
+
+  font-size:1.5rem;
+
+
+
+  line-height:1;
+
+
+
+  cursor:pointer;
+
+
+
+  transition:
+
+    color .2s ease,
+
+    transform .2s ease;
+
+}
+
+
+
+.project-toast-close:hover {
+
+
+  color:#3146ff;
+
+
+
+  transform:
+
+    scale(1.15);
+
+}
+
+
+
+
+
+/* ==========================================================
+   Hover Polish
+========================================================== */
+
+
+.project-toast:hover {
+
+
+  border-color:
+
+    rgba(49,70,255,.35);
+
+
+
+  transform:
+
+    translateX(-50%)
+
+    translateY(-4px);
+
+
+
+  box-shadow:
+
+
+    0 35px 80px rgba(15,23,42,.18),
+
+
+    0 20px 45px rgba(49,70,255,.18);
+
+}
+
+
+
+
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+
+@media(max-width:768px){
+
+
+  .project-toast {
+
+
+    top:140px;
+
+
+  }
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+
+@media(max-width:576px){
+
+
+  .project-toast {
+
+
+    top:90px;
+
+
+
+    width:
+
+      calc(100vw - 30px);
+
+
+
+    padding:
+
+      1rem;
+
+
+
+    border-radius:22px;
+
+  }
+
+
+
+  .project-toast-icon {
+
+
+    width:38px;
+
+
+    height:38px;
+
+
+    font-size:1rem;
+
+  }
+
+
+
+  .project-toast-title {
+
+
+    font-size:.92rem;
+
+  }
+
+
+
+  .project-toast-message {
+
+
+    font-size:.82rem;
+
+  }
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   Reduced Motion
+========================================================== */
+
+
+@media(prefers-reduced-motion:reduce){
+
+
+  .project-toast {
+
+
+    animation:none;
+
+    transition:none;
+
+  }
+
+
+  .project-toast-progress::after {
+
+
+    animation:none;
+
+  }
+
+
+}

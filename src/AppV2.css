@@ -1,0 +1,139 @@
+.App {
+
+  position:relative;
+
+  min-height:100vh;
+
+  isolation:isolate;
+
+}
+
+
+/* ==========================================================
+   Animated Background Layer
+========================================================== */
+
+
+.app-background {
+
+  position:fixed;
+
+  inset:0;
+
+  z-index:-20;
+
+  pointer-events:none;
+
+  overflow:hidden;
+
+}
+
+
+/*
+  Optional subtle dark overlay above SideRays.
+
+  Keeps content readable without killing animation.
+*/
+
+.app-background::after {
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+
+  background:
+
+    radial-gradient(
+
+      circle at center,
+
+      transparent 0%,
+
+      rgba(2,6,23,.45) 85%
+
+    );
+
+
+}
+
+
+
+/* ==========================================================
+   Main Content Frame
+========================================================== */
+
+
+.App::before {
+
+  content:"";
+
+  position:fixed;
+
+
+  top:0;
+
+  bottom:0;
+
+
+  left:50%;
+
+
+  width:min(1500px,96vw);
+
+
+  transform:translateX(-50%);
+
+
+  pointer-events:none;
+
+
+  z-index:-10;
+
+
+  background:
+
+    linear-gradient(
+
+      180deg,
+
+      rgba(15,23,42,.12),
+
+      rgba(2,6,23,.25)
+
+    );
+
+
+  border-left:
+
+    1px solid
+
+    rgba(255,255,255,.05);
+
+
+  border-right:
+
+    1px solid
+
+    rgba(255,255,255,.05);
+
+
+  backdrop-filter:blur(3px);
+
+}
+
+
+/* ==========================================================
+   CRA Defaults
+========================================================== */
+
+
+.App-logo,
+.App-header,
+.App-link {
+
+  all:unset;
+
+}

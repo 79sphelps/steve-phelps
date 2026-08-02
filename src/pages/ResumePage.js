@@ -15,7 +15,8 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 
 import RESUME_PDF from "../assets/Resume(Trimmed)-StevePhelps-May2026-Frontend.pdf";
 
-import "./ResumePage.css";
+// import "./ResumePage.css";
+import "./ResumePageV2.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 

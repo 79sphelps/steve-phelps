@@ -7,7 +7,8 @@ import {
   ABOUT_ACTIVITIES_ARRAY,
 } from "../../lib/about-data";
 
-import "./AboutCard.css";
+// import "./AboutCard.css";
+import "./AboutCardV2.css";
 
 const AboutCard = () => {
   return (

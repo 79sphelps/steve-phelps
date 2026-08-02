@@ -23,7 +23,8 @@ import {
 
 import { TbSparkles, TbBrain, TbRobot } from "react-icons/tb";
 
-import "./TechnologyStack.css";
+// import "./TechnologyStack.css";
+import "./TechnologyStackV2.css";
 
 const TECH = [
   {

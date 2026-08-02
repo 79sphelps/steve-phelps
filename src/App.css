@@ -1,16 +1,16 @@
-.App {
+/* .App {
   position: relative;
 
   min-height: 100vh;
 
   isolation: isolate;
-}
+} */
 
 /*
   Creates a centered content column without changing
   your Bootstrap Containers.
 */
-.App::before {
+/* .App::before {
   content: "";
 
   position: fixed;
@@ -37,6 +37,72 @@
 
   border-left: 1px solid rgba(255,255,255,.28);
   border-right: 1px solid rgba(255,255,255,.28);
+} */
+
+/* remove CRA defaults */
+
+/* .App-logo,
+.App-header,
+.App-link {
+  all: unset;
+} */
+
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  isolation: isolate;
+}
+
+/* ==========================================================
+   Animated Background Layer
+========================================================== */
+
+.app-background {
+  position: fixed;
+  inset: 0;
+
+  z-index: -20;
+
+  pointer-events: none;
+
+  overflow: hidden;
+}
+
+/*
+  Soft centered content column.
+  This floats above the animated rays.
+*/
+
+.App::before {
+  content: "";
+
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+
+  left: 50%;
+
+  width: min(1500px, 96vw);
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+
+  z-index: -10;
+
+  /* background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.16),
+      rgba(255,255,255,.04)
+    );
+
+  border-left: 1px solid rgba(255,255,255,.30);
+  border-right: 1px solid rgba(255,255,255,.30); */
+
+  backdrop-filter: blur(2px);
 }
 
 /* remove CRA defaults */

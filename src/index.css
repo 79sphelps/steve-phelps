@@ -1,29 +1,5 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-/* @import "tailwindcss";
-
-body {
-  background: black;
-} */
-
-@import "./theme.css";
-
+/* @import "./theme.css";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-/* body {
-  margin: 0;
-  font-family: "Raleway", serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(5, 90, 42), rgb(16, 28, 21));
-} */
-  /* background-image: linear-gradient(to left, #708238, rgb(20 15 35)); */
-  /* background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35)); */
-  /* background-image: linear-gradient(to left, rgb(5, 90, 42), rgb(20 15 35)); */
-
-
-  @import "./theme.css";
-
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
 
 *,
@@ -76,11 +52,11 @@ body {
     );
 
   background-attachment: fixed;
-}
+} */
 
 /* subtle texture */
 
-body::before {
+/* body::before {
   content: "";
 
   position: fixed;
@@ -103,10 +79,10 @@ body::before {
   background-size: 72px 72px;
 
   opacity: .65;
-}
+} */
 
 /* soft lighting */
-
+/* 
 body::after {
   content: "";
 
@@ -124,4 +100,64 @@ body::after {
     );
 
   opacity: .75;
+} */
+
+
+@import "./theme.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Raleway", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #0f172a;
+
+  overflow-x: hidden;
+
+  /*
+    IMPORTANT
+
+    The animated SideRays component now owns the page background.
+    Keep the body transparent so the fixed WebGL canvas is visible.
+  */
+
+  background: transparent;
+}
+
+/*
+  Prevent the browser from flashing white before React mounts.
+*/
+
+html {
+  background: #eef5ff;
+}
+
+/*
+  Allow the fixed background canvas to sit underneath everything.
+*/
+
+#root {
+  position: relative;
+  isolation: isolate;
 }

@@ -1,0 +1,438 @@
+/* ==========================================================
+   About Card Content
+   Phase 1 Premium SaaS Founder Visual DNA
+========================================================== */
+
+
+/*
+  Parent component owns:
+  - background
+  - border
+  - shadow
+  - hover
+
+  This component owns:
+  - content spacing
+  - typography
+*/
+
+
+.about-card {
+
+    width:100%;
+
+}
+
+
+
+.about-card-body {
+
+    padding:0;
+
+}
+
+
+
+/* ==========================================================
+   Content
+========================================================== */
+
+
+.about-card-content {
+
+    margin:0;
+
+}
+
+
+
+/* ==========================================================
+   Paragraphs
+========================================================== */
+
+
+.about-me-paragraph {
+
+
+    color:#cbd5e1;
+
+
+    font-size:1.05rem;
+
+
+    line-height:1.95;
+
+
+    margin-bottom:22px;
+
+
+    letter-spacing:-.005em;
+
+
+}
+
+
+
+.about-me-paragraph strong {
+
+
+    color:#f8fafc;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+/* ==========================================================
+   Activities Heading
+========================================================== */
+
+
+.about-other-title {
+
+
+    margin-top:40px;
+
+
+    margin-bottom:22px;
+
+
+
+    font-size:1.15rem;
+
+
+    font-weight:750;
+
+
+
+    color:#f8fafc;
+
+
+
+    letter-spacing:-.02em;
+
+
+}
+
+
+
+.about-other-title::after {
+
+
+    content:"";
+
+
+    display:block;
+
+
+    margin-top:10px;
+
+
+
+    width:45px;
+
+
+    height:3px;
+
+
+
+    border-radius:999px;
+
+
+
+    background:
+
+
+        linear-gradient(
+
+            90deg,
+
+            #2563eb,
+
+            #6366f1
+
+        );
+
+
+}
+
+
+
+/* ==========================================================
+   Activity List
+========================================================== */
+
+
+.about-activities-list {
+
+
+    list-style:none;
+
+
+    margin:0;
+
+
+    padding:0;
+
+
+}
+
+
+
+.about-activity {
+
+
+    display:flex;
+
+
+    align-items:flex-start;
+
+
+
+    gap:14px;
+
+
+    margin-bottom:16px;
+
+
+
+    color:#cbd5e1;
+
+
+
+    font-size:1rem;
+
+
+    line-height:1.7;
+
+
+
+    transition:
+
+
+        color .25s ease,
+
+        transform .25s ease;
+
+
+}
+
+
+
+.about-activity:hover {
+
+
+    color:#f8fafc;
+
+
+    transform:
+
+        translateX(4px);
+
+
+}
+
+
+
+/* ==========================================================
+   Icon
+========================================================== */
+
+
+.about-activity-icon {
+
+
+    color:#60a5fa;
+
+
+    flex-shrink:0;
+
+
+    margin-top:5px;
+
+
+    font-size:1rem;
+
+
+
+    filter:
+
+
+        drop-shadow(
+
+            0 4px 12px rgba(96,165,250,.35)
+
+        );
+
+
+}
+
+
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+
+@media(max-width:991px){
+
+
+    .about-me-paragraph {
+
+
+        font-size:1rem;
+
+
+        line-height:1.85;
+
+
+    }
+
+
+}
+
+
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+
+@media(max-width:767px){
+
+
+    .about-me-paragraph {
+
+
+        font-size:.97rem;
+
+
+        line-height:1.75;
+
+
+        margin-bottom:18px;
+
+
+    }
+
+
+
+    .about-other-title {
+
+
+        margin-top:28px;
+
+
+        margin-bottom:18px;
+
+
+        font-size:1.05rem;
+
+
+    }
+
+
+
+    .about-activity {
+
+
+        gap:10px;
+
+
+        font-size:.95rem;
+
+
+        margin-bottom:14px;
+
+
+    }
+
+
+}
+
+
+
+/* ==========================================================
+   Small Phones
+========================================================== */
+
+
+@media(max-width:480px){
+
+
+    .about-me-paragraph {
+
+
+        font-size:.94rem;
+
+
+    }
+
+
+
+    .about-activity {
+
+
+        font-size:.92rem;
+
+
+    }
+
+
+}
+
+
+
+/* ==========================================================
+   Mobile Content Spacing Update
+========================================================== */
+
+
+@media(max-width:767px){
+
+
+    .about-card-body {
+
+
+        padding-left:14px;
+
+
+        padding-right:14px;
+
+
+    }
+
+
+
+    .about-card-content {
+
+
+        padding:0;
+
+
+    }
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .about-card-body {
+
+
+        padding-left:8px;
+
+
+        padding-right:8px;
+
+
+    }
+
+
+}

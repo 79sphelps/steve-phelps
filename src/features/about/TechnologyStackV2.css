@@ -1,0 +1,391 @@
+/* ==========================================================
+   Tech Stack
+   Premium SaaS Visual DNA
+========================================================== */
+
+
+/* ==========================================================
+   Grid Layout
+========================================================== */
+
+.tech-stack-grid {
+
+  width:100%;
+
+  justify-content:center;
+
+  row-gap:18px;
+
+}
+
+
+.tech-stack-column {
+
+  display:flex;
+
+}
+
+
+
+/* ==========================================================
+   Card
+========================================================== */
+
+.tech-stack-card {
+
+  position:relative;
+
+  overflow:hidden;
+
+
+  width:100%;
+
+
+  min-height:105px;
+
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+
+  gap:10px;
+
+
+  padding:18px 12px;
+
+
+
+  background:
+
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.96),
+      rgba(248,250,252,.90)
+    );
+
+
+
+  border:
+
+    1px solid rgba(148,163,184,.55);
+
+
+
+  border-radius:22px;
+
+
+
+  backdrop-filter:
+
+    blur(20px);
+
+
+
+  -webkit-backdrop-filter:
+
+    blur(20px);
+
+
+
+  box-shadow:
+
+
+    0 15px 35px rgba(15,23,42,.07),
+
+
+    0 10px 25px rgba(59,130,246,.04);
+
+
+
+  transition:
+
+
+    transform .3s ease,
+
+
+    box-shadow .3s ease,
+
+
+    border-color .3s ease;
+
+}
+
+
+
+
+/* ==========================================================
+   Soft Glow Accent
+========================================================== */
+
+.tech-stack-card::before {
+
+  content:"";
+
+
+  position:absolute;
+
+
+  width:110px;
+
+
+  height:110px;
+
+
+  right:-45px;
+
+
+  top:-45px;
+
+
+  border-radius:50%;
+
+
+  background:
+
+
+    radial-gradient(
+      circle,
+      rgba(59,130,246,.16),
+      transparent 70%
+    );
+
+
+  pointer-events:none;
+
+
+  opacity:.75;
+
+}
+
+
+
+/* ==========================================================
+   Hover
+========================================================== */
+
+.tech-stack-card:hover {
+
+
+  transform:
+
+    translateY(-6px);
+
+
+
+  border-color:
+
+    rgba(59,130,246,.55);
+
+
+
+  box-shadow:
+
+
+    0 30px 70px rgba(15,23,42,.12),
+
+
+    0 20px 45px rgba(37,99,235,.12);
+
+}
+
+
+
+
+/* ==========================================================
+   Icon
+========================================================== */
+
+.tech-stack-icon {
+
+
+  display:flex;
+
+
+  justify-content:center;
+
+
+  align-items:center;
+
+
+
+  font-size:2.4rem;
+
+
+
+  color:#2563eb;
+
+
+
+  transition:
+
+
+    transform .25s ease,
+
+
+    filter .25s ease;
+
+
+}
+
+
+
+.tech-stack-card:hover .tech-stack-icon {
+
+
+  transform:
+
+    scale(1.12);
+
+
+
+  filter:
+
+    drop-shadow(
+      0 8px 18px rgba(37,99,235,.25)
+    );
+
+
+}
+
+
+
+/* ==========================================================
+   Label
+========================================================== */
+
+.tech-stack-name {
+
+
+  text-align:center;
+
+
+
+  color:#334155;
+
+
+
+  font-size:.78rem;
+
+
+
+  line-height:1.25;
+
+
+
+  font-weight:650;
+
+
+
+  letter-spacing:-.01em;
+
+
+}
+
+
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+@media(max-width:992px){
+
+
+  .tech-stack-icon {
+
+
+    font-size:
+
+      2.2rem;
+
+
+  }
+
+
+
+  .tech-stack-card {
+
+
+    min-height:
+
+      100px;
+
+
+  }
+
+
+}
+
+
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media(max-width:576px){
+
+
+  .tech-stack-grid {
+
+
+    row-gap:
+
+      14px;
+
+
+  }
+
+
+
+  .tech-stack-card {
+
+
+    min-height:
+
+      95px;
+
+
+
+    padding:
+
+      14px 8px;
+
+
+
+    border-radius:
+
+      18px;
+
+
+  }
+
+
+
+  .tech-stack-icon {
+
+
+    font-size:
+
+      2rem;
+
+
+  }
+
+
+
+  .tech-stack-name {
+
+
+    font-size:
+
+      .72rem;
+
+
+  }
+
+
+}

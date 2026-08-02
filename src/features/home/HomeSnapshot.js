@@ -14,7 +14,8 @@ import {
 
 import MY_IMG from "../../assets/my_photo-min.jpg";
 
-import "./HomeSnapshot.css";
+// import "./HomeSnapshot.css";
+import "./HomeSnapshotV2.css";
 
 const SOCIALS = {
   github: <AiFillGithub />,
