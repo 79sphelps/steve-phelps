@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
+import SpecularButton from "../../components/ui/ReactBitsComponents/SpecularButton";
+
 // import "./ContactForm.css";
 import "./ContactFormV2.css";
 
@@ -197,9 +199,35 @@ const ContactForm = () => {
         {renderError("message")}
       </div>
 
-      <button className="contact-submit" disabled={isSubmitting}>
+      {/* <button className="contact-submit" disabled={isSubmitting}>
         {isSubmitting ? "Sending..." : "Send Message"}
-      </button>
+      </button> */}
+
+      <div className="contact-submit-wrapper">
+        <SpecularButton
+          size="lg"
+          radius={18}
+          tint="#0f172a"
+          tintOpacity={0.85}
+          blur={8}
+          textColor="#ffffff"
+          lineColor="#2563eb"
+          baseColor="#1e293b"
+          // intensity={1.4}
+          intensity={5}
+          shineSize={12}
+          shineFade={45}
+          thickness={2.5}
+          // speed={0.35}
+          speed={0.05}
+          followMouse
+          proximity={250}
+          autoAnimate={false}
+          onClick={handleSubmit}
+        >
+          {isSubmitting ? "Sending..." : "Send Message"}
+        </SpecularButton>
+      </div>
 
       {status.message && (
         <div className={`contact-status ${status.type}`}>{status.message}</div>

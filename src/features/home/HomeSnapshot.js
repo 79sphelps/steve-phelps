@@ -4,6 +4,7 @@ import Tilt from "react-parallax-tilt";
 
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import SpotlightCard from "../../components/ui/ReactBitsComponents/SpotlightCard";
 
 import {
   HOME_PROFILE_SNAPSHOT_TEXT,
@@ -27,31 +28,42 @@ const HomeSnapshot = () => {
   return (
     <Container fluid className="home-snapshot-section">
       <Container>
-        <Row className="snapshot-card">
-          {/* CONTENT */}
+        {/* <Row className="snapshot-card"> */}
+        <SpotlightCard
+          className="snapshot-card"
+          // spotlightColor="rgba(96, 165, 250, 0.22)"
+          spotlightColor="rgba(255,255,255,0.25)"
+        >
+          <Row className="snapshot-card-content">
+            {/* CONTENT */}
 
-          <Col md={8} className="snapshot-content">
-            <h1 className="snapshot-heading">
-              <span>Snapshot</span>
-            </h1>
+            <Col md={8} className="snapshot-content">
+              <h1 className="snapshot-heading">
+                <span>Snapshot</span>
+              </h1>
 
-            <p className="snapshot-description">{HOME_PROFILE_SNAPSHOT_TEXT}</p>
-          </Col>
+              <p className="snapshot-description">
+                {HOME_PROFILE_SNAPSHOT_TEXT}
+              </p>
+            </Col>
 
-          {/* IMAGE */}
+            {/* IMAGE */}
 
-          <Col md={4} className="snapshot-avatar-wrapper">
-            <Tilt>
-              <div className="snapshot-avatar-card">
-                <img
-                  src={MY_IMG}
-                  className="snapshot-avatar"
-                  alt="Steve Phelps"
-                />
-              </div>
-            </Tilt>
-          </Col>
-        </Row>
+            <Col md={4} className="snapshot-avatar-wrapper">
+              <Tilt>
+                <div className="snapshot-avatar-card">
+                  <img
+                    src={MY_IMG}
+                    className="snapshot-avatar"
+                    alt="Steve Phelps"
+                  />
+                </div>
+              </Tilt>
+            </Col>
+          </Row>
+        </SpotlightCard>
+
+        {/* SOCIAL */}
 
         {/* SOCIAL */}
 

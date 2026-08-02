@@ -25,7 +25,7 @@
    Main Snapshot Card
 ========================================================== */
 
-.snapshot-card {
+/* .snapshot-card {
   display: flex;
 
   align-items: center;
@@ -49,19 +49,53 @@
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45), 0 0 50px rgba(59, 130, 246, 0.08);
 
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+} */
+
+/* ==========================================================
+   Main Snapshot Spotlight Card
+========================================================== */
+
+.snapshot-card {
+  width: 100%;
+
+  border-radius: 22px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.78),
+    rgba(5, 9, 20, 0.72)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(24px);
+
+  -webkit-backdrop-filter: blur(24px);
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45), 0 0 50px rgba(59, 130, 246, 0.08);
+
+  padding: 42px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.snapshot-card:hover {
+.snapshot-card-content {
+  display: flex;
+
+  align-items: center;
+}
+
+/* .snapshot-card:hover {
   transform: translateY(-5px);
 
   border-color: rgba(112, 183, 255, 0.35);
 
   box-shadow: 0 40px 90px rgba(0, 0, 0, 0.6), 0 0 70px rgba(59, 130, 246, 0.15);
-}
+} */
 
 /* subtle edge lighting */
 
-.snapshot-card::before {
+/* .snapshot-card::before {
   content: "";
 
   position: absolute;
@@ -79,7 +113,7 @@
   );
 
   opacity: 0.6;
-}
+} */
 
 /* ==========================================================
    Content
@@ -271,29 +305,38 @@
     padding: 45px 0 55px;
   }
 
+  /* .snapshot-card {
+    padding: 24px;
+
+    border-radius: 18px;
+  } */
   .snapshot-card {
     padding: 24px;
 
     border-radius: 18px;
   }
 
-.snapshot-content {
-  text-align: left;
-}
+  .snapshot-card-content {
+    align-items: center;
+  }
 
-.snapshot-heading {
-  text-align: center;
+  .snapshot-content {
+    text-align: left;
+  }
 
-  font-size: 1.8rem;
-}
+  .snapshot-heading {
+    text-align: center;
 
-.snapshot-description {
-  text-align: left;
+    font-size: 1.8rem;
+  }
 
-  font-size: .95rem;
+  .snapshot-description {
+    text-align: left;
 
-  line-height: 1.7;
-}
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+  }
 
   .snapshot-avatar-wrapper {
     margin-top: 25px;
@@ -337,5 +380,31 @@
     border-radius: 10px;
 
     font-size: 1.15rem;
+  }
+}
+
+/* ==========================================================
+   Spotlight Integration
+========================================================== */
+
+.snapshot-card {
+  overflow: hidden;
+}
+
+.snapshot-card::before {
+  z-index: 0;
+}
+
+.snapshot-card > * {
+  position: relative;
+
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .snapshot-card {
+    padding: 24px;
+
+    border-radius: 18px;
   }
 }

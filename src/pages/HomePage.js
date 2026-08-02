@@ -31,6 +31,7 @@ import {
 import HOME_LOGO_IMG from "../assets/home-main.svg";
 
 import HomeSnapshot from "../features/home/HomeSnapshot";
+import ShinyText from "../components/ui/ReactBitsComponents/ShinyText";
 
 // import "./HomePage.css";
 import "./HomePageV2.css";
@@ -44,12 +45,26 @@ const HomePage = () => {
         <Col lg={7} xl={7} className="home-header">
           <Section className="hero-card">
             <div className="hero-introduction">
-              <h1 className="heading-name">
+              {/* <h1 className="heading-name">
                 {HOME_GREETING}
 
                 <span className="wave" role="img" aria-label="wave">
-                  👋🏻
+                  👋🏻 ✨
                 </span>
+              </h1> */}
+              <h1 className="heading-name">
+                <ShinyText
+                  text={`${HOME_GREETING}`}
+                  speed={2}
+                  delay={0}
+                  color="#b5b5b5"
+                  shineColor="#ffffff"
+                  spread={120}
+                  direction="left"
+                  yoyo={false}
+                  pauseOnHover={false}
+                  disabled={false}
+                />
               </h1>
 
               <h2 className="hero-name">

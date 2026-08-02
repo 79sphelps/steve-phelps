@@ -9,6 +9,7 @@ import Section from "../components/layout/Section";
 
 // import Loading from "../components/feedback/Loading";
 import ResumeLoader from "../components/feedback/ResumeLoader";
+import SpecularButton from "../components/ui/ReactBitsComponents/SpecularButton";
 
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
@@ -57,14 +58,39 @@ const ResumePage = () => {
   }, [pdfLoaded]);
 
   const DownloadButton = () => (
-    <Button
+    // <Button
+    //   href={RESUME_PDF}
+    //   target="_blank"
+    //   className="resume-download-button"
+    // >
+    //   <AiOutlineDownload />
+    //   <span>Download CV</span>
+    // </Button>
+    <SpecularButton
       href={RESUME_PDF}
       target="_blank"
-      className="resume-download-button"
+      size="lg"
+      radius={18}
+      tint="#0f172a"
+      tintOpacity={0.85}
+      blur={8}
+      textColor="#ffffff"
+      lineColor="#2563eb"
+      baseColor="#1e293b"
+      // intensity={1.4}
+      intensity={5}
+      shineSize={12}
+      shineFade={45}
+      thickness={2.5}
+      // speed={0.35}
+      speed={0.05}
+      followMouse
+      proximity={250}
+      autoAnimate={false}
     >
       <AiOutlineDownload />
       <span>Download CV</span>
-    </Button>
+    </SpecularButton>
   );
 
   return (
