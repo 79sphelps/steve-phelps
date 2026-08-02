@@ -263,12 +263,16 @@ const App = () => {
               speed={2.2}
               rayColor1="#5B7CFA"
               rayColor2="#8EC5FF"
-              intensity={1.25}
-              spread={1.9}
+              // intensity={1.25}
+              intensity={3}
+              // spread={1.9}
+              spread={3}
               origin="top-right"
-              tilt={-8}
+              // tilt={-8}
+              tilt={0}
               saturation={1.3}
               blend={0.7}
+              // falloff={1.8}
               falloff={1.8}
               opacity={0.42}
             />
