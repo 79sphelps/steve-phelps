@@ -219,6 +219,16 @@
   margin-top: 2rem;
 }
 
+.resume-download-link {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.resume-download-link:hover,
+.resume-download-link:focus {
+  text-decoration: none;
+}
+
 /* ==========================================================
    Loading / Transition Support
 ========================================================== */

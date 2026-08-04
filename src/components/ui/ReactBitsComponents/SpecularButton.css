@@ -104,7 +104,8 @@
 
   pointer-events:none;
 
-  z-index:0;
+  /* z-index:0; */
+  z-index:1;
 
 }
 
@@ -134,7 +135,8 @@
 
   position:relative;
 
-  z-index:3;
+  /* z-index:3; */
+  z-index:2;
 
   display:inline-flex;
 
@@ -150,7 +152,21 @@
 
 
 .specular-button {
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow: visible;
+}
+
+.specular-button {
+  isolation:isolate;
+}
+
+.specular-button::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  background:inherit;
+  z-index:-1;
 }
 
 .specular-button__fx {
