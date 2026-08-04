@@ -193,7 +193,7 @@ const BUNDLE_URL = `${WIDGET_BASE}/widget-bundle.iife.js`;
 const LOADER_URL = `${WIDGET_BASE}/widget.js`;
 
 const WIDGET_API_KEY =
-  process.env.REACT_APP_WIDGET_API_KEY ?? "pk_7f2a325159a14dfb8fffd78d26b7d805";
+  process.env.REACT_APP_WIDGET_API_KEY ?? "pk_911c5d7a4f914a78894c486452fcefac";
 
 const App = () => {
   const [load, updateLoad] = useState(true);
