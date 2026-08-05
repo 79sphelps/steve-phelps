@@ -1,0 +1,542 @@
+/* ==========================================================
+   RESUME PAGE V3
+   Portfolio Engineering Resume Theme
+   Responsive Hero + Premium Dark UI
+========================================================== */
+
+:root {
+  --resume-bg: #0b1017;
+
+  --resume-panel: #121a24;
+
+  --resume-border: #334155;
+
+  --resume-border-soft: rgba(51, 65, 85, 0.6);
+
+  --resume-text: #f8fafc;
+
+  --resume-text-muted: #cbd5e1;
+
+  --resume-text-subtle: #94a3b8;
+
+  --resume-blue: #3b82f6;
+
+  --resume-blue-light: #60a5fa;
+
+  --resume-cyan: #38bdf8;
+
+  --resume-radius-lg: 24px;
+
+  --resume-radius-md: 16px;
+
+  --resume-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+
+  --resume-transition: all 0.25s ease;
+}
+
+/* ==========================================================
+   PAGE
+========================================================== */
+
+.resume-page {
+  min-height: 100vh;
+
+  position: relative;
+
+  overflow: hidden;
+
+  color: var(--resume-text);
+
+  background: radial-gradient(
+      circle at top,
+      rgba(59, 130, 246, 0.15),
+      transparent 35%
+    ),
+    var(--resume-bg);
+}
+
+.resume-page::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background-image: linear-gradient(
+      rgba(96, 165, 250, 0.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(96, 165, 250, 0.04) 1px, transparent 1px);
+
+  background-size: 48px 48px;
+
+  mask-image: linear-gradient(to bottom, black, transparent);
+
+  pointer-events: none;
+}
+
+.resume-background-accent {
+  position: absolute;
+
+  top: -220px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 700px;
+
+  height: 700px;
+
+  border-radius: 50%;
+
+  background: rgba(59, 130, 246, 0.12);
+
+  filter: blur(140px);
+
+  pointer-events: none;
+}
+
+.resume-container {
+  position: relative;
+
+  max-width: 1280px;
+
+  margin: auto;
+
+  padding: 56px 32px 80px;
+}
+
+/* ==========================================================
+   CARD SYSTEM
+========================================================== */
+
+.resume-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border: 1px solid var(--resume-border-soft);
+
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.82),
+    rgba(2, 6, 23, 0.72)
+  );
+
+  backdrop-filter: blur(24px);
+
+  -webkit-backdrop-filter: blur(24px);
+
+  border-radius: var(--resume-radius-lg);
+
+  box-shadow: var(--resume-shadow);
+}
+
+.resume-card::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: radial-gradient(
+    circle at top left,
+    rgba(96, 165, 250, 0.12),
+    transparent 40%
+  );
+
+  pointer-events: none;
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.resume-hero {
+  padding: 32px;
+}
+
+.resume-hero-content {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 48px;
+}
+
+.resume-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 6px 16px;
+
+  border-radius: 999px;
+
+  border: 1px solid rgba(59, 130, 246, 0.35);
+
+  background: rgba(59, 130, 246, 0.1);
+
+  color: #93c5fd;
+
+  font-size: 0.875rem;
+
+  margin-bottom: 20px;
+}
+
+.resume-name {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+
+  font-weight: 800;
+
+  letter-spacing: -0.04em;
+
+  line-height: 1.05;
+}
+
+.resume-title {
+  margin-top: 12px;
+
+  color: var(--resume-blue-light);
+
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.resume-meta {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+
+  margin-top: 24px;
+
+  color: var(--resume-text-muted);
+}
+
+.resume-meta-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 0.95rem;
+}
+
+.resume-avatar {
+  flex-shrink: 0;
+
+  width: 180px;
+
+  height: 180px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 32px;
+
+  /* background: linear-gradient(145deg, #172554, #020617); */
+
+  /* border: 1px solid rgba(96, 165, 250, 0.35); */
+
+  color: var(--resume-blue-light);
+
+  box-shadow: 0 30px 80px rgba(37, 99, 235, 0.25);
+}
+
+/* ==========================================================
+   METRICS
+========================================================== */
+
+.resume-metrics {
+  margin-top: 32px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+.resume-metrics > * {
+  min-width: 0;
+}
+
+.resume-metric-card {
+  height: 100%;
+
+  padding: 20px;
+
+  border: 1px solid var(--resume-border);
+
+  border-radius: var(--resume-radius-md);
+
+  background: rgba(15, 23, 42, 0.65);
+
+  transition: var(--resume-transition);
+}
+
+.resume-metric-card:hover {
+  transform: translateY(-4px);
+
+  border-color: var(--resume-blue);
+}
+
+/* ==========================================================
+   CONTENT GRID
+========================================================== */
+
+.resume-content-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.6fr)
+    minmax(0, 1fr);
+
+  gap: 32px;
+
+  margin-top: 32px;
+}
+
+.resume-highlight-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+.resume-column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 32px;
+}
+
+.resume-body-text {
+  color: var(--resume-text-muted);
+
+  line-height: 1.9;
+}
+
+/* ==========================================================
+   CARD CHILDREN
+========================================================== */
+
+.resume-item-card {
+  padding: 24px;
+
+  border: 1px solid var(--resume-border);
+
+  border-radius: var(--resume-radius-md);
+
+  background: rgba(2, 6, 23, 0.45);
+
+  transition: var(--resume-transition);
+}
+
+.resume-item-card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(96, 165, 250, 0.6);
+}
+
+/* ==========================================================
+   TIMELINE
+========================================================== */
+
+.resume-timeline {
+  position: relative;
+
+  padding-left: 12px;
+}
+
+.resume-timeline-line {
+  position: absolute;
+
+  left: 17px;
+
+  top: 16px;
+
+  bottom: 16px;
+
+  width: 1px;
+
+  background: var(--resume-border);
+}
+
+.resume-timeline-item {
+  position: relative;
+
+  padding-left: 48px;
+
+  margin-bottom: 24px;
+}
+
+.resume-timeline-node {
+  position: absolute;
+
+  left: 0;
+
+  top: 24px;
+
+  width: 36px;
+
+  height: 36px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #0f172a;
+
+  border: 1px solid rgba(96, 165, 250, 0.5);
+}
+
+.resume-timeline-node span {
+  width: 12px;
+
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: var(--resume-blue-light);
+}
+
+/* ==========================================================
+   CTA
+========================================================== */
+
+.resume-cta {
+  margin-top: 32px;
+
+  padding: 40px;
+
+  border-radius: var(--resume-radius-lg);
+
+  background: linear-gradient(135deg, #0f172a, #172554);
+}
+
+.resume-cta-button {
+  display: inline-flex;
+
+  padding: 12px 24px;
+
+  border-radius: 12px;
+
+  background: var(--resume-blue);
+
+  color: white;
+
+  font-weight: 600;
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 1200px) {
+  .resume-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .resume-container {
+    padding: 48px 24px;
+  }
+
+  .resume-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 32px 16px 60px;
+  }
+
+  .resume-hero {
+    padding: 24px;
+  }
+
+  .resume-hero-content {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 28px;
+  }
+
+  .resume-status {
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  .resume-meta {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .resume-avatar {
+    width: 130px;
+
+    height: 130px;
+  }
+
+  .resume-metrics {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .resume-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-cta {
+    padding: 28px;
+
+    text-align: center;
+  }
+}
+
+/* ==========================================================
+   SMALL PHONES
+========================================================== */
+
+@media (max-width: 420px) {
+  .resume-container {
+    padding-left: 12px;
+
+    padding-right: 12px;
+  }
+
+  .resume-name {
+    font-size: 1.9rem;
+  }
+
+  .resume-avatar {
+    width: 110px;
+
+    height: 110px;
+  }
+}

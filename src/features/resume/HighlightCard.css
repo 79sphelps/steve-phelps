@@ -1,0 +1,295 @@
+/* ==========================================================
+   HIGHLIGHT CARD
+   Resume KPI / Achievement Component
+========================================================== */
+
+
+.highlight-card {
+
+  width:100%;
+
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  justify-content:center;
+
+
+  padding:20px;
+
+
+  border:
+
+    1px solid
+
+    rgba(51,65,85,.85);
+
+
+  background:
+
+    rgba(2,6,23,.5);
+
+
+  border-radius:
+
+    16px;
+
+
+  text-align:center;
+
+
+  transition:
+
+    all 250ms ease;
+
+
+  position:relative;
+
+  overflow:hidden;
+
+}
+
+
+
+
+
+/* ==========================================================
+   SUBTLE LIGHT EFFECT
+========================================================== */
+
+
+.highlight-card::before {
+
+  content:"";
+
+
+  position:absolute;
+
+
+  inset:0;
+
+
+  background:
+
+    radial-gradient(
+      circle at top,
+      rgba(96,165,250,.12),
+      transparent 65%
+    );
+
+
+  opacity:0;
+
+
+  transition:
+
+    opacity 250ms ease;
+
+}
+
+
+
+.highlight-card:hover::before {
+
+  opacity:1;
+
+}
+
+
+
+
+
+.highlight-card:hover {
+
+  border-color:
+
+    rgba(96,165,250,.55);
+
+
+  transform:
+
+    translateY(-3px);
+
+
+  background:
+
+    rgba(15,23,42,.75);
+
+}
+
+
+
+
+/* ==========================================================
+   VALUE
+========================================================== */
+
+
+.highlight-value {
+
+  position:relative;
+
+
+  z-index:1;
+
+
+  color:
+
+    #93c5fd;
+
+
+  font-size:
+
+    1.75rem;
+
+
+  font-weight:
+
+    700;
+
+
+  line-height:
+
+    1.2;
+
+
+  letter-spacing:
+
+    -.02em;
+
+
+}
+
+
+
+/* ==========================================================
+   LABEL
+========================================================== */
+
+
+.highlight-label {
+
+  position:relative;
+
+
+  z-index:1;
+
+
+  margin-top:
+
+    8px;
+
+
+  color:
+
+    #64748b;
+
+
+  font-size:
+
+    .7rem;
+
+
+  font-weight:
+
+    600;
+
+
+  letter-spacing:
+
+    .08em;
+
+
+  text-transform:
+
+    uppercase;
+
+
+  line-height:
+
+    1.5;
+
+}
+
+
+
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+
+@media (max-width:768px) {
+
+
+  .highlight-card {
+
+    padding:
+
+      18px;
+
+  }
+
+
+
+  .highlight-value {
+
+    font-size:
+
+      1.5rem;
+
+  }
+
+
+
+}
+
+
+
+
+@media (max-width:480px) {
+
+
+  .highlight-card {
+
+    padding:
+
+      16px;
+
+
+    border-radius:
+
+      14px;
+
+  }
+
+
+
+  .highlight-value {
+
+    font-size:
+
+      1.35rem;
+
+  }
+
+
+
+  .highlight-label {
+
+    font-size:
+
+      .65rem;
+
+    letter-spacing:
+
+      .06em;
+
+  }
+
+
+}

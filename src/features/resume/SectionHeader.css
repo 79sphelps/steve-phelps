@@ -1,0 +1,324 @@
+/* ==========================================================
+   SECTION HEADER
+   Resume Module Shared Component
+========================================================== */
+
+
+.section-header {
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+
+  margin-bottom:
+
+    20px;
+
+}
+
+
+
+
+
+/* ==========================================================
+   ICON CONTAINER
+========================================================== */
+
+
+.section-header-icon {
+
+  width:
+
+    44px;
+
+
+  height:
+
+    44px;
+
+
+  flex-shrink:0;
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  justify-content:center;
+
+
+  border-radius:
+
+    12px;
+
+
+  background:
+
+    rgba(59,130,246,.1);
+
+
+  border:
+
+    1px solid
+
+    rgba(59,130,246,.2);
+
+
+  color:
+
+    #60a5fa;
+
+
+  transition:
+
+    all 250ms ease;
+
+}
+
+
+
+.section-header:hover .section-header-icon {
+
+  background:
+
+    rgba(59,130,246,.18);
+
+
+  border-color:
+
+    rgba(96,165,250,.5);
+
+
+  box-shadow:
+
+    0 0 20px rgba(59,130,246,.15);
+
+}
+
+
+
+
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+
+.section-header-content {
+
+  display:flex;
+
+  flex-direction:column;
+
+
+  min-width:0;
+
+}
+
+
+
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+
+.section-header-title {
+
+  margin:
+
+    0;
+
+
+  color:
+
+    #f8fafc;
+
+
+  font-size:
+
+    1.25rem;
+
+
+  font-weight:
+
+    600;
+
+
+  line-height:
+
+    1.4;
+
+
+  letter-spacing:
+
+    -.01em;
+
+}
+
+
+
+
+
+/* ==========================================================
+   ACCENT LINE
+========================================================== */
+
+
+.section-header-line {
+
+  margin-top:
+
+    6px;
+
+
+  width:
+
+    96px;
+
+
+  height:
+
+    2px;
+
+
+  border-radius:
+
+    999px;
+
+
+  background:
+
+    linear-gradient(
+      90deg,
+      #3b82f6,
+      #38bdf8
+    );
+
+}
+
+
+
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+
+@media (max-width:768px) {
+
+
+  .section-header {
+
+    gap:
+
+      10px;
+
+
+    margin-bottom:
+
+      18px;
+
+  }
+
+
+
+  .section-header-icon {
+
+    width:
+
+      40px;
+
+
+    height:
+
+      40px;
+
+  }
+
+
+
+  .section-header-title {
+
+    font-size:
+
+      1.1rem;
+
+  }
+
+
+
+  .section-header-line {
+
+    width:
+
+      72px;
+
+  }
+
+
+}
+
+
+
+
+@media (max-width:480px) {
+
+
+  .section-header {
+
+    align-items:
+
+      flex-start;
+
+  }
+
+
+
+  .section-header-icon {
+
+    width:
+
+      36px;
+
+
+    height:
+
+      36px;
+
+
+    border-radius:
+
+      10px;
+
+  }
+
+
+
+  .section-header-title {
+
+    font-size:
+
+      1rem;
+
+  }
+
+
+
+  .section-header-line {
+
+    width:
+
+      60px;
+
+  }
+
+
+}

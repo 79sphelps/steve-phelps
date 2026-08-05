@@ -179,7 +179,8 @@ import SideRays from "./components/ui/ReactBitsComponents/SideRays";
 const HomePage = lazy(() => import("./pages/HomePage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const ProjectsPage = lazy(() => import("./pages/ProjectsPage"));
-const ResumePage = lazy(() => import("./pages/ResumePage"));
+// const ResumePage = lazy(() => import("./pages/ResumePage"));
+const ResumePageV2 = lazy(() => import("./pages/ResumePageV2"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const NavBar = lazy(() => import("./components/layout/Navbar"));
 const Footer = lazy(() => import("./components/layout/Footer"));
@@ -289,7 +290,7 @@ const App = () => {
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/resume" element={<ResumePage />} />
+            <Route path="/resume" element={<ResumePageV2 />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
 

@@ -1,0 +1,38 @@
+@media print {
+  body {
+    background: white !important;
+
+    color: black;
+  }
+
+  .resume-background-accent,
+  .resume-status,
+  .resume-avatar,
+  .resume-cta-button {
+    display: none !important;
+  }
+
+  .resume-page {
+    background: white;
+  }
+
+  .resume-card,
+  .page-section-spotlight {
+    background: white !important;
+
+    box-shadow: none !important;
+
+    border: 1px solid #ddd !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    color: black !important;
+  }
+
+  .resume-page {
+    padding: 0;
+  }
+}

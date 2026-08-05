@@ -1,0 +1,209 @@
+/* ==========================================================
+   METRIC CARD
+   Resume KPI Summary Component
+========================================================== */
+
+.metric-card {
+  width: 100%;
+
+  height: 100%;
+
+  padding: 20px;
+
+  border: 1px solid rgba(51, 65, 85, 0.85);
+
+  background: rgba(15, 23, 42, 0.6);
+
+  backdrop-filter: blur(12px);
+
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 18px;
+
+  transition: all 300ms ease;
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.metric-card:hover {
+  border-color: rgba(59, 130, 246, 0.8);
+
+  transform: translateY(-4px);
+
+  background: rgba(15, 23, 42, 0.85);
+}
+
+.metric-card::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(96, 165, 250, 0.7),
+    transparent
+  );
+
+  opacity: 0;
+
+  transition: opacity 300ms ease;
+}
+
+.metric-card:hover::after {
+  opacity: 1;
+}
+
+/* ==========================================================
+   CONTENT WRAPPER
+========================================================== */
+
+.metric-content {
+  width: 100%;
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.metric-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 12px;
+}
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.metric-icon {
+  width: 40px;
+
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: rgba(59, 130, 246, 0.1);
+
+  color: #60a5fa;
+}
+
+/* ==========================================================
+   VALUE
+========================================================== */
+
+.metric-value {
+  color: #f8fafc;
+
+  font-size: 1.5rem;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: -0.02em;
+}
+
+/* ==========================================================
+   LABEL
+========================================================== */
+
+.metric-label {
+  color: #94a3b8;
+
+  font-size: 0.875rem;
+
+  line-height: 1.5;
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 768px) {
+  .metric-card {
+    padding: 18px;
+  }
+
+  .metric-content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .metric-header {
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+  }
+
+  .metric-value {
+    font-size: 1.35rem;
+
+    text-align: center;
+  }
+
+  .metric-label {
+    text-align: center;
+  }
+}
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+  .metric-card {
+    padding: 16px;
+
+    border-radius: 16px;
+  }
+
+  .metric-icon {
+    width: 36px;
+
+    height: 36px;
+  }
+
+  .metric-value {
+    font-size: 1.2rem;
+  }
+
+  .metric-label {
+    font-size: 0.8rem;
+  }
+}

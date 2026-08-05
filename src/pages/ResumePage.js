@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page as PdfPage, pdfjs } from "react-pdf";
 
@@ -22,6 +22,8 @@ import "./ResumePageV2.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
 const ResumePage = () => {
+  console.log(pdfjs.version);
+
   const [width, setWidth] = useState(window.innerWidth);
 
   const [pdfProgress, setPdfProgress] = useState(0);

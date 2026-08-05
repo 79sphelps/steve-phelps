@@ -1,0 +1,191 @@
+/* ==========================================================
+   CERTIFICATION CARD
+   Resume Module Component
+========================================================== */
+
+
+.certification-card {
+
+  width:100%;
+
+  padding:16px;
+
+  border:
+
+    1px solid
+
+    rgba(51,65,85,.8);
+
+
+  background:
+
+    rgba(2,6,23,.45);
+
+
+  border-radius:
+
+    16px;
+
+
+  transition:
+
+    all 250ms ease;
+
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:8px;
+
+}
+
+
+
+.certification-card:hover {
+
+  border-color:
+
+    rgba(96,165,250,.55);
+
+
+  background:
+
+    rgba(15,23,42,.75);
+
+
+  transform:
+
+    translateY(-2px);
+
+}
+
+
+
+/* ==========================================================
+   CERTIFICATION NAME
+========================================================== */
+
+
+.certification-name {
+
+  color:
+
+    #f8fafc;
+
+
+  font-size:
+
+    1rem;
+
+
+  font-weight:
+
+    600;
+
+
+  line-height:
+
+    1.5;
+
+
+  letter-spacing:
+
+    -.01em;
+
+}
+
+
+
+/* ==========================================================
+   CERTIFICATION META
+========================================================== */
+
+
+.certification-meta {
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  align-items:center;
+
+  gap:6px;
+
+
+  color:
+
+    #94a3b8;
+
+
+  font-size:
+
+    .875rem;
+
+
+  line-height:
+
+    1.5;
+
+}
+
+
+.certification-meta span {
+
+  color:
+
+    #475569;
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+
+@media (max-width:640px) {
+
+
+  .certification-card {
+
+    padding:14px;
+
+    border-radius:
+
+      14px;
+
+  }
+
+
+
+  .certification-name {
+
+    font-size:
+
+      .95rem;
+
+  }
+
+
+
+  .certification-meta {
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:2px;
+
+  }
+
+
+
+  .certification-meta span {
+
+    display:none;
+
+  }
+
+}
