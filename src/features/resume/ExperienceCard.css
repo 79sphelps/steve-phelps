@@ -205,18 +205,22 @@
   line-height: 1;
 }
 
+.experience-mobile-marker {
+  display: none;
+}
+
 /* ==========================================================
    RESPONSIVE
 ========================================================== */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .experience-card {
     padding: 20px;
   }
 
   .experience-header {
     flex-direction: column;
-
+    
     gap: 12px;
   }
 
@@ -227,6 +231,139 @@
   .experience-role {
     font-size: 1.1rem;
   }
+
+  .experience-mobile-marker {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    background: rgba(59, 130, 246, 0.12);
+
+    border: 1px solid rgba(59, 130, 246, 0.28);
+  }
+
+  .experience-mobile-dot {
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #60a5fa;
+
+    box-shadow: 0 0 10px rgba(96, 165, 250, 0.6);
+  }
+
+  .experience-mobile-label {
+    font-size: 0.72rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+    color: #93c5fd;
+  }
+} */
+@media (max-width: 768px) {
+  .experience-card {
+    padding: 20px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 14px;
+  }
+
+  .experience-title-group {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .experience-role {
+    font-size: 1.1rem;
+
+    text-align: center;
+  }
+
+  .experience-company {
+    text-align: center;
+  }
+
+  .experience-meta {
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 8px;
+  }
+
+  .experience-period {
+    align-self: center;
+
+    text-align: center;
+  }
+
+  /* .experience-mobile-marker {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 0 auto 18px;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    background: rgba(59, 130, 246, 0.12);
+
+    border: 1px solid rgba(59, 130, 246, 0.28);
+  } */
+
+  /* .experience-mobile-dot {
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #60a5fa;
+
+    box-shadow: 0 0 10px rgba(96, 165, 250, 0.6);
+  } */
+
+  /* .experience-mobile-label {
+    font-size: 0.72rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+    color: #93c5fd;
+  } */
 }
 
 @media (max-width: 480px) {

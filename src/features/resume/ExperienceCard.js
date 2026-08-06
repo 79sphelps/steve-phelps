@@ -10,7 +10,7 @@ export default function ExperienceCard({
   technologies,
 }) {
   return (
-    <div className="experience-card">
+    <article className="experience-card">
       {/* Header */}
 
       <div className="experience-header">
@@ -39,7 +39,6 @@ export default function ExperienceCard({
         {achievements.map((item) => (
           <li key={item}>
             <span className="experience-bullet" />
-
             <span>{item}</span>
           </li>
         ))}
@@ -54,6 +53,6 @@ export default function ExperienceCard({
           </span>
         ))}
       </div>
-    </div>
+    </article>
   );
 }

@@ -7,7 +7,7 @@ export default function EducationCard({
   details,
 }) {
   return (
-    <div className="education-card">
+    <article className="education-card">
       <div className="education-header">
         <div className="education-info">
           <h3 className="education-degree">{degree}</h3>
@@ -19,6 +19,6 @@ export default function EducationCard({
       </div>
 
       <p className="education-details">{details}</p>
-    </div>
+    </article>
   );
 }

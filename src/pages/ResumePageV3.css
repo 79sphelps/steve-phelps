@@ -517,6 +517,23 @@
 
     text-align: center;
   }
+
+  .resume-timeline {
+    padding-left: 0;
+  }
+
+  .resume-timeline-line {
+    display: none;
+  }
+
+  .resume-timeline-item {
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+
+  .resume-timeline-node {
+    display: none;
+  }
 }
 
 /* ==========================================================
