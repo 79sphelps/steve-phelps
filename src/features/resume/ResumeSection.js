@@ -8,10 +8,12 @@ export default function ResumeSection(props) {
     <motion.div
       variants={fadeUp}
       initial="hidden"
+      // animate="show"
       whileInView="show"
       viewport={{
         once: true,
-        amount: 0.2,
+        // amount: 0.2,
+        amount: 0.05,
       }}
     >
       <Section {...props} />
